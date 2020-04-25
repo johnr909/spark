@@ -1082,7 +1082,7 @@ UTILITY
 */
 .highlight {
   font-weight: 800;
-  color: green;
+  color: #80be79;
 }
 
 /*
@@ -1090,6 +1090,7 @@ HEADER
 */
 header#masthead {
   padding:0 0 5px 0;
+  background-color: #fff;
 }
 
 .navbar-brand {
@@ -1097,6 +1098,11 @@ header#masthead {
   margin-bottom: .5rem;
   padding: 0;
 }
+
+.navbar-brand-img {
+    width: 300px;
+}
+
 
 /*
 HEADER-FOOTER
@@ -1111,16 +1117,21 @@ HEADER-FOOTER
   background: #111 url('inc/assets/images/cannabis-pattern-bw.png');
 }
 
-div.header-footer {
+.header-footer {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-div.header-footer, div.header-footer a {
-  font-size: .85rem;
-  color: #fff;
+.header-footer,.header-footer a {
+  font-size: .9rem;
+  color: #2d3545;
   text-decoration: none;
 }
+
+ .header-footer a:hover {
+     color: #80be79;
+}
+
 
 /*
 NAV
@@ -1137,16 +1148,18 @@ NAV
   /*}*/
 /*}*/
 
-body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a {
-  /*border: 3px solid #888;*/
-  background-color: #999;
-  border-radius: 3px;
-  opacity: 50%;
-  color: green;
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
+    font-weight: 600;
+    color: #2d3545;
 }
 
-body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
-  font-weight: 600;
+body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a,
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover {
+    color: #80be79;
+}
+
+body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a {
+  border-bottom: 3px solid #80be79;
 }
 
 /*

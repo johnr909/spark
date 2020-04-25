@@ -48,7 +48,9 @@
                     <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
                     <a href="<?php echo esc_url( home_url( '/' )); ?>">
                         <img src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>"
-                             alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                             alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"
+                             class="navbar-brand-img">
+
                     </a>
                     <?php else : ?>
                     <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>

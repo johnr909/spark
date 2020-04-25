@@ -6,7 +6,7 @@
 get_header('spark'); ?>
 
 <?php if( is_page('contact-us')) : ?>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 google-maps">
 			    <?php get_template_part( 'template-parts/content', 'map2' );?>
@@ -15,7 +15,7 @@ get_header('spark'); ?>
     </div><!-- .container -->
 <?php endif; ?>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
 
         <section id="primary" class="content-area col-sm-12">
@@ -33,7 +33,7 @@ get_header('spark'); ?>
         </section><!-- #primary -->
 
         </div><!-- .row -->
-    </div><!-- .container -->
+    </div><!-- .container-fluid -->
 
 <?php if( is_page('rec')) : ?>
 
@@ -53,7 +53,7 @@ get_header('spark'); ?>
 
 	<?php get_template_part( 'template-parts/content', 'daily-deals' );?>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
 			<?php get_template_part( 'template-parts/content', 'rewards-signup' );?>
         </div><!-- .row -->

@@ -9,13 +9,13 @@
 
 ?>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row col">
         <h3>Deals of the Week</h3>
     </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row deals">
 
         <div id="day-Sunday" class="col-md card">
@@ -39,9 +39,9 @@
         </div>
 
     </div><!-- .row -->
-</div><!-- .container -->
+</div><!-- .container-fluid -->
 
-<div class="container">
+<div class="container-fluid">
     <div class="row deals">
 
         <div id="day-Thursday" class="col-md card">
@@ -62,4 +62,4 @@
         <div class="col-sm" style="margin: 5px; padding: 5px;"></div>
 
     </div><!-- .row -->
-</div><!-- .container -->
+</div><!-- .container-fluid -->

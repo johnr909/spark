@@ -28,7 +28,7 @@
 		<div class="col">&copy Copyright <?php echo date('Y') ;?> Spark Dispensary
         </div>
     </div><!-- .row -->
-</div><!-- .container -->
+</div><!-- .container-fluid -->
 
 
 <?php wp_footer(); ?>

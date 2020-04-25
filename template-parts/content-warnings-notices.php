@@ -8,20 +8,20 @@
  */
 
 ?>
-<div class="container">
+<div class="container-fluid">
+
     <div class="row">
         <div id="warning" class="col">
                     <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Warning") ) : ?>
                     <?php endif;?>
         </div><!-- .col -->
     </div><!-- .row -->
-</div><!-- .container -->
 
- <div class="container">
-      <div class="row">
-          <div id="notice" class="col">
-                    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Notice") ) : ?>
-                    <?php endif;?>
-          </div><!-- .col -->
+    <div class="row">
+        <div id="notice" class="col">
+            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Notice") ) : ?>
+            <?php endif;?>
+        </div><!-- .col -->
       </div><!-- .row -->
- </div><!-- .container -->
+
+ </div><!-- .container-fluid -->

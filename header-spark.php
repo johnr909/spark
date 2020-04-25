@@ -27,7 +27,7 @@
 
     <header id="masthead" class="site-header navbar-static-top sticky-top <?php echo wp_bootstrap_starter_bg_class(); ?>" role="banner">
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
 	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Location") ) : ?>
 	            <?php endif;?>
@@ -38,9 +38,9 @@
 	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Store Hours") ) : ?>
 	            <?php endif;?>
             </div><!-- .row -->
-        </div><!-- .container -->
+        </div><!-- .container-fluid -->
 
-        <div class="container">
+        <div class="container-fluid">
 
             <nav class="navbar navbar-expand-xl p-0">
                 <div class="navbar-brand">
@@ -77,7 +77,7 @@
 
             </nav>
 
-        </div><!-- .container -->
+        </div><!-- .container-fluid -->
 	</header><!-- #masthead -->
 
 <div id="content" class="site-content">

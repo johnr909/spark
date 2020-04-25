@@ -13,8 +13,8 @@
 
 	</div><!-- #content -->
 
-<div class="container-fluid">
-    <div class="row foot">
+<div class="container-fluid foot">
+    <div class="row">
 	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Location") ) : ?>
 	    <?php endif;?>
 	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Phone") ) : ?>
@@ -24,10 +24,7 @@
 	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Store Hours") ) : ?>
 	    <?php endif;?>
     </div><!-- .row -->
-</div><!-- .container -->
-
-<div class="container-fluid">
-    <div class="row foot">
+    <div class="row foot-bottom">
 		<div class="col">&copy Copyright <?php echo date('Y') ;?> Spark Dispensary
         </div>
     </div><!-- .row -->

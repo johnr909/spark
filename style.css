@@ -1105,9 +1105,10 @@ HEADER-FOOTER
   list-style: none;
 }
 
-.foot > .header-footer, .foot {
+.foot {
+  height: 10rem;
   padding-top: 20px;
-  background: transparent url('inc/assets/images/sun-over-cannabis-footer-bg.jpg') no-repeat;
+  background: #111 url('inc/assets/images/cannabis-pattern-bw.png');
 }
 
 div.header-footer {

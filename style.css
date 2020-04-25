@@ -1078,6 +1078,12 @@ BODY-LAYOUT
 }
 
 /*
+TYPOGRAPHY
+*/
+body {
+    font-family: "Karma", serif !important;
+}
+/*
 UTILITY
 */
 .highlight {
@@ -1136,18 +1142,6 @@ HEADER-FOOTER
 /*
 NAV
 */
-/*body:not(.theme-preset-active) #masthead .navbar-nav > li > a {*/
-  /*font-size: 1.05rem;*/
-/*}*/
-
-/*@media only screen and (min-width: 768px){*/
-  /*div.navbar-brand img {*/
-    /*max-width: 125%;*/
-    /*width: 125%;*/
-    /*height: auto;*/
-  /*}*/
-/*}*/
-
 body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
     font-weight: 600;
     color: #2d3545;

@@ -1091,6 +1091,17 @@ UTILITY
   color: #80be79;
 }
 
+.btn-primary {
+    font-weight: 600;
+    background-color: #80be79;
+    border-color: #80be79;
+}
+
+.btn-secondary {
+    font-weight: 600;
+    background-color:#2d3545;
+    border-color: #2d3545;
+}
 /*
 HEADER
 */
@@ -1120,7 +1131,8 @@ HEADER-FOOTER
 .foot {
   height: 10rem;
   padding-top: 20px;
-  background: #111 url('inc/assets/images/cannabis-pattern-bw.png');
+  background: #111 url('inc/assets/images/footer-bg.png');
+  color: #fff;
 }
 
 .header-footer {
@@ -1130,14 +1142,24 @@ HEADER-FOOTER
 
 .header-footer,.header-footer a {
   font-size: .9rem;
-  color: #2d3545;
-  text-decoration: none;
+   text-decoration: none;
 }
 
- .header-footer a:hover {
-     color: #80be79;
+#masthead .header-footer a {
+    color: #2d3545;
 }
 
+#masthead .header-footer a:hover {
+    color: #80be79;
+}
+
+.foot .header-footer, .foot .header-footer a {
+    color: #fff;
+}
+
+.foot .header-footer a:hover {
+    color: #80be79;
+}
 
 /*
 NAV
@@ -1185,12 +1207,20 @@ change the default and only have the burger show at sizes below 768px instead of
 HONE PAGE CAROUSEL/MOBILE BANNER
 */
 .carousel-caption {
-  bottom: 35px;
-  color: #222;
+  bottom: 55px;
 }
 
-#carousel-text h2 {
-    color: #222;
+.carousel-text h2 {
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+}
+
+.carousel-text p.lead {
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1211,7 +1241,10 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 }
 
 #home-mobile-banner h2 {
+    font-size: 3em;
     text-align: center;
+    color: #fff;
+    font-family: Roboto, sans-serif;
 }
 
 #home-mobile-banner a.btn {
@@ -1220,17 +1253,8 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 }
 
 p.lead {
-    text-align: center  ;
+    text-align: center;
 }
-
-/*#carousel-text .btn-primary  {*/
-  /*margin-right: 1rem;*/
-/*}*/
-
-/*#home-mobile-banner .btn-primary  {*/
-  /*margin-right: 1rem;*/
-  /*margin-left: 1.5rem;*/
-/*}*/
 
 /*
 HONE PAGE

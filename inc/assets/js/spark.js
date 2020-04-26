@@ -28,7 +28,7 @@ FUGLY, I know...
  */
 
 // hide warning and notices if you don't them
-if((jQuery('#warning .alert').length < 1)) {
+if((jQuery('#warning .warning').length < 1)) {
     jQuery('#warning').addClass('d-none');
 }
 

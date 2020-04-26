@@ -1081,7 +1081,17 @@ BODY-LAYOUT
 TYPOGRAPHY
 */
 body {
-    font-family: "Karma", serif !important;
+    font-family:  Roboto, serif !important;
+    font-weight: 600;
+}
+
+
+a {
+    color: #80be79;
+}
+
+a:hover {
+    color: #2d3545;
 }
 /*
 UTILITY
@@ -1097,14 +1107,34 @@ UTILITY
     border-color: #80be79;
 }
 
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #fff;
+    border-color: #80be79;
+    color: #2d3545;
+}
+
 .btn-secondary {
     font-weight: 600;
     background-color:#2d3545;
     border-color: #2d3545;
 }
+
+
+.btn-lg {
+    border-radius: .6rem;
+}
 /*
 HEADER
 */
+
+.warning {
+    padding: 20px 30px;
+    text-align: center;
+    color: #2d3545;
+    background-color: red;
+    border: 1px solid #000;
+}
+
 header#masthead {
   padding:0 0 5px 0;
   background-color: #fff;
@@ -1165,6 +1195,7 @@ HEADER-FOOTER
 NAV
 */
 body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
+    font-size: 1rem;
     font-weight: 600;
     color: #2d3545;
 }
@@ -1370,4 +1401,9 @@ CONTACT US PAGE
 
 .wpcf7-form {
   margin-top: 40px;
+}
+
+.form-control:focus {
+    border-color: #80be79;
+    box-shadow: 0 0 0 .2rem rgba(128,190,121);
 }

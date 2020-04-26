@@ -10,7 +10,6 @@ get_header('spark'); ?>
 			<?php
 			    get_template_part( 'template-parts/content', 'home-mobile-banner' );
 			?>
-
         </div><!-- .row -->
     </div><!-- .container-fluid -->
 
@@ -19,21 +18,22 @@ get_header('spark'); ?>
 			<?php
 			    get_template_part( 'template-parts/content', 'home-carousel' );
 			?>
-
         </div><!-- .row -->
     </div><!-- .container-fluid -->
 
-
-    <?php
-        get_template_part( 'template-parts/content', 'warnings-notices' );
-    ?>
+    <div class="container-fluid">
+        <div class="row">
+			<?php
+			get_template_part( 'template-parts/content', 'notices' );
+			?>
+        </div><!-- .row -->
+    </div><!-- .container-fluid -->
 
     <div class="container-fluid">
         <div class="row">
-					<?php
-						get_template_part( 'template-parts/content', 'page-home' );
-					?>
-
+			<?php
+				get_template_part( 'template-parts/content', 'page-home' );
+			?>
         </div><!-- .row -->
     </div><!-- .container-fluid -->
 

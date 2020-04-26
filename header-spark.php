@@ -27,6 +27,16 @@
 
     <header id="masthead" class="site-header navbar-static-top sticky-top <?php echo wp_bootstrap_starter_bg_class(); ?>" role="banner">
 
+	    <?php if ( is_front_page()) : ?>
+            <div class="container-fluid">
+                <div class="row">
+                    <?php
+                        get_template_part( 'template-parts/content', 'warnings' );
+                    ?>
+                </div><!-- .row -->
+            </div><!-- .container-fluid -->
+	    <?php endif;?>
+
         <div class="container-fluid">
             <div class="row">
 	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Location") ) : ?>

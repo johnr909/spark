@@ -5,16 +5,6 @@
 
 get_header('spark'); ?>
 
-<?php if( is_page('contact-us')) : ?>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8 google-maps">
-			    <?php get_template_part( 'template-parts/content', 'map2' );?>
-            </div><!-- .google-maps -->
-        </div><!-- .row -->
-    </div><!-- .container -->
-<?php endif; ?>
-
     <div class="container-fluid">
         <div class="row">
 
@@ -22,7 +12,12 @@ get_header('spark'); ?>
             <main id="main" class="site-main" role="main">
                 <header class="entry-header">
 		            <?php the_title( '<h1>', '</h1>' ); ?>
+                    <?php if( is_page('deals')) : ?>
+                        <?php get_template_part( 'template-parts/content', 'deals-subtitles' );?>
+                    <?php endif; ?>
                 </header><!-- .entry-header -->
+
+
                     <?php
                         while ( have_posts() ) : the_post();
                         endwhile; // End of the loop.

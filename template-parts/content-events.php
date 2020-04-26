@@ -11,7 +11,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col  col-md-8 events">
+        <div class="col col-md-8 events">
                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Events") ) : ?>
                 <?php endif;?>
         </div><!-- .col -->

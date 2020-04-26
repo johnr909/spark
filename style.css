@@ -1081,8 +1081,14 @@ BODY-LAYOUT
 TYPOGRAPHY
 */
 body {
-    font-family:  "Karma", san-serif;
-    font-weight: 600;
+    /*font-family:  "Karma", san-serif;*/
+  font-family:  "Overpass", serif;
+  font-weight: 600;
+  color: #2d3545;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2d3545;
 }
 
 
@@ -1098,6 +1104,10 @@ UTILITY
 */
 .highlight {
   font-weight: 800;
+  color: #80be79;
+}
+
+.green-text {
   color: #80be79;
 }
 
@@ -1258,17 +1268,21 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 */
 .carousel-caption {
   bottom: 55px;
+  padding-bottom: 0;
 }
 
-.carousel-text h2 {
-    font-size: 3em;
+.carousel-text h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+    font-size: 3.5rem;
     text-align: center;
     color: #fff;
     /*font-family:'Karma', sans-serif;*/
 }
 
 .carousel-text p.lead {
-    font-size: 1.5em;
+  margin-bottom: .75rem;
+    font-size: 1.5rem;
     text-align: center;
     color: #fff;
 }
@@ -1291,10 +1305,10 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 }
 
 #home-mobile-banner h2 {
-    font-size: 3em;
+    font-size: 3rem;
     text-align: center;
     color: #fff;
-    font-family: Roboto, sans-serif;
+    /*font-family: Roboto, sans-serif;*/
 }
 
 #home-mobile-banner a.btn {
@@ -1309,6 +1323,9 @@ p.lead {
 /*
 HONE PAGE
 */
+.card {
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1)
+}
 #card-home {
     padding: 0;
 }
@@ -1320,14 +1337,20 @@ HONE PAGE
 }
 
 .card-body {
+  margin-top: .75rem;
   text-align: center;
 }
 
 .card-title {
   margin-bottom: .75rem;
-  padding: .75rem;
-  font-size: 1.5rem;
+  padding: .75rem 0;
+  font-size: 1.25rem;
+  font-weight: 800;
   border-bottom: 3px solid #2d3545;
+}
+
+.card-text {
+  font-size: 1.25rem;
 }
 
 h5.highlight {
@@ -1336,9 +1359,25 @@ h5.highlight {
 
 .rewards-signup {
   margin: 15px;
-  padding: 20px;
-  background-color: #ccc;
-  border: 3px solid #333;
+  padding: 0 5px 10px 20px;
+  background-color: #f2f8f1;
+  border: 1px solid rgba(0,0,0,.125);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+  border-radius: .25rem;
+}
+
+.rewards-signup .fa-comment-dollar {
+  font-size: 4rem;
+}
+
+.rewards-title {
+  font-size: 3rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.rewards-text {
+  font-size: 1.5rem;
 }
 
 .testimonial {
@@ -1371,6 +1410,43 @@ h5.highlight {
   transform: rotateZ(-46deg);
 }
 
+/* NOT THE HOME PAGE */
+.entry-header {
+  padding: 4rem 0;
+  background: #2d3545 url('inc/assets/images/page-header-1920w-300h.jpg') no-repeat;
+}
+
+.entry-header h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #80be79;
+  border: none;
+}
+
+h3 .fa-cannabis, h3 .fa-cut {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3.lead {
+  font-size: 2em;
+  font-weight: 600;
+}
 /*
 DEALS/EVENTS PAGE
 */
@@ -1410,24 +1486,16 @@ body.single-tribe_events header.entry-header {
 /*
 CONTACT US PAGE
 */
-.google-maps {
-    position: relative;
-    padding-bottom: 75%; // This is the aspect ratio
-    height: 0;
-    overflow: hidden;
-    margin: 20px 0;
+.gmap-container {
+  margin: 2.5rem;
 }
 
-.google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+.i4ewOd-pzNkMb-haAclf {
+  background-color: #80be79;
 }
 
 .wpcf7-form {
-  margin-top: 40px;
+  margin-top: 2.25rem;
 }
 
 .form-control:focus {

@@ -27,14 +27,14 @@ jQuery(document).ready(function(){
 FUGLY, I know...
  */
 
-// hide warning and notices if you don't them
-if((jQuery('#warning .warning').length < 1)) {
-    jQuery('#warning').addClass('d-none');
-}
-
-if((jQuery('#notice .alert').length < 1)) {
-    jQuery('#notice').addClass('d-none');
-}
+// hide warning and notices if you don't need them
+// if((jQuery('.warning').length < 1)) {
+//     jQuery('#warning').addClass('d-none');
+// }
+//
+// if((jQuery('.notice').length < 1)) {
+//     jQuery('#notice').addClass('d-none');
+// }
 
 // hide a coupon if you don't have content for it
 // if((jQuery('#coupon-1 h3').length < 1)) {

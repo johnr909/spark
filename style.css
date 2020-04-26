@@ -1081,7 +1081,7 @@ BODY-LAYOUT
 TYPOGRAPHY
 */
 body {
-    font-family:  Roboto, serif !important;
+    font-family:  "Karma", san-serif;
     font-weight: 600;
 }
 
@@ -1127,21 +1127,30 @@ UTILITY
 /*
 HEADER
 */
-.container-fluid-warning {
+.container-fluid-info {
   padding-left: 0;
   padding-right: 0;
 }
 
-.warning {
-  margin-bottom: 10px;
+.warning,
+.notice {
+    margin-bottom: 10px;
     padding: 20px 30px 20px 30px;
     text-align: center;
-    color: #2d3545;
-    background-color: red;
-    border-bottom: 1px solid #000;
 }
 
-.warning .fa {
+.warning {
+  color: #2d3545;
+  background-color: red;
+  border-bottom: 1px solid #000;
+}
+
+.notice {
+  background-color: #80be79;
+}
+
+.warning .fa,
+.notice .fa {
   font-size: 2rem;
 }
 
@@ -1255,7 +1264,7 @@ HONE PAGE CAROUSEL/MOBILE BANNER
     font-size: 3em;
     text-align: center;
     color: #fff;
-    font-family:'Karma', sans-serif;
+    /*font-family:'Karma', sans-serif;*/
 }
 
 .carousel-text p.lead {
@@ -1310,6 +1319,21 @@ HONE PAGE
     }
 }
 
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  margin-bottom: .75rem;
+  padding: .75rem;
+  font-size: 1.5rem;
+  border-bottom: 3px solid #2d3545;
+}
+
+h5.highlight {
+  border-bottom: 3px solid #80be79;
+}
+
 .rewards-signup {
   margin: 15px;
   padding: 20px;
@@ -1318,18 +1342,16 @@ HONE PAGE
 }
 
 .testimonial {
-  margin: 20px;
-  padding: 15px;
+  margin: 1rem;
+  padding: 1rem;
   text-align: center;
-  background-color: #ccc;
-  border: 3px solid #333;
 }
 
 .testimonial-text {
   color: #808080;
   position: relative;
   padding: 15px;
-  background: #f1f1f1;
+  background: #f2f8f1;
   border: 1px solid #efefef;
   border-radius: 3px;
   margin-bottom: 15px;
@@ -1340,7 +1362,7 @@ HONE PAGE
   width: 15px;
   height: 15px;
   display: block;
-  background: #f1f1f1;
+  background: #f2f8f1;
   border: 1px solid #efefef;
   border-width: 0 0 1px 1px;
   position: absolute;

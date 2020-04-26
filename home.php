@@ -21,7 +21,7 @@ get_header('spark'); ?>
         </div><!-- .row -->
     </div><!-- .container-fluid -->
 
-    <div class="container-fluid">
+    <div class="container-fluid-info">
         <div class="row">
 			<?php
 			get_template_part( 'template-parts/content', 'notices' );

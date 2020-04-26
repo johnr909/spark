@@ -1121,18 +1121,28 @@ UTILITY
 
 
 .btn-lg {
+  padding: .75rem 1.5rem;
     border-radius: .6rem;
 }
 /*
 HEADER
 */
+.container-fluid-warning {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 .warning {
-    padding: 20px 30px;
+  margin-bottom: 10px;
+    padding: 20px 30px 20px 30px;
     text-align: center;
     color: #2d3545;
     background-color: red;
-    border: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.warning .fa {
+  font-size: 2rem;
 }
 
 header#masthead {
@@ -1245,7 +1255,7 @@ HONE PAGE CAROUSEL/MOBILE BANNER
     font-size: 3em;
     text-align: center;
     color: #fff;
-    font-family: Roboto, sans-serif;
+    font-family:'Karma', sans-serif;
 }
 
 .carousel-text p.lead {
@@ -1290,11 +1300,6 @@ p.lead {
 /*
 HONE PAGE
 */
-#warning,
-#notice {
-  margin: 10px 0 5px 0;
-}
-
 #card-home {
     padding: 0;
 }

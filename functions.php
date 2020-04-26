@@ -192,8 +192,8 @@ function wp_bootstrap_starter_widgets_init() {
 	register_sidebar(array(
 		'name' => esc_html__( 'Warning', 'wp-bootstrap-starter' ),
 		'id' => 'warning',
-		'before_widget' => '<div class="warning">',
-		'after_widget' => '</div><!-- .warning -->',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	) );

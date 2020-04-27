@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="col col-md-8 rewards-signup">
+<div class="col-sm col-md-8 rewards-signup">
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Rewards Signup") ) : ?>
 		<?php endif;?>
 </div><!-- .col -->

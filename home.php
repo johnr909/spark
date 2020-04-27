@@ -39,7 +39,7 @@ get_header('spark'); ?>
 
     <div class="container-fluid">
         <div class="row">
-            <div id="card-home" class="col col-md-3 card ">
+            <div id="card-home" class="col-sm col-md-3 card ">
 
 	                <?php
 	                    dealoFDay();

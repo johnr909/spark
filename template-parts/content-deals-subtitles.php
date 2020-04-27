@@ -1,1 +1,1 @@
-<h3 class="subtitle">We have deals every day of the week plus rewards, coupons and events.</h3>
+<h3 class="subtitle">We have deals every day of the week plus rewards, coupons and events</h3>

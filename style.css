@@ -1075,6 +1075,7 @@ BODY-LAYOUT
 */
 #content.site-content {
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 /*
@@ -1109,6 +1110,14 @@ UTILITY
 
 .green-text {
   color: #80be79;
+}
+
+.light-blue-bg {
+  background-color: #f2f8f1;
+}
+
+.very-dark-bg  {
+  background: #2d3545 url("inc/assets/images/leaf-dark-bg.png") no-repeat bottom right;
 }
 
 .btn-primary {
@@ -1330,11 +1339,11 @@ HONE PAGE
     padding: 0;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .card {
-        width: 60%;
-    }
-}
+/*@media only screen and (min-width: 480px) and (max-width: 767px) {*/
+    /*.card {*/
+        /*width: 60%;*/
+    /*}*/
+/*}*/
 
 .card-body {
   margin-top: .75rem;
@@ -1360,7 +1369,7 @@ h5.highlight {
 .rewards-signup {
   margin: 15px;
   padding: 0 5px 10px 20px;
-  background-color: #f2f8f1;
+  background-color: #fff;
   border: 1px solid rgba(0,0,0,.125);
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
   border-radius: .25rem;
@@ -1463,16 +1472,62 @@ DEALS/EVENTS PAGE
   margin: 20px;
   padding: 0;
   text-align: center;
-  background-color: #ccc;
-  border: 3px solid #333;
+  border: 1px solid rgba(0,0,0,.125);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+  border-radius: .25rem;
+  background-color: #fff;
+}
+
+.coupon-icon-container {
+  width: 10rem;
+  height: 10rem;
+  background-color: #80be79;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 3px solid;
+}
+
+.coupon-icon-container .fa {
+  display: inline-block;
+  margin: 2.25rem auto;
+  font-size: 5rem;
+}
+
+.coupon-text {
+  font-size: 2.5rem;
 }
 
 .events {
   margin: 20px;
   padding: 15px;
   text-align: left;
-  background-color: #ccc;
-  border: 3px solid #333;
+}
+
+.events h3 {
+  color: #fff;
+}
+
+.events .tribe-event-title {
+  font-size: 1.5rem;
+}
+
+.events .tribe-event-duration {
+  color: #fff;
+}
+
+.events .fas,
+.events .fa {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.events a {
+  color: #f2f8f1;
+}
+
+.events a:hover,
+.events a:active {
+  color: #80be79;
 }
 
 body.single-tribe_events header.entry-header {

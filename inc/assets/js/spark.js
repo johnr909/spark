@@ -41,21 +41,21 @@ FUGLY, I know...
 //     jQuery('#coupon-1').addClass('d-none');
 // }
 
-if((jQuery('#coupon-1 img.image').length < 1)) {
-    jQuery('#coupon-1').addClass('d-none');
-}
-
-if((jQuery('#coupon-2 h3').length < 1)) {
-    jQuery('#coupon-2').addClass('d-none');
-}
-
-if((jQuery('#coupon-3 h3').length < 1)) {
-    jQuery('#coupon-3').addClass('d-none');
-}
-
-if((jQuery('#coupon-4 h3').length < 1)) {
-    jQuery('#coupon-4').addClass('d-none');
-}
+// if((jQuery('#coupon-1 img.image').length < 1)) {
+//     jQuery('#coupon-1').addClass('d-none');
+// }
+//
+// if((jQuery('#coupon-2 h3').length < 1)) {
+//     jQuery('#coupon-2').addClass('d-none');
+// }
+//
+// if((jQuery('#coupon-3 h3').length < 1)) {
+//     jQuery('#coupon-3').addClass('d-none');
+// }
+//
+// if((jQuery('#coupon-4 h3').length < 1)) {
+//     jQuery('#coupon-4').addClass('d-none');
+// }
 
 //
 // if((jQuery('.coupon h3').length < 1)) {

@@ -13,7 +13,7 @@
 
     <div class="row">
         <div class="col">
-            <h3 class="lead"><i class="fa fa-cannabis green-text"></i>&nbsp;&nbsp;Coupons</h3>
+            <h3 class="lead"><i class="fa fa-cannabis green-text"></i>&nbsp;&nbsp;Daily Deals</h3>
         </div><!-- .col -->
     </div><!-- .row -->
 

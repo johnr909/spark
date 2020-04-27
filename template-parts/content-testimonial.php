@@ -9,15 +9,11 @@
 
 ?>
 
-
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Testimonial 1") ) : ?>
 		<?php endif;?>
 
-
-
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Testimonial 2") ) : ?>
 		<?php endif;?>
-
 
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Testimonial 3") ) : ?>
 		<?php endif;?>

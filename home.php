@@ -54,7 +54,12 @@ get_header('spark'); ?>
         </div><!-- .row -->
     </div><!-- .container-fluid -->
 
-    <div class="container-fluid">
+    <div class="container-fluid green-bg">
+        <div class="row">
+            <div class="col">
+                <h3 class="lead"><i class="fa fa-cannabis"></i>&nbsp;&nbsp;Reviews</h3>
+            </div>
+        </div>
         <div class="row">
 
                     <?php

@@ -1041,9 +1041,11 @@ body:not(.theme-preset-active) footer#colophon {
 ## SPARK
 /*--------------------------------------------------------------*!*/
 
+
 /*
 AGE GATE
 */
+
 .age-gate-form {
   background-color: #999;
   opacity: 90%;
@@ -1067,42 +1069,53 @@ AGE GATE
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
 
 /*
 BODY-LAYOUT
 */
+
 #content.site-content {
   padding-top: 0;
   padding-bottom: 0;
 }
 
+
 /*
 TYPOGRAPHY
 */
+
 body {
-    /*font-family:  "Karma", san-serif;*/
-  font-family:  "Overpass", serif;
+  /*font-family:  "Karma", san-serif;*/
+  font-family: "Overpass", serif;
   font-weight: 600;
   color: #2d3545;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2d3545;
+}
+
+a {
+  color: #80be79;
+}
+
+a:hover {
   color: #2d3545;
 }
 
 
-a {
-    color: #80be79;
-}
-
-a:hover {
-    color: #2d3545;
-}
 /*
 UTILITY
 */
+
 .highlight {
   font-weight: 800;
   color: #80be79;
@@ -1116,36 +1129,43 @@ UTILITY
   background-color: #f2f8f1;
 }
 
-.very-dark-bg  {
-  background: #2d3545 url("inc/assets/images/leaf-dark-bg.png") no-repeat bottom right;
+.very-dark-bg {
+  background: #2d3545 url("inc/assets/images/leaf-dark-bg2.png") no-repeat bottom right;
+}
+
+.green-bg {
+  background-color: #80be79;
 }
 
 .btn-primary {
-    font-weight: 600;
-    background-color: #80be79;
-    border-color: #80be79;
+  font-weight: 600;
+  background-color: #80be79;
+  border-color: #80be79;
 }
 
-.btn-primary:hover, .btn-secondary:hover {
-    background-color: #fff;
-    border-color: #80be79;
-    color: #2d3545;
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #fff;
+  border-color: #80be79;
+  color: #2d3545;
 }
 
 .btn-secondary {
-    font-weight: 600;
-    background-color:#2d3545;
-    border-color: #2d3545;
+  font-weight: 600;
+  background-color: #2d3545;
+  border-color: #2d3545;
 }
-
 
 .btn-lg {
   padding: .75rem 1.5rem;
-    border-radius: .6rem;
+  border-radius: .6rem;
 }
+
+
 /*
 HEADER
 */
+
 .container-fluid-info {
   padding-left: 0;
   padding-right: 0;
@@ -1153,9 +1173,9 @@ HEADER
 
 .warning,
 .notice {
-    margin-bottom: 10px;
-    padding: 20px 30px 20px 30px;
-    text-align: center;
+  margin-bottom: 10px;
+  padding: 20px 30px 20px 30px;
+  text-align: center;
 }
 
 .warning {
@@ -1174,7 +1194,7 @@ HEADER
 }
 
 header#masthead {
-  padding:0 0 5px 0;
+  padding: 0 0 5px 0;
   background-color: #fff;
 }
 
@@ -1185,13 +1205,14 @@ header#masthead {
 }
 
 .navbar-brand-img {
-    width: 300px;
+  width: 300px;
 }
 
 
 /*
 HEADER-FOOTER
 */
+
 .header-footer ul {
   list-style: none;
 }
@@ -1208,48 +1229,54 @@ HEADER-FOOTER
   margin-bottom: 5px;
 }
 
-.header-footer,.header-footer a {
+.header-footer,
+.header-footer a {
   font-size: .9rem;
-   text-decoration: none;
+  text-decoration: none;
 }
 
 #masthead .header-footer a {
-    color: #2d3545;
+  color: #2d3545;
 }
 
 #masthead .header-footer a:hover {
-    color: #80be79;
+  color: #80be79;
 }
 
-.foot .header-footer, .foot .header-footer a {
-    color: #fff;
+.foot .header-footer,
+.foot .header-footer a {
+  color: #fff;
 }
 
 .foot .header-footer a:hover {
-    color: #80be79;
+  color: #80be79;
 }
+
 
 /*
 NAV
 */
-body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #2d3545;
+
+body:not(.theme-preset-active) #masthead .navbar-nav>li>a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3545;
 }
 
-body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a,
-body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover {
-    color: #80be79;
+body:not(.theme-preset-active) #masthead .navbar-nav>li.current_page_item>a,
+body:not(.theme-preset-active) #masthead .navbar-nav>li>a:hover {
+  color: #80be79;
 }
 
-body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a {
+body:not(.theme-preset-active) #masthead .navbar-nav>li.current_page_item>a {
   border-bottom: 3px solid #80be79;
 }
+
 
 /*
 change the default and only have the burger show at sizes below 768px instead of 1120px
  */
+
 @media only screen and (min-width: 768px) {
   .navbar-expand-xl .navbar-collapse {
     display: -ms-flexbox !important;
@@ -1260,7 +1287,6 @@ change the default and only have the burger show at sizes below 768px instead of
   .navbar-nav {
     flex-direction: row;
   }
-
   .navbar-expand-xl .navbar-toggler {
     display: none;
   }
@@ -1272,9 +1298,11 @@ change the default and only have the burger show at sizes below 768px instead of
   }
 }
 
+
 /*
 HONE PAGE CAROUSEL/MOBILE BANNER
 */
+
 .carousel-caption {
   bottom: 55px;
   padding-bottom: 0;
@@ -1283,17 +1311,17 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 .carousel-text h1 {
   margin-bottom: 0;
   padding-bottom: 0;
-    font-size: 3.5rem;
-    text-align: center;
-    color: #fff;
-    /*font-family:'Karma', sans-serif;*/
+  font-size: 3.5rem;
+  text-align: center;
+  color: #fff;
+  /*font-family:'Karma', sans-serif;*/
 }
 
 .carousel-text p.lead {
   margin-bottom: .75rem;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1309,40 +1337,61 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 }
 
 #home-mobile-banner {
-  padding:  5px 15px;
-  background: transparent url('inc/assets/images/sun-over-cannabis-800w-500h.jpg') no-repeat;
+  width: 100%;
+  padding: 5px 15px;
+  background: transparent url('inc/assets/images/leaves-closeup.jpg') no-repeat;
 }
 
 #home-mobile-banner h2 {
-    font-size: 3rem;
-    text-align: center;
-    color: #fff;
-    /*font-family: Roboto, sans-serif;*/
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
 }
 
 #home-mobile-banner a.btn {
-    width:50%;
-    margin:15px auto;
+  width: 12rem;
+  margin: 15px auto;
 }
 
-p.lead {
-    text-align: center;
+#home-mobile-banner .lead {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
 }
+
 
 /*
 HONE PAGE
 */
+
 .card {
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1)
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1)
 }
+
 #card-home {
-    padding: 0;
+  padding: 0;
+}
+
+#card-home .card-title {
+  font-size: 1.75rem;
+}
+
+#card-home .card-text {
+  font-size: 1.25rem;
 }
 
 /*@media only screen and (min-width: 480px) and (max-width: 767px) {*/
-    /*.card {*/
-        /*width: 60%;*/
-    /*}*/
+
+
+/*.card {*/
+
+
+/*width: 60%;*/
+
+
+/*}*/
+
+
 /*}*/
 
 .card-body {
@@ -1369,9 +1418,9 @@ h5.highlight {
 .rewards-signup {
   margin: 15px;
   padding: 0 5px 10px 20px;
-  background-color: #fff;
-  border: 1px solid rgba(0,0,0,.125);
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+  background: #fff url('inc/assets/images/phone-icon-md.png') no-repeat 30% 80%;
+  border: 1px solid rgba(0, 0, 0, .125);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
   border-radius: .25rem;
 }
 
@@ -1381,7 +1430,7 @@ h5.highlight {
 
 .rewards-title {
   font-size: 3rem;
-  margin-top: 0;
+  margin-top: 1rem;
   padding-top: 0;
 }
 
@@ -1419,7 +1468,9 @@ h5.highlight {
   transform: rotateZ(-46deg);
 }
 
+
 /* NOT THE HOME PAGE */
+
 .entry-header {
   padding: 4rem 0;
   background: #2d3545 url('inc/assets/images/page-header-1920w-300h.jpg') no-repeat;
@@ -1443,7 +1494,8 @@ h5.highlight {
   border: none;
 }
 
-h3 .fa-cannabis, h3 .fa-cut {
+h3 .fa-cannabis,
+h3 .fa-cut {
   font-size: 3rem;
 }
 
@@ -1456,9 +1508,12 @@ h3.lead {
   font-size: 2em;
   font-weight: 600;
 }
+
+
 /*
 DEALS/EVENTS PAGE
 */
+
 .card {
   margin: 15px;
 }
@@ -1472,8 +1527,8 @@ DEALS/EVENTS PAGE
   margin: 20px;
   padding: 0;
   text-align: center;
-  border: 1px solid rgba(0,0,0,.125);
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+  border: 1px solid rgba(0, 0, 0, .125);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
   border-radius: .25rem;
   background-color: #fff;
 }
@@ -1538,15 +1593,13 @@ body.single-tribe_events header.entry-header {
   list-style: none;
 }
 
+
 /*
 CONTACT US PAGE
 */
+
 .gmap-container {
   margin: 2.5rem;
-}
-
-.i4ewOd-pzNkMb-haAclf {
-  background-color: #80be79;
 }
 
 .wpcf7-form {
@@ -1554,6 +1607,6 @@ CONTACT US PAGE
 }
 
 .form-control:focus {
-    border-color: #80be79;
-    box-shadow: 0 0 0 .2rem rgba(128,190,121);
+  border-color: #80be79;
+  box-shadow: 0 0 0 .2rem rgba(128, 190, 121);
 }

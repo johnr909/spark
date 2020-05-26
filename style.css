@@ -1447,11 +1447,11 @@ h5.highlight {
 .testimonial-text {
   color: #808080;
   position: relative;
+  margin-bottom: 1rem;
   padding: 15px;
   background: #f2f8f1;
   border: 1px solid #efefef;
   border-radius: 3px;
-  margin-bottom: 15px;
 }
 
 .testimonial-text::after {

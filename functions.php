@@ -162,28 +162,28 @@ function wp_bootstrap_starter_widgets_init() {
 	register_sidebar(array(
 		'name' => esc_html__( 'Header Footer Location', 'wp-bootstrap-starter' ),
 		'id' => 'header-footer-location',
-		'before_widget' => '<div class="col-6 col-sm-6 col-md-4 header-footer">',
+		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-4 header-footer">',
 		'after_widget' => '</div><!-- .col header-footer left-->',
 	) );
 
 	register_sidebar(array(
 		'name' => esc_html__( 'Header Footer Phone', 'wp-bootstrap-starter' ),
 		'id' => 'header-footer-phone',
-		'before_widget' => '<div class="col-6 col-sm-6 col-md-2 header-footer">',
+		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-2 header-footer">',
 		'after_widget' => '</div><!-- .col header-footer right-->',
 	) );
 
 	register_sidebar(array(
 		'name' => esc_html__( 'Header Footer Email', 'wp-bootstrap-starter' ),
 		'id' => 'header-footer-email',
-		'before_widget' => '<div class="col-6 col-sm-6 col-md-3 header-footer">',
+		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-3 header-footer">',
 		'after_widget' => '</div><!-- .col header-footer left-->',
 	) );
 
 	register_sidebar(array(
 		'name' => esc_html__( 'Header Footer Store Hours', 'wp-bootstrap-starter' ),
 		'id' => 'header-footer-store-hours',
-		'before_widget' => '<div class="col-6 col-sm-6 col-md-3 header-footer">',
+		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-3 header-footer">',
 		'after_widget' => '</div><!-- .col header-footer right-->',
 	) );
 

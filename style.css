@@ -1218,7 +1218,6 @@ HEADER-FOOTER
 }
 
 .foot {
-  height: 10rem;
   padding-top: 20px;
   background: #111 url('inc/assets/images/footer-bg.png');
   color: #fff;

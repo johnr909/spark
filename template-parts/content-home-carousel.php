@@ -9,7 +9,7 @@
     <div class="carousel-inner">
 
         <div class="carousel-item active" data-interval="5000">
-            <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'leaf-closeup-1920w-500h.jpg'; ?>"
+            <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'leaf-closeup-1920w-350h.jpg'; ?>"
                  class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
 	            <?php
@@ -19,7 +19,7 @@
         </div><!-- .carousel-item -->
 
         <div class="carousel-item"data-interval="5000">
-            <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'taylor-1920w-500h.jpg'; ?>"
+            <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'taylor-1920w-350h.jpg'; ?>"
                  class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
 	            <?php
@@ -29,7 +29,7 @@
         </div><!-- .carousel-item -->
 
         <div class="carousel-item" data-interval="5000">
-            <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'valdivia-1920w-500h.jpg'; ?>"
+            <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'valdivia-1920w-350h.jpg'; ?>"
                  class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
 	            <?php

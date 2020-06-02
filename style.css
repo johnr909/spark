@@ -1308,11 +1308,12 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 */
 
 .carousel-caption {
-  bottom: 55px;
+  bottom: 40px;
   padding-bottom: 0;
 }
 
 .carousel-text h1 {
+  display: none;
   margin-bottom: 0;
   padding-bottom: 0;
   font-size: 3.5rem;
@@ -1322,10 +1323,27 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 }
 
 .carousel-text p.lead {
-  margin-bottom: .75rem;
+  margin-bottom: .5rem;
   font-size: 1.5rem;
   text-align: center;
   color: #fff;
+}
+
+
+.carousel-text p.cta {
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 700;
+  color: #80be79;
+}
+
+.carousel-text .rec-button {
+  margin-right: .5rem;
+}
+
+.carousel-text .med-button {
+  margin-left: .5rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1347,6 +1365,7 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 }
 
 #home-mobile-banner h2 {
+  display: none;
   font-size: 3rem;
   text-align: center;
   color: #fff;
@@ -1358,9 +1377,18 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 }
 
 #home-mobile-banner .lead {
+  margin: .5rem 0;
   font-size: 1.5rem;
   text-align: center;
   color: #fff;
+}
+
+#home-mobile-banner .cta {
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 700;
+  color: #80be79;
 }
 
 

@@ -159,6 +159,21 @@ function wp_bootstrap_starter_widgets_init() {
 --------------------------------------------------------------*/
 
 // Header/Footer blocks
+// 
+	register_sidebar(array(
+		'name' => esc_html__( 'Header Location', 'wp-bootstrap-starter' ),
+		'id' => 'header-location',
+		'before_widget' => '<div class="col-sm-2 header">',
+		'after_widget' => '</div><!-- .col header -->',
+	) );
+
+	register_sidebar(array(
+		'name' => esc_html__( 'Header Phone', 'wp-bootstrap-starter' ),
+		'id' => 'header-phone',
+		'before_widget' => '<div class=" col-sm-2 header">',
+		'after_widget' => '</div><!-- .col header -->',
+	) );
+
 	register_sidebar(array(
 		'name' => esc_html__( 'Header Footer Location', 'wp-bootstrap-starter' ),
 		'id' => 'header-footer-location',

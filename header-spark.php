@@ -38,18 +38,16 @@
 	    <?php endif;?>
 
         <div class="container-fluid">
-            <div class="row">
-	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Location") ) : ?>
-	            <?php endif;?>
-	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Phone") ) : ?>
-	            <?php endif;?>
-	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Email") ) : ?>
-	            <?php endif;?>
-	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Store Hours") ) : ?>
-	            <?php endif;?>
+            <div class="row justify-content-end">
+                <div class="col-sm-8"></div>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Location") ) : ?>
+                <?php endif;?>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Phone") ): ?>
+                <?php endif;?>
             </div><!-- .row -->
         </div><!-- .container-fluid -->
 
+     
         <div class="container-fluid">
 
             <nav class="navbar navbar-expand-xl p-0">

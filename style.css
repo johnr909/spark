@@ -1223,22 +1223,27 @@ HEADER-FOOTER
   color: #fff;
 }
 
-.header-footer {
+.header-footer
+,.header {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .header-footer,
-.header-footer a {
+.header-footer a,
+.header,
+.header a {
   font-size: .9rem;
   text-decoration: none;
 }
 
-#masthead .header-footer a {
+#masthead .header-footer a,
+#masthead .header a  {
   color: #2d3545;
 }
 
-#masthead .header-footer a:hover {
+#masthead .header-footer a:hover,
+#masthead .header a:hover {
   color: #80be79;
 }
 

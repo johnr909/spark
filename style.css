@@ -1047,29 +1047,41 @@ AGE GATE
 */
 
 .age-gate-form {
-  background-color: #999;
-  opacity: 90%;
-  border-radius: 5px;
+  background-color: transparent;
+
+}
+h1.age-gate-heading {
+  display: none;
+}
+
+p.age-gate-challenge {
+  text-transform: uppercase;;
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+.age-gate-remember {
+  color: #fff;
 }
 
 .age-gate-submit-yes,
 .age-gate-submit-no {
   display: inline-block;
   font-weight: 600;
-  color: #000;
-  background-color: #444;
+  color: #fff;
+  background-color: transparent;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid #333;
-  padding: .375rem .75rem;
-  font-size: 1rem;
+  border: 3px solid #fff;
+  padding: .5rem 3rem;
+  font-size: 2rem;
   line-height: 1.5;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border-radius: .0;
+  /*transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;*/
 }
 
 

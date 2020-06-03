@@ -1080,7 +1080,7 @@ p.age-gate-challenge {
   padding: .5rem 3rem;
   font-size: 2rem;
   line-height: 1.5;
-  border-radius: .0;
+  border-radius: .6rem;
   /*transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;*/
 }
 
@@ -1235,32 +1235,26 @@ HEADER-FOOTER
   width: 33%;
 }
 
-.foot {
-  padding-top: 20px;
-  background: #111 url('inc/assets/images/footer-bg.png');
-  color: #fff;
-}
-
 .header {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-
 .header,
 .header a {
   font-size: .9rem;
   text-decoration: none;
-}
-
-#masthead .footer a,
-#masthead .header a  {
   color: #2d3545;
 }
 
-#masthead .footer a:hover,
-#masthead .header a:hover {
+.header a:hover {
   color: #80be79;
+}
+
+.foot {
+  padding-top: 20px;
+  background: #111 url('inc/assets/images/footer-bg.png');
+  color: #fff;
 }
 
 .foot .footer,
@@ -1378,6 +1372,24 @@ HONE PAGE CAROUSEL/MOBILE BANNER
     display: none;
   }
 }
+
+@media only screen and (min-width: 769px) and (max-width: 961px) {
+
+  .carousel-text p.lead {
+  	font-size: 1.25rem;
+  }
+
+  .carousel-text p.cta {
+  	font-size: 1.4rem;
+  }
+
+  .btn-lg {
+  	padding: .5rem 1rem;
+  }
+}
+
+
+
 
 @media only screen and (min-width: 768px) {
   #home-mobile-banner {

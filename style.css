@@ -1055,7 +1055,7 @@ h1.age-gate-heading {
 }
 
 p.age-gate-challenge {
-  text-transform: uppercase;;
+  text-transform: uppercase;
   font-size: 1.9rem;
   color: #fff;
 }
@@ -1103,6 +1103,7 @@ body {
   /*font-family:  "Karma", san-serif;*/
   font-family: "Overpass", serif;
   font-weight: 600;
+  font-size: 1.15rem;
   color: #2d3545;
 }
 
@@ -1217,7 +1218,7 @@ header#masthead {
 }
 
 .navbar-brand-img {
-  width: 300px;
+  width: 250px;
 }
 
 
@@ -1227,6 +1228,10 @@ HEADER-FOOTER
 
 .header-footer ul {
   list-style: none;
+}
+
+.header {
+  width: 33%;
 }
 
 .foot {
@@ -1274,7 +1279,7 @@ NAV
 */
 
 body:not(.theme-preset-active) #masthead .navbar-nav>li>a {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #2d3545;
 }
@@ -1314,13 +1319,19 @@ change the default and only have the burger show at sizes below 768px instead of
   }
 }
 
+@media only screen and (min-width: 476px) {
+  .navbar-brand {
+    margin: auto;   
+  }      
+}
+
 
 /*
 HONE PAGE CAROUSEL/MOBILE BANNER
 */
 
 .carousel-caption {
-  bottom: 40px;
+  bottom: 20px;
   padding-bottom: 0;
 }
 
@@ -1335,15 +1346,16 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 }
 
 .carousel-text p.lead {
-  margin-bottom: .5rem;
-  font-size: 1.5rem;
+  margin-bottom: .2rem;
+  font-size: 1.35rem;
   text-align: center;
+  font-weight: 700;
   color: #fff;
 }
 
 
 .carousel-text p.cta {
-  margin-bottom: .5rem;
+  margin-bottom: .2rem;
   font-size: 1.6rem;
   text-align: center;
   font-weight: 700;
@@ -1356,6 +1368,10 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 
 .carousel-text .med-button {
   margin-left: .5rem;
+}
+
+.carousel-indicators {
+  bottom: -15px;      
 }
 
 @media only screen and (max-width: 768px) {
@@ -1530,7 +1546,7 @@ h5.highlight {
 
 .subtitle {
   margin: 0;
-  padding: 0;
+  padding: 0 .5rem;
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
@@ -1544,12 +1560,12 @@ h3 .fa-cut {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 600;
 }
 
 h3.lead {
-  font-size: 2em;
+  font-size: 1.75rem;
   font-weight: 600;
 }
 

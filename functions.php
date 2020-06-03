@@ -170,7 +170,7 @@ function wp_bootstrap_starter_widgets_init() {
 	register_sidebar(array(
 		'name' => esc_html__( 'Header Phone', 'wp-bootstrap-starter' ),
 		'id' => 'header-phone',
-		'before_widget' => '<div class=" col-sm-2 header">',
+		'before_widget' => '<div class="col-sm-2 header">',
 		'after_widget' => '</div><!-- .col header -->',
 	) );
 

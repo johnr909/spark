@@ -175,31 +175,31 @@ function wp_bootstrap_starter_widgets_init() {
 	) );
 
 	register_sidebar(array(
-		'name' => esc_html__( 'Header Footer Location', 'wp-bootstrap-starter' ),
+		'name' => esc_html__( 'Footer Location', 'wp-bootstrap-starter' ),
 		'id' => 'header-footer-location',
-		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-4 header-footer">',
-		'after_widget' => '</div><!-- .col header-footer left-->',
+		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-4 footer">',
+		'after_widget' => '</div><!-- .col footer left-->',
 	) );
 
 	register_sidebar(array(
-		'name' => esc_html__( 'Header Footer Phone', 'wp-bootstrap-starter' ),
+		'name' => esc_html__( 'Footer Phone', 'wp-bootstrap-starter' ),
 		'id' => 'header-footer-phone',
-		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-2 header-footer">',
-		'after_widget' => '</div><!-- .col header-footer right-->',
+		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-2 footer">',
+		'after_widget' => '</div><!-- .col footer right-->',
 	) );
 
 	register_sidebar(array(
-		'name' => esc_html__( 'Header Footer Email', 'wp-bootstrap-starter' ),
+		'name' => esc_html__( 'Footer Email', 'wp-bootstrap-starter' ),
 		'id' => 'header-footer-email',
-		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-3 header-footer">',
-		'after_widget' => '</div><!-- .col header-footer left-->',
+		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-3 footer">',
+		'after_widget' => '</div><!-- .col footer left-->',
 	) );
 
 	register_sidebar(array(
-		'name' => esc_html__( 'Header Footer Store Hours', 'wp-bootstrap-starter' ),
+		'name' => esc_html__( 'Footer Store Hours', 'wp-bootstrap-starter' ),
 		'id' => 'header-footer-store-hours',
-		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-3 header-footer">',
-		'after_widget' => '</div><!-- .col header-footer right-->',
+		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-3 footer">',
+		'after_widget' => '</div><!-- .col footer right-->',
 	) );
 
 

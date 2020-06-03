@@ -15,13 +15,13 @@
 
 <div class="container-fluid foot">
     <div class="row">
-	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Location") ) : ?>
+	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Location") ) : ?>
 	    <?php endif;?>
-	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Phone") ) : ?>
+	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Phone") ) : ?>
 	    <?php endif;?>
-	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Email") ) : ?>
+	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Email") ) : ?>
 	    <?php endif;?>
-	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Footer Store Hours") ) : ?>
+	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Store Hours") ) : ?>
 	    <?php endif;?>
     </div><!-- .row -->
     <div class="row foot-bottom">

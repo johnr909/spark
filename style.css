@@ -1219,6 +1219,7 @@ header#masthead {
 
 .navbar-brand-img {
   width: 250px;
+  min-width: 250px;
 }
 
 
@@ -1240,36 +1241,34 @@ HEADER-FOOTER
   color: #fff;
 }
 
-.header-footer
-,.header {
+.header {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.header-footer,
-.header-footer a,
+
 .header,
 .header a {
   font-size: .9rem;
   text-decoration: none;
 }
 
-#masthead .header-footer a,
+#masthead .footer a,
 #masthead .header a  {
   color: #2d3545;
 }
 
-#masthead .header-footer a:hover,
+#masthead .footer a:hover,
 #masthead .header a:hover {
   color: #80be79;
 }
 
-.foot .header-footer,
-.foot .header-footer a {
+.foot .footer,
+.foot .footer a {
   color: #fff;
 }
 
-.foot .header-footer a:hover {
+.foot .footer a:hover {
   color: #80be79;
 }
 

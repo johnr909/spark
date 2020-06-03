@@ -1419,6 +1419,7 @@ HONE PAGE CAROUSEL/MOBILE BANNER
   margin: .5rem 0;
   font-size: 1.5rem;
   text-align: center;
+  font-weight:700;
   color: #fff;
 }
 
@@ -1465,6 +1466,36 @@ HONE PAGE
 
 /*}*/
 
+/*
+#Sunday {
+  background: transparent url('inc/assets/images/bud-purple.jpg') no-repeat;
+}
+
+#Monday {
+  background: transparent url('inc/assets/images/jars.jpg') no-repeat;
+}
+
+#Tuesday {
+  background: transparent url('inc/assets/images/pre-roll.jpg') no-repeat;
+}
+
+#Wednesday {
+  background: transparent url('inc/assets/images/close-up.jpg') no-repeat;
+}
+
+#Thursday {
+  background: transparent url('inc/assets/images/salve.jpg') no-repeat;
+}
+
+#Friday {
+  background: transparent url('inc/assets/images/edibles.jpg') no-repeat;
+}
+
+#Saturday {
+  background: transparent url('inc/assets/images/extracts.jpg') no-repeat;
+}
+*/
+
 .card-body {
   margin-top: .75rem;
   text-align: center;
@@ -1484,6 +1515,27 @@ HONE PAGE
 
 h5.highlight {
   border-bottom: 3px solid #80be79;
+}
+
+
+.deals div[class^='col'] {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.deals div[class^='col'] .card-body {
+	margin-top: 0;
+	padding: 0 .25rem;
+}
+
+.deals div[class^='col'] .card-title {
+	margin-top: .25rem;
+	padding: .25rem 0;
+	font-size: 1rem;
+}
+
+.deals div[class^='col'] .card-text {
+	font-size: .92rem;
 }
 
 .rewards-signup {

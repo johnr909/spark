@@ -30,6 +30,13 @@ get_header('spark'); ?>
         </div><!-- .row -->
     </div><!-- .container-fluid -->
 
+<?php if( is_page('rec') || is_page('med')) : ?>
+
+    <?php get_template_part( 'template-parts/content', 'order-online-cta' );?>
+
+<?php endif; ?>
+
+
 <?php if( is_page('rec')) : ?>
 
     <?php get_template_part( 'template-parts/content', 'rec-page' );?>

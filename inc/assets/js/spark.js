@@ -65,6 +65,12 @@ FUGLY, I know...
 // add FA calendar icon to events list
 jQuery('h4.tribe-event-title ').prepend('<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;');
 
+if(jQuery('.trible-list-widget').length < 1) 
+ {
+    jQuery('.events').addClass('d-none');
+}
+
+// hide events section if there are none
 jQuery('#warning .alert').on('closed.bs.alert', function () {
     console.log('warning closed');
     jQuery('#warning .alert').alert('dispose');

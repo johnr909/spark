@@ -1665,8 +1665,6 @@ DEALS/EVENTS PAGE
   padding-left: 0;
 }
 
-
-
 .coupon {
   margin: 20px;
   padding: 0;
@@ -1705,26 +1703,19 @@ DEALS/EVENTS PAGE
 .online-icon-container .fa {
   display: inline-block;
   margin: 2.25rem auto;
+}
+
+.coupon-icon-container .fa {
+  font-size: 5rem;
+}
+
+.online-icon-container .fa {
   font-size: 2rem;
-}
-
-.joint .online-step-numbers {
-	color: rgb(227,88,16);
-}
-
-.joint .online-icon-container {
-  color: rgb(227,88,16);
-}
-.online-icon-container .fa-joint {
-  color: rgb(227,88,16);
 }
 
 .coupon-text {
   font-size: 2rem;
 }
-
-
-
 
 
 
@@ -1734,7 +1725,7 @@ DEALS/EVENTS PAGE
   text-align: left;
 }
 
-.events h3 {
+.events h3, .events p {
   color: #fff;
 }
 

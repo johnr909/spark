@@ -18,22 +18,22 @@
     </div><!-- .row -->
 
     <div class="row">
-        <div id="coupon-1" class="col-md coupon rounded">
+        <div id="coupon-1" class="col-sm-5 col-md coupon rounded">
 		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Coupon 1") ) : ?>
 		    <?php endif;?>
         </div><!-- #coupon-1 -->
 
-        <div id="coupon-2" class="col-md coupon rounded">
+        <div id="coupon-2" class="col-sm-5 col-md coupon rounded">
 		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Coupon 2") ) : ?>
 		    <?php endif;?>
         </div><!-- #coupon-2 -->
 
-        <div id="coupon-3" class="col-md coupon rounded">
+        <div id="coupon-3" class="col-sm-5 col-md coupon rounded">
 		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Coupon 3") ) : ?>
 		    <?php endif;?>
         </div><!-- #coupon-3 -->
 
-        <div id="coupon-4" class="col-md coupon rounded">
+        <div id="coupon-4" class="col-sm-5 col-md coupon rounded">
 		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Coupon 4") ) : ?>
 		    <?php endif;?>
         </div><!-- #coupon-4 -->

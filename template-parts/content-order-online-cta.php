@@ -14,14 +14,14 @@
     <div class="row">
         <div class="col">
             <h3 class="lead">
-            	</i>&nbsp;&nbsp;Order Online: Its' as easy as 1-2-3!
+            	</i>&nbsp;&nbsp;Order Online: Its' as easy as 1-2-3-<span style="color: rgb(277,88,16);">Spark it Up!</span>
             </h3>
         </div>
     </div><!-- .row -->
 
     <div class="row">
 
-       <div class="col-md coupon rounded online-cta">
+       <div class="col-sm-5 col-md coupon rounded online-cta">
 		    <div>
 		    	<div class="textwidget custom-html-widget"> 
 		    		<h4 class="online-step-numbers">1</h4>						
@@ -33,7 +33,7 @@
 			</div>
         </div><!-- .coupon- -->
 
-        <div class="col-md coupon rounded online-cta">
+        <div class="col-sm-5 col-md coupon rounded online-cta">
 		    <div>
 		    	<div class="textwidget custom-html-widget">
 		    		<h4 class="online-step-numbers">2</h4>						
@@ -45,7 +45,7 @@
 			</div>
         </div><!-- .coupon -->
 
-        <div class="col-md coupon rounded online-cta">
+        <div class="col-sm-5 col-md coupon rounded online-cta">
 		    <div>
 		    	<div class="textwidget custom-html-widget">
 		    		<h4 class="online-step-numbers">3</h4>						
@@ -57,14 +57,14 @@
 			</div>
         </div><!-- .coupon -->
 
-        <div class="col-md coupon rounded joint online-cta">
+        <div class="col-sm-5 col-md coupon rounded joint online-cta">
 		    <div>
 		    	<div class="textwidget custom-html-widget">
-		    		<h4 class="online-step-numbers">4</h4>						
-		    		<div class="online-icon-container">
-		    			<i class="fa fa-joint"></i>
+		    		<h4 class="online-step-numbers orange-text">4</h4>						
+		    		<div class="online-icon-container orange-text">
+		    			<i class="fa fa-joint orange-text"></i>
 		    		</div>
-					<h4 class="online-cta-text">OK, there are actually four steps ;) Spark it up!</h4>
+					<h4 class="online-cta-text orange-text">Enjoy!</h4>
 				</div>
 			</div>
         </div><!-- .coupon -->

@@ -48,7 +48,7 @@
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("deal-friday") ) : ?>
 			<?php endif;?>
         </div>
-
+        
         <div id="day-Saturday" class="col-sm-3 col-md-1 card">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("deal-saturday") ) : ?>
 			<?php endif;?>

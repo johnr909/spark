@@ -47,7 +47,7 @@
         </div><!-- .container-fluid -->
 
      
-        <div class="container-fluid">
+        <div class="container-fluid jr-nav-container">
 
             <nav class="navbar navbar-expand-xl p-0">
                 <div class="navbar-brand">

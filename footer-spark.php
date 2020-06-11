@@ -13,6 +13,19 @@
 
 	</div><!-- #content -->
 
+	<div class="container-fluid foot-social">
+		<div class="row">
+			<div class="col"></div>
+			<div class="col align-self-end">
+				<p class="text-right">
+					<a href="https://www.facebook.com/SPARKDispensary"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.facebook.com/SPARKDispensary"><i class="fab fa-instagram"></i></a>
+			</p>				
+			</div><!-- .col -->
+		</div><!-- .row -->
+	</div><!-- .container-fluid -->
+
+
 <div class="container-fluid foot">
     <div class="row">
 	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Location") ) : ?>

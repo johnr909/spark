@@ -1248,7 +1248,7 @@ HEADER-FOOTER
 }
 
 .header {
-  width: 33%;
+  /*width: 33%;*/
 }
 
 .header {
@@ -1469,11 +1469,21 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 HONE PAGE
 */
 
+/*.home-cards .col-md {
+	flex: 0 0 30%;
+	max-width: 31%;
+}*/
+
+.home-cards .card {
+	margin: 10px 5px 10px 0;
+}
+
 .card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1)
 }
 
 #card-home {
+	margin-left: 15px;
   padding: 0;
 }
 
@@ -1485,6 +1495,9 @@ HONE PAGE
   font-size: 1.25rem;
 }
 
+/*.card-home {
+	margin: 0 5px;
+}*/
 /*@media only screen and (min-width: 480px) and (max-width: 767px) {*/
 
 
@@ -1558,6 +1571,7 @@ HONE PAGE
   padding: .75rem 0;
   font-size: 1.25rem;
   font-weight: 800;
+  line-height: 125%;
   border-bottom: 2px solid #2d3545;
 }
 
@@ -1591,26 +1605,35 @@ h5.highlight {
 }
 
 .rewards-signup {
-  margin: 15px;
+  /*margin: 15px;*/
   padding: 0 5px 10px 20px;
-  background: #fff url('inc/assets/images/phone-icon-md.png') no-repeat 30% 80%;
+  background: #fff url('inc/assets/images/phone-icon-md.png') no-repeat 30% 50%;
   border: 1px solid rgba(0, 0, 0, .125);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
   border-radius: .25rem;
 }
 
 .rewards-signup .fa-comment-dollar {
+	display: inline-block;
+	margin: 5px 0;
   font-size: 4rem;
 }
 
 .rewards-title {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 1rem;
   padding-top: 0;
+  text-align: center;
 }
 
 .rewards-text {
   font-size: 1.5rem;
+  text-align: center;
+}
+
+.btn-join {
+	width: 12rem;
+	margin-top: 5rem;
 }
 
 .testimonial {
@@ -1623,7 +1646,7 @@ h5.highlight {
   color: #808080;
   position: relative;
   margin-bottom: 1rem;
-  padding: 15px;
+  padding: 15px 30px;
   background: #f2f8f1;
   border: 1px solid #efefef;
   border-radius: 3px;
@@ -1643,7 +1666,33 @@ h5.highlight {
   transform: rotateZ(-46deg);
 }
 
+#carouselTestimonials .carousel-control-prev {
+	left: -10px;
+}
 
+#carouselTestimonials .carousel-control-next {
+	right: -10px;
+}
+
+
+#carouselTestimonials .carousel-control-prev-icon,
+#carouselTestimonials  .carousel-control-next-icon {
+	height: 50px;
+	width: 25px;
+}
+
+#carouselTestimonials .carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+#carouselTestimonials .carousel-control-next-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+
+.spotlight {
+  background: url('inc/assets/images/spotlight-light-grey.svg') no-repeat 30% 50%;
+}
 /* NOT THE HOME PAGE */
 
 .entry-header {
@@ -1670,7 +1719,11 @@ h5.highlight {
 }
 
 h3 .fa-cannabis,
-h3 .fa-cut {
+h3 .fa-cut,
+h3 .fa-leaf,
+h3 .fa-seedling,
+h3 .fa-eye,
+h3 .fa-university {
   font-size: 3rem;
 }
 
@@ -1680,8 +1733,14 @@ h3 {
 }
 
 h3.lead {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 961px) {
+	h3.lead {
+		font-size: 1.15rem;
+	}
 }
 
 /*

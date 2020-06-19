@@ -45,5 +45,9 @@
 
 
 <?php wp_footer(); ?>
+
+<?php //if ( is_front_page() || is_page('deals'))  : ?>
+	<!-- <script id="join-script" name="https://enrollnow.vip/login/2429" src="https://cdn.springbig.cloud/production/files/join_modal_button.js?m=2429"></script> -->
+<?php // endif;?>
 </body>
 </html>

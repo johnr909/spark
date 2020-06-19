@@ -159,20 +159,27 @@ function wp_bootstrap_starter_widgets_init() {
 --------------------------------------------------------------*/
 
 // Header/Footer blocks
-// 
+
 	register_sidebar(array(
-		'name' => esc_html__( 'Header Location', 'wp-bootstrap-starter' ),
+		'name' => esc_html__( 'Header Location Phone', 'wp-bootstrap-starter' ),
 		'id' => 'header-location',
-		'before_widget' => '<div class="col-sm-2 header">',
+		'before_widget' => '<div class="col col-md-5 col-lg-4 text-right header">',
 		'after_widget' => '</div><!-- .col header -->',
 	) );
 
-	register_sidebar(array(
-		'name' => esc_html__( 'Header Phone', 'wp-bootstrap-starter' ),
-		'id' => 'header-phone',
-		'before_widget' => '<div class="col-sm-2 header">',
-		'after_widget' => '</div><!-- .col header -->',
-	) );
+	// register_sidebar(array(
+	// 	'name' => esc_html__( 'Header Location', 'wp-bootstrap-starter' ),
+	// 	'id' => 'header-location',
+	// 	'before_widget' => '<div class="col-sm-2 header">',
+	// 	'after_widget' => '</div><!-- .col header -->',
+	// ) );
+
+	// register_sidebar(array(
+	// 	'name' => esc_html__( 'Header Phone', 'wp-bootstrap-starter' ),
+	// 	'id' => 'header-phone',
+	// 	'before_widget' => '<div class="col-sm-2 header">',
+	// 	'after_widget' => '</div><!-- .col header -->',
+	// ) );
 
 	register_sidebar(array(
 		'name' => esc_html__( 'Footer Location', 'wp-bootstrap-starter' ),
@@ -234,32 +241,32 @@ function wp_bootstrap_starter_widgets_init() {
 	) );
 
 //	Testimonials
-	register_sidebar(array(
-		'name' => 'Testimonial 1',
-		'id' => 'testimonial 1',
-		'before_widget' => '<div class="col-md testimonial">',
-		'after_widget' => '</div><!-- .col-md .testimonial -->',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
-	) );
+	// register_sidebar(array(
+	// 	'name' => 'Testimonial 1',
+	// 	'id' => 'testimonial 1',
+	// 	'before_widget' => '<div class="col-md testimonial">',
+	// 	'after_widget' => '</div><!-- .col-md .testimonial -->',
+	// 	'before_title' => '<h3>',
+	// 	'after_title' => '</h3>',
+	// ) );
 
-	register_sidebar(array(
-		'name' => 'Testimonial 2',
-		'id' => 'testimonial 2',
-		'before_widget' => '<div class="col-md testimonial">',
-		'after_widget' => '</div><!-- .col-md .testimonial -->',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
-	) );
+	// register_sidebar(array(
+	// 	'name' => 'Testimonial 2',
+	// 	'id' => 'testimonial 2',
+	// 	'before_widget' => '<div class="col-md testimonial">',
+	// 	'after_widget' => '</div><!-- .col-md .testimonial -->',
+	// 	'before_title' => '<h3>',
+	// 	'after_title' => '</h3>',
+	// ) );
 
-	register_sidebar(array(
-		'name' => 'Testimonial 3',
-		'id' => 'testimonial 3',
-		'before_widget' => '<div class="col-md testimonial">',
-		'after_widget' => '</div><!-- .col-md .testimonial -->',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
-	) );
+	// register_sidebar(array(
+	// 	'name' => 'Testimonial 3',
+	// 	'id' => 'testimonial 3',
+	// 	'before_widget' => '<div class="col-md testimonial">',
+	// 	'after_widget' => '</div><!-- .col-md .testimonial -->',
+	// 	'before_title' => '<h3>',
+	// 	'after_title' => '</h3>',
+	// ) );
 
 
 //	Daily Deals

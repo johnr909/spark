@@ -49,9 +49,7 @@
 
         <div class="container-fluid">
             <div class="row justify-content-end">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Location") ) : ?>
-                <?php endif;?>
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Phone") ): ?>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Location Phone") ) : ?>
                 <?php endif;?>
             </div><!-- .row -->
         </div><!-- .container-fluid -->

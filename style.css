@@ -1135,6 +1135,10 @@ UTILITY
   color: #80be79;
 }
 
+.dark-text {
+  color: #2d3545;
+}
+
 .green-text {
   color: #80be79;
 }
@@ -1267,14 +1271,17 @@ HEADER-FOOTER
   color: #80be79;
 }
 
-.foot-social {
-  font-size: 3rem;
-  background-color: #111;
+.foot-social  {
+	background-color: #111;
   color: #fff;
 }
 
+.foot-social .fab {
+  font-size: 3rem;
+}
+
 .foot-social p {
-	margin: 0;
+	margin: 0 0 1rem 0;
 	padding: 0;
 }
 
@@ -1544,20 +1551,28 @@ HONE PAGE
 
 @media only screen and (min-width: 768px) and (max-width: 961px) {
 	.deals .col-md-1 {
-		flex: 0 0 10%;
-		max-width: 11%;
+		flex: 0 0 12.5%;
+		max-width: 13%;
+	}
+
+	.deals .card {
+		margin: 5px;
 	}
 }
-
+/*
 	.deals .col-lg-1 {
 		flex: 0 0 11%;
 		max-width: 11%;
 	}
-
+*/
 @media only screen and (min-width: 962px) {
 	.deals .col-md-1 {
-		flex: 0 0 11%;
-		max-width: 11%;
+		flex: 0 0 13%;
+		max-width: 14%;
+	}
+
+	.deals .card {
+		margin: 6px;
 	}
 }
 
@@ -1575,7 +1590,9 @@ HONE PAGE
   border-bottom: 2px solid #2d3545;
 }
 
-.card-text {
+.card-text, 
+.card-text:last-child {
+	margin-bottom: 1rem;
   font-size: 1.25rem;
 }
 
@@ -1634,6 +1651,29 @@ h5.highlight {
 .btn-join {
 	width: 12rem;
 	margin-top: 5rem;
+}
+
+.deals-rewards {
+  background: #f2f8f1 url('inc/assets/images/phone-icon-md.png') no-repeat 50% 50%;	
+}
+
+.deals-reward .rewards-title {
+	margin-top: 1.5rem;
+	font-size: 4rem;
+}
+
+.deals-reward .rewards-text {
+	font-size: 2.5rem;
+}
+
+.rewards-text:last-child {
+	margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+	#carouselTestimonials .carousel-item {
+		height: 77rem;
+	}
 }
 
 .testimonial {
@@ -1737,11 +1777,11 @@ h3.lead {
   font-weight: 600;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 961px) {
+/*@media only screen and (min-width: 768px) and (max-width: 961px) {
 	h3.lead {
 		font-size: 1.15rem;
 	}
-}
+}*/
 
 /*
 MENU PAGES
@@ -1749,16 +1789,35 @@ MENU PAGES
 
 .online-step-numbers {
 	padding-top: 1.25rem;    	
-	text-shadow: -1px 0 #2d3545, 0 1px #2d3545, 1px 0 #2d3545, 0 -1px #2d3545;
-	font-size: 3.75rem;
-	color: #80be79;
+	font-size: 5rem;
 }
 
 .online-cta-text {
-	padding-right: .5rem;
-	padding-left: .5rem;	
-	font-size: 1.3rem;
+  margin-bottom: 0;
+  padding-right: .5rem;
+  padding-left: .5rem;
+	font-size: 1.35rem;
+  text-transform: uppercase;
+  line-height: 125%;
+  font-weight: 900;
 }
+
+.img-hand {
+  margin: 0 auto;
+}
+
+.img-cart {
+  margin: 10px auto;
+}
+
+.img-bag {
+  margin: 20px auto;
+}
+
+.img-joint {
+  margin: 40px auto;
+}
+
 /*
 DEALS/EVENTS PAGE
 */
@@ -1786,40 +1845,53 @@ DEALS/EVENTS PAGE
 	background-color: #f2f8f1;
 }
 
-.coupon-icon-container,
+/*.coupon-icon-container,
 .online-icon-container {
   border-radius: 50%;
   margin: 20px auto;
   border: 3px solid;
 }
+*/
 
 .coupon-icon-container {
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 3px solid;
   width: 10rem;
   height: 10rem;			
   background-color: #80be79;
 }
 
-.online-icon-container {
+/*.online-icon-container {
   width: 7rem;
   height: 7rem;	
   background-color: #2d3545;
   color: #80be79;
-}
+}*/
 
-.coupon-icon-container .fa,
+/*.coupon-icon-container .fa,
 .online-icon-container .fa {
   display: inline-block;
   margin: 2.25rem auto;
 }
+*/
 
 .coupon-icon-container .fa {
+  display: inline-block;
+  margin: 2.25rem auto;
   font-size: 5rem;
 }
 
+
+.online-icon-container {
+  padding: 1rem;
+}
+
+/*
 .online-icon-container .fa {
   font-size: 2rem;
 }
-
+*/
 .coupon-text {
   font-size: 2rem;
 }

@@ -47,7 +47,7 @@
 
 	    <?php endif;?>
 
-        <div class="container-fluid">
+        <div class="container-fluid-info">
             <div class="row justify-content-end">
                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Location Phone") ) : ?>
                 <?php endif;?>

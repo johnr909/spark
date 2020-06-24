@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="container-fluid">
+<div class="container-fluid light-blue-bg">
 
     <div class="row">
         <div class="col">

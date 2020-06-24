@@ -10,7 +10,7 @@
 
         <div class="carousel-item active" data-interval="5000">
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'leaf-closeup-1920w-350h.jpg'; ?>"
-                 class="d-block w-100" alt="...">
+                 class="d-block w-100" alt="marijuana leaf close-up">
             <div class="carousel-caption d-none d-md-block">
 	            <?php
 	                get_template_part( 'template-parts/content', 'home-carousel-buttons' );
@@ -20,7 +20,7 @@
 
         <div class="carousel-item"data-interval="5000">
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'taylor-1920w-350h.jpg'; ?>"
-                 class="d-block w-100" alt="...">
+                 class="d-block w-100" alt="marijuana plant close-up">
             <div class="carousel-caption d-none d-md-block">
 	            <?php
 	                get_template_part( 'template-parts/content', 'home-carousel-buttons' );
@@ -30,7 +30,7 @@
 
         <div class="carousel-item" data-interval="5000">
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'valdivia-1920w-350h.jpg'; ?>"
-                 class="d-block w-100" alt="...">
+                 class="d-block w-100" alt="marijuana leaf close-up">
             <div class="carousel-caption d-none d-md-block">
 	            <?php
 	                get_template_part( 'template-parts/content', 'home-carousel-buttons' );

@@ -8,8 +8,7 @@
  *
  * @package WP_Bootstrap_Starter
  */
-
-?>
+ ?>
 
 	</div><!-- #content -->
 
@@ -17,9 +16,9 @@
 		<div class="row">
 			<div class="col"></div>
 			<div class="col align-self-end">
-				<p class="text-right">
-					<a href="https://www.facebook.com/SPARKDispensary"><i class="fab fa-facebook"></i></a>
-					<a href="https://www.facebook.com/SPARKDispensary"><i class="fab fa-instagram"></i></a>
+				<p class="text-right green-text">Connect With Us
+					<a href="https://www.facebook.com/SPARKDispensary" class="d-inline-block mt-3 mr-2 mb-2 ml-3"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.facebook.com/SPARKDispensary" class="d-inline-block mt-3 mr-2 mb-2"><i class="fab fa-instagram"></i></a>
 			</p>				
 			</div><!-- .col -->
 		</div><!-- .row -->

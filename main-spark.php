@@ -55,10 +55,12 @@ get_header('spark'); ?>
 
 	<?php get_template_part( 'template-parts/content', 'daily-deals' );?>
 
-    <div class="container-fluid">
-        <div class="row">
-			<?php get_template_part( 'template-parts/content', 'rewards-signup' );?>
-        </div><!-- .row -->
+    <div class="container-fluid light-blue-bg">
+        <div class="row deals-rewards">
+            <div class="col">
+			  <?php get_template_part( 'template-parts/content', 'rewards-signup' );?>
+            </div><!-- .col -->
+       </div><!-- .row -->
     </div><!-- .container -->
 
     <?php get_template_part( 'template-parts/content', 'coupons' );?>

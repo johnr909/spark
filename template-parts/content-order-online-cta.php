@@ -17,18 +17,19 @@
             	</i>&nbsp;&nbsp;Order Online: Its' as easy as 1-2-3-<span style="color: rgb(277,88,16);">Spark it Up!</span>
             </h3>
         </div>
-    </div><!-- .row -->
+    </div>
+    <!-- .row -->
 
     <div class="row">
 
        <div class="col-sm-5 col-md coupon rounded online-cta">
 		    <div>
 		    	<div class="textwidget custom-html-widget"> 
-		    		<h4 class="online-step-numbers">1</h4>						
+		    		<h4 class="online-step-numbers dark-text">1</h4>
+					  <p class="online-cta-text mt-5 green-text text-center">Shop by category, brand or strain</p>
 		    		<div class="online-icon-container">
-		    			<i class="fa fa-laptop"></i>
+		    			<img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'hand.svg'; ?>" width="40%" height="40%" alt="hand" class="d-block img-hand">
 		    		</div>
-					<h4 class="online-cta-text">Shop by category, brand or strain</h4>
 				</div>
 			</div>
         </div><!-- .coupon- -->
@@ -36,11 +37,11 @@
         <div class="col-sm-5 col-md coupon rounded online-cta">
 		    <div>
 		    	<div class="textwidget custom-html-widget">
-		    		<h4 class="online-step-numbers">2</h4>						
+		    		<h4 class="online-step-numbers dark-text">2</h4>
+						<p class="online-cta-text mt-5 green-text text-center">Checkout and select a pickup time</p>
 		    		<div class="online-icon-container">
-		    			<i class="fa fa-cart-plus"></i>
+		    			<img src="<?php echo get_template_directory_uri() .'/inc/assets/images/' .'cart.svg'; ?>" width="65%" height="65%" alt="cart" class="d-block img-cart">
 		    		</div>
-					<h4 class="online-cta-text">Checkout and select a pickup time</h4>
 				</div>
 			</div>
         </div><!-- .coupon -->
@@ -48,23 +49,23 @@
         <div class="col-sm-5 col-md coupon rounded online-cta">
 		    <div>
 		    	<div class="textwidget custom-html-widget">
-		    		<h4 class="online-step-numbers">3</h4>						
+		    		<h4 class="online-step-numbers dark-text">3</h4>
+						<p class="online-cta-text mt-5 green-text text-center">Pickup and pay at the store</p>
 		    		<div class="online-icon-container">
-		    			<i class="fa fa-shopping-bag"></i>
+		    			<img src="<?php echo get_template_directory_uri() .'/inc/assets/images/' .'bag.svg'; ?>" width="45%" height="45%" alt="bag" class="d-block img-bag">
 		    		</div>
-					<h4 class="online-cta-text">Pickup and pay at the store</h4>
 				</div>
 			</div>
         </div><!-- .coupon -->
 
-        <div class="col-sm-5 col-md coupon rounded joint online-cta">
+        <div class="col-sm-5 col-md coupon rounded online-cta">
 		    <div>
 		    	<div class="textwidget custom-html-widget">
-		    		<h4 class="online-step-numbers orange-text">4</h4>						
-		    		<div class="online-icon-container orange-text">
-		    			<i class="fa fa-joint orange-text"></i>
+		    		<h4 class="online-step-numbers dark-text">4</h4>
+					  <p class="online-cta-text mt-5 green-text text-center">Enjoy!</p>
+		    		<div class="online-icon-container">
+		    			<img src="<?php echo get_template_directory_uri() .'/inc/assets/images/' .'smoke.svg'; ?>" width="55%" height="55%" alt="joint" class="d-block img-joint">
 		    		</div>
-					<h4 class="online-cta-text orange-text">Enjoy!</h4>
 				</div>
 			</div>
         </div><!-- .coupon -->

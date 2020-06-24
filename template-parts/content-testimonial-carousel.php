@@ -15,7 +15,7 @@
 
   <div class="carousel-inner">
 
-    <div class="carousel-item active" data-interval="3000">
+    <div class="carousel-item active" data-interval="6000">
 		    <blockquote>
 					<p class="testimonial-text"><i class="fa fa-cannabis"></i>&nbsp;&nbsp;
 						Only shop I go to. The people in there are super cool 
@@ -26,7 +26,7 @@
 				</blockquote>
     </div><!-- .carousel-item -->
 
-    <div class="carousel-item" data-interval="3000">
+    <div class="carousel-item" data-interval="6000">
 			 <blockquote>
 					<p class="testimonial-text"><i class="fa fa-seedling"></i>&nbsp;&nbsp;The absolute best dispensary in Denver hands down. I live 40 minutes away from this location and it is still the only dispensary I will go to. Every member of the staff is incredibly friendly and knowledgeable and are always willing to help their customers. Other dispensaries in Denver could learn some things from how well this place is ran.
 					</p>
@@ -34,7 +34,7 @@
 			</blockquote>
     </div><!-- .carousel-item -->
 
-    <div class="carousel-item" data-interval="3000">
+    <div class="carousel-item" data-interval="6000">
 		    <blockquote>
 					<p class="testimonial-text"><i class="fa fa-cannabis"></i>&nbsp;&nbsp;This dispensary is by far the best I've found since 
 						living in Denver. Vanilla kush is always a great pick for an indica. All the budtenders that I've shopped with have been very knowledgeable and patient.

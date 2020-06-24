@@ -22,50 +22,11 @@ jQuery(document).ready(function(){
     highlightDailyDeal();
 });
 
-/*
-FUGLY, I know...
- */
-
-// hide warning and notices if you don't need them
-// if((jQuery('.warning').length < 1)) {
-//     jQuery('#warning').addClass('d-none');
-// }
-//
-// if((jQuery('.notice').length < 1)) {
-//     jQuery('#notice').addClass('d-none');
-// }
-
-// hide a coupon if you don't have content for it
-// if((jQuery('#coupon-1 h3').length < 1)) {
-//     jQuery('#coupon-1').addClass('d-none');
-// }
-
-// if((jQuery('#coupon-1 img.image').length < 1)) {
-//     jQuery('#coupon-1').addClass('d-none');
-// }
-//
-// if((jQuery('#coupon-2 h3').length < 1)) {
-//     jQuery('#coupon-2').addClass('d-none');
-// }
-//
-// if((jQuery('#coupon-3 h3').length < 1)) {
-//     jQuery('#coupon-3').addClass('d-none');
-// }
-//
-// if((jQuery('#coupon-4 h3').length < 1)) {
-//     jQuery('#coupon-4').addClass('d-none');
-// }
-
-//
-// if((jQuery('.coupon h3').length < 1)) {
-//     jQuery('.coupon').addClass('d-none');
-// }
-
 // add FA calendar icon to events list
 jQuery('h4.tribe-event-title ').prepend('<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;');
 
-if(!jQuery('.trible-list-widget')) {
-    jQuery('.events').addClass('d-none');
+if(jQuery('.tribe-list-widget').length === 0) {
+    jQuery('.events-container').addClass('d-none');
 }
 
 // hide events section if there are none

@@ -44,11 +44,14 @@ get_header('spark'); ?>
             </div><!-- .col -->
 
             <div class="col-sm-4 col-md online-cta-home card card-home">
-                <h2 class="rewards-title mt-4">Order Online</h2>
+                <h2 class="rewards-title mt-4">Pre-Order Online</h2>
                 <div style="width: 10rem;" class="mx-auto">
                     <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/hand.svg'; ?>" width="40%" height="40%" class="d-block mx-auto" alt="laptop">
                 </div>
                 <p class="rewards-text green-text mt-4">It's soooo easy!</p>
+                <a href="/rec" class="d-block mx-auto btn-join btn btn-lg btn-primary">     Pre-Order Rec</a>
+                <a href="/med" class="d-block mx-auto btn-join btn btn-lg btn-secondary">     Pre-Order Med</a>
+
             </div><!-- .col -->           
         </div><!-- .row -->
     </div><!-- .container-fluid -->

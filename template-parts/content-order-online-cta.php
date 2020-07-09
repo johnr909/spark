@@ -14,8 +14,7 @@
     <div class="row">
         <div class="col">
             <h3 class="lead">
-            	</i>&nbsp;&nbsp;Order Online: Its' as easy as 1-2-3-<span style="color: rgb(277,88,16);">Spark it Up!</span>
-            </h3>
+            	</i>&nbsp;&nbsp;Pre-Order Online: It's as easy as 1-2-3-4!</h3>
         </div>
     </div>
     <!-- .row -->

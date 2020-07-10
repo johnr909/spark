@@ -1154,6 +1154,10 @@ a:hover {
 UTILITY
 */
 
+blockquote {
+  border: none;
+}
+
 .highlight {
   font-weight: 800;
   color: #80be79;
@@ -1507,7 +1511,7 @@ HONE PAGE
 }*/
 
 .home-cards .card {
-	margin: 10px 5px 10px 0;
+	/*margin: 10px 5px 10px 0;*/
 }
 
 .card {
@@ -1601,6 +1605,15 @@ HONE PAGE
 	}
 }
 
+.home-cards .card-body {
+  margin-top: 0;
+}
+
+.home-cards .card-title{
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
 .card-body {
   margin-top: .75rem;
   text-align: center;
@@ -1646,18 +1659,27 @@ h5.highlight {
 	font-size: .92rem;
 }
 
+.home-cards .rewards-signup{
+  background: #fff url('inc/assets/images/phone-icon-md.png') no-repeat 50% 90%;
+}
+
+/*.home-cards .btn-primary,
+.home-cards .btn-secondary {
+
+}*/
+
 .rewards-signup {
   /*margin: 15px;*/
-  padding: 0 5px 10px 20px;
+  /*padding: 0 5px 10px 20px;*/
   background: #fff url('inc/assets/images/phone-icon-md.png') no-repeat 30% 50%;
-  border: 1px solid rgba(0, 0, 0, .125);
+/*  border: 1px solid rgba(0, 0, 0, .125);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
-  border-radius: .25rem;
+  border-radius: .25rem;*/
 }
 
 .rewards-signup .fa-comment-dollar {
 	display: inline-block;
-	margin: 5px 0;
+	margin-top: 5px;
   font-size: 4rem;
 }
 
@@ -1669,18 +1691,19 @@ h5.highlight {
 }
 
 .rewards-text {
+  margin-bottom: 0;
   font-size: 1.5rem;
   text-align: center;
 }
 
 .btn-join {
 	width: 12rem;
-	margin-top: 5rem;
+	margin-top: 1rem;
 }
 
 .deals-rewards {
-  padding-bottom: 2rem;
-  background: #f2f8f1 url('inc/assets/images/phone-icon-md.png') no-repeat 50% 80%;	
+  padding:  3rem 0;
+  background: #f2f8f1 url('inc/assets/images/phone-icon-md.png') no-repeat 50% 60%;	
 }
 
 .deals-reward .rewards-title {

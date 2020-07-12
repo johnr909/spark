@@ -1514,13 +1514,17 @@ HONE PAGE
 	/*margin: 10px 5px 10px 0;*/
 }
 
+.home-cards .rewards-signup p {
+  margin-top: 15rem;
+}
+
 .card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1)
 }
 
 #card-home {
 	margin-left: 15px;
-  padding: 0;
+  padding: 0 15px;
 }
 
 #card-home .card-title {
@@ -1660,7 +1664,16 @@ h5.highlight {
 }
 
 .home-cards .rewards-signup{
-  background: #fff url('inc/assets/images/phone-icon-md.png') no-repeat 50% 90%;
+  background: #fff url('inc/assets/images/phone-icon-lg.png') no-repeat 50% 22%;
+}
+
+.home-cards .card-img-top {
+  display: inline-block;
+  /*padding: 0 15px;*/
+}
+
+.card-home .rewards-title {
+  font-weight: 700;
 }
 
 /*.home-cards .btn-primary,
@@ -1671,7 +1684,7 @@ h5.highlight {
 .rewards-signup {
   /*margin: 15px;*/
   /*padding: 0 5px 10px 20px;*/
-  background: #fff url('inc/assets/images/phone-icon-md.png') no-repeat 30% 50%;
+  background: #fff url('inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
 /*  border: 1px solid rgba(0, 0, 0, .125);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
   border-radius: .25rem;*/
@@ -1684,7 +1697,7 @@ h5.highlight {
 }
 
 .rewards-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   padding-top: 0;
   text-align: center;
@@ -1694,6 +1707,19 @@ h5.highlight {
   margin-bottom: 0;
   font-size: 1.5rem;
   text-align: center;
+}
+
+.card-home .rewards-text {
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+.card-home .card-text {
+  text-align: left;
+}
+ 
+.card-home .card-body {
+  padding: 15px 15px 15px 0;
 }
 
 .btn-join {

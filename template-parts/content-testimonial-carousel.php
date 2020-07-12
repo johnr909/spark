@@ -9,7 +9,7 @@
 
 ?>
 
-<h3 class="rewards-title">Reviews</h3>
+<h5 class="rewards-title">Reviews</h5>
 
 <div id="carouselTestimonials" class="carousel slide carousel-fade" data-ride="carousel">
 

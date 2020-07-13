@@ -1514,6 +1514,13 @@ HONE PAGE
 	/*margin: 10px 5px 10px 0;*/
 }
 
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .home-cards .card {
+    flex: 0 0 27%;
+    max-width: 28%;
+  }
+}
+
 .home-cards .rewards-signup p {
   margin-top: 15rem;
 }

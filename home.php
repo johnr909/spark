@@ -63,7 +63,7 @@ get_header('spark'); ?>
                 <h5 class="rewards-title">Education Callout</h5>
                 <img src="
                 <?php echo get_template_directory_uri() . '/inc/assets/images/sativa-indica-r2.jpg'; ?>
-                " class="d-block mx-auto" alt="sativa and indica plants">
+                " class="card-img-top" alt="sativa and indica plants">
                 <p class="mt-3">Art party mumblecore ennui selvage chillwave synth palo santo listicle prism pork belly gluten-free single-origin coffee tumblr flexitarian. Schlitz helvetica trust fund bushwick raw denim. Narwhal organic poutine, live-edge schlitz church-key kogi XOXO waistcoat post-ironic.</p>
             </div><!-- .col -->
 

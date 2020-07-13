@@ -1056,7 +1056,7 @@ h1.age-gate-heading {
 
 p.age-gate-challenge {
   text-transform: uppercase;
-  font-size: 1.9rem;
+  font-size: 1.75rem;
   color: #fff;
 }
 
@@ -1078,7 +1078,7 @@ p.age-gate-challenge {
   user-select: none;
   border: 3px solid #fff;
   padding: .5rem 3rem;
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 1.5;
   border-radius: .6rem;
   /*transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;*/

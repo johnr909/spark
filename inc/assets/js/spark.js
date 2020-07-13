@@ -19,9 +19,8 @@ jQuery(document).ready( function() {
         jQuery('#' + dayOfWeek + ' .card-text' ).addClass('highlight');
     }
 
-    jQuery(document).ready(function(){
         highlightDailyDeal();
-    });
+
 
     // move and re-style elements for home page visual consistency
     jQuery('#card-home h5').insertBefore('#card-home .card-img-top');
@@ -30,10 +29,7 @@ jQuery(document).ready( function() {
     // jQuery('#card-home p').removeClass('highlight');
     jQuery('#card-home' + '#' + dayOfWeek + ' .card-text' ).removeClass('highlight');
     
-
     jQuery('.rewards-signup p').removeClass('rewards-text');
-
-
 
     // add FA calendar icon to events list
     jQuery('h4.tribe-event-title ').prepend('<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;');

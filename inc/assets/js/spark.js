@@ -26,7 +26,7 @@ jQuery(document).ready( function() {
     jQuery('#card-home h5').insertBefore('#card-home .card-img-top');
     jQuery('#card-home h5').removeClass('card-title highlight');
     jQuery('#card-home h5').addClass('rewards-title');
-    // jQuery('#card-home p').removeClass('highlight');
+    jQuery('#card-home p').removeClass('highlight');
     jQuery('#card-home' + '#' + dayOfWeek + ' .card-text' ).removeClass('highlight');
     
     jQuery('.rewards-signup p').removeClass('rewards-text');

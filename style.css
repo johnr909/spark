@@ -1439,6 +1439,10 @@ HONE PAGE CAROUSEL/MOBILE BANNER
   bottom: -15px;      
 }
 
+.carousel-indicators li {
+  cursor: default;
+}
+
 @media only screen and (max-width: 768px) {
   #carousel {
     display: none;
@@ -1968,6 +1972,12 @@ DEALS/EVENTS PAGE
   font-size: 2rem;
 }
 
+
+.coupon img {
+  display: block;
+  margin: 80px auto;
+  padding: 1rem;
+}
 
 
 .events {

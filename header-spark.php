@@ -19,7 +19,18 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<?php 
+    // get the slug for CSS styling
+
+        $slug = get_post_field( 'post_name', get_post() ); 
+
+        if($slug == '') {
+            global $post;
+            $slug = $post->ID;
+        }
+?> 
+<body <?php body_class();?> id="<?php echo $slug;?>">
+   
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content">
         <?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?>

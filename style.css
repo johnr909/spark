@@ -1056,7 +1056,7 @@ h1.age-gate-heading {
 
 p.age-gate-challenge {
   text-transform: uppercase;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   color: #fff;
 }
 
@@ -1067,7 +1067,7 @@ p.age-gate-challenge {
 .age-gate-submit-yes,
 .age-gate-submit-no {
   display: inline-block;
-  font-weight: 600;
+  font-weight: 800;
   color: #fff;
   background-color: transparent;
   text-align: center;
@@ -1130,7 +1130,7 @@ h3 {
 
 h3.lead {
   font-size: 1.5rem;
-  font-weight: 600;
+  /*font-weight: 600;*/
 }
 
 h4 {
@@ -1248,6 +1248,17 @@ HEADER
 .notice a:hover {
 	text-decoration: none;
 	color: #fff;
+}
+
+@media only screen and (max-width: 576px) {
+  .warning {
+    margin-bottom: 2px;
+    padding: 3px 8px;
+  }
+
+  .notice {
+    padding: 3px 8px;
+  }
 }
 
 .warning .fa,
@@ -1413,9 +1424,10 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 
 .carousel-text p.lead {
   margin-bottom: .2rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-align: center;
   font-weight: 700;
+  line-height: 100%;
   color: #fff;
 }
 
@@ -1452,7 +1464,7 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 @media only screen and (min-width: 769px) and (max-width: 961px) {
 
   .carousel-text p.lead {
-  	font-size: 1.1rem;
+  	font-size: 1.75rem;
   }
 
   .carousel-text p.cta {
@@ -1514,6 +1526,12 @@ HONE PAGE
 	max-width: 31%;
 }*/
 
+body.home .xdebug-error,
+body.home .xdebug-warnong {
+  display: none;
+}
+
+
 .home-cards .card {
 	/*margin: 10px 5px 10px 0;*/
 }
@@ -1525,9 +1543,9 @@ HONE PAGE
   }
 }
 
-.home-cards .rewards-signup p {
+/*.home-cards .rewards-signup p {
   margin-top: 15rem;
-}
+}*/
 
 .card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1)
@@ -1674,9 +1692,9 @@ h5.highlight {
 	font-size: .92rem;
 }
 
-.home-cards .rewards-signup{
+/*.home-cards .rewards-signup{
   background: #fff url('inc/assets/images/phone-icon-lg.png') no-repeat 50% 22%;
-}
+}*/
 
 .home-cards .card-img-top {
   display: inline-block;
@@ -1684,6 +1702,7 @@ h5.highlight {
 }
 
 .card-home .rewards-title {
+  line-height: 125%;
   font-weight: 700;
 }
 
@@ -1699,6 +1718,10 @@ h5.highlight {
 /*  border: 1px solid rgba(0, 0, 0, .125);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
   border-radius: .25rem;*/
+}
+
+.home-cards .rewards-signup {
+  background: transparent;
 }
 
 .rewards-signup .fa-comment-dollar {
@@ -1743,6 +1766,10 @@ h5.highlight {
   background: #f2f8f1 url('inc/assets/images/phone-icon-md.png') no-repeat 50% 60%;	
 }
 
+.deals-rewards img.card-img-top {
+  display: none;
+}
+
 .deals-reward .rewards-title {
 	margin-top: 1.5rem;
 	font-size: 4rem;
@@ -1754,6 +1781,11 @@ h5.highlight {
 
 .rewards-text:last-child {
 	margin-top: 1rem;
+}
+
+
+.pre-order-home .btn-secondary {
+  margin-bottom: 1rem;
 }
 
 /*@media only screen and (min-width: 768px) {
@@ -1815,7 +1847,6 @@ h5.highlight {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
 }
 
-
 .spotlight {
   background: url('inc/assets/images/spotlight-light-grey.svg') no-repeat 30% 50%;
 }
@@ -1823,8 +1854,33 @@ h5.highlight {
 
 .entry-header {
   padding: 4rem 0;
+  background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
+}
+
+#rec .entry-header {
+  background: #2d3545 url('inc/assets/images/golden-plants-1920.jpg') no-repeat;
+}
+
+#med .entry-header {
+  background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
+}
+
+#deals .entry-header {
   background: #2d3545 url('inc/assets/images/page-header-1920w-300h.jpg') no-repeat;
 }
+
+#contact-us .entry-header {
+  background: #2d3545 url('inc/assets/images/b&w-bud-1920.jpg') no-repeat;
+}
+
+#contact-us .entry-header h1 {
+  color: #80be79;
+}
+
+#resources .entry-header {
+  background: #2d3545 url('inc/assets/images/potted-plants-1920.jpg') no-repeat;
+}
+
 
 .entry-header h1 {
   margin: 0;

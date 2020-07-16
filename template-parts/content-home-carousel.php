@@ -1,10 +1,10 @@
 <div id="carousel" class="carousel slide carousel-fade"" data-ride="carousel">
 
-    <ol class="carousel-indicators">
+<!--     <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
+    </ol> -->
 
     <div class="carousel-inner">
 
@@ -38,6 +38,18 @@
             </div><!-- .carousel-caption -->
         </div><!-- .carousel-item -->
 
+        <div class="carousel-item" data-interval="5000">
+            <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'bud-burst-beauty-1920w-350h.jpg'; ?>"
+                 class="d-block w-100" alt="marijuana leaf close-up">
+            <div class="carousel-caption d-none d-md-block">
+                <?php
+                    get_template_part( 'template-parts/content', 'home-carousel-buttons' );
+                ?>
+            </div><!-- .carousel-caption -->
+        </div><!-- .carousel-item -->
+
+
+bud-burst-beauty-1920w-500h
     </div><!-- .carousel-inner -->
 
 

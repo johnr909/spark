@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<section id="primary" class="content-area col-sm-12 col-lg-8">
 		<main id="main" class="site-main" role="main">
-
+<h1>sup?</h1>
 		<?php
 		while ( have_posts() ) : the_post();
 

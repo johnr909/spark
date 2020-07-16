@@ -1437,6 +1437,7 @@ HONE PAGE CAROUSEL/MOBILE BANNER
   text-align: center;
   font-weight: 700;
   color: #80be79;
+  /*-webkit-text-stroke: 1px darkgreen; */
 }
 
 .carousel-text .rec-button {
@@ -1738,7 +1739,7 @@ h5.highlight {
 }
 
 .rewards-text {
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
   font-size: 1.5rem;
   text-align: center;
 }

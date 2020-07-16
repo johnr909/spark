@@ -25,7 +25,7 @@
 		    <div>
 		    	<div class="textwidget custom-html-widget"> 
 		    		<h4 class="online-step-numbers dark-text">1</h4>
-					  <p class="online-cta-text mt-5 green-text text-center">Shop by category, brand or strain</p>
+					  <p class="online-cta-text mt-5 green-text text-center step1">Shop by category, brand or strain</p>
 		    		<div class="online-icon-container">
 		    			<img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'hand.svg'; ?>" width="40%" height="40%" alt="hand" class="d-block img-hand">
 		    		</div>
@@ -37,7 +37,7 @@
 		    <div>
 		    	<div class="textwidget custom-html-widget">
 		    		<h4 class="online-step-numbers dark-text">2</h4>
-						<p class="online-cta-text mt-5 green-text text-center">Checkout and select a pickup time</p>
+						<p class="online-cta-text mt-5 green-text text-center step2">Checkout and select a pickup time</p>
 		    		<div class="online-icon-container">
 		    			<img src="<?php echo get_template_directory_uri() .'/inc/assets/images/' .'cart.svg'; ?>" width="65%" height="65%" alt="cart" class="d-block img-cart">
 		    		</div>
@@ -49,7 +49,7 @@
 		    <div>
 		    	<div class="textwidget custom-html-widget">
 		    		<h4 class="online-step-numbers dark-text">3</h4>
-						<p class="online-cta-text mt-5 green-text text-center">Pickup and pay at the store</p>
+						<p class="online-cta-text mt-5 green-text text-center step3">Pickup and pay at the store</p>
 		    		<div class="online-icon-container">
 		    			<img src="<?php echo get_template_directory_uri() .'/inc/assets/images/' .'bag.svg'; ?>" width="45%" height="45%" alt="bag" class="d-block img-bag">
 		    		</div>
@@ -61,7 +61,7 @@
 		    <div>
 		    	<div class="textwidget custom-html-widget">
 		    		<h4 class="online-step-numbers dark-text">4</h4>
-					  <p class="online-cta-text mt-5 green-text text-center">Enjoy!</p>
+					  <p class="online-cta-text mt-5 green-text text-center step4">Enjoy!</p>
 		    		<div class="online-icon-container">
 		    			<img src="<?php echo get_template_directory_uri() .'/inc/assets/images/' .'smoke.svg'; ?>" width="55%" height="55%" alt="joint" class="d-block img-joint">
 		    		</div>

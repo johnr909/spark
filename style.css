@@ -1544,9 +1544,9 @@ body.home .xdebug-warnong {
   }
 }*/
 
-@media screen and (min-width: 769px) and (max-width: 961px) {
+@media screen and (min-width: 768px) and (max-width: 961px) {
   .home-cards .col-md-4 {
-    flex: 0 0 29.1%;
+    flex: 0 0 28%;
     max-width: 32%;
   }
 }
@@ -1557,6 +1557,14 @@ body.home .xdebug-warnong {
     max-width: 33.3333333%;
   }
 }
+
+@media screen and (min-width: 962px) {
+  .home-cards .col-md-4 {
+    flex: 0 0 30.2%;
+    max-width: 33.3333333%;
+  }
+}
+
 
 /*.home-cards .rewards-signup p {
   margin-top: 15rem;
@@ -1969,21 +1977,30 @@ MENU PAGES
   margin: 40px auto;
 }
 
-.step1 {
-  /*padding-bottom: 10px;  */
+.step1,
+.step2,
+.step4 {
+  padding-bottom: 175px;
 }
 
-.step2 {
-  /*padding-bottom: 0;*/
+.step1 {
+  background: transparent url('inc/assets/images/hand-r3.svg') no-repeat center 185px;
+}
+
+.step2 {    
+  background: transparent url('inc/assets/images/cart-r3.svg') no-repeat center 240px;
 }
 
 .step3 {
-  /*padding-bottom: 15px;*/
+  padding-bottom: 190px;
+  background: transparent url('inc/assets/images/bag-r3.svg') no-repeat center 195px;
 }
 
 .step4 {
-  /*padding-bottom: 40px;*/
+  background: transparent url('inc/assets/images/smoke-r3.svg') no-repeat center 202px;
 }
+
+
 /*
 DEALS/EVENTS PAGE
 */

@@ -1977,27 +1977,31 @@ MENU PAGES
   margin: 40px auto;
 }
 
-.step1,
+/*.step1,
 .step2,
 .step4 {
   padding-bottom: 175px;
 }
-
-.step1 {
-  background: transparent url('inc/assets/images/hand-r3.svg') no-repeat center 185px;
+*/
+.coupon .step1 {
+  padding-top: 2.25rem;
+  /*background: transparent url('inc/assets/images/hand-r3.svg') no-repeat center 185px;*/
 }
 
-.step2 {    
-  background: transparent url('inc/assets/images/cart-r3.svg') no-repeat center 240px;
+.coupon .step2 {   
+  padding-top: 6rem 
+  /*background: transparent url('inc/assets/images/cart-r3.svg') no-repeat center 240px;*/
 }
 
-.step3 {
-  padding-bottom: 190px;
-  background: transparent url('inc/assets/images/bag-r3.svg') no-repeat center 195px;
+.coupon .step3 {
+  padding-top: 3rem;
+  /*padding-bottom: 190px;*/
+  /*background: transparent url('inc/assets/images/bag-r3.svg') no-repeat center 195px;*/
 }
 
-.step4 {
-  background: transparent url('inc/assets/images/smoke-r3.svg') no-repeat center 202px;
+.coupon .step4 {
+  padding-top: 9rem;
+  /*background: transparent url('inc/assets/images/smoke-r3.svg') no-repeat center 202px;*/
 }
 
 

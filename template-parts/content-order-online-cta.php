@@ -49,7 +49,7 @@
 		    		<h4 class="online-step-numbers dark-text">4</h4>
 					  <p class="online-cta-text mt-5 green-text text-center">Enjoy!</p>
 		    		<div class="online-icon-container step4">
-		    			<img src="<?php echo get_template_directory_uri() .'/inc/assets/images/' .'smoke-r3.svg'; ?>" width="80%" height="80%" alt="joint" class="d-block img-joint">
+		    			<img src="<?php echo get_template_directory_uri() .'/inc/assets/images/' .'stoner-emoji.svg'; ?>" width="80%" height="80%" alt="joint" class="d-block img-joint">
 		    		</div>
         </div><!-- .coupon -->
 

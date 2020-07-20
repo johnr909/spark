@@ -38,7 +38,7 @@
             </div><!-- .carousel-caption -->
         </div><!-- .carousel-item -->
 
-        <div class="carousel-item" data-interval="5000">
+        <div class="carousel-item bud-burst" data-interval="5000">
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'bud-burst-beauty-1920w-350h.jpg'; ?>"
                  class="d-block w-100" alt="marijuana leaf close-up">
             <div class="carousel-caption d-none d-md-block">
@@ -47,9 +47,6 @@
                 ?>
             </div><!-- .carousel-caption -->
         </div><!-- .carousel-item -->
-
-
-bud-burst-beauty-1920w-500h
     </div><!-- .carousel-inner -->
 
 

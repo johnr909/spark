@@ -60,7 +60,7 @@ get_header('spark'); ?>
             </div><!-- .col -->
 
             <div class="col-sm-12 col-md-4 card card-home">
-                <h5 class="rewards-title">Education Callout</h5>
+                <h5 class="rewards-title">Cannabis 101</h5>
                 <img src="
                 <?php echo get_template_directory_uri() . '/inc/assets/images/sativa-indica-r2.jpg'; ?>
                 " class="card-img-top" alt="sativa and indica plants">

@@ -1430,7 +1430,7 @@ HONE PAGE CAROUSEL/MOBILE BANNER
   line-height: 100%;
   color: #fff;
 }
-
+ 
 .carousel-text p.cta {
   margin-bottom: .2rem;
   font-size: 1.6rem;
@@ -1438,6 +1438,10 @@ HONE PAGE CAROUSEL/MOBILE BANNER
   font-weight: 700;
   color: #80be79;
   /*-webkit-text-stroke: 1px darkgreen; */
+}
+
+.bud-burst .carousel-text p.cta {
+  color: #fff;
 }
 
 .carousel-text .rec-button {
@@ -2000,7 +2004,7 @@ MENU PAGES
 }
 
 .coupon .step4 {
-  padding-top: 9rem;
+  padding-top: 8rem;
   /*background: transparent url('inc/assets/images/smoke-r3.svg') no-repeat center 202px;*/
 }
 

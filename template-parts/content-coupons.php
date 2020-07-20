@@ -13,7 +13,7 @@
 
     <div class="row">
         <div class="col">
-            <h3 class="lead"><i class="fa fa-cut green-text"></i>&nbsp;&nbsp;Coupons</h3>
+            <h3 class="lead"><i class="fa fa-cut green-text"></i>&nbsp;&nbsp;Specials</h3>
         </div>
     </div><!-- .row -->
 

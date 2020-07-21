@@ -1908,23 +1908,21 @@ h5.highlight {
   background: #2d3545 url('inc/assets/images/potted-plants-1920.jpg') no-repeat;
 }
 
-
 @media screen and (max-width:767px) {
-  #rec .entry-header,
-  #med .entry-header,
-  #deals .entry-header,
-  #contact-us .entry-header,
-  #resources .entry-header {
-    background: #2d3545;
+  
+ body#rec .entry-header,
+ body#med .entry-header,
+ body#deals .entry-header,
+ body#contact-us .entry-header,
+ body#resources .entry-header {
+    background: #2d3545 !important;
   } 
 
-  #contact-us .entry-header h1 {
-  color: #fff;
+  body#contact-us .entry-header h1 {
+  color: #fff !important;
   }
 
 }
-
-
 
 .entry-header h1 {
   margin: 0;

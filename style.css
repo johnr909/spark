@@ -1949,7 +1949,9 @@ h3 .fa-cut,
 h3 .fa-leaf,
 h3 .fa-seedling,
 h3 .fa-eye,
-h3 .fa-university {
+h3 .fa-university,
+h3 .fa-money-bill-alt,
+h3 .fa-dollar-sign {
   font-size: 3rem;
 }
 
@@ -2097,13 +2099,19 @@ DEALS/EVENTS PAGE
 }
 */
 .coupon-text {
-  font-size: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-size: 1.25rem;
 }
 
 
 .coupon img {
   display: block;
   margin: 1rem auto;
+}
+
+#coupon-3 img {
+  margin: 0  auto;
 }
 
 

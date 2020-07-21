@@ -1081,7 +1081,6 @@ p.age-gate-challenge {
   font-size: 1.75rem;
   line-height: 1.5;
   border-radius: .6rem;
-  /*transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;*/
 }
 
 
@@ -1100,8 +1099,6 @@ TYPOGRAPHY
 */
 
 body {
-  /*font-family:  "Karma", san-serif;*/
-  /*font-family: "Overpass", serif;*/
   font-family: "Muli", sans-serif; 
   font-weight: 600;
   font-size: 1.15rem;
@@ -1130,7 +1127,6 @@ h3 {
 
 h3.lead {
   font-size: 1.5rem;
-  /*font-weight: 600;*/
 }
 
 h4 {
@@ -1149,6 +1145,24 @@ a:hover {
   color: #2d3545;
 }
 
+@media screen only and (max-width: 576px) {
+
+  body {
+    font-size: 1.35rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.65rem
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+}
 
 /*
 UTILITY
@@ -1288,10 +1302,6 @@ HEADER-FOOTER
 
 .header-footer ul {
   list-style: none;
-}
-
-.header {
-  /*width: 33%;*/
 }
 
 .header {
@@ -1437,7 +1447,6 @@ HONE PAGE CAROUSEL/MOBILE BANNER
   text-align: center;
   font-weight: 700;
   color: #80be79;
-  /*-webkit-text-stroke: 1px darkgreen; */
 }
 
 .bud-burst .carousel-text p.cta {
@@ -1526,27 +1535,10 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 HONE PAGE
 */
 
-/*.home-cards .col-md {
-	flex: 0 0 30%;
-	max-width: 31%;
-}*/
-
 body.home .xdebug-error,
-body.home .xdebug-warnong {
+body.home .xdebug-warning {
   display: none;
 }
-
-
-.home-cards .card {
-	/*margin: 10px 5px 10px 0;*/
-}
-
-/*@media screen and (min-width: 576px) and (max-width: 767px) {
-  .home-cards .card {
-    flex: 0 0 27%;
-    max-width: 28%;
-  }
-}*/
 
 @media screen and (min-width: 768px) and (max-width: 961px) {
   .home-cards .col-md-4 {
@@ -1569,11 +1561,6 @@ body.home .xdebug-warnong {
   }
 }
 
-
-/*.home-cards .rewards-signup p {
-  margin-top: 15rem;
-}*/
-
 .card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1)
 }
@@ -1591,53 +1578,6 @@ body.home .xdebug-warnong {
   font-size: 1.25rem;
 }
 
-/*.card-home {
-	margin: 0 5px;
-}*/
-/*@media only screen and (min-width: 480px) and (max-width: 767px) {*/
-
-
-/*.card {*/
-
-
-/*width: 60%;*/
-
-
-/*}*/
-
-
-/*}*/
-
-/*
-#Sunday {
-  background: transparent url('inc/assets/images/bud-purple.jpg') no-repeat;
-}
-
-#Monday {
-  background: transparent url('inc/assets/images/jars.jpg') no-repeat;
-}
-
-#Tuesday {
-  background: transparent url('inc/assets/images/pre-roll.jpg') no-repeat;
-}
-
-#Wednesday {
-  background: transparent url('inc/assets/images/close-up.jpg') no-repeat;
-}
-
-#Thursday {
-  background: transparent url('inc/assets/images/salve.jpg') no-repeat;
-}
-
-#Friday {
-  background: transparent url('inc/assets/images/edibles.jpg') no-repeat;
-}
-
-#Saturday {
-  background: transparent url('inc/assets/images/extracts.jpg') no-repeat;
-}
-*/
-
 @media only screen and (min-width: 768px) and (max-width: 961px) {
 	.deals .col-md-1 {
 		flex: 0 0 12.5%;
@@ -1648,12 +1588,7 @@ body.home .xdebug-warnong {
 		margin: 5px;
 	}
 }
-/*
-	.deals .col-lg-1 {
-		flex: 0 0 11%;
-		max-width: 11%;
-	}
-*/
+
 @media only screen and (min-width: 962px) {
 	.deals .col-md-1 {
 		flex: 0 0 13%;
@@ -1719,13 +1654,8 @@ h5.highlight {
 	font-size: .92rem;
 }
 
-/*.home-cards .rewards-signup{
-  background: #fff url('inc/assets/images/phone-icon-lg.png') no-repeat 50% 22%;
-}*/
-
 .home-cards .card-img-top {
   display: inline-block;
-  /*padding: 0 15px;*/
 }
 
 .card-home .rewards-title {
@@ -1733,18 +1663,8 @@ h5.highlight {
   font-weight: 700;
 }
 
-/*.home-cards .btn-primary,
-.home-cards .btn-secondary {
-
-}*/
-
 .rewards-signup {
-  /*margin: 15px;*/
-  /*padding: 0 5px 10px 20px;*/
   background: #fff url('inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
-/*  border: 1px solid rgba(0, 0, 0, .125);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
-  border-radius: .25rem;*/
 }
 
 .home-cards .rewards-signup {
@@ -1765,7 +1685,6 @@ h5.highlight {
 }
 
 .rewards-text {
-  /*margin-bottom: 0;*/
   font-size: 1.5rem;
   text-align: center;
 }
@@ -1819,12 +1738,6 @@ h5.highlight {
   margin-bottom: 1rem;
 }
 
-/*@media only screen and (min-width: 768px) {
-	#carouselTestimonials .carousel-item {
-		height: 77rem;
-	}
-}*/
-
 .testimonial {
   margin: 1rem;
   padding: 1rem;
@@ -1855,32 +1768,6 @@ h5.highlight {
   transform: rotateZ(-46deg);
 }
 
-#carouselTestimonials .carousel-control-prev {
-	left: -10px;
-}
-
-#carouselTestimonials .carousel-control-next {
-	right: -10px;
-}
-
-
-#carouselTestimonials .carousel-control-prev-icon,
-#carouselTestimonials  .carousel-control-next-icon {
-	height: 50px;
-	width: 25px;
-}
-
-#carouselTestimonials .carousel-control-prev-icon {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
-}
-
-#carouselTestimonials .carousel-control-next-icon {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
-}
-
-.spotlight {
-  background: url('inc/assets/images/spotlight-light-grey.svg') no-repeat 30% 50%;
-}
 /* NOT THE HOME PAGE */
 
 .entry-header {
@@ -1953,12 +1840,6 @@ h3 .fa-dollar-sign {
   font-size: 3rem;
 }
 
-/*@media only screen and (min-width: 768px) and (max-width: 961px) {
-	h3.lead {
-		font-size: 1.15rem;
-	}
-}*/
-
 /*
 MENU PAGES
 */
@@ -1994,31 +1875,21 @@ MENU PAGES
   margin: 40px auto;
 }
 
-/*.step1,
-.step2,
-.step4 {
-  padding-bottom: 175px;
-}
-*/
+
 .coupon .step1 {
   padding-top: 2.25rem;
-  /*background: transparent url('inc/assets/images/hand-r3.svg') no-repeat center 185px;*/
 }
 
 .coupon .step2 {   
   padding-top: 6rem 
-  /*background: transparent url('inc/assets/images/cart-r3.svg') no-repeat center 240px;*/
 }
 
 .coupon .step3 {
   padding-top: 3rem;
-  /*padding-bottom: 190px;*/
-  /*background: transparent url('inc/assets/images/bag-r3.svg') no-repeat center 195px;*/
 }
 
 .coupon .step4 {
   padding-top: 8rem;
-  /*background: transparent url('inc/assets/images/smoke-r3.svg') no-repeat center 202px;*/
 }
 
 
@@ -2049,14 +1920,6 @@ DEALS/EVENTS PAGE
 	background: #f2f8f1 url('inc/assets/images/dots.jpg') repeat;
 }
 
-/*.coupon-icon-container,
-.online-icon-container {
-  border-radius: 50%;
-  margin: 20px auto;
-  border: 3px solid;
-}
-*/
-
 .coupon-icon-container {
   border-radius: 50%;
   margin: 20px auto;
@@ -2065,20 +1928,6 @@ DEALS/EVENTS PAGE
   height: 10rem;			
   background-color: #80be79;
 }
-
-/*.online-icon-container {
-  width: 7rem;
-  height: 7rem;	
-  background-color: #2d3545;
-  color: #80be79;
-}*/
-
-/*.coupon-icon-container .fa,
-.online-icon-container .fa {
-  display: inline-block;
-  margin: 2.25rem auto;
-}
-*/
 
 .coupon-icon-container .fa {
   display: inline-block;
@@ -2091,17 +1940,11 @@ DEALS/EVENTS PAGE
   padding: 1rem;
 }
 
-/*
-.online-icon-container .fa {
-  font-size: 2rem;
-}
-*/
 .coupon-text {
   margin-right: 1rem;
   margin-left: 1rem;
   font-size: 1.25rem;
 }
-
 
 .coupon img {
   display: block;
@@ -2111,7 +1954,6 @@ DEALS/EVENTS PAGE
 #coupon-3 img {
   margin: 0  auto;
 }
-
 
 .events {
   margin: 20px;

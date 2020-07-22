@@ -1145,7 +1145,7 @@ a:hover {
   color: #2d3545;
 }
 
-@media screen only and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
 
   body {
     font-size: 1.35rem;

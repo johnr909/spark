@@ -1795,7 +1795,7 @@ h5.highlight {
   background: #2d3545 url('inc/assets/images/potted-plants-1920.jpg') no-repeat;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:576px) {
   
  body#rec .entry-header,
  body#med .entry-header,

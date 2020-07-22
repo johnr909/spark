@@ -1,5 +1,7 @@
 inc/assets/images/
 inc/assets/fonts/
+inc/plugin-compatability
 spark.sublime-workspace
 spark.sublime-project
 .phpintel
+/woocommerce

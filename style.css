@@ -1165,7 +1165,7 @@ a:hover {
 }
 
 /*
-UTILITY
+UTILITIES, BUTTONS
 */
 
 blockquote {
@@ -1187,6 +1187,10 @@ blockquote {
 
 .orange-text {
   color: #ff5810;
+}
+
+.white-text {
+  color: #fff;
 }
 
 .light-blue-bg {
@@ -1331,7 +1335,7 @@ HEADER-FOOTER
 
 .foot-social p {
 	margin: 0 0 1rem 0;
-	padding: 0;
+	/*padding: 0;*/
 }
 
 .foot-social p a:hover {
@@ -1416,7 +1420,6 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 */
 
 .carousel-caption {
-  /*width: 79%;*/
   bottom: 20px;
   padding-top: 0;
   padding-bottom: 0;
@@ -1429,7 +1432,6 @@ HONE PAGE CAROUSEL/MOBILE BANNER
   font-size: 3.5rem;
   text-align: center;
   color: #fff;
-  /*font-family:'Karma', sans-serif;*/
 }
 
 .carousel-text p.lead {
@@ -1461,14 +1463,8 @@ HONE PAGE CAROUSEL/MOBILE BANNER
   margin-left: .5rem;
 }
 
-.carousel-indicators {
-  bottom: -15px;      
-}
 
-.carousel-indicators li {
-  cursor: default;
-}
-
+/* hide the carousel for smaller devices */
 @media only screen and (max-width: 768px) {
   #carousel {
     display: none;
@@ -1504,9 +1500,9 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 
 #home-mobile-banner h2 {
   display: none;
-  font-size: 3rem;
+/*  font-size: 3rem;
   text-align: center;
-  color: #fff;
+  color: #fff;*/
 }
 
 #home-mobile-banner a.btn {
@@ -1565,6 +1561,8 @@ body.home .xdebug-warning {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1)
 }
 
+
+/* DOD home page styling */
 #card-home {
 	margin-left: 15px;
   padding: 0 15px;
@@ -1578,6 +1576,27 @@ body.home .xdebug-warning {
   font-size: 1.25rem;
 }
 
+/* card styling on the home page generally */
+.home-cards .card-body {
+  margin-top: 0;
+}
+
+.home-cards .card-title {
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.home-cards .card-img-top {
+  display: inline-block;
+}
+
+.card-home .rewards-title {
+  line-height: 125%;
+  font-weight: 700;
+}
+
+
+/* for the deals page */
 @media only screen and (min-width: 768px) and (max-width: 961px) {
 	.deals .col-md-1 {
 		flex: 0 0 12.5%;
@@ -1600,18 +1619,24 @@ body.home .xdebug-warning {
 	}
 }
 
-.home-cards .card-body {
+.deals div[class^='col'] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.deals div[class^='col'] .card-body {
   margin-top: 0;
+  padding: .25rem;
 }
 
-.home-cards .card-title{
-  margin-bottom: 0;
-  padding-top: 0;
+.deals div[class^='col'] .card-title {
+  margin-top: .25rem;
+  padding: .25rem 0;
+  font-size: 1rem;
 }
 
-.card-body {
-  margin-top: .75rem;
-  text-align: center;
+.deals div[class^='col'] .card-text {
+  font-size: .92rem;
 }
 
 .card-title {
@@ -1625,8 +1650,15 @@ body.home .xdebug-warning {
 
 .card-text, 
 .card-text:last-child {
-	margin-bottom: 1rem;
   font-size: 1.25rem;
+}
+
+.card-home .card-text {
+  text-align: left;
+}
+ 
+.card-home .card-body {
+  padding: 15px 15px 15px 0;
 }
 
 h5.highlight {
@@ -1634,38 +1666,18 @@ h5.highlight {
 }
 
 
-.deals div[class^='col'] {
-	padding-left: 0;
-	padding-right: 0;
-}
 
-.deals div[class^='col'] .card-body {
-	margin-top: 0;
-	padding: .25rem;
-}
 
-.deals div[class^='col'] .card-title {
-	margin-top: .25rem;
-	padding: .25rem 0;
-	font-size: 1rem;
-}
 
-.deals div[class^='col'] .card-text {
-	font-size: .92rem;
-}
 
-.home-cards .card-img-top {
-  display: inline-block;
-}
 
-.card-home .rewards-title {
-  line-height: 125%;
-  font-weight: 700;
-}
 
-.rewards-signup {
-  background: #fff url('inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
-}
+
+
+
+
+/* rewards home */
+
 
 .home-cards .rewards-signup {
   background: transparent;
@@ -1680,13 +1692,12 @@ h5.highlight {
 .rewards-title {
   font-size: 1.5rem;
   margin-top: 1rem;
-  padding-top: 0;
   text-align: center;
 }
 
 .rewards-text {
   font-size: 1.5rem;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .card-home .rewards-text {
@@ -1694,17 +1705,13 @@ h5.highlight {
   text-align: left;
 }
 
-.card-home .card-text {
-  text-align: left;
-}
- 
-.card-home .card-body {
-  padding: 15px 15px 15px 0;
-}
-
 .btn-join {
 	width: 12rem;
 	margin-top: 1rem;
+}
+
+.rewards-signup {
+  background: #fff url('inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
 }
 
 .deals-rewards {
@@ -1733,16 +1740,17 @@ h5.highlight {
 	margin-top: 1rem;
 }
 
-
+/* pre-order home page callout */
 .pre-order-home .btn-secondary {
   margin-bottom: 1rem;
 }
 
-.testimonial {
+/* testimonials */
+/*.testimonial {
   margin: 1rem;
   padding: 1rem;
   text-align: center;
-}
+}*/
 
 .testimonial-text {
   color: #808080;
@@ -1770,6 +1778,7 @@ h5.highlight {
 
 /* NOT THE HOME PAGE */
 
+/* non-home page banners */
 .entry-header {
   padding: 4rem 0;
   background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
@@ -1795,6 +1804,7 @@ h5.highlight {
   background: #2d3545 url('inc/assets/images/potted-plants-1920.jpg') no-repeat;
 }
 
+/* no banner images for phones*/
 @media screen and (max-width:576px) {
   
  body#rec .entry-header,
@@ -1824,7 +1834,7 @@ h5.highlight {
   padding: 0 .5rem;
   font-size: 1.5rem;
   font-weight: 700;
-  text-align: center;
+  /*text-align: center;*/
   color: #80be79;
   border: none;
 }
@@ -1874,7 +1884,6 @@ MENU PAGES
 .img-joint {
   margin: 40px auto;
 }
-
 
 .coupon .step1 {
   padding-top: 2.25rem;
@@ -1934,7 +1943,6 @@ DEALS/EVENTS PAGE
   margin: 2.25rem auto;
   font-size: 5rem;
 }
-
 
 .online-icon-container {
   padding: 1rem;
@@ -2004,7 +2012,6 @@ CONTACT US PAGE
 iframe {  
 border: 1px solid #2d3545;
 }
-
 
 .gmap-container {
  overflow: hidden;

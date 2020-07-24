@@ -66,7 +66,7 @@ get_header('spark'); ?>
             </div><!-- .col -->
 
             <div class="col-sm-12 col-md-4 pre-order-home card card-home">
-                <h5 class="rewards-title">Pre-Order Online</h5>
+                <h5 class="rewards-title text-center">Pre-Order Online</h5>
                 <div style="width: 10rem;" class="mx-auto">
                     <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/hand.svg'; ?>" width="40%" height="40%" class="d-block mx-auto" alt="laptop">
                 </div>

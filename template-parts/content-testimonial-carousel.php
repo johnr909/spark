@@ -9,7 +9,7 @@
 
 ?>
 
-<h5 class="rewards-title">Reviews</h5>
+<h5 class="rewards-title text-center">Reviews</h5>
 
 <div id="carouselTestimonials" class="carousel slide carousel-fade" data-ride="carousel">
 
@@ -77,15 +77,5 @@ Thank you spark dispensary</p>
     </div><!-- .carousel-item -->
 
 	</div><!-- .carousel-inner -->
-
-<!-- 	<a class="carousel-control-prev" href="#carouselTestimonials" role="button" data-slide="prev">
-	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next" href="#carouselTestimonials" role="button" data-slide="next">
-	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Next</span>
-	</a>
- -->
 
 </div><!-- #carousel -->

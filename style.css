@@ -1111,6 +1111,7 @@ h3,
 h4,
 h5,
 h6 {
+
   color: #2d3545;
 }
 
@@ -1122,11 +1123,10 @@ h6 {
 
 h3 {
   font-size: 1.85rem;
-  font-weight: 600;
 }
 
 h3.lead {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 h4 {
@@ -1148,11 +1148,17 @@ a:hover {
 @media only screen and (max-width: 576px) {
 
   body {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
+
 
   h3 {
     font-size: 2rem;
+  }
+
+  h3.lead {
+    font-size: 2.5rem;
+    font-weight: 600;
   }
 
   h4 {
@@ -1229,7 +1235,11 @@ blockquote {
   border-radius: .6rem;
 }
 
-
+@media only screen and (max-width: 576px) {
+  .btn-group-lg > .btn, .btn-lg {
+    font-size: 1.5rem;
+  }
+}
 /*
 HEADER
 */
@@ -1237,11 +1247,6 @@ HEADER
 .container-fluid-info {
   padding-left: 0;
   padding-right: 0;
-}
-
-.warning,
-.notice {
-  text-align: center;
 }
 
 .warning {
@@ -1285,7 +1290,7 @@ HEADER
 }
 
 header#masthead {
-  padding: 0 0 5px 0;
+  padding-bottom: 5px;
   background-color: #fff;
 }
 
@@ -1335,7 +1340,6 @@ HEADER-FOOTER
 
 .foot-social p {
 	margin: 0 0 1rem 0;
-	/*padding: 0;*/
 }
 
 .foot-social p a:hover {
@@ -1357,6 +1361,16 @@ HEADER-FOOTER
   color: #80be79;
 }
 
+@media only screen and (max-width: 576px) {
+  header, .header a {
+    font-size: 1.1rem;
+  }
+
+  .foot .footer, .foot .footer a {
+    font-size: 1.35rem;
+    line-height: 200%;
+  }
+}
 
 /*
 NAV
@@ -1380,6 +1394,12 @@ body:not(.theme-preset-active) #masthead .navbar-nav>li>a:hover {
 
 body:not(.theme-preset-active) #masthead .navbar-nav>li.current_page_item>a {
   border-bottom: 3px solid #80be79;
+}
+
+@media only screen and (max-width: 576px) {
+  body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
+    font-size: 1.5rem;
+  }
 }
 
 
@@ -1500,9 +1520,6 @@ HONE PAGE CAROUSEL/MOBILE BANNER
 
 #home-mobile-banner h2 {
   display: none;
-/*  font-size: 3rem;
-  text-align: center;
-  color: #fff;*/
 }
 
 #home-mobile-banner a.btn {
@@ -1576,6 +1593,12 @@ body.home .xdebug-warning {
   font-size: 1.25rem;
 }
 
+@media only screen and (max-width: 576px) {
+  #card-home .card-text {
+    font-size: 1.5rem;
+  }  
+}
+
 /* card styling on the home page generally */
 .home-cards .card-body {
   margin-top: 0;
@@ -1595,6 +1618,13 @@ body.home .xdebug-warning {
   font-weight: 700;
 }
 
+.card-home .card-text {
+  text-align: left;
+}
+ 
+.card-home .card-body {
+  padding: 15px 15px 15px 0;
+}
 
 /* for the deals page */
 @media only screen and (min-width: 768px) and (max-width: 961px) {
@@ -1636,6 +1666,7 @@ body.home .xdebug-warning {
 }
 
 .deals div[class^='col'] .card-text {
+  text-align: center;
   font-size: .92rem;
 }
 
@@ -1653,31 +1684,21 @@ body.home .xdebug-warning {
   font-size: 1.25rem;
 }
 
-.card-home .card-text {
-  text-align: left;
-}
- 
-.card-home .card-body {
-  padding: 15px 15px 15px 0;
-}
-
 h5.highlight {
   border-bottom: 2px solid #80be79;
 }
 
+@media only screen and (max-width: 576px) {
+  .deals div[class^="col"] .card-title {
+    font-size: 1.75rem;
+  }
 
-
-
-
-
-
-
-
-
-
+    .deals div[class^="col"] .card-text {
+    font-size: 1.5rem;
+  }
+}
 
 /* rewards home */
-
 
 .home-cards .rewards-signup {
   background: transparent;
@@ -1697,7 +1718,6 @@ h5.highlight {
 
 .rewards-text {
   font-size: 1.5rem;
-  /*text-align: center;*/
 }
 
 .card-home .rewards-text {
@@ -1714,6 +1734,17 @@ h5.highlight {
   background: #fff url('inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
 }
 
+@media only screen and (max-width: 576px) {
+  .rewards-title {
+    font-size: 1.75rem;
+  }
+
+  .card-home .rewards-text {
+    font-size: 1.5rem;
+  }
+}
+
+ /* rewards callout on the deals page */
 .deals-rewards {
   padding:  3rem 0;
   background: #f2f8f1 url('inc/assets/images/phone-icon-md.png') no-repeat 50% 60%;	
@@ -1724,33 +1755,24 @@ h5.highlight {
 }
 
 .deals-rewards .rewards-title {
+  margin-top: 1.5rem;
   font-size: 2.5rem;
 }
 
-.deals-reward .rewards-title {
-	margin-top: 1.5rem;
-	font-size: 4rem;
-}
-
-.deals-reward .rewards-text {
-	font-size: 2.5rem;
+.deals-rewards .rewards-text {
+  text-align: center;
+	font-size: 1.5rem;
 }
 
 .rewards-text:last-child {
 	margin-top: 1rem;
 }
 
+
 /* pre-order home page callout */
 .pre-order-home .btn-secondary {
   margin-bottom: 1rem;
 }
-
-/* testimonials */
-/*.testimonial {
-  margin: 1rem;
-  padding: 1rem;
-  text-align: center;
-}*/
 
 .testimonial-text {
   color: #808080;

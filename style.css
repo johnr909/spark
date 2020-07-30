@@ -1727,7 +1727,6 @@ h5.highlight {
 
 .btn-join {
 	width: 12rem;
-	margin-top: 1rem;
 }
 
 .rewards-signup {
@@ -1806,6 +1805,7 @@ h5.highlight {
   background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
 }
 
+#rec .entry-header,
 #med .entry-header {
   background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
 }
@@ -1818,6 +1818,8 @@ h5.highlight {
   background: #2d3545 url('inc/assets/images/b&w-bud-1920.jpg') no-repeat;
 }
 
+#rec .entry-header h1,
+#med .entry-header h1,
 #contact-us .entry-header h1 {
   color: #80be79;
 }
@@ -1920,7 +1922,11 @@ MENU PAGES
 }
 
 .coupon .step4 {
-  padding-top: 8rem;
+  padding-top: 5rem;
+}
+
+.btn-coupon {
+  width: 90%;
 }
 
 
@@ -1979,10 +1985,6 @@ DEALS/EVENTS PAGE
 .coupon img {
   display: block;
   margin: 1rem auto;
-}
-
-#coupon-3 img {
-  margin: 0  auto;
 }
 
 .events {

@@ -1,5 +1,4 @@
 jQuery(document).ready( function() {
-{
     // highlights the deal of the day on the deals/events page
     // if your looking for the code that shows the deal of the day
     // on the home page, it's  in the theme's functions.php file
@@ -30,13 +29,14 @@ jQuery(document).ready( function() {
     jQuery('#card-home' + '#' + dayOfWeek + ' .card-text' ).removeClass('highlight');
     
     jQuery('.rewards-signup p').removeClass('rewards-text');
-
-    // add FA calendar icon to events list
-    jQuery('h4.tribe-event-title ').prepend('<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;');
-
-    if(jQuery('.tribe-list-widget').length === 0) {
-        jQuery('.events-container').addClass('d-none');
-    }
-
-}
 });
+
+// needs to outside of document.ready()
+
+// add FA calendar icon to events list
+jQuery('h4.tribe-event-title ').prepend('<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;');
+
+if(jQuery('.tribe-list-widget').length === 0) {
+        jQuery('#events-container').addClass('d-none');
+}
+    

@@ -166,18 +166,14 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'warning',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 //	Notice
 	register_sidebar(array(
 		'name' => esc_html__( 'Notice', 'wp-bootstrap-starter' ),
 		'id' => 'notice',
-		'before_widget' => '<div class="notice">',
-		'after_widget' => '</div><!-- .notice -->',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
 	) );
 
 //	Rewards Signup
@@ -186,8 +182,6 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'rewards',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 	//	Product Spotlight
@@ -196,8 +190,6 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'products',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 
@@ -207,8 +199,6 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'edu',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 //	Daily Deals
@@ -217,8 +207,6 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'sunday',
 		'before_widget' => '<div id="Sunday">',
 		'after_widget' => '</div><!-- #Sunday-->',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 	register_sidebar(array(
@@ -226,8 +214,6 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'monday',
 		'before_widget' => '<div id="Monday">',
 		'after_widget' => '</div><!-- #Monday-->',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 	register_sidebar(array(
@@ -235,8 +221,6 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'tuesday',
 		'before_widget' => '<div id="Tuesday">',
 		'after_widget' => '</div><!-- #Tuesday-->',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 	register_sidebar(array(
@@ -244,8 +228,6 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'wednesday',
 		'before_widget' => '<div id="Wednesday">',
 		'after_widget' => '</div><!-- #Wednesday-->',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 	register_sidebar(array(
@@ -253,8 +235,6 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'thursday',
 		'before_widget' => '<div id="Thursday">',
 		'after_widget' => '</div><!-- #Thursday-->',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 	register_sidebar(array(
@@ -262,8 +242,6 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'friday',
 		'before_widget' => '<div id="Friday">',
 		'after_widget' => '</div><!-- #Friday-->',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 	register_sidebar(array(
@@ -271,8 +249,6 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'saturday',
 		'before_widget' => '<div id="Saturday">',
 		'after_widget' => '</div><!-- #Saturday-->',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 // Coupons
@@ -281,45 +257,33 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'coupon-1',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
-	) );
+		) );
 
 	register_sidebar(array(
 		'name' => 'Coupon 2',
 		'id' => 'coupon-2',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
-	) );
+		) );
 
 	register_sidebar(array(
 		'name' => 'Coupon 3',
 		'id' => 'coupon-3',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
-	) );
+		) );
 
 	register_sidebar(array(
 		'name' => 'Coupon 4',
 		'id' => 'coupon-4',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 //	Events
 	register_sidebar(array(
 		'name' => 'Events',
 		'id' => 'events',
-		'before_widget' => '<div>',
-		'after_widget' => '</div>',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
 	) );
 
 }
@@ -374,7 +338,7 @@ function wp_bootstrap_starter_scripts() {
         wp_enqueue_style( 'wp-bootstrap-starter-'.get_theme_mod( 'preset_style_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/typography/'.get_theme_mod( 'preset_style_setting' ).'.css', false, '' );
     }
 
-    wp_enqueue_style( 'wp-bootstrap-starter-karma-overpass-muli', 'https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Overpass:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,800&family=Muli:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap' );
+    wp_enqueue_style( 'wp-bootstrap-starter-muli', 'https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap' );
 
 	//Color Scheme
     /*if(get_theme_mod( 'preset_color_scheme_setting' ) && get_theme_mod( 'preset_color_scheme_setting' ) !== 'default') {

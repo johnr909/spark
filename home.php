@@ -71,8 +71,8 @@ get_header('spark'); ?>
                     <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/hand.svg'; ?>" width="40%" height="40%" class="d-block mx-auto" alt="laptop">
                 </div>
                 <p class="rewards-text green-text mt-2 text-center">It's soooo easy!</p>
-                <a href="/rec" class="d-block mx-auto btn-join btn btn-lg btn-primary">     Pre-Order Rec</a>
-                <a href="/med" class="d-block mx-auto btn-join btn btn-lg btn-secondary">     Pre-Order Med</a>    
+                <a href="/rec" class="d-block mx-auto mt-3 mb-3 btn-join btn btn-lg btn-primary">Pre-Order Rec</a>
+                <a href="/med" class="d-block mx-auto mb-3 btn-join btn btn-lg btn-secondary">Pre-Order Med</a>    
             </div><!-- .col -->
                     
         </div><!-- .row -->      

@@ -18,7 +18,7 @@
 			<div class="col align-self-end">
 				<p class="text-right green-text">Connect With Us
 					<!-- <a href="https://www.facebook.com/SPARKDispensary" class="d-inline-block mt-3 mr-2 mb-2 ml-3"><i class="fab fa-facebook"></i></a> -->
-					<a href="https://www.facebook.com/SPARKDispensary" class="d-inline-block mt-3 mr-2 mb-2 ml-3"><i class="fab fa-instagram"></i></a>
+					<a href="https://instagram.com/sparkdispensary?igshid=1ptbuszy3kt61" class="d-inline-block mt-3 mr-2 mb-2 ml-3"><i class="fab fa-instagram"></i></a>
 			</p>				
 			</div><!-- .col -->
 		</div><!-- .row -->
@@ -42,11 +42,7 @@
     </div><!-- .row -->
 </div><!-- .container-fluid -->
 
-
 <?php wp_footer(); ?>
 
-<?php //if ( is_front_page() || is_page('deals'))  : ?>
-	<!-- <script id="join-script" name="https://enrollnow.vip/login/2429" src="https://cdn.springbig.cloud/production/files/join_modal_button.js?m=2429"></script> -->
-<?php // endif;?>
 </body>
 </html>

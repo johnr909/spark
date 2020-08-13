@@ -1,4 +1,4 @@
-<div class="hcf_box">
+<div class="box">
     <style scoped>
         .box {
             display: grid;
@@ -13,6 +13,7 @@
 <?php
     $reviewer = get_post_meta($post->ID, 'jr_reviewer', true);
     $review_status = get_post_meta($post->ID, 'spark_review_status', true);
+    $icon = get_post_meta($post->ID, 'spark_review_icon', true);
 ?>
     <p class="meta-options field">
         <label for="jr_reviewer">Reviewer</label>
@@ -22,7 +23,9 @@
                value="<?php echo esc_attr($reviewer); ?>">
     </p>
 
-    <p>Is this review active?<br>
+    <p class="meta-options field">
+    <label for="spark_review_status">Is this review active?</label>
+    <br><br>
     <input type="radio" name="spark_review_status" 
            value="yes"          
            <?php if($review_status === 'yes') { 
@@ -36,5 +39,12 @@
              } 
            ?>
            /> No
-</p>
-</div>
+    </p>
+    <p class="meta-options field">
+        <label for="jr_reviewer">Icon<br>Valid values: cannabis, seedling & joint</label>
+        <input type="text" 
+               name="spark_review_icon" 
+               id="spark_review_icon"
+               value="<?php echo esc_attr($icon); ?>">
+    </p>
+</div><!-- /.box -->

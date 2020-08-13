@@ -50,9 +50,13 @@ get_header();
 <?php 
 	$reviewer = get_post_meta($post->ID, 'jr_reviewer', true);
 	$review_status = get_post_meta($post->ID, 'spark_review_status', true);
+  $icon = get_post_meta($post->ID, 'spark_review_icon', true);
+
 
 	echo '<br>the reviewer is: ' . $reviewer . '<br><br>';
 	echo '<br>the review status is: ' . $review_status . '<br><br>';
+	echo '<br>the icon is: ' . $icon . '<br><br>';
+
 
 
 

@@ -3,10 +3,10 @@
  * Register meta boxes.
  */
 function register_review_meta_boxes() {
-    add_meta_box( 'reviewer_data_metabox', __( 'Reviewer Data'), 'review_display_callback', 'reviews','normal', 'high' );
+    add_meta_box('reviewer_data_metabox', __( 'Reviewer Data'), 'review_display_callback', 'reviews','normal', 'high');
 }
 
-add_action( 'add_meta_boxes', 'register_review_meta_boxes' );
+add_action('add_meta_boxes', 'register_review_meta_boxes');
 
 /**
  * Meta box display callback.
@@ -14,8 +14,9 @@ add_action( 'add_meta_boxes', 'register_review_meta_boxes' );
  * @param WP_Post $post Current post object.
  */
 
-function review_display_callback( $post ) {
+function review_display_callback($post) {
     include 'custom-fields-review-form.php';
+    wp_nonce_field( basename( __FILE__ ), 'review_meta_box_nonce' );
 }
 
 // wp_nonce_field( basename( __FILE__ ), 'review_meta_box_nonce' );
@@ -30,13 +31,24 @@ function save_review_meta_box($post_id) {
     	return;
     }
 
+    if (!current_user_can( 'edit_post', $post_id)){
+		  return;
+	  }
+
+
+		// verify meta box nonce
+		if (!isset($_POST['review_meta_box_nonce']) || !wp_verify_nonce($_POST['review_meta_box_nonce'], basename( __FILE__ ))) {
+			return;
+		}
+
     if ($parent_id = wp_is_post_revision($post_id)) {
         $post_id = $parent_id;
     }
 
     $fields = [
         'jr_reviewer',
-        'spark_review_status'
+        'spark_review_status',
+        'spark_review_icon',
     ];
     foreach ($fields as $field) {
         if (array_key_exists($field, $_POST)) {

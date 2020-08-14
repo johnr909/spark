@@ -50,7 +50,7 @@
     		$reviewer = get_post_meta($id, 'jr_reviewer', true);
   	    $icon = get_post_meta($id, 'spark_review_icon', true);
   	  ?>
-    	 	<div class="carousel-item <?php if ($counter == 1) echo ' active'; ?>" data-interval="3000">
+    	 	<div class="carousel-item <?php if ($counter == 1) echo ' active'; ?>" data-interval="5000">
     	 		<blockquote>
 						<p class="testimonial-text"><i class="fa fa-<?php echo $icon; ?>"></i>&nbsp;&nbsp;
 							<?php 

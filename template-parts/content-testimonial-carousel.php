@@ -17,12 +17,6 @@
 
     <div class="carousel-item active" data-interval="6000">
 		    <blockquote>
-					<p class="testimonial-text"><i class="fa fa-cannabis"></i>&nbsp;&nbsp;
-						Only shop I go to. The people in there are super cool 
-						and know what they are talking about. The prices are UNBEATABLE. You cannot show me 
-						better pricing in Denver or in Colorado for that matter. Top quality all around, 
-						come here you won't regret it.</p>
-						<p><cite title="Mitch H">Mitch H</cite></p>
 				</blockquote>
     </div><!-- .carousel-item -->
 

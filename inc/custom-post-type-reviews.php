@@ -38,8 +38,8 @@ function post_type_reviews() {
 		'rewrite' => array('slug' => 'reviews'),
 		'has_archive' => true,
 		'hierarchical' => false,
-	)
-	;
+	);
+	
 register_post_type('reviews', $args);
 }
 /*Custom Post type end*/

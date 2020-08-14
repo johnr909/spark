@@ -15,7 +15,7 @@
     $review_status = get_post_meta($post->ID, 'spark_review_status', true);
     $icon = get_post_meta($post->ID, 'spark_review_icon', true);
 ?>
-    <p class="meta-options field">
+    <p class="field">
         <label for="jr_reviewer">Reviewer</label>
         <input id="jr_reviewer" 
                type="text" 
@@ -23,7 +23,7 @@
                value="<?php echo esc_attr($reviewer); ?>">
     </p>
 
-    <p class="meta-options field">
+    <p class="field">
     <label for="spark_review_status">Is this review active?</label>
     <br><br>
     <input type="radio" name="spark_review_status" 
@@ -40,7 +40,7 @@
            ?>
            /> No
     </p>
-    <p class="meta-options field">
+    <p class="field">
         <label for="jr_reviewer">Icon<br>Valid values: cannabis, seedling & joint</label>
         <input type="text" 
                name="spark_review_icon" 

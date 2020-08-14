@@ -20,7 +20,6 @@ get_header();
 
 	<section id="primary" class="content-area col-sm-12 col-lg-8">
 		<main id="main" class="site-main" role="main">
-<h1></h1>
 
 <?php
  /**
@@ -44,14 +43,12 @@ get_header();
         the_content();
         ?>
 
-
-
-<!-- <table> -->
 <?php 
 	$reviewer = get_post_meta($post->ID, 'jr_reviewer', true);
 	$review_status = get_post_meta($post->ID, 'spark_review_status', true);
   $icon = get_post_meta($post->ID, 'spark_review_icon', true);
 
+  echo 'the ID: ' . get_the_ID() . '<br><br>';
 
 	echo '<br>the reviewer is: ' . $reviewer . '<br><br>';
 	echo '<br>the review status is: ' . $review_status . '<br><br>';

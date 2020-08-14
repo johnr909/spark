@@ -55,7 +55,7 @@ get_header('spark'); ?>
         <div class="row home-cards">
             <div class="col-sm-12 col-md-4 card card-home">
                 <?php
-                    get_template_part( 'template-parts/content', 'testimonial-carousel' );
+                    get_template_part( 'template-parts/content', 'review-carousel' );
                 ?>
             </div><!-- .col -->
 

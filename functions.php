@@ -411,12 +411,12 @@ add_filter( 'the_password_form', 'wp_bootstrap_starter_password_form' );
 /**
  * Custom reviews post type.
  */
-require get_template_directory() . '/inc/custom-post-type-reviews.php';
+require get_template_directory() . '/inc/reviews/custom-post-type-reviews.php';
 
 /**
  * Custom meta box and fields for reviews.
  */
-require get_template_directory() . '/inc/custom-metabox-reviews.php';
+require get_template_directory() . '/inc/reviews/custom-metabox-reviews.php';
 /**
  * Implement the Custom Header feature.
  */

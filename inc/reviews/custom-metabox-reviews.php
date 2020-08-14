@@ -19,12 +19,12 @@ function review_display_callback($post) {
 
 
 /**
- * Save meta box content
+ * Save the meta box content
  * @param int $post_id Post ID
  */
 function save_review_meta_box($post_id) {
 
-		// Return if autosave
+	// Return if it's autosave
     if (defined('DOING_AUTOSAVE' ) && DOING_AUTOSAVE) {
     	return;
     }
@@ -34,12 +34,12 @@ function save_review_meta_box($post_id) {
 		  return;
 	  }
 
-		// Verify meta box nonce
-		if (!isset($_POST['review_meta_box_nonce']) || !wp_verify_nonce($_POST['review_meta_box_nonce'], basename( __FILE__ ))) {
-			return;
-		}
+	// Verify meta box nonce
+	if (!isset($_POST['review_meta_box_nonce']) || !wp_verify_nonce($_POST['review_meta_box_nonce'], basename( __FILE__ ))) {
+		return;
+	}
 
-		// Check if it's a revision
+	// Check if it's a revision
     if ($parent_id = wp_is_post_revision($post_id)) {
         $post_id = $parent_id;
     }

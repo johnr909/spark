@@ -18,16 +18,17 @@ function post_type_reviews() {
 	$labels = array(
 	'name' => _x('reviews', 'plural'),
 	'singular_name' => _x('review', 'singular'),
-	'menu_name' => _x('reviews', 'admin menu'),
-	'name_admin_bar' => _x('reviews', 'admin bar'),
+	'menu_name' => _x('Reviews', 'admin menu'),
+	'name_admin_bar' => _x('Reviews', 'admin bar'),
 	'add_new' => _x('Add New', 'add new'),
-	'add_new_item' => __('Add New reviews'),
-	'new_item' => __('New reviews'),
-	'edit_item' => __('Edit reviews'),
-	'view_item' => __('View reviews'),
-	'all_items' => __('All reviews'),
-	'search_items' => __('Search reviews'),
-	'not_found' => __('No reviews found.'),	
+	'add_new_item' => __('Add New Review'),
+	'new_item' => __('New Reviews'),
+	'edit_item' => __('Edit Reviews'),
+	'view_item' => __('View Reviews'),
+	'all_items' => __('All Reviews'),
+	'search_items' => __('Search Reviews'),
+	'not_found' => __('No Reviews found.'),	
+	'menu_icon'   => 'dashicons-products',
 	);
 
 	$args = array(
@@ -38,9 +39,10 @@ function post_type_reviews() {
 		'rewrite' => array('slug' => 'reviews'),
 		'has_archive' => true,
 		'hierarchical' => false,
+		'menu_icon' => 'dashicons-heart',
 	);
-	
-register_post_type('reviews', $args);
+
+	register_post_type('reviews', $args);
 }
 /*Custom Post type end*/
 

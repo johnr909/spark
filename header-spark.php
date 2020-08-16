@@ -12,6 +12,15 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175453544-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-175453544-1');
+		</script>
+
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +31,7 @@
 <?php 
     // get the slug for CSS styling
 
-        $slug = get_post_field( 'post_name', get_post() ); 
+        $slug = get_post_field('post_name', get_post()); 
 
         if($slug == '') {
             global $post;
@@ -33,15 +42,15 @@
    
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content">
-        <?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?>
+        <?php esc_html_e('Skip to content', 'wp-bootstrap-starter'); ?>
     </a>
 
-    <?php if ( is_front_page()) : ?>
+    <?php if (is_front_page()) : ?>
 
         <div class="container-fluid container-fluid-info">
             <div class="row">
                 <?php
-                    get_template_part( 'template-parts/content', 'warnings' );
+                    get_template_part('template-parts/content', 'warnings');
                 ?>
             </div><!-- .row -->
         </div><!-- .container-fluid -->
@@ -53,7 +62,7 @@
         <div class="container-fluid container-fluid-info">
             <div class="row">
                 <?php
-                    get_template_part( 'template-parts/content', 'notices' );
+                    get_template_part('template-parts/content', 'notices');
                 ?>
             </div><!-- .row -->
         </div><!-- .container-fluid -->
@@ -63,7 +72,7 @@
 
         <div class="container-fluid-info">
             <div class="row justify-content-end">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Location Phone") ) : ?>
+                <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Location Phone") ) : ?>
                 <?php endif;?>
             </div><!-- .row -->
         </div><!-- .container-fluid -->
@@ -74,7 +83,7 @@
             <nav class="navbar navbar-expand-xl p-0">
                 <div class="navbar-brand">
 
-                    <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
+                    <?php if (get_theme_mod( 'wp_bootstrap_starter_logo')): ?>
                     <a href="<?php echo esc_url( home_url( '/' )); ?>">
                         <img src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>"
                              alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"

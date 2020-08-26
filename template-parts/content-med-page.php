@@ -8,10 +8,10 @@
  */
 
 ?>
-<div>
-     <script 
-     	async="" 
-     	id="dutchie--embed__script" 
-     	src="https://dutchie.com/api/v2/embedded-menu/5f0e28e862db3000efa5e1a2.js">
-     	</script> 
+<div> 
+	<script 
+		async="" 
+		id="dutchie--embed__script" 
+		src="https://dutchie.com/api/v2/embedded-menu/5f0e28e862db3000efa5e1a2.js">
+	</script>
 </div>

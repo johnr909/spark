@@ -1802,7 +1802,7 @@ h5.highlight {
 /* non-home page banners */
 .entry-header {
   padding: 4rem 0;
-  background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
+  /*background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;*/
 }
 
 #rec .entry-header,

@@ -7,29 +7,32 @@
  * @package WP_Bootstrap_Starter
  */
 
-get_header(); ?>
+get_header('spark'); ?>
+<div class="container-fluid">
+	<div class="row">
+			<section id="primary" class="content-area col-sm-12 col-lg-8">
+				<main id="main" class="site-main" role="main">
+					<h1>sup?</h1>
+				<?php
+				while ( have_posts() ) : the_post();
 
-	<section id="primary" class="content-area col-sm-12 col-lg-8">
-		<main id="main" class="site-main" role="main">
-<h1>sup?</h1>
-		<?php
-		while ( have_posts() ) : the_post();
+					get_template_part( 'template-parts/content', get_post_format() );
 
-			get_template_part( 'template-parts/content', get_post_format() );
+					    the_post_navigation();
 
-			    the_post_navigation();
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+				endwhile; // End of the loop.
+				?>
 
-		endwhile; // End of the loop.
-		?>
+				</main><!-- #main -->
+			</section><!-- #primary -->
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+			<?php get_sidebar('spark'); ?>
 
-<?php
-get_sidebar();
-get_footer();
+ </div><!-- .row -->
+</div><!-- .container-fluid -->
+<?php	get_footer('spark'); ?>

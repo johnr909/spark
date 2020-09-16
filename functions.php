@@ -123,6 +123,13 @@ function wp_bootstrap_starter_widgets_init() {
 --------------------------------------------------------------*/
 
 // Header/Footer blocks
+	//	Notice
+	register_sidebar(array(
+		'name' => esc_html__( 'basic sidebar jjr', 'wp-bootstrap-starter' ),
+		'id' => 'sidebar-jjr',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+	) );
 
 	register_sidebar(array(
 		'name' => esc_html__( 'Header Location Phone', 'wp-bootstrap-starter' ),
@@ -482,3 +489,18 @@ function dealoFDay() {
 			echo "<a href='/deals/'>Deals</a>";
 	}
 }
+
+// elipsis/read more links for the blog
+function wp_bootstrap_starter_excerpt_more( $more ) {
+    return '';
+}
+
+add_filter( 'excerpt_more', 'wp_bootstrap_starter_excerpt_more', 21 );
+
+function wp_bootstrap_starter_excerpt_more_link( $excerpt ){
+    $post = get_post();
+    $excerpt .= '<a href="'. get_permalink( $post->ID ) . '">continue reading</a>.';
+    return $excerpt;
+}
+
+add_filter( 'the_excerpt', 'wp_bootstrap_starter_excerpt_more_link', 21 );

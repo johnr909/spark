@@ -30,7 +30,8 @@
 
 			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'wp-bootstrap-starter' ); ?></p>
 			<?php
-				get_search_form();
+				the_excerpt();
+				// get_search_form();
 
 		endif; ?>
 	</div><!-- .page-content -->

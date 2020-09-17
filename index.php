@@ -44,9 +44,11 @@ get_header('spark'); ?>
 
 					endwhile;
 
-					echo '<nav class="pagination">';
-	        pagination_bar();
-	        echo '</nav>';
+					wp_bootstrap_pagination();
+
+					// echo '<nav class="navigation"><ul class="pagination">';
+	        // pagination_bar();
+	        // echo '</ul></nav>';
 
 					// the_posts_navigation();
 

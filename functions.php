@@ -456,6 +456,9 @@ if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
     require_once(get_template_directory() . '/inc/wp_bootstrap_navwalker.php');
 }
 
+require get_template_directory() . '/inc/wp_bootstrap_pagination.php';
+
+
 function dealoFDay() {
 	date_default_timezone_set( 'America/Denver' );
 

@@ -2123,6 +2123,35 @@ BLOG
   border-color: #80be79;
 }
 
+.alert-info {
+  color: #2d3545;
+  background-color: #80be79;
+  border-color: #f2f8f1;
+}
+
+.cat-links {
+  font-weight: 700;
+}
+
+.blog-sidebar ul li {
+  /*list-style: none;*/
+  list-style-position: inside;
+  list-style-type: none;
+  margin: .75rem 0;
+  padding: 0 0 0 2rem;
+  background-size: 1.25rem;
+  background-image: url('inc/assets/images/emoji2.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+/*.blog-sidebar ul li a::before {
+  display: inline-block;
+  content: "\f007";
+  background-image: url('inc/assets/images/emoji2.svg');
+  font-size: 1rem;
+}*/
+
 /*
 .page-numbers {
   display: inline-block;

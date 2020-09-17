@@ -12,7 +12,7 @@
  * @package WP_Bootstrap_Starter
  */
 
-get_header('spark'); ?>
+ get_header('spark'); ?>
 <div class="container-fluid blog">
 	<div class="row">
 

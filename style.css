@@ -2028,6 +2028,47 @@ body.single-tribe_events header.entry-header {
   list-style: none;
 }
 
+.tribe-events-c-search  .tribe-common-c-btn {
+  background-color: #80be79;
+}
+
+.tribe-events-c-ical  .tribe-events-c-ical__link {
+  color: #2d3545;
+  border-color: #2d3545;
+}
+
+
+.tribe-events .tribe-events-c-search__input-control--keyword .tribe-events-c-search__input {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 18.711l-6.044-6.044a7.782 7.782 0 0 0 1.688-4.845c0-2.089-.822-4.044-2.288-5.533C11.866.822 9.91 0 7.822 0S3.778.822 2.29 2.289A7.801 7.801 0 0 0 0 7.822c0 2.09.822 4.045 2.289 5.534a7.801 7.801 0 0 0 5.533 2.288c1.778 0 3.467-.6 4.845-1.688L18.71 20 20 18.711zM3.578 12.067c-2.334-2.334-2.334-6.156 0-8.49a5.968 5.968 0 0 1 4.244-1.755c1.6 0 3.111.622 4.245 1.756 2.333 2.333 2.333 6.155 0 8.489a5.968 5.968 0 0 1-4.245 1.755c-1.6 0-3.11-.622-4.244-1.755z' fill='%2380be79'/%3E%3C/svg%3E");
+  background-size: 16px;
+}
+
+.tribe-events-c-ical .tribe-events-c-ical__link:hover {
+  background-color: #80be79;
+}
+
+.tribe-events .tribe-events-c-ical__link::before {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M6 1v10m5-5H1' fill='none' fill-rule='evenodd' stroke='%2380be79' stroke-linecap='square' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  flex: none;
+  height: 10px;
+  margin-right: 8px;
+  width: 10px;
+}
+
+.single-tribe_events a.tribe-events-gcal, .single-tribe_events a.tribe-events-gcal:hover, .single-tribe_events a.tribe-events-ical, .single-tribe_events a.tribe-events-ical:hover {
+  background-color: transparent;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 0;
+  float: none;
+  color: #80be79;
+}
 
 /*
 CONTACT US PAGE
@@ -2050,4 +2091,12 @@ border: 1px solid #2d3545;
 .form-control:focus {
   border-color: #80be79;
   box-shadow: 0 0 0 .2rem rgba(128, 190, 121);
+}
+
+/*
+BLOG
+ */
+
+.blog .widgettitle {
+  font-size: 1.15rem;
 }

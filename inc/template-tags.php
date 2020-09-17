@@ -22,10 +22,14 @@ function wp_bootstrap_starter_posted_on() {
 		esc_html( get_the_date() )
 	);
 
+	// $posted_on = sprintf(
+	// 	esc_html_x( 'Posted on %s', 'post date', 'wp-bootstrap-starter' ),
+	// 	'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+	// );
+
+	// redefined $posted_on because I didnt want the date to link to the post 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'wp-bootstrap-starter' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-	);
+	esc_html_x( 'Posted on %s', 'post date', 'wp-bootstrap-starter' ),$time_string);
 
 	$byline = sprintf(
 		esc_html_x( 'by %s', 'post author', 'wp-bootstrap-starter' ),

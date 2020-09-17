@@ -8,7 +8,7 @@
  */
 
 get_header('spark'); ?>
-<div class="container-fluid">
+<div class="container-fluid blog">
 	<div class="row">
 			<section id="primary" class="content-area col-sm-12 col-lg-8">
 				<main id="main" class="site-main" role="main">

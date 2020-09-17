@@ -492,14 +492,14 @@ function dealoFDay() {
 
 // elipsis/read more links for the blog
 function wp_bootstrap_starter_excerpt_more( $more ) {
-    return '';
+    return ' [.....]';
 }
 
 add_filter( 'excerpt_more', 'wp_bootstrap_starter_excerpt_more', 21 );
 
 function wp_bootstrap_starter_excerpt_more_link( $excerpt ){
     $post = get_post();
-    $excerpt .= '<a href="'. get_permalink( $post->ID ) . '">continue reading</a>.';
+    $excerpt .= '<a href="'. get_permalink( $post->ID ) . '" class="btn btn-primary">continue reading</a>';
     return $excerpt;
 }
 

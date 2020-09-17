@@ -499,8 +499,26 @@ add_filter( 'excerpt_more', 'wp_bootstrap_starter_excerpt_more', 21 );
 
 function wp_bootstrap_starter_excerpt_more_link( $excerpt ){
     $post = get_post();
-    $excerpt .= '<a href="'. get_permalink( $post->ID ) . '" class="btn btn-primary">continue reading</a>';
+    $excerpt .= '<a href="'. get_permalink( $post->ID ) . '" class="btn btn-primary readmore-btn">continue reading</a>';
     return $excerpt;
 }
 
 add_filter( 'the_excerpt', 'wp_bootstrap_starter_excerpt_more_link', 21 );
+
+// Pagination
+function pagination_bar() {
+  global $wp_query;
+
+  $total_pages = $wp_query->max_num_pages;
+
+  if ($total_pages > 1) {
+      $current_page = max( 1, get_query_var( 'paged' ));
+
+      echo paginate_links(array(
+          'base' => get_pagenum_link(1) . '%_%',
+          'format' => '/page/%#%',
+          'current' => $current_page,
+          'total' => $total_pages,
+      ));
+  }
+}

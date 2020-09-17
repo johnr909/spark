@@ -44,7 +44,11 @@ get_header('spark'); ?>
 
 					endwhile;
 
-					the_posts_navigation();
+					echo '<nav class="pagination">';
+	        pagination_bar();
+	        echo '</nav>';
+
+					// the_posts_navigation();
 
 				else :
 

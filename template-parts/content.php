@@ -32,7 +32,6 @@
 		<?php
 		if ( is_single() ) :
 			the_content();
-			echo "<h2>Is you here!</h3>";
 		else :
 			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wp-bootstrap-starter' ) );
 		endif;

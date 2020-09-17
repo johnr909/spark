@@ -2100,3 +2100,17 @@ BLOG
 .blog .widgettitle {
   font-size: 1.15rem;
 }
+
+.readmore-btn {
+  margin-bottom: 2rem;
+}
+
+.pagination {
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.page-numbers {
+  display: inline-block;
+  padding: .35rem;
+}

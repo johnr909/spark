@@ -525,3 +525,10 @@ function pagination_bar() {
       ));
   }
 }
+
+// hide the WordPress version in browser source 
+function wp_version_remove_version() {
+	return '';
+}
+
+add_filter('the_generator', 'wp_version_remove_version');

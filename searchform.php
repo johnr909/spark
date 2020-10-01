@@ -4,6 +4,3 @@
     </label>
     <input type="submit" class="search-submit btn btn-primary" value="<?php echo esc_attr_x( 'Search', 'submit button', 'wp-bootstrap-starter' ); ?>">
 </form>
-
-
-

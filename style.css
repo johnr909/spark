@@ -2153,3 +2153,7 @@ BLOG
   padding: .35rem;
 }
 */
+
+h1.entry-title {
+  font-size: 1.75rem;
+}

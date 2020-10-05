@@ -121,9 +121,7 @@ function wp_bootstrap_starter_widgets_init() {
 	/*--------------------------------------------------------------
 ## Spark  Widgets
 --------------------------------------------------------------*/
-
-// Header/Footer blocks
-	//	Notice
+// blog sidebar
 	register_sidebar(array(
 		'name' => esc_html__( 'basic sidebar jjr', 'wp-bootstrap-starter' ),
 		'id' => 'sidebar-jjr',
@@ -131,6 +129,7 @@ function wp_bootstrap_starter_widgets_init() {
 		'after_widget' => '</div>',
 	) );
 
+// Header/Footer blocks
 	register_sidebar(array(
 		'name' => esc_html__( 'Header Location Phone', 'wp-bootstrap-starter' ),
 		'id' => 'header-location',
@@ -210,49 +209,49 @@ function wp_bootstrap_starter_widgets_init() {
 
 //	Daily Deals
 	register_sidebar(array(
-		'name' => 'deal-sunday',
+		'name' => esc_html__( 'deal-sunday', 'wp-bootstrap-starter' ),
 		'id' => 'sunday',
 		'before_widget' => '<div id="Sunday">',
 		'after_widget' => '</div><!-- #Sunday-->',
 	) );
 
 	register_sidebar(array(
-		'name' => 'deal-monday',
+		'name' => esc_html__( 'deal-monday', 'wp-bootstrap-starter' ),
 		'id' => 'monday',
 		'before_widget' => '<div id="Monday">',
 		'after_widget' => '</div><!-- #Monday-->',
 	) );
 
 	register_sidebar(array(
-		'name' => 'deal-tuesday',
+		'name' => esc_html__( 'deal-tuesday', 'wp-bootstrap-starter' ),
 		'id' => 'tuesday',
 		'before_widget' => '<div id="Tuesday">',
 		'after_widget' => '</div><!-- #Tuesday-->',
 	) );
 
 	register_sidebar(array(
-		'name' => 'deal-wednesday',
+		'name' => esc_html__( 'deal-wednesday', 'wp-bootstrap-starter' ),
 		'id' => 'wednesday',
 		'before_widget' => '<div id="Wednesday">',
 		'after_widget' => '</div><!-- #Wednesday-->',
 	) );
 
 	register_sidebar(array(
-		'name' => 'deal-thursday',
+		'name' => esc_html__('deal-thursday', 'wp-bootstrap-starter'),
 		'id' => 'thursday',
 		'before_widget' => '<div id="Thursday">',
 		'after_widget' => '</div><!-- #Thursday-->',
 	) );
 
 	register_sidebar(array(
-		'name' => 'deal-friday',
+		'name' => esc_html__('deal-friday', 'wp-bootstrap-starter'),
 		'id' => 'friday',
 		'before_widget' => '<div id="Friday">',
 		'after_widget' => '</div><!-- #Friday-->',
 	) );
 
 	register_sidebar(array(
-		'name' => 'deal-saturday',
+		'name' => esc_html__('deal-saturday', 'wp-bootstrap-starter'),
 		'id' => 'saturday',
 		'before_widget' => '<div id="Saturday">',
 		'after_widget' => '</div><!-- #Saturday-->',
@@ -260,28 +259,28 @@ function wp_bootstrap_starter_widgets_init() {
 
 // Coupons
 	register_sidebar(array(
-		'name' => 'Coupon 1',
+		'name' => esc_html__( 'Coupon 1', 'wp-bootstrap-starter' ),
 		'id' => 'coupon-1',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 		) );
 
 	register_sidebar(array(
-		'name' => 'Coupon 2',
+		'name' => esc_html__( 'Coupon 2', 'wp-bootstrap-starter' ),
 		'id' => 'coupon-2',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 		) );
 
 	register_sidebar(array(
-		'name' => 'Coupon 3',
+		'name' => esc_html__( 'Coupon 3',  'wp-bootstrap-starter' ),
 		'id' => 'coupon-3',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 		) );
 
 	register_sidebar(array(
-		'name' => 'Coupon 4',
+		'name' => esc_html__( 'Coupon 4', 'wp-bootstrap-starter' ),
 		'id' => 'coupon-4',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
@@ -289,14 +288,21 @@ function wp_bootstrap_starter_widgets_init() {
 
 //	Events
 	register_sidebar(array(
-		'name' => 'Events',
+		'name' => esc_html__( 'Events', 'wp-bootstrap-starter' ),
 		'id' => 'events',
 	) );
 
+	//	WestWord Advert Modal
+	register_sidebar(array(
+		'name' => esc_html__( 'WW Ad Modal', 'wp-bootstrap-starter' ),
+		'id' => 'WWAdModal',
+		'before_widget' => '<div id="WWAG">',
+		'after_widget' => '</div>',
+	) );
+
 }
+
 add_action( 'widgets_init', 'wp_bootstrap_starter_widgets_init' );
-
-
 
 /**
  * Enqueue scripts and styles.

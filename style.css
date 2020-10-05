@@ -1235,6 +1235,25 @@ blockquote {
   border-radius: .6rem;
 }
 
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(128,190,121,.5);
+}
+
+.btn-primary.focus, 
+.btn-primary:focus {
+    box-shadow: 0 0 0 .2rem rgba(128,190,121,.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #80be79;
+    border-color: transparent;
+}
+
 @media only screen and (max-width: 576px) {
   .btn-group-lg > .btn, .btn-lg {
     font-size: 1.5rem;
@@ -2156,4 +2175,21 @@ BLOG
 
 h1.entry-title {
   font-size: 1.75rem;
+}
+
+/* override Bootstrap's display: flex property on this element */
+.modal-header {
+  display: block;
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 960px) {
+  .modal-dialog {
+      max-width: 700px;
+  }
+}
+
+/* hide the title on the Westword widget */
+div#WWAG h2.widgettitle {
+  display: none;
 }

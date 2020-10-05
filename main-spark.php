@@ -66,8 +66,6 @@ get_header('spark'); ?>
 
 	<?php get_template_part( 'template-parts/content', 'daily-deals' );?>
 
-
-
     <?php get_template_part( 'template-parts/content', 'coupons' );?>
 
     <?php get_template_part( 'template-parts/content', 'events' );?>

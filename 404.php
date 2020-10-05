@@ -9,28 +9,39 @@
 
 get_header('spark'); ?>
 
-	<section id="primary" class="content-area col-sm-12">
-    <main id="main" class="site-main" role="main">
+<div class="container-fluid">
+    <div class="row">
 
-			<section class="error-404 not-found">
-				<header class="page-header entry-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'wp-bootstrap-starter' ); ?></h1>
-				</header><!-- .page-header -->
+        <section class="content-area col-sm-12">
+            <header class="entry-header">
+            </header><!-- .entry-header -->
+        </section>
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'wp-bootstrap-starter' ); ?></p>
+    </div><!-- .row -->
+</div><!-- .container-fluid -->
 
-					<?php
-						get_search_form();
+<div class="container">
+    <div class="row">
 
+			<section id="primary" class="content-area col-sm-12">
+		    <main id="main" class="site-main" role="main">
 
-					?>
+					<section class="error-404 not-found">
+						<header class="page-header">
+							<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'wp-bootstrap-starter' ); ?></h1>
+						</header><!-- .page-header -->
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
+						<div class="page-content">
+							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the menu links or a search?', 'wp-bootstrap-starter' ); ?></p>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+							<?php get_search_form(); ?>
 
-<?php
-get_footer('spark');
+						</div><!-- .page-content -->
+					</section><!-- .error-404 -->
+
+				</main><!-- #main -->
+			</section><!-- #primary -->
+
+	</div><!-- .row -->
+</div><!-- .container -->
+<?php get_footer('spark');

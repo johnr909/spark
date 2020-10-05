@@ -1824,6 +1824,10 @@ h5.highlight {
   /*background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;*/
 }
 
+.error404 .entry-header {
+  background: #2d3545 url('inc/assets/images/Trikes1920-404err-r5.jpg') no-repeat
+}
+
 #rec .entry-header,
 #med .entry-header {
   background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
@@ -2192,4 +2196,8 @@ h1.entry-title {
 /* hide the title on the Westword widget */
 div#WWAG h2.widgettitle {
   display: none;
+}
+
+.not-found .search-form {
+  margin-bottom: 3rem;
 }

@@ -1204,7 +1204,9 @@ blockquote {
 }
 
 .very-dark-bg {
-  background: #2d3545 url("inc/assets/images/leaf-dark-bg2.png") no-repeat bottom right;
+  /*background-color: #2d3545;*/
+  background: #2d3545 url("inc/assets/images/leaf-dark-bg2-r2.png") no-repeat bottom right;
+  /*background: #2d3545 url("inc/assets/images/leaf-dark-bg2.png") no-repeat bottom right;*/
 }
 
 .green-bg {
@@ -1764,8 +1766,10 @@ h5.highlight {
 
  /* rewards callout on the deals page */
 .deals-rewards {
-  padding:  3rem 0;
-  background: #f2f8f1 url('inc/assets/images/phone-icon-md.png') no-repeat 50% 60%;	
+  padding:  3rem 4rem 3rem 4rem;
+  background: #2d3545 url('inc/assets/images/phone-icon-md.png') no-repeat 50% 60%;	
+  /*background: #2d3545 url('inc/assets/images/phone-icon-md-r2.png') no-repeat 50% 60%; */
+  /*background: #2d3545 url('inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; */
 }
 
 .deals-rewards img.card-img-top {
@@ -1774,12 +1778,14 @@ h5.highlight {
 
 .deals-rewards .rewards-title {
   margin-top: 1.5rem;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
+  color: #f2f8f1;
 }
 
 .deals-rewards .rewards-text {
   text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
+  color: #f2f8f1;
 }
 
 .rewards-text:last-child {
@@ -2016,7 +2022,9 @@ DEALS/EVENTS PAGE
   text-align: left;
 }
 
-.events h3, .events p {
+.events h3, .events p,
+.events h2.widgettitle {
+  font-size: 2.25rem;
   color: #fff;
 }
 

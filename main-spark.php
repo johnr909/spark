@@ -70,7 +70,7 @@ get_header('spark'); ?>
 
     <?php get_template_part( 'template-parts/content', 'events' );?>
 
-    <div class="container-fluid light-blue-bg">
+    <div class="container-fluid very-dark-bg">
         <div class="row deals-rewards">
             <div class="col">
               <?php get_template_part( 'template-parts/content', 'rewards-signup' );?>

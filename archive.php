@@ -37,8 +37,8 @@
 
 					endwhile;
 
-					// the_posts_navigation();
-					wp_bootstrap_pagination();
+					the_posts_navigation();
+					// wp_bootstrap_pagination();
 
 				else :
 

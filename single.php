@@ -17,8 +17,8 @@
 
 					get_template_part( 'template-parts/content', get_post_format() );
 
-					    // the_post_navigation();
-							wp_bootstrap_pagination();			    
+					    the_post_navigation();
+							// wp_bootstrap_pagination();			    
 
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) :

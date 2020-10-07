@@ -1766,10 +1766,8 @@ h5.highlight {
 
  /* rewards callout on the deals page */
 .deals-rewards {
-  padding:  3rem 4rem 3rem 4rem;
-  background: #2d3545 url('inc/assets/images/phone-icon-md.png') no-repeat 50% 60%;	
-  /*background: #2d3545 url('inc/assets/images/phone-icon-md-r2.png') no-repeat 50% 60%; */
-  /*background: #2d3545 url('inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; */
+  padding: 3rem;
+  background: #2d3545 url('inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; 
 }
 
 .deals-rewards img.card-img-top {
@@ -2017,8 +2015,6 @@ DEALS/EVENTS PAGE
 }
 
 .events {
-  margin: 20px;
-  padding: 15px;
   text-align: left;
 }
 
@@ -2208,4 +2204,18 @@ div#WWAG h2.widgettitle {
 
 .not-found .search-form {
   margin-bottom: 3rem;
+}
+
+article.post header.entry-header {
+  padding: 0;
+}
+
+article.post header.entry-header h1 {
+  text-align: left;
+  color: #2d2545;
+}
+
+article.post header.entry-header h1.entry-title {
+  margin-bottom: 1rem;
+  border-bottom: none;
 }

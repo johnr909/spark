@@ -1905,16 +1905,16 @@ h3 .fa-dollar-sign {
 MENU PAGES
 */
 
-.online-step-numbers {
-	padding-top: 1.25rem;    	
-	font-size: 5rem;
+.coupon h4.online-step-numbers {
+  margin: .75rem 0;
+	font-size: 2.25rem;
 }
 
 .online-cta-text {
   margin-bottom: 0;
   padding-right: .5rem;
   padding-left: .5rem;
-	font-size: 1.35rem;
+	font-size: 1.15rem;
   text-transform: uppercase;
   line-height: 125%;
   font-weight: 900;
@@ -1937,19 +1937,19 @@ MENU PAGES
 }
 
 .coupon .step1 {
-  padding-top: 2.25rem;
+  padding-top: .25rem;
 }
 
 .coupon .step2 {   
-  padding-top: 6rem 
+  padding-top: 2rem 
 }
 
 .coupon .step3 {
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .coupon .step4 {
-  padding-top: 5rem;
+  padding-top: 1.25rem;
 }
 
 .btn-coupon {
@@ -1971,7 +1971,7 @@ DEALS/EVENTS PAGE
 }
 
 .coupon {
-  margin: 20px;
+  margin: 0 20px;
   padding: 0;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, .125);
@@ -1999,10 +1999,10 @@ DEALS/EVENTS PAGE
   font-size: 5rem;
 }
 
-.online-icon-container {
-  padding: 1rem;
+/*.online-icon-container {
+  padding: .25rem;
 }
-
+*/
 .coupon-text {
   margin-right: 1rem;
   margin-left: 1rem;
@@ -2011,7 +2011,7 @@ DEALS/EVENTS PAGE
 
 .coupon img {
   display: block;
-  margin: 1rem auto;
+  margin: .25rem auto;
 }
 
 .events {

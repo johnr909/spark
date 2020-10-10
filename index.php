@@ -15,7 +15,6 @@
  get_header('spark'); ?>
 <div class="container-fluid blog">
 	<div class="row">
-		<?php // get_template_part('template-parts/content', 'featured-posts'); ?>
 
 		<section id="primary" class="content-area col-sm-12 col-md-12 col-lg-8">
 			<main id="main" class="site-main" role="main">

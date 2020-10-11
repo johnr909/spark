@@ -20,7 +20,7 @@
 
 	    <div class="entry-content">
 
-				<?php	the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<?php	the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 				<p><?php wp_bootstrap_starter_posted_on(); ?></p>
 				<?php the_excerpt(); ?>
 

@@ -2219,3 +2219,9 @@ article.post header.entry-header h1.entry-title {
   margin-bottom: 1rem;
   border-bottom: none;
 }
+
+.post-304 {
+  padding: 1rem;
+  border: 1px solid #2d3545;
+  background-color: #f2f8f1;
+}

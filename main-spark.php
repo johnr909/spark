@@ -78,7 +78,7 @@ get_header('spark'); ?>
        </div><!-- .row -->
     </div><!-- .container -->
 
-    <?php get_template_part( 'template-parts/content', 'westword-ad-modal' );?>
+    <?php get_template_part( 'template-parts/content', 'westword-ad-modal-r2' );?>
 
 
 <?php endif; ?>

@@ -129,6 +129,14 @@ function wp_bootstrap_starter_widgets_init() {
 		'after_widget' => '</div>',
 	) );
 
+//	Westword Weekly Ad Image
+	register_sidebar(array(
+		'name' => esc_html__( 'Westword Weekly Ad Image', 'wp-bootstrap-starter' ),
+		'id' => 'wwwadi',
+		'before_widget' => '<div class="wwwadi">',
+		'after_widget' => '</div><!-- .wwwadi -->',
+	) );
+
 // Header/Footer blocks
 	register_sidebar(array(
 		'name' => esc_html__( 'Header Location Phone', 'wp-bootstrap-starter' ),
@@ -290,14 +298,6 @@ function wp_bootstrap_starter_widgets_init() {
 	register_sidebar(array(
 		'name' => esc_html__( 'Events', 'wp-bootstrap-starter' ),
 		'id' => 'events',
-	) );
-
-	//	WestWord Advert Modal
-	register_sidebar(array(
-		'name' => esc_html__( 'WW Ad Modal', 'wp-bootstrap-starter' ),
-		'id' => 'WWAdModal',
-		'before_widget' => '<div id="WWAG">',
-		'after_widget' => '</div>',
 	) );
 
 }

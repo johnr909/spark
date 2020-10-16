@@ -2122,6 +2122,19 @@ border: 1px solid #2d3545;
   box-shadow: 0 0 0 .2rem rgba(128, 190, 121);
 }
 
+/* modal */
+/* override Bootstrap's display: flex property on this element */
+.modal-header {
+  display: block;
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 960px) {
+  .modal-dialog {
+      max-width: 700px;
+  }
+}
+
 /*
 BLOG
  */
@@ -2172,30 +2185,12 @@ BLOG
   background-image: url('inc/assets/images/emoji2.svg');
   background-repeat: no-repeat;
   background-position: left center;
-}s
-
-/*
-.page-numbers {
-  display: inline-block;
-  padding: .35rem;
 }
-*/
 
 h1.entry-title {
   font-size: 1.75rem;
 }
 
-/* override Bootstrap's display: flex property on this element */
-.modal-header {
-  display: block;
-  border-bottom: none;
-}
-
-@media only screen and (min-width: 960px) {
-  .modal-dialog {
-      max-width: 700px;
-  }
-}
 
 /* hide the title on the Westword widget */
 div#WWAG h2.widgettitle {
@@ -2221,10 +2216,13 @@ article.post header.entry-header h1.entry-title {
   border-bottom: none;
 }
 
-/* the covid policy, sticky post */
-/*.post-304,*/
+/* the covid policy, sticky post */s
 .post-306 {
   padding: 1rem;
   border: 1px solid #2d3545;
   background-color: #f2f8f1;
+}
+
+.blog-sidebar {
+  margin-top: 2rem;
 }

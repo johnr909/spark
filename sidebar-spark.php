@@ -13,7 +13,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <aside id="secondary" class="widget-area col-sm-12 col-lg-4 blog-sidebar" role="complementary">
-	<h3>Spark Sidebar</h3>
 	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("sidebar-jjr") ) : ?>
   <?php endif;?>
 </aside><!-- #secondary -->

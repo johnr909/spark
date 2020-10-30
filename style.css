@@ -14,7 +14,7 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
-# Typography
+# Typographyty
 # Elements
 # Forms
 # Navigation
@@ -2191,6 +2191,14 @@ h1.entry-title {
   font-size: 1.75rem;
 }
 
+article.reviews .entry-header {
+  padding: 0;
+}
+
+article.reviews h1.title {
+  text-align: left;
+  color: #2d3545;
+}
 
 /* hide the title on the Westword widget */
 div#WWAG h2.widgettitle {

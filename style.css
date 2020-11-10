@@ -1855,6 +1855,7 @@ h5.highlight {
   color: #80be79;
 }
 
+h1.entry-title,
 h2.entry-title {
   border-bottom: none;
 }

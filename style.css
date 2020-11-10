@@ -1823,9 +1823,13 @@ h5.highlight {
 /* NOT THE HOME PAGE */
 
 /* non-home page banners */
-.entry-header {
+.entry-header,
+.entry-header-blog {
   padding: 4rem 0;
-  /*background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;*/
+}
+
+.entry-header-blog {
+  background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
 }
 
 .error404 .entry-header {
@@ -1851,8 +1855,8 @@ h5.highlight {
   color: #80be79;
 }
 
-#resources .entry-header {
-  background: #2d3545 url('inc/assets/images/potted-plants-1920.jpg') no-repeat;
+h2.entry-title {
+  border-bottom: none;
 }
 
 /* no banner images for phones*/
@@ -1861,8 +1865,8 @@ h5.highlight {
  body#rec .entry-header,
  body#med .entry-header,
  body#deals .entry-header,
- body#contact-us .entry-header,
- body#resources .entry-header {
+ body#contact-us .entry-header
+  {
     background: #2d3545 !important;
   } 
 
@@ -1872,7 +1876,8 @@ h5.highlight {
 
 }
 
-.entry-header h1 {
+.entry-header h1,
+.entry-header-blog h1 {
   margin: 0;
   padding: 0;
   text-align: center;

@@ -6,8 +6,7 @@
  *
  * Based on a solution in WP Rig.
  *
- * @package WordPress
- * @subpackage WP_Bootstrap_Starter
+ * @package WP_Bootstrap_Starter
  */
 
 if ( ! class_exists( 'WP_Bootstrap_Script_Loader' ) ) {

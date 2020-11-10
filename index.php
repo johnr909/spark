@@ -13,6 +13,29 @@
  */
 
  get_header('spark'); ?>
+
+<div class="container-fluid blog">
+    <div class="row">
+
+        <section class="content-area col-sm-12">
+            <header class="entry-header-blog">
+            	<?php 
+            		global $wp;
+								$current_slug = add_query_arg( array(), $wp->request ); 
+							?>
+            		<h1>
+            			<?php
+            				if($current_slug === 'resources') {
+										 	_e('Resources', 'wp-bootstrap-starter'); 
+										} 
+									?>
+								</h1>
+            </header><!-- .entry-header -->
+        </section>
+
+    </div><!-- .row -->
+</div><!-- .container-fluid-blog -->
+
 <div class="container-fluid blog">
 	<div class="row">
 

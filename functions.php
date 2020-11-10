@@ -374,8 +374,15 @@ function wp_bootstrap_starter_scripts() {
         wp_enqueue_script('wp-bootstrap-starter-popper', get_template_directory_uri() . '/inc/assets/js/popper.min.js', array(), '', true );
         wp_enqueue_script('wp-bootstrap-starter-bootstrapjs', get_template_directory_uri() . '/inc/assets/js/bootstrap.min.js', array(), '', true );
     }
-    wp_enqueue_script('wp-bootstrap-starter-themejs', get_template_directory_uri() . '/inc/assets/js/theme-script.min.js', array(), '', true );
+
+	wp_enqueue_script('wp-bootstrap-starter-themejs', get_template_directory_uri() . '/inc/assets/js/theme-script.min.js', array(), '', true );
+	// add the async attribute
+	wp_script_add_data( 'wp-bootstrap-starter-themejs', 'async', true );
+
 	wp_enqueue_script( 'wp-bootstrap-starter-skip-link-focus-fix', get_template_directory_uri() . '/inc/assets/js/skip-link-focus-fix.min.js', array(), '20151215', true );
+	// add the async attribute
+	wp_script_add_data( 'wp-bootstrap-starter-skip-link-focus-fix', 'async', true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -383,7 +390,11 @@ function wp_bootstrap_starter_scripts() {
 
 	if (is_page('deals') ||  is_front_page() ) {
 		wp_enqueue_script( 'wp-bootstrap-starter-spark', get_template_directory_uri() . '/inc/assets/js/spark.js', array(), null, true );
+		// add the async attribute
+		wp_script_add_data( 'wp-bootstrap-starter-spark', 'async', true );
 	}
+
+
 }
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_scripts' );
 

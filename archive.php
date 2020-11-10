@@ -9,6 +9,18 @@
 
 	get_header('spark'); 
 ?>
+
+<div class="container-fluid-blog">
+    <div class="row">
+
+        <section class="content-area col-sm-12">
+            <header class="entry-header-blog">
+            </header><!-- .entry-header -->
+        </section>
+
+    </div><!-- .row -->
+</div><!-- .container-fluid-blog -->
+
 <div class="container-fluid blog">
 	<div class="row">
 			<section id="primary" class="content-area col-sm-12 col-lg-8">

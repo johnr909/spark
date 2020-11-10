@@ -408,8 +408,6 @@ function wp_bootstrap_starter_preload( $hints, $relation_type ){
 
 add_filter( 'wp_resource_hints', 'wp_bootstrap_starter_preload', 10, 2 );
 
-
-
 function wp_bootstrap_starter_password_form() {
     global $post;
     $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
@@ -454,6 +452,16 @@ require get_template_directory() . '/inc/customizer.php';
  * Load plugin compatibility file.
  */
 require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibility.php';
+
+/**
+ * Load `async` and `defer` support for scripts registered or enqueued file
+ */
+
+require get_template_directory() . '/inc/class-script-loader.php';
+/*
+ * Adds `async` and `defer` support for scripts registered or enqueued
+ * by the theme.
+ */
 
 /**
  * Load custom WordPress nav walker.
@@ -538,3 +546,10 @@ function wp_version_remove_version() {
 }
 
 add_filter('the_generator', 'wp_version_remove_version');
+
+/*
+ * Adds `async` and `defer` support for scripts registered or enqueued
+ * by the theme.
+ */
+$loader = new WP_Bootstrap_Script_Loader();
+add_filter( 'script_loader_tag', array( $loader, 'filter_script_loader_tag' ), 10, 2 );

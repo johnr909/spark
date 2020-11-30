@@ -1849,6 +1849,10 @@ h5.highlight {
   background: #2d3545 url('inc/assets/images/b&w-bud-1920.jpg') no-repeat;
 }
 
+#xmas-25days .entry-header {
+  background: #2d3545 url('inc/assets/images/christmas-lights2-1920w-300h.jpg') no-repeat;
+}
+
 #rec .entry-header h1,
 #med .entry-header h1,
 #contact-us .entry-header h1 {

@@ -17,7 +17,7 @@ get_header('spark'); ?>
 	            <?php the_title( '<h2 class="text-center text-white">', '</h2>' ); ?>
             </header><!-- .entry-header -->
         </section>
-xt
+
     </div><!-- .row -->
 </div><!-- .container-fluid-blog -->
 

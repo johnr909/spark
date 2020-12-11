@@ -12,7 +12,7 @@
 	<script 
 		async="" 
 		id="dutchie--embed__script" 
-		src="https://dutchie.com/api/v2/embedded-menu/5f3c7042762f12010dd649cd.js">
+		src="https://dutchie.com/api/v2/embedded-menu/5f3c7042762f12010dd649cd.js?menuType=rec">
 	</script>
 </div>
 

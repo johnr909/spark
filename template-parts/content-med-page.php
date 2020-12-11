@@ -12,6 +12,6 @@
 	<script 
 		async="" 
 		id="dutchie--embed__script" 
-		src="https://dutchie.com/api/v2/embedded-menu/5f0e28e862db3000efa5e1a2.js">
+		src="https://dutchie.com/api/v2/embedded-menu/5f3c7042762f12010dd649cd.js?menuType=med">
 	</script>
 </div>

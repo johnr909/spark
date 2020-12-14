@@ -2245,3 +2245,41 @@ article.post header.entry-header h1.entry-title {
 .blog-sidebar {
   margin-top: 2rem;
 }
+
+/* 25 Days of Xmas */
+/* Comment out when out of season */
+a[title^="25"]::after {
+  display: inline-block;
+  padding-left: .25rem;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+a[title^="25"]::after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f786";
+  color: red;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 916px) {
+
+  .navbar-brand {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .navbar-brand-img {
+    width: 165px;
+    min-width: 150px;
+  }
+
+  .navbar-brand > a {
+    font-size: .9rem;
+  }
+
+  body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
+    font-size: .9rem;
+  }
+
+}

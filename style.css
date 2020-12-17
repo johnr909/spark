@@ -2230,13 +2230,14 @@ article.post header.entry-header h1 {
 }
 
 article.post header.entry-header h1.entry-title {
+  margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 2.25rem;
   border-bottom: none;
 }
 
-/* the covid policy, sticky post */
-.post-306 {
+/* for sticky posts */
+.sticky {
   padding: 1rem;
   border: 1px solid #2d3545;
   background-color: #f2f8f1;

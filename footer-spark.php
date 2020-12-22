@@ -43,6 +43,9 @@
 </div><!-- .container-fluid -->
 
 <?php wp_footer(); ?>
-
+<script src ="https://up.pixel.ad/assets/up.js?um=1"></script>
+<script type="text/javascript">
+	cntrUpTag.track('cntrData', 'a91da65f88ee6470');
+</script>
 </body>
 </html>

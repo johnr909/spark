@@ -394,7 +394,8 @@ function wp_bootstrap_starter_scripts() {
 		wp_script_add_data( 'wp-bootstrap-starter-spark', 'async', true );
 	}
 
-
+	// the Westword tracking pixel is loaded from footer-spark.php since it's format
+	// does not fit well with wp_enque_scripts JR 12-22-20
 }
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_scripts' );
 

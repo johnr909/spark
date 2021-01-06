@@ -2249,6 +2249,7 @@ article.post header.entry-header h1.entry-title {
 
 /* 25 Days of Xmas */
 /* Comment out when out of season */
+/*
 a[title^="25"]::after {
   display: inline-block;
   padding-left: .25rem;
@@ -2284,3 +2285,4 @@ a[title^="25"]::after {
   }
 
 }
+*/

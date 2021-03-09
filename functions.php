@@ -394,6 +394,10 @@ function wp_bootstrap_starter_scripts() {
 		wp_script_add_data( 'wp-bootstrap-starter-spark', 'async', true );
 	}
 
+	wp_enqueue_script('media-mgr', get_template_directory_uri() . '/inc/media-mgr/myplugin-media.js', array(), '', true );
+// add the async attribute
+	wp_script_add_data( 'media-mgr', 'async', true );
+
 	// the Westword tracking pixel is loaded from footer-spark.php since it's format
 	// does not fit well with wp_enque_scripts JR 12-22-20
 }
@@ -440,6 +444,17 @@ require get_template_directory() . '/inc/reviews/custom-post-type-reviews.php';
  * Custom meta box and fields for reviews.
  */
 require get_template_directory() . '/inc/reviews/custom-metabox-reviews.php';
+
+/**
+ * Custom specials post type.
+ */
+require get_template_directory() . '/inc/specials/custom-post-type-specials.php';
+
+/**
+ * Custom meta box and fields for specials.
+ */
+require get_template_directory() . '/inc/specials/custom-metabox-specials.php';
+
 /**
  * Implement the Custom Header feature.
  */
@@ -464,6 +479,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load plugin compatibility file.
  */
 require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibility.php';
+
+/**
+ * Load plugin media manager file.
+ */
+require get_template_directory() . '/inc/media-mgr/myplugin-media.php';
 
 /**
  * Load `async` and `defer` support for scripts registered or enqueued file

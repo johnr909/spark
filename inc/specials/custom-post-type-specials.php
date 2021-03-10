@@ -14,7 +14,7 @@ function post_type_specials() {
 
 	$labels = array(
 	'name' => _x('specials', 'plural'),
-	'singular_name' => _x('specials', 'singular'),
+	'singular_name' => _x('special', 'singular'),
 	'menu_name' => _x('Specials', 'admin menu'),
 	'name_admin_bar' => _x('Specials', 'admin bar'),
 	'add_new' => _x('Add New', 'add new'),

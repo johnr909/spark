@@ -11,8 +11,8 @@
         }
     </style>
 <?php
-    $specialsTitle = get_post_meta($post->ID, 'specialsTitle', true);
-    $specialsDescription = get_post_meta($post->ID, 'specialsDescription', true);
+    $specials_title = get_post_meta($post->ID, 'specialsTitle', true);
+    $specials_description = get_post_meta($post->ID, 'specialsDescription', true);
     $specials3 = get_post_meta($post->ID, 'specials3', true);
 ?>
     <p class="field">
@@ -20,7 +20,7 @@
         <input id="specialsTitle" 
                type="text" 
                name="specialsTitle"
-               value="<?php echo esc_attr($specialsTitle); ?>">
+               value="<?php echo esc_attr($specials_title); ?>">
     </p>
 
     <p class="field">
@@ -28,7 +28,7 @@
         <input id="specialsDescription"  
                   name="specialsDescription"
                   type="text"
-                  value="<?php echo esc_attr($specialsDescription); ?>">
+                  value="<?php echo esc_attr($specials_description); ?>">
     </p>
 
     <p class="field">

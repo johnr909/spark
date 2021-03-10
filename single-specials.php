@@ -28,20 +28,12 @@
 				<?php
 				while ( have_posts() ) : the_post();
 
-					get_template_part( 'template-parts/content', get_post_format() );
+					// get_template_part( 'template-parts/content', get_post_format() );
+					$specialsTitle = get_post_meta($post->ID, 'specialsTitle', true);
+					$specialsDescription = get_post_meta($post->ID, 'specialsDescription', true);
 
-					    the_post_navigation();
-							// wp_bootstrap_pagination();			    
-
-					// hide comnents for review post type
-					if(get_post_type($post->ID) != 'reviews') {
-
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
-
-					}
+					echo '<br>the specials title is: ' . $specialsTitle . '<br><br>';
+					echo '<br>the specials description is: ' . $specialsDescription . '<br><br>';
 
 				endwhile; // End of the loop.
 				?>

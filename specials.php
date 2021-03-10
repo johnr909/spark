@@ -45,18 +45,23 @@ get_header('spark');
 
 <!-- <table> -->
 <?php 
-	$specialsTitle = get_post_meta($post->ID, 'specialsTitle', true);
-	$specialsDescription = get_post_meta($post->ID, 'specialsDescription', true);
+	$specials_title = get_post_meta($post->ID, 'specialsTitle', true);
+	$specials_description = get_post_meta($post->ID, 'specialsDescription', true);
 
-	echo '<br>the specials title is: ' . $specialsTitle . '<br><br>';
-	echo '<br>the specials description is: ' . $specialsDescription . '<br><br>';
-
-
+	echo '<br>the specials title is: ' . $specials_title . '<br><br>';
+	echo '<br>the specials description is: ' . $specials_description . '<br><br>';
 
 endwhile;
 wp_reset_postdata();
 ?>
 
+<?php
+    $westword_ad_img  = get_option('westword_ad_img_path');
+    $westword_ad_run_dates = get_option('westword_ad_run_dates');
+
+    echo '<br>' . $westword_ad_img . '<br><br>';
+    echo $westword_ad_run_dates . '<br><br>';
+?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 

@@ -12,10 +12,10 @@ add_action('add_meta_boxes', 'register_specials_options_meta_boxes');
  * Meta box display callback
  * @param WP_Post $post Current post object
  */
-// function specials_display_callback($post) {
-//     include 'custom-fields-specials-form.php';
-//     wp_nonce_field( basename( __FILE__ ), 'specials_options_meta_box_nonce' );
-// }
+function specials_options_display_callback($post) {
+    // include 'specials-settings-form.php';
+    wp_nonce_field( basename( __FILE__ ), 'specials_options_meta_box_nonce' );
+}
 
 
 /**

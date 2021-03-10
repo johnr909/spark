@@ -1,18 +1,49 @@
 <?php
-//Example from Codex page : http://codex.wordpress.org/Function_Reference/add_submenu_page
-//Add this in your functions.php file, or use it in your plugin
+class Specials_Options {
+	public function __construct() {
+		add_action('admin menu', array($this, 'create_specials_options_page'));
+	}
 
-add_action('admin_menu', 'register_my_custom_submenu_page');
+	public function create_specials_options_page() {
+	$page_title = 'Specials Options Title';
+	$menu_title = 'Specials Options Menu';
+	$capability = 'manage_options';
+	$slug = 'specials options fields';
+	$callback = array($this, 'specials_options_page_content');
+	// $icon = 'dashicons-admin-plugin';
+	// $position = 100;
 
-function register_my_custom_submenu_page() {
-  add_submenu_page( 'edit.php?post_type=specials', 'Specials Options', 'Specials Options', 'manage_options', 'my-custom-submenu-page', 'my_custom_submenu_page_callback' ); 
+	add_menu_page('options-general.php', $page_title, $menu_title, $capability, $slug, $callback);
+	}
+
+	public function specials_options_page_content() { ?>
+		<div class="wrap">
+			<h2>setting page</h2>
+			<form action="options.php" method="post">
+				<?php
+					settings_field('specials options');
+					do_settings_sections('special options block');
+					submit_button();
+				?>
+			</form>
+		</div>
+	<?php
+	}
 }
 
-function my_custom_submenu_page_callback() {
-	echo '<div class="wrap"><div id="icon-tools" class="icon32"></div>';
-	echo '<h2>Specials Options Page</h2>';
-	include 'specials-settings-form.php';
-	echo '</div>';
-	wp_nonce_field( basename( __FILE__ ), 'specials_options_meta_box_nonce' );
-}
+new Specials_Options();
+
+
+
+// function register_specials_options_submenu_page() {
+//   add_submenu_page( 'edit.php?post_type=specials', 'Specials Options', 'Specials Options', 'manage_options', 
+//   	'specials-options-submenu-page', 'specials_options_submenu_page_callback' ); 
+// }
+
+// function specials_options_submenu_page_callback() {
+// 	include 'specials-settings-form.php';
+// 	wp_nonce_field( basename( __FILE__ ), 'specials_options_meta_box_nonce' );
+// }
+
+// add_action('admin_menu', 'register_specials_options_submenu_page');
 ?>

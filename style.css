@@ -2287,3 +2287,23 @@ a[title^="25"]::after {
 
 }
 */
+#more-deals ul {
+  margin-top: 2.5rem;
+}
+
+#more-deals ul li {
+  list-style-position: inside;
+  list-style-type: none;
+  margin: 1rem 0;
+  padding: 0 0 0 2rem;
+  background-size: 1.25rem;
+  background-image: url('inc/assets/images/emoji2.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.specials-btn {
+  width: 20rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+}

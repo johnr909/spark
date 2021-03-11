@@ -304,7 +304,7 @@ function wp_bootstrap_starter_widgets_init() {
 	register_sidebar(array(
 		'name' => esc_html__( 'More Deals', 'wp-bootstrap-starter' ),
 		'id' => 'more-deals',
-		'before_widget' => '<div>',
+		'before_widget' => '<div id="more-deals">',
 		'after_widget' => '</div>',
 	) );
 
@@ -402,16 +402,16 @@ function wp_bootstrap_starter_scripts() {
 		wp_script_add_data( 'wp-bootstrap-starter-spark', 'async', true );
 	}
 
-	wp_enqueue_script('media-mgr', get_template_directory_uri() . '/inc/media-mgr/myplugin-media.js', array(), '', true );
-// add the async attribute
-	wp_script_add_data( 'media-mgr', 'async', true );
-
 	// the Westword tracking pixel is loaded from footer-spark.php since it's format
 	// does not fit well with wp_enque_scripts JR 12-22-20
 }
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_scripts' );
 
-
+// for styling the specials options admin page
+function admin_style() {
+  wp_enqueue_style('admin-styles', get_template_directory_uri().'/inc/assets/css/admin.css');
+}
+add_action('admin_enqueue_scripts', 'admin_style');
 
 /**
  * Add Preload for CDN scripts and stylesheet

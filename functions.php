@@ -300,6 +300,14 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'events',
 	) );
 
+//	Events
+	register_sidebar(array(
+		'name' => esc_html__( 'More Deals', 'wp-bootstrap-starter' ),
+		'id' => 'more-deals',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+	) );
+
 }
 
 add_action( 'widgets_init', 'wp_bootstrap_starter_widgets_init' );

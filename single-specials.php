@@ -7,42 +7,62 @@
  * @package WP_Bootstrap_Starter
  */
 
- get_header('spark'); ?>
+get_header('spark'); ?>
 
-<div class="container-fluid blog">
-    <div class="row">
 
-        <section class="content-area col-sm-12">
-            <header class="entry-header-blog">
-	            <?php the_title( '<h2 class="text-center text-white">', '</h2>' ); ?>
-            </header><!-- .entry-header -->
-        </section>
+    <div class="container">
+        <div class="row">
 
-    </div><!-- .row -->
-</div><!-- .container-fluid-blog -->
 
-<div class="container-fluid blog">
-	<div class="row">
-			<section id="primary" class="content-area col-sm-12 col-lg-8">
-				<main id="main" class="site-main" role="main">
-				<?php
-				while ( have_posts() ) : the_post();
+                    <?php
+                        while ( have_posts() ) : the_post();
+                        endwhile; // End of the loop.   
 
-					// get_template_part( 'template-parts/content', get_post_format() );
-					$specialsTitle = get_post_meta($post->ID, 'specialsTitle', true);
-					$specialsDescription = get_post_meta($post->ID, 'specialsDescription', true);
 
-					echo '<br>the specials title is: ' . $specialsTitle . '<br><br>';
-					echo '<br>the specials description is: ' . $specialsDescription . '<br><br>';
+                        $westword_ad_image_path = get_option('westword_ad_image_path');
+                        $westword_ad_run_dates =  get_option('westword_ad_run_dates');
+                    ?>     
+                    <div class="col-lg-12">
+                        <?php 
+                                    echo "<h1>Today's specials for " . date('m/d/Y') . '</h1>';
+                                    
+                                ?>
+                    </div>
+                            <div class="col-lg-4">
+                                <?php 
+                                    the_post_thumbnail( 'medium_large' ); 
+                                ?>
+                            </div>
 
-				endwhile; // End of the loop.
-				?>
+                            <div class="col-md-8">
+                                <?php 
+                                the_title('<h2>','</h2>');  
+                                $specialsTitle = get_post_meta($post->ID, 'specialsTitle', true);
+                                $specialsDescription = get_post_meta($post->ID, 'specialsDescription', true);
 
-				</main><!-- #main -->
-			</section><!-- #primary -->
+                                // echo '<br>the specials title is: ' . $specialsTitle . '<br><br>';
+                                echo  $specialsDescription;
+                                ?>
+                            </div>
 
-			<?php get_sidebar('spark'); ?>
+  
+                            <div class="col-md-12">
+                                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("more-deals") ) : ?>
+                                <?php endif; ?>
+                            </div>
 
- </div><!-- .row -->
-</div><!-- .container-fluid -->
-<?php	get_footer('spark'); ?>
+                            <div class="col-lg-12">
+                                <h3>Our Westword Ad</h3>
+                                <p>Run Dates <?php echo $westword_ad_run_dates; ?></p>
+                                <img 
+                                    src="<?php echo $westword_ad_image_path; ?>" 
+                                    alt="Westword Ad for<?php echo $westword_ad_run_dates; ?>" 
+                                    loading="lazy">
+                            </div>
+
+
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+<?php
+get_footer('spark');

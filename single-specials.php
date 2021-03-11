@@ -47,7 +47,6 @@ get_header('spark'); ?>
                 ?>
             </div>
 
-
             <div class="col-md-12">
                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("more-deals") ) : ?>
                 <?php endif; ?>
@@ -61,7 +60,6 @@ get_header('spark'); ?>
                     alt="Westword Ad for <?php echo $westword_ad_run_dates; ?>" 
                     loading="lazy">
             </div>
-
 
         </div><!-- .row -->
     </div><!-- .container -->

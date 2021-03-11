@@ -31,11 +31,11 @@
                   value="<?php echo esc_attr($specials_description); ?>">
     </p>
 
-    <p class="field">
+ <!--    <p class="field">
         <label for="specials3">Specials 3</label>
         <input type="text" 
                name="specials3" 
                id="specials3"
-               value="<?php echo esc_attr($specials3); ?>">
-    </p>
+               value="<?php //echo esc_attr($specials3); ?>">
+    </p> -->
 </div><!-- /.box -->

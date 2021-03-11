@@ -2302,8 +2302,20 @@ a[title^="25"]::after {
   background-position: left center;
 }
 
+.more-deals-header {
+  margin-left: 2.25rem;
+}
+
 .specials-btn {
   width: 20rem;
-  margin: 1rem 0;
-  font-size: 2rem;
+  margin: .5rem 0;
+  font-size: 1.5rem;
+}
+
+.specials-btn-top {
+  margin-top: 3rem;
+}
+
+.specials-btn-bottom {
+  margin-bottom: 3rem;
 }

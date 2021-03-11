@@ -29,7 +29,7 @@ get_header('spark'); ?>
                 $westword_ad_run_dates =  get_option('westword_ad_run_dates');
             ?>     
             <div class="col-lg-12">
-                <?php echo "<h2 class='h1'>Today's specials for " . date('m/d') . '</h2>'; ?>
+                <?php echo "<h2 class='h1'><i class='fa fa-money-bill-alt green-text' style='font-size: 3.5rem;'></i>&nbsp; &nbsp;Today's specials for " . date('m/d') . '</h2>'; ?>
             </div>
 
             <div class="col-lg-6">
@@ -38,7 +38,7 @@ get_header('spark'); ?>
                     $specialsDescription = get_post_meta($post->ID, 'specialsDescription', true);
                     echo '<h3>' . $specialsTitle . '</h3>';
                     echo  '<p class="mb-0">' . $specialsDescription . '</p>';
-                    the_post_thumbnail( 'medium_large' ); 
+                    the_post_thumbnail( 'medium' ); 
                 ?>
             </div>
 
@@ -48,8 +48,10 @@ get_header('spark'); ?>
             </div>
 
             <div class="col-md-12">
-                <a class="d-block mx-auto specials-btn btn btn-primary btn-lg rec-button" 
-                   href="<?php echo get_site_url() . '/rec'; ?>" role="button">Pre-Order Now</a>
+                <a class="d-block mx-auto specials-btn specials-btn-top btn btn-primary btn-lg rec-button" 
+                   href="<?php echo get_site_url() . '/rec'; ?>" role="button">
+                   <i class="fa fa-dollar-sign white-text"></i>&nbsp;&nbsp;Pre-Order Now&nbsp;&nbsp;<i class="fa fa-dollar-sign white-text"></i>
+               </a>
             </div>
 
             <div class="col-lg-12">
@@ -63,8 +65,9 @@ get_header('spark'); ?>
             </div>
 
             <div class="col-md-12">
-                <a class="d-block mx-auto specials-btn btn btn-primary btn-lg rec-button" 
-                   href="<?php echo get_site_url() . '/rec'; ?>" role="button">Pre-Order Now</a>
+                <a class="d-block mx-auto specials-btn specials-btn-bottom btn btn-primary btn-lg rec-button"   href="<?php echo get_site_url() . '/rec'; ?>" role="button">
+                    <i class="fa fa-dollar-sign white-text"></i>&nbsp;&nbsp;Pre-Order Now&nbsp;&nbsp;<i class="fa fa-dollar-sign white-text"></i>
+                </a>
             </div>
 
         </div><!-- .row -->

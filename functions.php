@@ -300,7 +300,7 @@ function wp_bootstrap_starter_widgets_init() {
 		'id' => 'events',
 	) );
 
-//	Events
+//	More Deals
 	register_sidebar(array(
 		'name' => esc_html__( 'More Deals', 'wp-bootstrap-starter' ),
 		'id' => 'more-deals',
@@ -461,15 +461,7 @@ require get_template_directory() . '/inc/specials/custom-post-type-specials.php'
 /**
  * Custom meta box and fields for specials.
  */
-// require get_template_directory() . '/inc/specials/custom-metabox-specials.php';
-
-/**
- * Custom options for specials.
- */
-// require get_template_directory() . '/inc/specials/specials-settings.php';
-// require get_template_directory() . '/inc/specials/custom-metabox-options-specials.php';
-// require get_template_directory() . '/inc/specials/smashing-fields.php';
-
+require get_template_directory() . '/inc/specials/custom-metabox-specials.php';
 
 /**
  * Implement the Custom Header feature.
@@ -497,11 +489,6 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibility.php';
 
 /**
- * Load plugin media manager file.
- */
-require get_template_directory() . '/inc/media-mgr/myplugin-media.php';
-
-/**
  * Load `async` and `defer` support for scripts registered or enqueued file
  */
 
@@ -525,8 +512,6 @@ function dealoFDay() {
 	date_default_timezone_set( 'America/Denver' );
 
 	$dayofweek = date( 'l' );
-//                 echo $dayofweek . '<br>';
-//                echo date("l jS \of F Y h:i:s A") . "<br>";
 
 	switch ( $dayofweek ) {
 		case "Sunday":

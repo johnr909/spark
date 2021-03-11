@@ -1841,7 +1841,8 @@ h5.highlight {
   background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
 }
 
-#deals .entry-header {
+#deals .entry-header,
+.single-specials .entry-header {
   background: #2d3545 url('inc/assets/images/page-header-1920w-300h.jpg') no-repeat;
 }
 

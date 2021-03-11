@@ -8,6 +8,17 @@
  */
 
 get_header('spark'); ?>
+    <div class="container-fluid">
+        <div class="row">
+
+            <section class="content-area col-sm-12">
+                <header class="entry-header">
+                    <?php the_title( '<h1>', '</h1>' ); ?>
+                </header><!-- .entry-header -->
+            </section>
+
+        </div><!-- .row -->
+    </div><!-- .container-fluid -->
 
     <div class="container">
         <div class="row">
@@ -44,7 +55,7 @@ get_header('spark'); ?>
 
             <div class="col-lg-12">
                 <h3>Our Westword Ad</h3>
-                <p>Run Dates <?php echo $westword_ad_run_dates; ?></p>
+                <p>Run Dates: <?php echo $westword_ad_run_dates; ?></p>
                 <img 
                     src="<?php echo $westword_ad_image_path; ?>" 
                     alt="Westword Ad for <?php echo $westword_ad_run_dates; ?>" 

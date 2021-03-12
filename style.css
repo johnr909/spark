@@ -2307,9 +2307,10 @@ a[title^="25"]::after {
 }
 
 .specials-btn {
-  width: 20rem;
+  width: 15rem;
   margin: .5rem 0;
-  font-size: 1.5rem;
+  padding: .75rem .5rem;
+  font-size: 1.35rem;
 }
 
 .specials-btn-top {

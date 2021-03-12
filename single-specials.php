@@ -66,8 +66,8 @@ get_header('spark'); ?>
             </div>
 
             <div class="col-md-12">
-                <a class="d-block mx-auto specials-btn specials-btn-bottom btn btn-primary btn-lg rec-button
-                          dark-text"   
+                <a class="d-block mx-auto specials-btn specials-btn-top specials-btn-bottom 
+                          btn btn-primary btn-lg rec-button dark-text"   
                    href="<?php echo get_site_url() . '/rec'; ?>" role="button">
                    <i class="fa fa-dollar-sign"></i>&nbsp;&nbsp;Pre-Order Now&nbsp;&nbsp;<i class="fa fa-dollar-sign"></i>
                 </a>

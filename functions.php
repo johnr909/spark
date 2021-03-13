@@ -459,9 +459,14 @@ require get_template_directory() . '/inc/reviews/custom-metabox-reviews.php';
 require get_template_directory() . '/inc/specials/custom-post-type-specials.php';
 
 /**
- * Custom meta box and fields for specials.
+ * Custom meta box and fields for specials post type.
  */
 require get_template_directory() . '/inc/specials/custom-metabox-specials.php';
+
+/**
+ * Custom specials options page.
+ */
+require get_template_directory() . '/inc/specials/specials-options-page.php';
 
 /**
  * Implement the Custom Header feature.

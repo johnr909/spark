@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Template part for coupons

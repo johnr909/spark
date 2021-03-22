@@ -22,7 +22,7 @@
         <div class="carousel-item carousel-item2" data-interval="3000">
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'rebel-blasts-1920w-350h.jpg'; ?>"
                  class="d-block w-100" alt="Rebel Blast edibles">
-            <div class="carousel-caption d-none d-md-block carousel-text">
+            <div class="carousel-caption d-xs-block carousel-text">
 	            <p class="lead lead-dark">Rebel edibles BOGO 50% off all month</p>
             </div><!-- .carousel-caption -->
         </div><!-- .carousel-item -->
@@ -30,7 +30,7 @@
         <div class="carousel-item carousel-item3" data-interval="3000">
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'valdivia-1920w-350h.jpg'; ?>"
                  class="d-block w-100" alt="marijuana leaf close-up">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-xs-block">
 	            <?php
 	                get_template_part( 'template-parts/content', 'home-carousel-buttons' );
 	            ?>
@@ -40,7 +40,7 @@
         <div class="carousel-item carousel-item4 bud-burst " data-interval="3000">
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'bud-burst-beauty-1920w-350h.jpg'; ?>"
                  class="d-block w-100" alt="marijuana leaf close-up">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-xs-block">
                 <?php
                     get_template_part( 'template-parts/content', 'home-carousel-buttons' );
                 ?>

@@ -308,6 +308,15 @@ function wp_bootstrap_starter_widgets_init() {
 		'after_widget' => '</div>',
 	) );
 
+//	Westword vote for us CTA
+	register_sidebar(array(
+		'name' => esc_html__( 'Westword Vote CTA', 'wp-bootstrap-starter' ),
+		'id' => 'vote4us',
+		'before_widget' => '<div id="vote4us">',
+		'after_widget' => '</div>',
+	) );
+
+
 }
 
 add_action( 'widgets_init', 'wp_bootstrap_starter_widgets_init' );

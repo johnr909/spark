@@ -2,10 +2,10 @@
 
     <div class="carousel-inner">
 
-        <div class="carousel-item carousel-item1 active" data-interval="3000">
+        <div class="carousel-item active" data-interval="3000">
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'westword-bg-vote-1920w-350h.jpg'; ?>"
                  class="d-block mx-auto" alt="Westword vote background">
-            <div class="carousel-caption ww-vote-caption d-none d-md-block">
+            <div class="carousel-caption ww-vote-caption d-xs-block">
             
                 <div class="ww-vote-bestof mx-auto white-bg">
                     <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'westword-vote-logo.jpg'; ?>"

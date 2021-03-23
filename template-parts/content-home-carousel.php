@@ -2,16 +2,6 @@
 
     <div class="carousel-inner">
 
-        <div class="carousel-item" data-interval="3000">
-            <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'valdivia-1920w-350h.jpg'; ?>"
-                 class="d-block" alt="marijuana leaf close-up">
-            <div class="carousel-caption">
-                <?php
-                    get_template_part( 'template-parts/content', 'home-carousel-buttons' );
-                ?>
-            </div><!-- .carousel-caption -->
-        </div><!-- .carousel-item -->
-
         <div class="carousel-item active" data-interval="3000">
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'westword-bg-vote-1920w-350h.jpg'; ?>"
                  class="ww-vote-banner d-block mx-auto" alt="Westword vote background">
@@ -26,6 +16,16 @@
                     <p class="ww-vote-text text-uppercase font-weight-bold white-text">the best of denver<span>&reg;</span> 2021 reader's choice award</p>
                 </div>
 	            
+            </div><!-- .carousel-caption -->
+        </div><!-- .carousel-item -->
+
+        <div class="carousel-item" data-interval="3000">
+            <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'valdivia-1920w-350h.jpg'; ?>"
+                 class="d-block" alt="marijuana leaf close-up">
+            <div class="carousel-caption">
+                <?php
+                    get_template_part( 'template-parts/content', 'home-carousel-buttons' );
+                ?>
             </div><!-- .carousel-caption -->
         </div><!-- .carousel-item -->
 

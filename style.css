@@ -2035,10 +2035,6 @@ DEALS/EVENTS PAGE
   font-size: 5rem;
 }
 
-/*.online-icon-container {
-  padding: .25rem;
-}
-*/
 .coupon-text {
   margin-right: 1rem;
   margin-left: 1rem;
@@ -2353,37 +2349,11 @@ a[title^="25"]::after {
   font-style: normal;
 }
 
-.ww-vote-caption {
-  top: 5px;
-  bottom: 0 !important;
-}
-
-@media only screen and (min-width: 960px) {
-  .ww-vote-bestof {
-    max-width: 80%; 
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .ww-vote-bestof {
-    max-width: 65%; 
-  }
-}
-
-@media only screen and (min-width: 1312px) {
-  .ww-vote-bestof {
-    max-width: 65%; 
-  }
-}
-
 .ww-vote-bestof {
-  padding: .15rem 1rem 0 1rem; 
   font-family: 'AvalonReg', 'Muli', sans-serif;
 }
 
 .ww-vote-btn {
-  padding: .15rem .35rem;
-  font-size: 1.05rem;
   border: 2px solid #000;
   background-color: #06b1cb; 
 }
@@ -2392,10 +2362,213 @@ a[title^="25"]::after {
   text-decoration: none;
 }
 
-.best {
-  font-size: .9rem;
+.ww-vote-text > span {
+  font-size: .75rem;
 }
-.ww-vote-text {
-  font-size: .9rem; 
-  color: #06b1cb;
+
+@media only screen and (max-width: 480px) {
+
+  .carousel-caption {
+    top: 2%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .carousel-item > img {
+    width: 300%;
+    height: 300%;
+    max-width: inherit !important;
+  }
+
+  .carousel-text p.lead {
+    margin: 1rem 0;
+    font-size: 1.75rem;
+  }
+
+  .carousel-text p.cta {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .btn-lg {
+    padding: .5rem .75rem;
+  }
+
+  .ww-vote-banner {
+    height: 350px;
+  }
+
+  .ww-vote-caption {
+    top: 2%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .ww-vote-logo {
+    width: 85%;
+    height: 85%;
+  }
+
+  .ww-vote-btn {
+    margin: .35rem 0;
+    padding: .25rem 1.15rem; 
+    font-size: 2rem;
+  }
+
+  .best {
+    margin: .5rem 0;
+    padding: 0;
+    font-size: 2.5rem;
+    color: #f4c22f;
+    text-shadow: -3px 2px #222425;
+  }
+
+  .ww-vote-text {
+    margin: .5rem 0;
+    font-size: 1.25rem; 
+  }
+}
+
+@media only screen and (min-width: 481px)  and (max-width: 767px) {
+
+  .carousel-caption {
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .carousel-item > img {
+    width: 300%;
+    height: 300%;
+    max-width: inherit !important;
+  }
+
+  .carousel-text p.lead {
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+
+  .carousel-text p.cta {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .btn-lg {
+    padding: .5rem .75rem;
+  }
+
+  .ww-vote-banner {
+    height: 350px;
+  }
+
+  .ww-vote-caption {
+    top: 2%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .ww-vote-logo {
+    width: 70%;
+    height: 70%;
+  }
+
+  .ww-vote-btn {
+    margin: 1rem 0;
+    padding: .5rem 1.15rem;
+    font-size: 2rem;
+  }
+
+  .best {
+    margin: 1rem 0;
+    padding: 0;
+    font-size: 2.5rem;
+    color: #f4c22f;
+    text-shadow: -3px 2px #222425;
+  }
+
+  .ww-vote-text {
+    margin: 1rem 0 0 0;
+    font-size: 1.25rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .ww-vote-caption {
+    top: 2%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .ww-vote-logo {
+    width: 60%;
+    height: 60%;
+  }
+
+  .ww-vote-btn {
+    margin: 0;
+    padding: .15rem 1.15rem;
+    font-size: 1.25rem;
+  }
+
+  .best {
+    margin: .15rem 0;
+    padding: 0;
+    font-size: 2rem;
+    color: #f4c22f;
+    text-shadow: -3px 2px #222425;
+  }
+
+  .ww-vote-text {
+    margin: .5rem 0;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px)  and (max-width: 959px) {
+ 
+  .carousel-text p.lead {
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+
+  .carousel-text p.cta {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .btn-lg {
+    padding: .5rem .75rem;
+  }
+
+   .ww-vote-logo {
+    width: 33%;
+    height: 33%;
+  }
+
+  .ww-vote-btn {
+    margin: .25rem 0;
+  }
+
+  .best {
+    margin: .15rem 0;
+  }
+
+  .ww-vote-text {
+    margin: .25rem 0 0 0;
+  }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+ .ww-vote-logo {
+    width: 30%;
+    height: 30%;
+  }
 }

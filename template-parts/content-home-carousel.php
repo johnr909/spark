@@ -12,7 +12,7 @@
                         class="ww-vote-logo d-block mx-auto" alt="Westword vote logo">
                     <p class="best dark-text text-uppercase font-weight-bold white-text">Best Dispensary Bargains</p>
                         <a href="https://bestofdenver2021.com/" target="_blank"
-                           class="ww-vote-btn text-uppercase font-weight-bold white-text">vote for us!</a>  
+                           class="ww-vote-btn text-uppercase font-weight-bold white-text">vote for spark!</a>  
                     <p class="ww-vote-text text-uppercase font-weight-bold white-text">the best of denver<span>&reg;</span> 2021 reader's choice award</p>
                 </div>
 	            

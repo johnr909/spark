@@ -61,8 +61,7 @@ get_header('spark'); ?>
 
             <div class="col-sm-12 col-md-4 card card-home">
                <?php
-                    // get_template_part( 'template-parts/content', 'education-callout' );
-                    get_template_part( 'template-parts/content', 'product-spotlight' );
+                    get_template_part( 'template-parts/content', 'education-callout' );
                 ?>
             </div><!-- .col -->
 

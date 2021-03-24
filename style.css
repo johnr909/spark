@@ -2353,6 +2353,11 @@ a[title^="25"]::after {
   font-family: 'AvalonReg', 'Muli', sans-serif;
 }
 
+.best {
+  padding: 0;
+  text-shadow: -3px 2px #222425;
+  }
+
 .ww-vote-btn {
   border: 2px solid #000;
   background-color: #06b1cb; 
@@ -2419,9 +2424,7 @@ a[title^="25"]::after {
 
   .best {
     margin: .5rem 0;
-    padding: 0;
     font-size: 2.5rem;
-    text-shadow: -3px 2px #222425;
   }
 
   .ww-vote-text {
@@ -2447,16 +2450,17 @@ a[title^="25"]::after {
 
   .carousel-text p.lead {
     margin: 1rem 0;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .carousel-text p.cta {
     margin: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .btn-lg {
-    padding: .5rem .75rem;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
   }
 
   .ww-vote-banner {
@@ -2483,9 +2487,7 @@ a[title^="25"]::after {
 
   .best {
     margin: 1rem 0;
-    padding: 0;
     font-size: 2.5rem;
-    text-shadow: -3px 2px #222425;
   }
 
   .ww-vote-text {
@@ -2516,9 +2518,7 @@ a[title^="25"]::after {
 
   .best {
     margin: .15rem 0;
-    padding: 0;
     font-size: 2rem;
-    text-shadow: -3px 2px #222425;
   }
 
   .ww-vote-text {

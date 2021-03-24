@@ -2,7 +2,7 @@
 
     <div class="carousel-inner">
 
-        <div class="carousel-item active" data-interval="3000">
+        <div class="carousel-item active" data-interval="9000">
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'westword-bg-vote-1920w-350h.jpg'; ?>"
                  class="ww-vote-banner d-block mx-auto" alt="Westword vote background">
             <div class="carousel-caption ww-vote-caption">

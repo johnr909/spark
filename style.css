@@ -2342,6 +2342,7 @@ a[title^="25"]::after {
 }
 
 /* Westword */
+/* all devices/viewports */
 @font-face {
   font-family: 'AvalonReg';
   src: url('inc/assets/fonts/Avalon_Regular.ttf');
@@ -2356,7 +2357,7 @@ a[title^="25"]::after {
 .best {
   padding: 0;
   text-shadow: -3px 2px #222425;
-  }
+}
 
 .ww-vote-btn {
   display: inline-block;
@@ -2376,9 +2377,6 @@ a[title^="25"]::after {
 
   .carousel-caption {
     top: 2%;
-    right: 0;
-    bottom: 0;
-    left: 0;
   }
 
   .carousel-item > img {
@@ -2405,20 +2403,13 @@ a[title^="25"]::after {
     height: 350px;
   }
 
-  .ww-vote-caption {
-    top: 2%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
   .ww-vote-logo {
     width: 85%;
     height: 85%;
   }
 
   .ww-vote-btn {
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem 1rem 0;
     padding: .25rem 1.15rem; 
     font-size: 2rem;
   }
@@ -2438,15 +2429,11 @@ a[title^="25"]::after {
 
   .carousel-caption {
     top: 10%;
-    right: 0;
-    bottom: 0;
-    left: 0;
   }
 
   .carousel-item > img {
     width: 255%;
     height: 255%;
-    max-width: inherit !important;
   }
 
   .carousel-text p.lead {
@@ -2468,20 +2455,13 @@ a[title^="25"]::after {
     height: 350px;
   }
 
-  .ww-vote-caption {
-    top: 2%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .ww-vote-logo {
+   .ww-vote-logo {
     width: 70%;
     height: 70%;
   }
 
   .ww-vote-btn {
-    margin: 2rem 0 0 0;
+    margin-top: 2rem;
     padding: .5rem 1.15rem;
     font-size: 2rem;
   }
@@ -2492,19 +2472,13 @@ a[title^="25"]::after {
   }
 
   .ww-vote-text {
-    margin: 1rem 0 0 0;
+    margin-top: 1rem;
     font-size: 1.25rem;
   }
 
 }
 
 @media only screen and (min-width: 768px) {
-  .ww-vote-caption {
-    top: 2%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
 
   .ww-vote-logo {
     width: 60%;
@@ -2526,21 +2500,18 @@ a[title^="25"]::after {
     margin: .5rem 0;
     font-size: 1rem;
   }
+
 }
 
 @media only screen and (min-width: 768px)  and (max-width: 959px) {
 
   .carousel-caption {
     top: 2%;
-    right: 0;
-    bottom: 0;
-    left: 0;
   }
 
   .carousel-item > img {
     width: 115%;
     height: 115%;
-    max-width: inherit !important;
   }
  
   .carousel-text p.lead {
@@ -2563,7 +2534,7 @@ a[title^="25"]::after {
   }
 
   .ww-vote-btn {
-    margin: .5rem 0 0 0;
+    margin-top: .5rem;
     font-size: 1.15rem;
   }
 
@@ -2573,7 +2544,28 @@ a[title^="25"]::after {
   }
 
   .ww-vote-text {
-    margin: .25rem 0 0 0;
+    margin-top: .25rem;
+  }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+  .carousel-item > img {
+    max-width: inherit !important;
+  }
+
+  .carousel-caption {
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .ww-vote-caption {
+    top: 2%;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 
 }
@@ -2589,4 +2581,5 @@ a[title^="25"]::after {
     margin: .25rem 0 0 0;
     font-size: 1.15rem;
   }
+
 }

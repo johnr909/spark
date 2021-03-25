@@ -2382,7 +2382,6 @@ a[title^="25"]::after {
   .carousel-item > img {
     width: 300%;
     height: 300%;
-    max-width: inherit !important;
   }
 
   .carousel-text p.lead {

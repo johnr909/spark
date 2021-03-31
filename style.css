@@ -1866,7 +1866,9 @@ h5.highlight {
 }
 
 #deals .entry-header,
-.single-specials .entry-header {
+.single-specials .entry-header,
+.page-id-396 .entry-header
+{
   background: #2d3545 url('inc/assets/images/page-header-1920w-300h.jpg') no-repeat;
 }
 
@@ -2270,8 +2272,8 @@ article.post header.entry-header h1.entry-title {
 
 /* 25 Days of Xmas */
 /* Comment out when out of season */
-/*
-a[title^="25"]::after {
+
+/*a[title^="25"]::after {
   display: inline-block;
   padding-left: .25rem;
   font-style: normal;
@@ -2283,8 +2285,25 @@ a[title^="25"]::after {
 a[title^="25"]::after {
   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f786";
   color: red;
+}*/
+
+/* 420 */
+/* Comment out when out of season */
+a[title^="420"]::after {
+  display: inline-block;
+  padding-left: .25rem;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
+a[title^="420"]::after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f55f";
+  color: #80be79;
+}
+
+/* Toggle comments here when adding/subtracting an item from the main nav */
 @media only screen and (min-width: 768px) and (max-width: 916px) {
 
   .navbar-brand {
@@ -2306,7 +2325,7 @@ a[title^="25"]::after {
   }
 
 }
-*/
+
 #more-deals ul {
   margin-top: 2.5rem;
 }

@@ -512,6 +512,11 @@ require get_template_directory() . '/inc/class-script-loader.php';
  * by the theme.
  */
 
+require get_template_directory() . '/inc/numeric-slug.php';
+/*
+ * Adds support for numeric URL slugslike '/420' toggle on/off a necessary
+ */
+
 /**
  * Load custom WordPress nav walker.
  */

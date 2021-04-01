@@ -1852,6 +1852,11 @@ h5.highlight {
   padding: 4rem 0;
 }
 
+/* the 420 page */
+.page-id-396 .entry-header {
+  padding: 0 0 9rem 0;
+}
+
 .entry-header-blog {
   background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
 }
@@ -1866,10 +1871,14 @@ h5.highlight {
 }
 
 #deals .entry-header,
-.single-specials .entry-header,
-.page-id-396 .entry-header
+.single-specials .entry-header
 {
   background: #2d3545 url('inc/assets/images/page-header-1920w-300h.jpg') no-repeat;
+}
+
+/* the 420 page */
+.page-id-396 .entry-header {
+  background: #fff url('inc/assets/images/420banner-1920w-300h.jpg') no-repeat;
 }
 
 #contact-us .entry-header {
@@ -1884,6 +1893,10 @@ h5.highlight {
 #med .entry-header h1,
 #contact-us .entry-header h1 {
   color: #80be79;
+}
+
+.page-id-396 .entry-header h1 {
+  color: #2d3545;
 }
 
 h1.entry-title,

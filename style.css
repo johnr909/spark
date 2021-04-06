@@ -2635,11 +2635,11 @@ a[title^="420"]::after {
 
 /* 420 page */
 .panel-emoji {
-  background: transparent url("inc/assets/images/emoji2.svg") no-repeat 50% 40%;
+  background: transparent url("inc/assets/images/emoji2.svg") no-repeat 50% 25%;
 }
 
 .panel-joint {
-  background: transparent url("inc/assets/images/smoke-r3.svg") no-repeat 50% 40%;
+  background: transparent url("inc/assets/images/smoke-r3.svg") no-repeat 50% 25%;
 }
 
 @media only screen and (max-width: 767px) {

@@ -1865,6 +1865,15 @@ h5.highlight {
   padding: 4rem 0;
 }
 
+.entry-header h1,
+.entry-header-blog h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
 /* the 420 page */
 .page-id-396 .entry-header,
 .page-id-396 .entry-header-blog, 
@@ -1918,8 +1927,7 @@ h5.highlight {
 
 .page-id-396 .entry-header h1,
 .page-id-399 .entry-header h1,
-.page-id-439 .entry-header h1
- {
+.page-id-439 .entry-header h1 {
   color: #2d3545;
 }
 
@@ -1944,15 +1952,6 @@ h2.entry-title {
   color: #fff !important;
   }
 
-}
-
-.entry-header h1,
-.entry-header-blog h1 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 3.5rem;
-  color: #fff;
 }
 
 .subtitle {

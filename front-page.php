@@ -45,7 +45,7 @@ get_header('spark'); ?>
 
             <div class="col-sm-12 col-md-4 online-cta-home card card-home">
                 <?php
-                    get_template_part( 'template-parts/content', 'westword-vote4us-CTA' );
+                    get_template_part( 'template-parts/content', 'product-spotlight' );
                 ?>
             </div><!-- .col -->           
         </div><!-- .row -->

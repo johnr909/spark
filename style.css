@@ -1527,11 +1527,11 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 }
   
 /* hide the carousel for smaller devices */
-/*@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #carousel {
     display: none;
   }
-}*/
+}
 
 /*@media only screen and (min-width: 769px) and (max-width: 961px) {*/
 @media only screen and (min-width: 370px) and (max-width: 961px) {
@@ -1555,13 +1555,13 @@ HOME PAGE CAROUSEL/MOBILE BANNER
   }
 }
 
-/*@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   #home-mobile-banner {
     display: none;
   }
-}*/
+}
 
-/*#home-mobile-banner {
+#home-mobile-banner {
   width: 100%;
   padding: 5px 15px;
   background: transparent url('inc/assets/images/leaves-closeup.jpg') no-repeat;
@@ -1590,7 +1590,7 @@ HOME PAGE CAROUSEL/MOBILE BANNER
   text-align: center;
   font-weight: 700;
   color: #80be79;
-}*/
+}
 
 
 /*

@@ -7,7 +7,7 @@
                  class="d-block w-100" alt="our monthly specials">
             <div class="carousel-caption d-none d-md-block">
                 <?php
-                    get_template_part( 'template-parts/content', 'home-carousel-rooster-ad' );
+                    get_template_part( 'template-parts/content', 'home-rooster-ad' );
                 ?>
             </div><!-- .carousel-caption -->
         </div><!-- .carousel-item -->

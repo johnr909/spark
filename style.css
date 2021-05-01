@@ -1473,11 +1473,6 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 
 .carousel-text h1 {
   display: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  font-size: 3.5rem;
-  text-align: center;
-  color: #fff;
 }
 
 .carousel-text p.lead {
@@ -1487,13 +1482,6 @@ HOME PAGE CAROUSEL/MOBILE BANNER
   font-weight: 700;
   line-height: 100%;
   color: #fff;
-}
-
-.carousel-text p.lead {
-  margin-bottom: .2rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 100%;
 }
 
 .carousel-text p.lead-dark {
@@ -1525,13 +1513,35 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 .carousel-text .med-button {
   margin-left: .5rem;
 }
+
+/* rooster ad */
+.rooster-caption {
+  right: 20% !important;
+  left: 20% !important;
+  bottom: 40px;
+}
+
+#carousel-text .rooster-text {
+  font-size: 2.5rem;
+  text-shadow: -3px 2px #222425;
+}
+
+.rooster-link {
+  text-decoration: underline;
+}
+
+.rooster-link:hover {
+  color: #f2f8f1;
+  text-decoration: none;
+}
+
   
 /* hide the carousel for smaller devices */
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
   #carousel {
     display: none;
   }
-}
+}*/
 
 /*@media only screen and (min-width: 769px) and (max-width: 961px) {*/
 @media only screen and (min-width: 370px) and (max-width: 961px) {
@@ -1550,10 +1560,10 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 
 /* not showing the home mobile banner for smaller devices as we */
 /* want to show the carousel to all devices */
-/*#home-mobile-banner {
+#home-mobile-banner {
     display: none;
   }
-}*/
+}
 
 @media only screen and (min-width: 768px) {
   #home-mobile-banner {
@@ -1608,22 +1618,9 @@ body.home .xdebug-warning {
     max-width: 32%;
   }
 }
-/*@media (max-width: 767px) {
-  .home-cards .col-md-6 {
-  -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    
-    max-width: 43%;
-  }
-}*/
-
-
 
 @media (min-width: 768px) {
   .home-cards .col-md-6 {
-/*  -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-*/    
     max-width: 44%;
   }
 }
@@ -1903,7 +1900,8 @@ body.page-id-439 .entry-header-blog {
 }
 
 #rec .entry-header,
-#med .entry-header {
+#med .entry-header,
+#may-specials .entry-header {
   background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
 }
 
@@ -2436,16 +2434,38 @@ a[title^="420"]::after {
   font-size: .75rem;
 }
 
+@media only screen and (min-width: 250px) and (max-width: 360px){
+
+   .carousel-item > img {
+    width: 450% !important;
+    height: 450% !important;
+  }
+
+   .carousel-text p.lead {
+    margin: .5rem 0;
+  }
+
+}
+
+@media only screen and (min-width: 361px) and (max-width: 479px){
+
+   .carousel-item > img {
+    width: 350% !important;
+    height: 350% !important;
+  }
+
+}
+
 @media only screen and (max-width: 480px) {
 
   .carousel-caption {
     top: 2%;
   }
 
-  .carousel-item > img {
-    width: 300%;
-    height: 300%;
-  }
+/*  .carousel-item > img {
+    width: 300% !important;
+    height: 300% !important;
+  }*/
 
   .carousel-text p.lead {
     margin: 1rem 0;
@@ -2485,6 +2505,7 @@ a[title^="420"]::after {
     margin: .5rem 0;
     font-size: 1.25rem; 
   }
+
 }
 
 @media only screen and (min-width: 481px)  and (max-width: 767px) {
@@ -2494,8 +2515,8 @@ a[title^="420"]::after {
   }
 
   .carousel-item > img {
-    width: 255%;
-    height: 255%;
+    width: 250% !important;
+    height: 250% !important;
   }
 
   .carousel-text p.lead {
@@ -2536,6 +2557,10 @@ a[title^="420"]::after {
   .ww-vote-text {
     margin-top: 1rem;
     font-size: 1.25rem;
+  }
+
+  #carousel-text .rooster-text {
+    font-size: 2.75rem;
   }
 
 }
@@ -2644,6 +2669,12 @@ a[title^="420"]::after {
     font-size: 1.15rem;
   }
 
+}
+
+@media only screen and (min-width: 1024px) {
+  .rooster-caption {
+    bottom: 75px;
+  }
 }
 
 /* 420 page */

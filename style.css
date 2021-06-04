@@ -1901,7 +1901,7 @@ body.page-id-439 .entry-header-blog {
 
 #rec .entry-header,
 #med .entry-header,
-#may-specials .entry-header {
+[id$="specials"] .entry-header {
   background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
 }
 

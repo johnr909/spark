@@ -316,6 +316,14 @@ function wp_bootstrap_starter_widgets_init() {
 		'after_widget' => '</div>',
 	) );
 
+	//	June Flash sale CTA
+	register_sidebar(array(
+		'name' => esc_html__( 'Flash Sale CTA', 'wp-bootstrap-starter' ),
+		'id' => 'flash-sale',
+		'before_widget' => '<div id="flash-sale">',
+		'after_widget' => '</div>',
+	) );
+
 
 }
 

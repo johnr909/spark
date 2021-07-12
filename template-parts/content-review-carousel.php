@@ -33,28 +33,35 @@
 			$counter = 0; 
 		?>
 		<?php while ($loop->have_posts()) : $loop->the_post(); ?>
-			<?php $counter++; ?>
-			<?php 
+		<?php $counter++; ?>
+		<?php 
 				// Using get_post_meta($post->ID) and similar functions was not working. The home page has an id (value = 2 ) 
 				// but that didn't return anything. While in this loop, get_the_ID() returns the id of the individual review
 				// and that apparently works
 				$id = get_the_ID();
-    		    $reviewer = get_post_meta($id, 'jr_reviewer', true);
-  	            $icon = get_post_meta($id, 'spark_review_icon', true);
-  	        ?>
-    	 	<div class="carousel-item <?php if ($counter == 1) echo ' active'; ?>" data-interval="5000">
-    	 		<blockquote>
-						<p class="testimonial-text"><i class="fa fa-<?php echo $icon; ?>"></i>&nbsp;&nbsp;
-							<?php 
-								 // we use 'echo get_the_content()'' instead of just 'the_content()'' since the
-								 // latter adds html(<p>) tags that foul up the presentation here							 
-								 echo get_the_content(); 
-							?>
-   					</p>
-						<p><cite title="<?php echo $reviewer; ?>"><?php echo $reviewer; ?></cite></p>
-					</blockquote>
-    		</div><!-- .carousel-item -->
+    		$reviewer = get_post_meta($id, 'jr_reviewer', true);
+  	    $icon = get_post_meta($id, 'spark_review_icon', true);
+  	  ?>
+  	 	<div class="carousel-item <?php if ($counter == 1) echo ' active'; ?>" data-interval="5000">
+  	 		<blockquote>
+					<p class="testimonial-text"><i class="fa fa-<?php echo $icon; ?>"></i>&nbsp;&nbsp;
+						<?php 
+							 // we use 'echo get_the_content()'' instead of just 'the_content()'' since the
+							 // latter adds html(<p>) tags that foul up the presentation here							 
+							 echo get_the_content(); 
+						?>
+ 					</p>
+					<p><cite title="<?php echo $reviewer; ?>"><?php echo $reviewer; ?></cite></p>
+				</blockquote>
 
+				 <a href="https://www.leafly.com/dispensary-info/sense-of-healing" 
+				    title="Spark Dispensary Reviews" target="_blank">
+				    <img src="https://www.leafly.com/badge/2x/sense-of-healing.png" 
+				         width="212" 
+				         class="d-block mx-auto mt-4 mb-4"/>
+				 </a> 
+  
+  		</div><!-- .carousel-item -->
 
     	<?php 
     		endwhile;

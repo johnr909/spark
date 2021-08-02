@@ -3,7 +3,8 @@
     <div class="carousel-inner">
 
         <div class="carousel-item active" data-interval="5000">
-            <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 'fireworks-1920w-350h.jpg'; ?>"
+            <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 
+'hiker-mtns-1920w-350h.jpg'; ?>"
                  class="d-block w-100" alt="our monthly specials">
             <div class="carousel-caption rooster-caption d-md-block">
                 <?php

@@ -2351,7 +2351,7 @@ a[title^="420"]::after {
 }
 
 /* Toggle comments here when adding/subtracting an item from the main nav */
-/*@media only screen and (min-width: 768px) and (max-width: 916px) {
+@media only screen and (min-width: 768px) and (max-width: 916px) {
 
   .navbar-brand {
     padding-right: 0;
@@ -2369,7 +2369,7 @@ a[title^="420"]::after {
 
   body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
     font-size: .9rem;
-  }*/
+  }
 
 }
 

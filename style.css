@@ -1888,7 +1888,8 @@ body.page-id-399 .entry-header,
 body.page-id-399 .entry-header-blog,
 body.page-id-439 .entry-header, 
 body.page-id-439 .entry-header-blog {
-  padding: 0 0 10rem 0 !important;
+  /*padding: 0 0 10rem 0 !important;*/
+  padding: 0 0 25rem 0 !important;
 }
 
 .entry-header-blog {
@@ -1914,7 +1915,9 @@ body.page-id-439 .entry-header-blog {
 body.page-id-396 .entry-header,
 body.page-id-399 .entry-header,
 body.page-id-439 .entry-header {
-  background: #fff url('inc/assets/images/420banner-1920w-300h.jpg') no-repeat;
+  /* background: #fff url('inc/assets/images/420banner-1920w-300h.jpg') no-repeat; */
+  background: #fff url('inc/assets/images/black-friday-banner.gif') no-repeat;
+
 }
 
 #contact-us .entry-header {
@@ -1934,7 +1937,8 @@ body.page-id-439 .entry-header {
 body.page-id-396 .entry-header h1,
 body.page-id-399 .entry-header h1,
 body.page-id-439 .entry-header h1 {
-  color: #2d3545 !important;
+  /*color: #2d3545 !important;*/
+  display: none;
 }
 
 h1.entry-title,

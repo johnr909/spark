@@ -1881,17 +1881,6 @@ h5.highlight {
   color: #fff;
 }
 
-/* the 420 page */
-body.page-id-396 .entry-header,
-body.page-id-396 .entry-header-blog, 
-body.page-id-399 .entry-header, 
-body.page-id-399 .entry-header-blog,
-body.page-id-439 .entry-header, 
-body.page-id-439 .entry-header-blog {
-  /*padding: 0 0 10rem 0 !important;*/
-  padding: 0 0 25rem 0 !important;
-}
-
 .entry-header-blog {
   background: #2d3545 url('inc/assets/images/Trikes1920.jpg') no-repeat;
 }
@@ -1912,14 +1901,35 @@ body.page-id-439 .entry-header-blog {
 }
 
 /* the 420 page */
+/*body.page-id-396 .entry-header,
+body.page-id-396 .entry-header-blog, 
+body.page-id-399 .entry-header, 
+body.page-id-399 .entry-header-blog,
+body.page-id-439 .entry-header, 
+body.page-id-439 .entry-header-blog {
+  padding: 0 0 10rem 0 !important;
+}*/
+
 body.page-id-396 .entry-header,
 body.page-id-399 .entry-header,
 body.page-id-439 .entry-header {
   /* background: #fff url('inc/assets/images/420banner-1920w-300h.jpg') no-repeat; */
-  height:  396px;
-  background: #fff url('inc/assets/images/black-friday-banner.gif') no-repeat;
-
+  height: 396px;
+  background: #000 url('inc/assets/images/black-friday-banner.gif') no-repeat;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #contact-us .entry-header {
   background: #2d3545 url('inc/assets/images/b&w-bud-1920.jpg') no-repeat;
@@ -1934,7 +1944,7 @@ body.page-id-439 .entry-header {
 #contact-us .entry-header h1 {
   color: #80be79;
 }
-
+/* wrap this in a media query */
 body.page-id-396 .entry-header h1,
 body.page-id-399 .entry-header h1,
 body.page-id-439 .entry-header h1 {

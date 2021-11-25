@@ -2016,7 +2016,8 @@ body.page-id-439 .entry-header-blog {
 
 @media only screen and (min-width: 841px) and (max-width: 1023px) {
 
-  body.page-id-568 .entry-header {
+  body.page-id-568 .entry-header,
+  body.page-id-480 .entry-header {
     background: #000 url('inc/assets/images/cyber-monday-banner-960px.gif') no-repeat;
     height:  175px;
   }

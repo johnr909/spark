@@ -1984,12 +1984,14 @@ body.page-id-439 .entry-header-blog {
 
 /* Cyber Monday */
 @media only screen and (max-width: 767px) {
-  body.page-id-568 .entry-header {
+  body.page-id-568 .entry-header,
+  body.page-id-480 .entry-header {
     background: #000 url('inc/assets/images/cyber-monday-banner-767w-725h.webp') no-repeat;
     height: 100%;
   }
 
-  body.page-id-568 .entry-header h1 {
+  body.page-id-568 .entry-header h1,
+  body.page-id-480 .entry-header h1 {
     margin:  2rem auto;
     font-size:  3.25rem;
     color: #fff;
@@ -1999,12 +2001,14 @@ body.page-id-439 .entry-header-blog {
 
 @media only screen and (min-width: 768px) and (max-width: 840px) {
 
-  body.page-id-568 .entry-header {
+  body.page-id-568 .entry-header,
+  body.page-id-480 .entry-header {
     background: #000 url('inc/assets/images/cyber-monday-banner-786px.gif') no-repeat;
     height:  140px;
   }
 
-  body.page-id-568 .entry-header h1 {
+  body.page-id-568 .entry-header h1,
+  body.page-id-480 .entry-header h1 {
     display: none
   }
 
@@ -2017,7 +2021,8 @@ body.page-id-439 .entry-header-blog {
     height:  175px;
   }
 
-  body.page-id-568 .entry-header h1 {
+  body.page-id-568 .entry-header h1,
+  body.page-id-480 .entry-header h1 {
     display: none
   }
 
@@ -2025,12 +2030,14 @@ body.page-id-439 .entry-header-blog {
 
 @media only screen and (min-width: 1024px) {
 
-  body.page-id-568 .entry-header {
+  body.page-id-568 .entry-header,
+  body.page-id-480 .entry-header {
     height: 350px;
     background: #000 url('inc/assets/images/cyber-monday-banner.gif') no-repeat;
   }
 
-  body.page-id-568 .entry-header h1 {
+  body.page-id-568 .entry-header h1,
+  body.page-id-480 .entry-header h1 {
     display: none;
   }
 

@@ -4,11 +4,11 @@
 
         <div class="carousel-item active" data-interval="5000">
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 
-'black-friday-bg-banner-1920w-350h.webp'; ?>"
-                 class="d-block w-100" alt="our monthly specials">
+'cyber-monday-bg-banner-1920w-350h.webp'; ?>"
+                 class="d-block w-100" alt="our Cyber Monday specials">
             <div class="carousel-caption rooster-caption d-md-block">
                 <?php
-                    get_template_part( 'template-parts/content', 'home-black-friday-cta' );
+                    get_template_part( 'template-parts/content', 'home-cyber-monday-cta' );
                 ?>
             </div><!-- .carousel-caption -->
         </div><!-- .carousel-item -->

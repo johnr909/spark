@@ -2080,6 +2080,7 @@ body.page-id-439 .entry-header-blog {
 body.page-id-579 .entry-header h1,
 body.page-id-492 .entry-header h1,
 body.page-id-613 .entry-header h1 {
+
   font-family: 'Lobster Two', cursive;
   color: gold;
   text-shadow: -3px 2px #222;
@@ -2096,6 +2097,7 @@ body.page-id-613 .entry-header h1 {
   body.page-id-579 entry-header h1,
   body.page-id-492 .entry-header h1,
   body.page-id-613 .entry-header h1 {
+    margin:  1.25rem auto;
     font-size:  3.25rem;
   }
 
@@ -2113,6 +2115,7 @@ body.page-id-613 .entry-header h1 {
   body.page-id-579 .entry-header h1,
   body.page-id-492 .entry-header h1,
   body.page-id-613 .entry-header h1 {
+    margin:  2rem auto;
     font-size:  4rem;
   }
 
@@ -2130,6 +2133,7 @@ body.page-id-613 .entry-header h1 {
   body.page-id-579 .entry-header h1,
   body.page-id-492 .entry-header h1,
   body.page-id-613 .entry-header h1 {
+    margin:  3rem auto;
     font-size:  5rem;
   }
 

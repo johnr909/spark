@@ -380,6 +380,8 @@ function wp_bootstrap_starter_scripts() {
 
     wp_enqueue_style( 'wp-bootstrap-starter-muli', 'https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap' );
 
+    wp_enqueue_style( 'wp-bootstrap-starter-lobser2', 'https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap' );
+
 	//Color Scheme
     /*if(get_theme_mod( 'preset_color_scheme_setting' ) && get_theme_mod( 'preset_color_scheme_setting' ) !== 'default') {
         wp_enqueue_style( 'wp-bootstrap-starter-'.get_theme_mod( 'preset_color_scheme_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/color-scheme/'.get_theme_mod( 'preset_color_scheme_setting' ).'.css', false, '' );

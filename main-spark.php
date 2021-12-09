@@ -20,12 +20,18 @@ get_header('spark'); ?>
         </div><!-- .row -->
     </div><!-- .container-fluid -->
 
+    
+
     <div class="container">
         <div class="row">
 
             <section id="primary" class="content-area col-sm-12">      
                 <main id="main" class="site-main" role="main">
+                    <?php if( is_page('12days')) : ?>
 
+    <?php get_template_part( 'template-parts/content', 'advent-cal' );?>
+
+<?php endif; ?>
                     <?php
                         while ( have_posts() ) : the_post();
                         endwhile; // End of the loop.

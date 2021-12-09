@@ -3254,6 +3254,17 @@ label {
   color: red;
 }
 
+@media only screen and (max-width: 499px) { 
+
+  .back-text h5 {
+    font-size:  2rem;
+  }
+
+  .back-text p {
+    font-size: 1.5rem;
+  }
+}
+
 label:hover .door {
   border-color: #efefef; 
 }

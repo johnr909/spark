@@ -3023,11 +3023,11 @@ h4.text-420 {
     grid-template-columns: repeat(2, 1fr); 
     grid-gap: 15px;  
     grid-template-areas:    "d1       d2"
-                            "d3       d4"
-                            "d5       d6"
-                            "d7       d8"
-                            "d9       d10"
-                            "d11      d11"
+                            "d3       d3"
+                            "d4       d5"
+                            "d6       d7"
+                            "d8       d9"
+                            "d10      d11"
                             "d12      d12";
 
   } 
@@ -3039,10 +3039,10 @@ h4.text-420 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 20px;    
-    grid-template-areas:    "d1       d2       d3"
-                            "d4       d5       d6"
-                            "d7       d8       d9"
-                            "d10      d11      d11"
+    grid-template-areas:    "d1       d1       d2"
+                            "d3       d3       d4"
+                            "d5       d6       d7"
+                            "d8       d10      d11"
                             "d12      d12      d12";
   }
 
@@ -3053,10 +3053,10 @@ h4.text-420 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-gap: 25px;    
-    grid-template-areas:    "d1       d2       d3       d4"
-                            "d5       d6       d7       d8"
-                            "d9       d10      d11      d11"
-                            "d12      d12      d12      d12";
+    grid-template-areas:    "d1       d2       d3       d3"
+                            "d4       d5       d6       d7"
+                            "d8       d9       d10      d10"
+                            "d11      d12      d12      d12";
   }
 }
 
@@ -3159,7 +3159,7 @@ grid-area: d1;
   background: url(inc/assets/images/advent/12-Dec24.jpg)  no-repeat center top;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 500px) {
   .day-12 .back-img {
   background: url(inc/assets/images/advent/12-Dec24-biggly.jpg)  no-repeat center top;
 }
@@ -3237,6 +3237,7 @@ label {
   top: 0;
   margin: 1rem 0 .5rem 0;
   padding: 0;
+  font-weight:  800;
   font-size:  1.5rem;
   color:  green;
   text-align: center;
@@ -3248,9 +3249,10 @@ label {
   margin: 1rem;
   padding: 0;
   font-family: "Muli", sans-serif; 
-  font-weight:  600;
+  font-weight:  800;
   font-size: 1rem;
   text-align: center;
+  line-height:  125%;
   color: red;
 }
 
@@ -3263,6 +3265,18 @@ label {
   .back-text p {
     font-size: 1.5rem;
   }
+}
+
+@media only screen and (min-width: 500px)  and (max-width: 959px) {
+
+  .back-text h5 {
+    font-size:  1.5rem;
+  }
+
+  .back-text p {
+    font-size: 1.15rem;
+  }
+
 }
 
 label:hover .door {

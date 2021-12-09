@@ -3236,8 +3236,12 @@ label {
   height: 100%;
 }
 
-#back-3 .back-text {
-  height: 70%;
+@media only screen and (max-width: 499px) { 
+
+  #back-3 .back-text {
+    height: 70%;
+  }
+
 }
 
 .door .back-text {

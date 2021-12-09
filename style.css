@@ -2062,7 +2062,15 @@ body.page-id-439 .entry-header-blog {
   font-family: 'Lobster Two', cursive;
   color: gold;  
   text-shadow: -3px 2px #222;
-  font-size: 3.5rem;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 959px) {
+
+  .dankmas {
+    font-size:  2.5rem;
+  }
+
 }
 
 .dankmas:hover {
@@ -3160,9 +3168,18 @@ grid-area: d1;
 }
 
 @media only screen and (min-width: 500px) {
+
+  .day-1 .back-img {
+    background: url(inc/assets/images/advent/1-Dec13-biggly.jpg)  no-repeat center top;
+  }
+
+  .day-3 .back-img {
+    background: url(inc/assets/images/advent/3-Dec15-biggly.jpg)  no-repeat center top;
+  }
+
   .day-12 .back-img {
-  background: url(inc/assets/images/advent/12-Dec24-biggly.jpg)  no-repeat center top;
-}
+    background: url(inc/assets/images/advent/12-Dec24-biggly.jpg)  no-repeat center top;
+  }
 }
 
 /* door styles */

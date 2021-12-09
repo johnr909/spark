@@ -6,7 +6,7 @@
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 
 '12days-banner-1920w-350h.jpg'; ?>"
                  class="d-block w-100" alt="the 12 days of dankmas">
-            <div class="carousel-caption rooster-caption d-md-block">
+            <div class="carousel-caption d-md-block">
                 <?php
                     get_template_part( 'template-parts/content', 'home-12days' );
                 ?>

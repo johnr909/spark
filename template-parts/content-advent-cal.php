@@ -1,6 +1,5 @@
 <section class="description">
-    <h3></h3>
-  <p></p>
+  <p>Get ready for 12 days of Dankmas with Spark! 12 days and 12 deals. click on the corresponding date to reveal that day's sale! Deals Valid through December 24th after start date. <span class="red">Spark will be Closed Christmas Day</span>.</p>
   </section>
 
 <section class='grid-1'>

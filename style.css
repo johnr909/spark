@@ -2065,6 +2065,22 @@ body.page-id-439 .entry-header-blog {
   font-size: 3.5rem;
 }
 
+.dankmas:hover {
+  color: #fff;
+  text-decoration: none;
+} 
+
+.description p {
+  width:  75%;
+  margin: 1rem auto;
+  font-family: "Lobster Two", cursive;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.red {
+  color: red;
+}
 @media only screen and (max-width: 499px) { 
   .dankmas {
     font-size: 2.5rem;
@@ -2072,15 +2088,10 @@ body.page-id-439 .entry-header-blog {
 
 }
 
-.dankmas:hover {
-  color: #fff;
-  text-decoration: none;
-} 
-
 body.page-id-579 .entry-header h1,
 body.page-id-492 .entry-header h1,
 body.page-id-613 .entry-header h1 {
-
+  margin: auto;
   font-family: 'Lobster Two', cursive;
   color: gold;
   text-shadow: -3px 2px #222;
@@ -2097,7 +2108,6 @@ body.page-id-613 .entry-header h1 {
   body.page-id-579 entry-header h1,
   body.page-id-492 .entry-header h1,
   body.page-id-613 .entry-header h1 {
-    margin:  1.25rem auto;
     font-size:  3rem;
   }
 
@@ -2115,7 +2125,6 @@ body.page-id-613 .entry-header h1 {
   body.page-id-579 .entry-header h1,
   body.page-id-492 .entry-header h1,
   body.page-id-613 .entry-header h1 {
-    margin:  2rem auto;
     font-size:  3.5rem;
   }
 
@@ -2133,7 +2142,6 @@ body.page-id-613 .entry-header h1 {
   body.page-id-579 .entry-header h1,
   body.page-id-492 .entry-header h1,
   body.page-id-613 .entry-header h1 {
-    margin:  2rem auto;
     font-size:  4rem;
   }
 
@@ -2151,7 +2159,6 @@ body.page-id-613 .entry-header h1 {
   body.page-id-568 .entry-header h1,
   body.page-id-480 .entry-header h1,
   body.page-id-613 .entry-header h1 {
-    margin:  3rem auto;
     font-size:  5rem;
   }
 

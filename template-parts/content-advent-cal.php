@@ -1,6 +1,6 @@
 <section class="description">
-    <h3>the 12 days of dankmas</h3>
-  <p>description</p>
+    <h3></h3>
+  <p></p>
   </section>
 
 <section class='grid-1'>

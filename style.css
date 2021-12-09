@@ -2983,7 +2983,7 @@ h4.text-420 {
   margin: 2% auto;
   padding:  2rem;
   background: url(inc/assets/images/advent/12days-background.jpg) no-repeat top center #000;
-
+  background-size: cover;
 }
 
 @media only screen and (max-width: 499px) { 

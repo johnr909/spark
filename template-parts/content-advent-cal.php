@@ -132,7 +132,7 @@
             <div class="back-img"></div>
             <div class="back-text">
               <h5>December 20th-24th</h5>
-              <p>Airo pro TBD. While supplies last. Deal is available Recreational only.</p>
+              <p>Airo pro cartridges are buy any two and get a battery for .10 cents. While supplies last. Deal is available Recreational only.</p>
             </div>
           </div><!-- /.back -->
         </div><!-- /.door -->

@@ -2083,13 +2083,14 @@ body.page-id-439 .entry-header-blog {
   margin: 1rem auto;
   font-family: "Lobster Two", cursive;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
 }
 
 .red {
   color: red;
 }
 @media only screen and (max-width: 499px) { 
+
   .dankmas {
     font-size: 2.5rem;
   }
@@ -3171,14 +3172,18 @@ grid-area: d1;
 
   .day-1 .back-img {
     background: url(inc/assets/images/advent/1-Dec13-biggly.jpg)  no-repeat center top;
+    background-size: cover !important;
+
   }
 
   .day-3 .back-img {
     background: url(inc/assets/images/advent/3-Dec15-biggly.jpg)  no-repeat center top;
+    background-size: cover !important;  
   }
 
   .day-12 .back-img {
     background: url(inc/assets/images/advent/12-Dec24-biggly.jpg)  no-repeat center top;
+    background-size: cover !important;
   }
 }
 
@@ -3217,7 +3222,7 @@ label {
   justify-content: center;  
   font-family: 'Lobster Two', cursive;
   color: green;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: bold;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
 }
@@ -3234,9 +3239,10 @@ label {
   position: absolute;
   top: 0;
   height: 100%;
+  background-size: cover;
 }
 
-@media only screen and (max-width: 499px) { 
+@media only screen and (max-width: 499px) {
 
   #back-3 .back-text {
     height: 70%;
@@ -3250,7 +3256,7 @@ label {
   border-radius: 0 0 6px 6px;
   position: absolute;
   bottom: 0;
-  opacity: 80%;
+  opacity: 70%;
 }
 
 .back-text h5 {
@@ -3280,12 +3286,24 @@ label {
 @media only screen and (max-width: 499px) { 
 
   .back-text h5 {
-    font-size:  2rem;
+    font-size:  1.75rem;
   }
 
   .back-text p {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
+}
+
+@media only screen and (max-width: 350px) { 
+  
+  .back-text h5 {
+    font-size:  1.5rem;
+  }
+
+  .back-text p {
+    font-size: 1.2rem;
+  }
+
 }
 
 @media only screen and (min-width: 500px)  and (max-width: 959px) {

@@ -1,0 +1,22 @@
+/*
+CONTACT US PAGE with form
+*/
+
+iframe {  
+border: 1px solid #2d3545;
+}
+
+.gmap-container {
+ overflow: hidden;
+ height: 480px;
+ margin: 2.5rem;
+}
+
+.wpcf7-form {
+  margin-top: 2.25rem;
+}
+
+.form-control:focus {
+  border-color: #80be79;
+  box-shadow: 0 0 0 .2rem rgba(128, 190, 121);
+}

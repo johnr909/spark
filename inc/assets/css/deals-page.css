@@ -1,0 +1,52 @@
+/*
+DEALS/EVENTS PAGE
+*/
+
+.card {
+  margin: 15px;
+}
+
+.deals .col-md {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.coupon {
+  margin: 0 20px;
+  padding: 0;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, .125);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  border-radius: .25rem;
+  background-color: #fff;
+}
+
+.row .online-cta {
+  background: #f2f8f1 url('inc/assets/images/dots.jpg') repeat;
+}
+
+.coupon-icon-container {
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 3px solid;
+  width: 10rem;
+  height: 10rem;      
+  background-color: #80be79;
+}
+
+.coupon-icon-container .fa {
+  display: inline-block;
+  margin: 2.25rem auto;
+  font-size: 5rem;
+}
+
+.coupon-text {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-size: 1.25rem;
+}
+
+.coupon img {
+  display: block;
+  margin: .25rem auto;
+}

@@ -7,7 +7,7 @@ BODY-LAYOUT
   padding-bottom: 0;
 }
 /*
-UTILITIES, BUTTONS
+UTILITIES, BUTTONS & MODALS
 */
 
 blockquote {
@@ -97,5 +97,17 @@ blockquote {
 @media only screen and (max-width: 576px) {
   .btn-group-lg > .btn, .btn-lg {
     font-size: 1.5rem;
+  }
+}
+/* modal */
+/* override Bootstrap's display: flex property on this element */
+.modal-header {
+  display: block;
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 960px) {
+  .modal-dialog {
+      max-width: 700px;
   }
 }

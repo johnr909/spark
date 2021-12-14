@@ -1,0 +1,100 @@
+/*
+BLOG
+*/
+
+.blog .widgettitle {
+  font-size: 1.15rem;
+}
+
+.readmore-btn {
+  margin-bottom: 2rem;
+}
+
+.pagination {
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.page-link {
+  color: #80be79;
+}
+
+.page-link:hover {
+  color: #2d3545;
+}
+
+.page-item.active .page-link {
+  color: #f2f8f1;
+  background-color: #80be79;
+  border-color: #80be79;
+}
+
+.alert-info {
+  color: #2d3545;
+  background-color: #80be79;
+  border-color: #f2f8f1;
+}
+
+.cat-links {
+  font-weight: 700;
+}
+
+.blog-sidebar ul li {
+  list-style-position: inside;
+  list-style-type: none;
+  margin: .75rem 0;
+  padding: 0 0 0 2rem;
+  background-size: 1.25rem;
+  background-image: url('inc/assets/images/emoji2.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+h1.entry-title {
+  font-size: 1.75rem;
+}
+
+article.reviews .entry-header {
+  padding: 0;
+}
+
+article.reviews h1.title {
+  text-align: left;
+  color: #2d3545;
+}
+
+/* hide the title on the Westword widget */
+div#WWAG h2.widgettitle {
+  display: none;
+}
+
+.not-found .search-form {
+  margin-bottom: 3rem;
+}
+
+article.post header.entry-header {
+  padding: 0;
+}
+
+article.post header.entry-header h1 {
+  text-align: left;
+  color: #2d2545;
+}
+
+article.post header.entry-header h1.entry-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  border-bottom: none;
+}
+
+/* for sticky posts */
+.sticky {
+  padding: 1rem;
+  border: 1px solid #2d3545;
+  background-color: #f2f8f1;
+}
+
+.blog-sidebar {
+  margin-top: 2rem;
+}

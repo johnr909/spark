@@ -1,0 +1,165 @@
+/* Westword */
+@font-face {
+  font-family: 'AvalonReg';
+  src: url('inc/assets/fonts/Avalon_Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ww-vote-bestof {
+  font-family: 'AvalonReg', 'Muli', sans-serif;
+}
+
+.best {
+  padding: 0;
+  text-shadow: -3px 2px #222425;
+}
+
+.ww-vote-btn {
+  display: inline-block;
+  border: 2px solid #000;
+  background-color: #06b1cb; 
+}
+
+.ww-vote-btn:hover {
+  text-decoration: none;
+}
+
+.ww-vote-text > span {
+  font-size: .75rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .carousel-item .ww-vote-banner {
+    height: 350px;
+  }
+
+  .ww-vote-logo {
+    width: 85%;
+    height: 85%;
+  }
+
+  .ww-vote-btn {
+    margin: 1rem 1rem 0;
+    padding: .25rem 1.15rem; 
+    font-size: 2rem;
+  }
+
+  .best {
+    margin: .35rem 0;
+    font-size: 2.5rem;
+  }
+
+  .ww-vote-text {
+    margin: .5rem 0;
+    font-size: 1.25rem; 
+  }
+
+}
+
+
+@media only screen and (min-width: 481px)  and (max-width: 767px) {
+
+  .carousel-item .ww-vote-banner {
+    height: 350px;
+  }
+
+   .ww-vote-logo {
+    width: 70%;
+    height: 70%;
+  }
+
+  .ww-vote-btn {
+    margin-top: 2rem;
+    padding: .5rem 1.15rem;
+    font-size: 2rem;
+  }
+
+  .best {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+  }
+
+  .ww-vote-text {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .ww-vote-logo {
+    width: 60%;
+    height: 60%;
+  }
+
+  .ww-vote-btn {
+    margin: 0;
+    padding: .15rem 1.15rem;
+    font-size: 1.25rem;
+  }
+
+  .best {
+    margin: .15rem 0;
+    font-size: 2rem;
+  }
+
+  .ww-vote-text {
+    margin: .5rem 0;
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px)  and (max-width: 959px) {
+
+   .ww-vote-logo {
+    width: 33%;
+    height: 33%;
+  }
+
+  .ww-vote-btn {
+    margin-top: .5rem;
+    font-size: 1.15rem;
+  }
+
+  .best {
+    font-size: 1.75rem;
+    margin: .15rem 0;
+  }
+
+  .ww-vote-text {
+    margin-top: .25rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 960px) {
+
+  .ww-vote-caption {
+    top: 2%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+}
+
+
+@media only screen and (min-width: 960px) {
+
+ .ww-vote-logo {
+    width: 30%;
+    height: 30%;
+  }
+
+  .ww-vote-btn {
+    margin: .25rem 0 0 0;
+    font-size: 1.15rem;
+  }
+
+}
+

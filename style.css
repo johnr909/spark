@@ -27,771 +27,20 @@ Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, 
 /* @import "inc/assets/css/promos/westword-bestof.css"; */
 
 /* @import "inc/assets/css/events.css"; */
+ @import "inc/assets/css/typography.css";
+ @import "inc/assets/css/utils-buttons.css"; 
+ @import "inc/assets/css/alerts-notices.css"; 
+ @import "inc/assets/css/header-footer.css"; 
+ @import "inc/assets/css/main-nav.css"; 
+ @import "inc/assets/css/home-carousel-banner.css"; 
+ @import "inc/assets/css/home.css"; 
 
 
 
-/*
-BODY-LAYOUT
-*/
 
-#content.site-content {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
-/*
-TYPOGRAPHY
-*/
 
-body {
-  font-family: "Muli", sans-serif; 
-  font-weight: 600;
-  font-size: 1.15rem;
-  color: #2d3545;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 125%;
-  color: #2d3545;
-}
-
-h4, 
-h5, 
-h6 {
-  font-weight: 700;
- } 
-
-h2 {
-  font-size: 2.25rem;
-}
-
-h3 {
-  font-size: 1.85rem;
-}
-
-h3.lead {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.4rem;
-}
-
-h5 {
-  font-size: 1.2rem;
-}
-
-a {
-  color: #80be79;
-}
-
-a:hover {
-  color: #2d3545;
-}
-
-@media only screen and (max-width: 576px) {
-
-  body {
-    font-size: 1.5rem;
-  }
-
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h3.lead {
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-
-  h4 {
-    font-size: 1.65rem
-  }
-
-  h5 {
-    font-size: 1.4rem;
-  }
-}
-
-/*
-UTILITIES, BUTTONS
-*/
-
-blockquote {
-  border: none;
-}
-
-.highlight {
-  font-weight: 800;
-  color: #80be79;
-}
-
-.dark-text {
-  color: #2d3545;
-}
-
-.green-text {
-  color: #80be79;
-}
-
-.orange-text {
-  color: #ff5810;
-}
-
-.white-text {
-  color: #fff;
-}
-
-.light-blue-bg {
-  background-color: #f2f8f1;
-}
-
-.very-dark-bg {
-  background: #2d3545 url("inc/assets/images/leaf-dark-bg2-r2.png") no-repeat bottom right;
-}
-
-.white-bg {
-  background-color: #fff;
-}
-
-.green-bg {
-  background-color: #80be79;
-}
-
-.btn-primary {
-  font-weight: 600;
-  background-color: #80be79;
-  border-color: #80be79;
-}
-
-.btn-primary:hover,
-.btn-secondary:hover {
-  background-color: #fff;
-  border-color: #80be79;
-  color: #2d3545;
-}
-
-.btn-secondary {
-  font-weight: 600;
-  background-color: #2d3545;
-  border-color: #2d3545;
-}
-
-.btn-lg {
-  padding: .75rem 1.5rem;
-  border-radius: .6rem;
-}
-
-.btn-primary:not(:disabled):not(.disabled).active:focus, 
-.btn-primary:not(:disabled):not(.disabled):active:focus, 
-.show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgba(128,190,121,.5);
-}
-
-.btn-primary.focus, 
-.btn-primary:focus {
-    box-shadow: 0 0 0 .2rem rgba(128,190,121,.5);
-}
-
-.btn-primary:not(:disabled):not(.disabled).active, 
-.btn-primary:not(:disabled):not(.disabled):active, 
-.show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #80be79;
-    border-color: transparent;
-}
-
-@media only screen and (max-width: 576px) {
-  .btn-group-lg > .btn, .btn-lg {
-    font-size: 1.5rem;
-  }
-}
-/*
-HEADER
-*/
-
-.container-fluid-info {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.warning {
-	margin-bottom: 10px;
-  padding: 20px 30px;
-  background-color: red;
-  border-bottom: 1px solid #000;
-  color: #2d3545;
-}
-
-.notice {
-	padding: 10px 20px;
-  background-color: #80be79;
-  color: #2d3545;
-}
-
-.notice a {
-	text-decoration: underline;
-	color: #2d3545;
-}
-
-.notice a:hover {
-	text-decoration: none;
-	color: #fff;
-}
-
-@media only screen and (max-width: 576px) {
-  .warning {
-    margin-bottom: 2px;
-    padding: 3px 8px;
-  }
-
-  .notice {
-    padding: 3px 8px;
-  }
-}
-
-.warning .fa,
-.notice .fa {
-  font-size: 2rem;
-}
-
-header#masthead {
-  padding-bottom: 5px;
-  background-color: #fff;
-}
-
-.navbar-brand {
-  margin-right: 0;
-  padding: .25rem .75rem .5rem .5rem;
-}
-
-.navbar-brand-img {
-  width: 250px;
-  min-width: 250px;
-}
-
-/*
-HEADER-FOOTER
-*/
-
-.header-footer ul {
-  list-style: none;
-}
-
-.header {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.header,
-.header a {
-  font-size: .9rem;
-  text-decoration: none;
-  color: #2d3545;
-}
-
-.header a:hover {
-  color: #80be79;
-}
-
-.foot-social  {
-	background-color: #111;
-  color: #fff;
-}
-
-.foot-social .fab {
-  font-size: 3rem;
-}
-
-.foot-social p {
-	margin: 0 0 1rem 0;
-}
-
-.foot-social p a:hover {
-	color: #fff;
-}
-
-.foot {
-  background: #111 url('inc/assets/images/footer-bg.png');
-  color: #fff;
-}
-
-.foot .footer,
-.foot .footer a {
-  font-size: .9rem;	
-  color: #fff;
-}
-
-.foot .footer a:hover {
-  color: #80be79;
-}
-
-@media only screen and (max-width: 576px) {
-  header, .header a {
-    font-size: 1.1rem;
-  }
-
-  .foot .footer, .foot .footer a {
-    font-size: 1.35rem;
-    line-height: 200%;
-  }
-}
-
-/*
-NAV
-*/
-
-#masthead .jr-nav-container {
-	padding-left: 0;
-	padding-right: 0;
-}
-
-body:not(.theme-preset-active) #masthead .navbar-nav>li>a {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #2d3545;
-}
-
-body:not(.theme-preset-active) #masthead .navbar-nav>li.current_page_item>a,
-body:not(.theme-preset-active) #masthead .navbar-nav>li>a:hover {
-  color: #80be79;
-}
-
-body:not(.theme-preset-active) #masthead .navbar-nav>li.current_page_item>a {
-  border-bottom: 3px solid #80be79;
-}
-
-@media only screen and (max-width: 576px) {
-  body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
-    font-size: 1.5rem;
-  }
-}
-
-/*
-change the default and only have the burger show at sizes below 768px instead of 1120px
-*/
-
-@media only screen and (min-width: 768px) {
-  .navbar-expand-xl .navbar-collapse {
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-  }
-  .navbar-nav {
-    flex-direction: row;
-  }
-  .navbar-expand-xl .navbar-toggler {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #main-nav {
-    margin-bottom: 5px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .navbar-brand {
-    margin: auto;   
-  }      
-}
-
-/*
-HOME PAGE CAROUSEL/MOBILE BANNER
-*/
-
-.carousel-caption {
-  bottom: 20px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.carousel-text h1 {
-  display: none;
-}
-
-.carousel-text p.lead {
-  margin-bottom: .2rem;
-  font-size: 2.5rem;
-  text-align: center;
-  font-weight: 700;
-  line-height: 100%;
-  color: #fff;
-}
-
-.carousel-text p.lead-dark {
-  color: #2d3545 !important;
-}
- 
-.carousel-text p.cta {
-  margin-bottom: .2rem;
-  font-size: 1.6rem;
-  text-align: center;
-  font-weight: 700;
-  color: #80be79;
-}
-
-.carousel-text p.cta {
-  margin-bottom: .2rem;
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-
-.bud-burst .carousel-text p.cta {
-  color: #fff;
-}
-
-.carousel-text .rec-button {
-  margin-right: .5rem;
-}
-
-.carousel-text .med-button {
-  margin-left: .5rem;
-}
-
-/* rooster ad */
-.rooster-caption {
-  right: 20% !important;
-  left: 20% !important;
-  bottom: 40px;
-}
-
-#carousel-text .rooster-text {
-  font-size: 2.5rem;
-  text-shadow: -3px 2px #222425;
-}
-
-.rooster-link {
-  text-decoration: underline;
-}
-
-.rooster-link:hover {
-  color: #f2f8f1;
-  text-decoration: none;
-}
-
-@media only screen and (min-width: 370px) and (max-width: 961px) {
-  .carousel-text p.lead {
-  	font-size: 1.35rem;
-  }
-
-  .carousel-text p.cta {
-  	font-size: 1.15rem;
-  }
-
-  .btn-lg {
-  	padding: .15rem .25rem;
-  }
-}
-
-/* not showing the home mobile banner for smaller devices as we */
-/* want to show the carousel to all devices */
-#home-mobile-banner {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #home-mobile-banner {
-    display: none;
-  }
-}
-
-#home-mobile-banner {
-  width: 100%;
-  padding: 5px 15px;
-  background: transparent url('inc/assets/images/leaves-closeup.jpg') no-repeat;
-}
-
-#home-mobile-banner h2 {
-  display: none;
-}
-
-#home-mobile-banner a.btn {
-  width: 12rem;
-  margin: 15px auto;
-}
-
-#home-mobile-banner .lead {
-  margin: .5rem 0;
-  font-size: 1.5rem;
-  text-align: center;
-  font-weight:700;
-  color: #fff;
-}
-
-#home-mobile-banner .cta {
-  margin-bottom: .5rem;
-  font-size: 1.6rem;
-  text-align: center;
-  font-weight: 700;
-  color: #80be79;
-}
-
-
-/*
-HOME PAGE
-*/
-
-body.home .xdebug-error,
-body.home .xdebug-warning {
-  display: none;
-}
-
-@media screen and (min-width: 768px) and (max-width: 961px) {
-  .home-cards .col-md-4 {
-    flex: 0 0 28%;
-    max-width: 32%;
-  }
-}
-
-@media (min-width: 768px) {
-  .home-cards .col-md-6 {
-    max-width: 44%;
-  }
-}
-
-@media screen and (min-width: 962px) {
-  .home-cards .col-md-4 {
-    flex: 0 0 29%;
-    max-width: 33.3333333%;
-  }
-}
-
-@media screen and (min-width: 962px) {
-  .home-cards .col-md-4 {
-    flex: 0 0 30.2%;
-    max-width: 33.3333333%;
-  }
-}
-
-
-/* DOD home page styling */
-#card-home {
-	margin-left: 15px;
-  padding: 0 15px;
-}
-
-#card-home .card-title {
-  font-size: 1.75rem;
-}
-
-#card-home .card-text {
-  font-size: 1.25rem;
-}
-
-@media only screen and (max-width: 576px) {
-  #card-home .card-text {
-    font-size: 1.5rem;
-  }  
-}
-
-/* card styling on the home page generally */
-.home-cards .card-body {
-  margin-top: 0;
-}
-
-.home-cards .card-title {
-  margin-bottom: 0;
-  padding-top: 0;
-}
-
-.home-cards .card-img-top {
-  display: inline-block;
-}
-
-.card-home .rewards-title {
-  line-height: 125%;
-  font-weight: 700;
-}
-
-.card-home .card-text {
-  text-align: left;
-}
- 
-.card-home .card-body {
-  padding: 15px 15px 15px 0;
-}
-
-/* for the deals page */
-@media only screen and (min-width: 768px) and (max-width: 961px) {
-	.deals .col-md-1 {
-		flex: 0 0 12.5%;
-		max-width: 13%;
-	}
-
-	.deals .card {
-		margin: 5px;
-	}
-}
-
-@media only screen and (min-width: 962px) {
-	.deals .col-md-1 {
-		flex: 0 0 13%;
-		max-width: 14%;
-	}
-
-	.deals .card {
-		margin: 6px;
-	}
-}
-
-.deals div[class^='col'] {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.deals div[class^='col'] .card-body {
-  margin-top: 0;
-  padding: .25rem;
-}
-
-.deals div[class^='col'] .card-title {
-  margin-top: .25rem;
-  padding: .25rem 0;
-  font-size: 1rem;
-}
-
-.deals div[class^='col'] .card-text {
-  text-align: center;
-  font-size: .92rem;
-}
-
-.card-title {
-  margin-bottom: .75rem;
-  padding: .75rem 0;
-  font-size: 1.25rem;
-  font-weight: 800;
-  line-height: 125%;
-  border-bottom: 2px solid #2d3545;
-}
-
-.card-text, 
-.card-text:last-child {
-  font-size: 1.25rem;
-}
-
-h5.highlight {
-  border-bottom: 2px solid #80be79;
-}
-
-@media only screen and (max-width: 576px) {
-  .deals div[class^="col"] .card-title {
-    font-size: 1.75rem;
-  }
-
-    .deals div[class^="col"] .card-text {
-    font-size: 1.5rem;
-  }
-}
-
-/* rewards home */
-
-.home-cards .rewards-signup {
-  background: transparent;
-}
-
-.rewards-signup .fa-comment-dollar {
-	display: inline-block;
-	margin-top: 5px;
-  font-size: 4rem;
-}
-
-.rewards-title {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.rewards-text {
-  font-size: 1.5rem;
-}
-
-.card-home .rewards-text {
-  font-size: 1.15rem;
-  text-align: left;
-}
-
-.btn-join {
-	width: 12rem;
-}
-
-.rewards-signup {
-  background: #fff url('inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
-}
-
-@media only screen and (max-width: 576px) {
-  .rewards-title {
-    font-size: 1.75rem;
-  }
-
-  .card-home .rewards-text {
-    font-size: 1.5rem;
-  }
-}
-
- /* rewards callout on the deals page */
-.deals-rewards {
-  padding: 3rem;
-  background: #2d3545 url('inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; 
-}
-
-.deals-rewards img.card-img-top {
-  display: none;
-}
-
-.deals-rewards .rewards-title {
-  margin-top: 1.5rem;
-  font-size: 2.25rem;
-  color: #f2f8f1;
-}
-
-.deals-rewards .rewards-text {
-  text-align: center;
-	font-size: 1.25rem;
-  color: #f2f8f1;
-}
-
-.rewards-text:last-child {
-	margin-top: 1rem;
-}
-
-/* pre-order home page callout */
-.pre-order-home .btn-secondary {
-  margin-bottom: 1rem;
-}
-
-.testimonial-text {
-  color: #808080;
-  position: relative;
-  margin-bottom: 1rem;
-  padding: 15px 30px;
-  background: #f2f8f1;
-  border: 1px solid #efefef;
-  border-radius: 3px;
-}
-
-.testimonial-text::after {
-  content: "";
-  width: 15px;
-  height: 15px;
-  display: block;
-  background: #f2f8f1;
-  border: 1px solid #efefef;
-  border-width: 0 0 1px 1px;
-  position: absolute;
-  bottom: -8px;
-  left: 46px;
-  transform: rotateZ(-46deg);
-}
 
 /* NOT THE HOME PAGE */
 
@@ -829,125 +78,6 @@ h5.highlight {
   background: #2d3545 url('inc/assets/images/page-header-1920w-300h.jpg') no-repeat;
 }
 
-/* 12 Days of  Dankness */
-.dankmas {
-  margin: 1rem auto;
-  font-family: 'Lobster Two', cursive;
-  color: gold;  
-  text-shadow: -3px 2px #222;
-  font-size: 3rem;
-}
-
-@media only screen and (max-width: 959px) {
-
-  .dankmas {
-    font-size:  2.5rem;
-  }
-
-}
-
-.dankmas:hover {
-  color: #fff;
-  text-decoration: none;
-} 
-
-.description p {
-  width:  75%;
-  margin: 1rem auto;
-  font-family: "Lobster Two", cursive;
-  text-align: center;
-  font-size: 1.35rem;
-}
-
-.red {
-  color: red;
-}
-@media only screen and (max-width: 499px) { 
-
-  .dankmas {
-    font-size: 2.5rem;
-  }
-
-}
-
-body.page-id-579 .entry-header h1,
-body.page-id-492 .entry-header h1,
-body.page-id-613 .entry-header h1 {
-  margin: auto;
-  font-family: 'Lobster Two', cursive;
-  color: gold;
-  text-shadow: -3px 2px #222;
-}
-
-@media only screen and (max-width: 767px) {
-  body.page-id-579 .entry-header,
-  body.page-id-492 .entry-header,
-  body.page-id-613 .entry-header {
-    background: #000 url('inc/assets/images/12days-mobile-banner.jpg') no-repeat;
-    height: 100%;
-  }
-
-  body.page-id-579 entry-header h1,
-  body.page-id-492 .entry-header h1,
-  body.page-id-613 .entry-header h1 {
-    font-size:  3rem;
-  }
-
-}
-
-@media only screen and (min-width: 768px) and (max-width: 840px) {
-
-  body.page-id-579 .entry-header,
-  body.page-id-492 .entry-header,
-  body.page-id-613 .entry-header {
-    background: #000 url('inc/assets/images/12days-banner-840w.jpg') no-repeat;
-    height:  153px;
-  }
-
-  body.page-id-579 .entry-header h1,
-  body.page-id-492 .entry-header h1,
-  body.page-id-613 .entry-header h1 {
-    font-size:  3.5rem;
-  }
-
-}
-
-@media only screen and (min-width: 841px) and (max-width: 1023px) {
-
-  body.page-id-579 .entry-header,
-  body.page-id-492 .entry-header,
-  body.page-id-613 .entry-header {
-    background: #000 url('inc/assets/images/12days-banner-10230w.jpg') no-repeat;
-    height:  186px;
-  }
-
-  body.page-id-579 .entry-header h1,
-  body.page-id-492 .entry-header h1,
-  body.page-id-613 .entry-header h1 {
-    font-size:  4rem;
-  }
-
-}
-
-@media only screen and (min-width: 1024px) {
-
-  body.page-id-579 .entry-header,
-  body.page-id-492 .entry-header,
-  body.page-id-613 .entry-header {
-    height: 225px;
-    background: #000 url('inc/assets/images/12days-banner-1920w-225h.jpg') no-repeat;
-  }
-
-  body.page-id-568 .entry-header h1,
-  body.page-id-480 .entry-header h1,
-  body.page-id-613 .entry-header h1 {
-    font-size:  5rem;
-  }
-
-}
-
-/* end 12 Days of Dankness */
-
 #contact-us .entry-header {
 
   background: #2d3545 url('inc/assets/images/b&w-bud-1920.jpg') no-repeat;
@@ -981,28 +111,8 @@ h2.entry-title {
 
 }
 
-.subtitle {
-  margin: 0;
-  padding: 0 .5rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #80be79;
-  border: none;
-}
-
-h3 .fa-cannabis,
-h3 .fa-cut,
-h3 .fa-leaf,
-h3 .fa-seedling,
-h3 .fa-eye,
-h3 .fa-university,
-h3 .fa-money-bill-alt,
-h3 .fa-dollar-sign {
-  font-size: 3rem;
-}
-
 /*
-MENU PAGES
+REC & MED MENU PAGES
 */
 
 .coupon h4.online-step-numbers {
@@ -1112,7 +222,7 @@ DEALS/EVENTS PAGE
 
 
 /*
-CONTACT US PAGE
+CONTACT US PAGE with form
 */
 
 iframe {  
@@ -1270,6 +380,7 @@ article.post header.entry-header h1.entry-title {
   }
 
 }
+/* end nav */
 
 #more-deals ul {
   margin-top: 2.5rem;
@@ -1760,3 +871,121 @@ label:hover .door {
   transform: rotateY(180deg);
 }
 /* end advent cal*/
+/* 12 Days of  Dankness */
+.dankmas {
+  margin: 1rem auto;
+  font-family: 'Lobster Two', cursive;
+  color: gold;  
+  text-shadow: -3px 2px #222;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 959px) {
+
+  .dankmas {
+    font-size:  2.5rem;
+  }
+
+}
+
+.dankmas:hover {
+  color: #fff;
+  text-decoration: none;
+} 
+
+.description p {
+  width:  75%;
+  margin: 1rem auto;
+  font-family: "Lobster Two", cursive;
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+.red {
+  color: red;
+}
+@media only screen and (max-width: 499px) { 
+
+  .dankmas {
+    font-size: 2.5rem;
+  }
+
+}
+
+body.page-id-579 .entry-header h1,
+body.page-id-492 .entry-header h1,
+body.page-id-613 .entry-header h1 {
+  margin: auto;
+  font-family: 'Lobster Two', cursive;
+  color: gold;
+  text-shadow: -3px 2px #222;
+}
+
+@media only screen and (max-width: 767px) {
+  body.page-id-579 .entry-header,
+  body.page-id-492 .entry-header,
+  body.page-id-613 .entry-header {
+    background: #000 url('inc/assets/images/12days-mobile-banner.jpg') no-repeat;
+    height: 100%;
+  }
+
+  body.page-id-579 entry-header h1,
+  body.page-id-492 .entry-header h1,
+  body.page-id-613 .entry-header h1 {
+    font-size:  3rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 840px) {
+
+  body.page-id-579 .entry-header,
+  body.page-id-492 .entry-header,
+  body.page-id-613 .entry-header {
+    background: #000 url('inc/assets/images/12days-banner-840w.jpg') no-repeat;
+    height:  153px;
+  }
+
+  body.page-id-579 .entry-header h1,
+  body.page-id-492 .entry-header h1,
+  body.page-id-613 .entry-header h1 {
+    font-size:  3.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 841px) and (max-width: 1023px) {
+
+  body.page-id-579 .entry-header,
+  body.page-id-492 .entry-header,
+  body.page-id-613 .entry-header {
+    background: #000 url('inc/assets/images/12days-banner-10230w.jpg') no-repeat;
+    height:  186px;
+  }
+
+  body.page-id-579 .entry-header h1,
+  body.page-id-492 .entry-header h1,
+  body.page-id-613 .entry-header h1 {
+    font-size:  4rem;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  body.page-id-579 .entry-header,
+  body.page-id-492 .entry-header,
+  body.page-id-613 .entry-header {
+    height: 225px;
+    background: #000 url('inc/assets/images/12days-banner-1920w-225h.jpg') no-repeat;
+  }
+
+  body.page-id-568 .entry-header h1,
+  body.page-id-480 .entry-header h1,
+  body.page-id-613 .entry-header h1 {
+    font-size:  5rem;
+  }
+
+}
+
+/* end 12 Days of Dankness */

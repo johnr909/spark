@@ -1,0 +1,101 @@
+/*
+BODY-LAYOUT
+*/
+
+#content.site-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/*
+UTILITIES, BUTTONS
+*/
+
+blockquote {
+  border: none;
+}
+
+.highlight {
+  font-weight: 800;
+  color: #80be79;
+}
+
+.dark-text {
+  color: #2d3545;
+}
+
+.green-text {
+  color: #80be79;
+}
+
+.orange-text {
+  color: #ff5810;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.light-blue-bg {
+  background-color: #f2f8f1;
+}
+
+.very-dark-bg {
+  background: #2d3545 url("inc/assets/images/leaf-dark-bg2-r2.png") no-repeat bottom right;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.green-bg {
+  background-color: #80be79;
+}
+
+.btn-primary {
+  font-weight: 600;
+  background-color: #80be79;
+  border-color: #80be79;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #fff;
+  border-color: #80be79;
+  color: #2d3545;
+}
+
+.btn-secondary {
+  font-weight: 600;
+  background-color: #2d3545;
+  border-color: #2d3545;
+}
+
+.btn-lg {
+  padding: .75rem 1.5rem;
+  border-radius: .6rem;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(128,190,121,.5);
+}
+
+.btn-primary.focus, 
+.btn-primary:focus {
+    box-shadow: 0 0 0 .2rem rgba(128,190,121,.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #80be79;
+    border-color: transparent;
+}
+
+@media only screen and (max-width: 576px) {
+  .btn-group-lg > .btn, .btn-lg {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,131 @@
+/*
+HOME PAGE CAROUSEL/MOBILE BANNER
+*/
+
+.carousel-caption {
+  bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.carousel-text h1 {
+  display: none;
+}
+
+.carousel-text p.lead {
+  margin-bottom: .2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 100%;
+  color: #fff;
+}
+
+.carousel-text p.lead-dark {
+  color: #2d3545 !important;
+}
+ 
+.carousel-text p.cta {
+  margin-bottom: .2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 700;
+  color: #80be79;
+}
+
+.carousel-text p.cta {
+  margin-bottom: .2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.bud-burst .carousel-text p.cta {
+  color: #fff;
+}
+
+.carousel-text .rec-button {
+  margin-right: .5rem;
+}
+
+.carousel-text .med-button {
+  margin-left: .5rem;
+}
+
+/* rooster ad */
+.rooster-caption {
+  right: 20% !important;
+  left: 20% !important;
+  bottom: 40px;
+}
+
+#carousel-text .rooster-text {
+  font-size: 2.5rem;
+  text-shadow: -3px 2px #222425;
+}
+
+.rooster-link {
+  text-decoration: underline;
+}
+
+.rooster-link:hover {
+  color: #f2f8f1;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 370px) and (max-width: 961px) {
+  .carousel-text p.lead {
+    font-size: 1.35rem;
+  }
+
+  .carousel-text p.cta {
+    font-size: 1.15rem;
+  }
+
+  .btn-lg {
+    padding: .15rem .25rem;
+  }
+}
+
+/* not showing the home mobile banner for smaller devices as we */
+/* want to show the carousel to all devices */
+#home-mobile-banner {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #home-mobile-banner {
+    display: none;
+  }
+}
+
+#home-mobile-banner {
+  width: 100%;
+  padding: 5px 15px;
+  background: transparent url('inc/assets/images/leaves-closeup.jpg') no-repeat;
+}
+
+#home-mobile-banner h2 {
+  display: none;
+}
+
+#home-mobile-banner a.btn {
+  width: 12rem;
+  margin: 15px auto;
+}
+
+#home-mobile-banner .lead {
+  margin: .5rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight:700;
+  color: #fff;
+}
+
+#home-mobile-banner .cta {
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 700;
+  color: #80be79;
+}

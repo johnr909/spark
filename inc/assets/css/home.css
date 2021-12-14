@@ -1,0 +1,255 @@
+/*
+HOME PAGE
+*/
+
+body.home .xdebug-error,
+body.home .xdebug-warning {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 961px) {
+  .home-cards .col-md-4 {
+    flex: 0 0 28%;
+    max-width: 32%;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-cards .col-md-6 {
+    max-width: 44%;
+  }
+}
+
+@media screen and (min-width: 962px) {
+  .home-cards .col-md-4 {
+    flex: 0 0 29%;
+    max-width: 33.3333333%;
+  }
+}
+
+@media screen and (min-width: 962px) {
+  .home-cards .col-md-4 {
+    flex: 0 0 30.2%;
+    max-width: 33.3333333%;
+  }
+}
+
+
+/* DOD home page styling */
+#card-home {
+  margin-left: 15px;
+  padding: 0 15px;
+}
+
+#card-home .card-title {
+  font-size: 1.75rem;
+}
+
+#card-home .card-text {
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 576px) {
+  #card-home .card-text {
+    font-size: 1.5rem;
+  }  
+}
+
+/* card styling on the home page generally */
+.home-cards .card-body {
+  margin-top: 0;
+}
+
+.home-cards .card-title {
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.home-cards .card-img-top {
+  display: inline-block;
+}
+
+.card-home .rewards-title {
+  line-height: 125%;
+  font-weight: 700;
+}
+
+.card-home .card-text {
+  text-align: left;
+}
+ 
+.card-home .card-body {
+  padding: 15px 15px 15px 0;
+}
+
+/* for the deals page */
+@media only screen and (min-width: 768px) and (max-width: 961px) {
+  .deals .col-md-1 {
+    flex: 0 0 12.5%;
+    max-width: 13%;
+  }
+
+  .deals .card {
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-width: 962px) {
+  .deals .col-md-1 {
+    flex: 0 0 13%;
+    max-width: 14%;
+  }
+
+  .deals .card {
+    margin: 6px;
+  }
+}
+
+.deals div[class^='col'] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.deals div[class^='col'] .card-body {
+  margin-top: 0;
+  padding: .25rem;
+}
+
+.deals div[class^='col'] .card-title {
+  margin-top: .25rem;
+  padding: .25rem 0;
+  font-size: 1rem;
+}
+
+.deals div[class^='col'] .card-text {
+  text-align: center;
+  font-size: .92rem;
+}
+
+.card-title {
+  margin-bottom: .75rem;
+  padding: .75rem 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 125%;
+  border-bottom: 2px solid #2d3545;
+}
+
+.card-text, 
+.card-text:last-child {
+  font-size: 1.25rem;
+}
+
+h5.highlight {
+  border-bottom: 2px solid #80be79;
+}
+
+@media only screen and (max-width: 576px) {
+  .deals div[class^="col"] .card-title {
+    font-size: 1.75rem;
+  }
+
+    .deals div[class^="col"] .card-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* rewards home */
+
+.home-cards .rewards-signup {
+  background: transparent;
+}
+
+.rewards-signup .fa-comment-dollar {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 4rem;
+}
+
+.rewards-title {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.rewards-text {
+  font-size: 1.5rem;
+}
+
+.card-home .rewards-text {
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+.btn-join {
+  width: 12rem;
+}
+
+.rewards-signup {
+  background: #fff url('inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
+}
+
+@media only screen and (max-width: 576px) {
+  .rewards-title {
+    font-size: 1.75rem;
+  }
+
+  .card-home .rewards-text {
+    font-size: 1.5rem;
+  }
+}
+
+ /* rewards callout on the deals page */
+.deals-rewards {
+  padding: 3rem;
+  background: #2d3545 url('inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; 
+}
+
+.deals-rewards img.card-img-top {
+  display: none;
+}
+
+.deals-rewards .rewards-title {
+  margin-top: 1.5rem;
+  font-size: 2.25rem;
+  color: #f2f8f1;
+}
+
+.deals-rewards .rewards-text {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #f2f8f1;
+}
+
+.rewards-text:last-child {
+  margin-top: 1rem;
+}
+
+/* pre-order home page callout */
+.pre-order-home .btn-secondary {
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  color: #808080;
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 15px 30px;
+  background: #f2f8f1;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+}
+
+.testimonial-text::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  background: #f2f8f1;
+  border: 1px solid #efefef;
+  border-width: 0 0 1px 1px;
+  position: absolute;
+  bottom: -8px;
+  left: 46px;
+  transform: rotateZ(-46deg);
+}

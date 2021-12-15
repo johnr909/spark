@@ -1,11 +1,11 @@
 
 :root {
   --black: #000;
+  --almost-black: #111;
   --white: #fff;
   --brand-green: #80be79;
   --brand-dark-grey:  #2d3545;
   --brand-light-blue: #f2f8f1;
-  /*--brand-light-grey: ;*/
   --brand-orange: #ff5810;
 
   --fweight-reg: 600;
@@ -14,9 +14,10 @@
 
   --font-fam: "Muli", sans-serif;
 
+  --lheight-reg:  125%;
+
   --btn-box-shadow-trans: 0 0 0 .2rem rgba(128,190,121,.5);
   --btn-box-shadow-opaque: 0 0 0 .2rem rgba(128,190,121);
-
 
   --tablet-min-width:  768px;
   --desktop-min-width:  960px;

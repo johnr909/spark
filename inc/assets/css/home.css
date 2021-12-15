@@ -132,7 +132,7 @@ body.home .xdebug-warning {
   font-size: 1.25rem;
   font-weight: 800;
   line-height: 125%;
-  border-bottom: 2px solid #2d3545;
+  border-bottom: 2px solid var(--brand-dark-grey);
 }
 
 .card-text, 
@@ -186,7 +186,7 @@ h5.highlight {
 }
 
 .rewards-signup {
-  background: #fff url('../../../inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
+  background: var(--white) url('../../../inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
 }
 
 @media only screen and (max-width: 576px) {
@@ -202,7 +202,7 @@ h5.highlight {
  /* rewards callout on the deals page */
 .deals-rewards {
   padding: 3rem;
-  background: #2d3545 url('../../../inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; 
+  background: var(--brand-dark-grey) url('../../../inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; 
 }
 
 .deals-rewards img.card-img-top {
@@ -212,13 +212,13 @@ h5.highlight {
 .deals-rewards .rewards-title {
   margin-top: 1.5rem;
   font-size: 2.25rem;
-  color: #f2f8f1;
+  color: var(--brand-light-blue);
 }
 
 .deals-rewards .rewards-text {
   text-align: center;
   font-size: 1.25rem;
-  color: #f2f8f1;
+  color: var(--brand-light-blue);
 }
 
 .rewards-text:last-child {
@@ -235,7 +235,7 @@ h5.highlight {
   position: relative;
   margin-bottom: 1rem;
   padding: 15px 30px;
-  background: #f2f8f1;
+  background: var(--brand-light-blue);
   border: 1px solid #efefef;
   border-radius: 3px;
 }

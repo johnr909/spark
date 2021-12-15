@@ -4,7 +4,7 @@ NAV
 
 header#masthead {
   padding-bottom: 5px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 #masthead .jr-nav-container {
@@ -24,16 +24,16 @@ header#masthead {
 body:not(.theme-preset-active) #masthead .navbar-nav>li>a {
   font-size: 1rem;
   font-weight: 600;
-  color: #2d3545;
+  color: var(--brand-dark-grey);
 }
 
 body:not(.theme-preset-active) #masthead .navbar-nav>li.current_page_item>a,
 body:not(.theme-preset-active) #masthead .navbar-nav>li>a:hover {
-  color: #80be79;
+  color: var(--brand-green);
 }
 
 body:not(.theme-preset-active) #masthead .navbar-nav>li.current_page_item>a {
-  border-bottom: 3px solid #80be79;
+  border-bottom: 3px solid var(--brand-green);
 }
 
 @media only screen and (max-width: 576px) {

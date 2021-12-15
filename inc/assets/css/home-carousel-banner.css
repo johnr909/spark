@@ -18,11 +18,11 @@ HOME PAGE CAROUSEL/MOBILE BANNER
   text-align: center;
   font-weight: 700;
   line-height: 100%;
-  color: #fff;
+  color: var(--white);
 }
 
 .carousel-text p.lead-dark {
-  color: #2d3545 !important;
+  color: var(--brand-dark-grey); !important;
 }
  
 .carousel-text p.cta {
@@ -30,7 +30,7 @@ HOME PAGE CAROUSEL/MOBILE BANNER
   font-size: 1.6rem;
   text-align: center;
   font-weight: 700;
-  color: #80be79;
+  color: var(--brand-green);
 }
 
 .carousel-text p.cta {
@@ -68,7 +68,7 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 }
 
 .rooster-link:hover {
-  color: #f2f8f1;
+  color: var(--brand-light-blue);
   text-decoration: none;
 }
 
@@ -118,16 +118,16 @@ HOME PAGE CAROUSEL/MOBILE BANNER
   margin: .5rem 0;
   font-size: 1.5rem;
   text-align: center;
-  font-weight:700;
-  color: #fff;
+  font-weight: var(--fweight-bold);
+  color: var(--white);
 }
 
 #home-mobile-banner .cta {
   margin-bottom: .5rem;
   font-size: 1.6rem;
   text-align: center;
-  font-weight: 700;
-  color: #80be79;
+  font-weight: var(--fweight-bold);
+  color: var(--brand-green);
 }
 
 @media only screen and (min-width: 250px) and (max-width: 360px){

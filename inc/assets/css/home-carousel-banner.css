@@ -22,7 +22,7 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 }
 
 .carousel-text p.lead-dark {
-  color: var(--brand-dark-grey); !important;
+  color: var(--brand-dark-grey) !important;
 }
  
 .carousel-text p.cta {

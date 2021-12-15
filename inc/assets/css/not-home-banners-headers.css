@@ -24,17 +24,17 @@
 #rec .entry-header,
 #med .entry-header,
 [id$="specials"] .entry-header {
-  background: var(--brand-dark-grey); url('../../../inc/assets/images/Trikes1920.jpg') no-repeat;
+  background: var(--brand-dark-grey) url('../../../inc/assets/images/Trikes1920.jpg') no-repeat;
 }
 
 #deals .entry-header,
 .single-specials .entry-header {
-  background: #2d3545 url('../../../inc/assets/images/page-header-1920w-300h.jpg') no-repeat;
+  background: var(--brand-dark-grey) url('../../../inc/assets/images/page-header-1920w-300h.jpg') no-repeat;
 }
 
 #contact-us .entry-header {
 
-  background: var(--brand-dark-grey); url('../../../inc/assets/images/b&w-bud-1920.jpg') no-repeat;
+  background: var(--brand-dark-grey) url('../../../inc/assets/images/b&w-bud-1920.jpg') no-repeat;
 }
 
 #rec .entry-header h1,
@@ -56,11 +56,11 @@ h2.entry-title {
  body#deals .entry-header,
  body#contact-us .entry-header
   {
-    background: var(--brand-dark-grey); !important;
+    background: var(--brand-dark-grey) !important;
   } 
 
   body#contact-us .entry-header h1 {
-  color: var(--white); !important;
+  color: var(--white) !important;
   }
 
 }

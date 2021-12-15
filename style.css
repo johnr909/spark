@@ -10,31 +10,3 @@ License URI: LICENSE
 Text Domain: wp-bootstrap-starter
 Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, custom-background, e-commerce, theme-options, sticky-post, full-width-template
 */
-@import "inc/assets/css/wp_bootstrap.css";
-
-/*--------------------------------------------------------------
-## SPARK
-/*--------------------------------------------------------------*!*/
-@import "inc/assets/css/age-gate.css";
-/* @import "inc/assets/css/events.css"; */
- @import "inc/assets/css/typography.css";
- @import "inc/assets/css/utils-buttons.css"; 
- @import "inc/assets/css/alerts-notices.css"; 
- @import "inc/assets/css/header-footer.css"; 
- @import "inc/assets/css/main-nav.css"; 
- @import "inc/assets/css/home-carousel-banner.css"; 
- @import "inc/assets/css/home.css"; 
- @import "inc/assets/css/not-home-banners-headers.css"; 
- @import "inc/assets/css/rec-med-pages.css";
- @import "inc/assets/css/deals-page.css";
- @import "inc/assets/css/contactus-forms.css";
- @import "inc/assets/css/blog.css";
- @import "inc/assets/css/specials.css";
-
-/* Promos */
-/* @import "inc/assets/css/promos/420.css"; */
-/* @import "inc/assets/css/promos/black-friday.css"; */
-/* @import "inc/assets/css/promos/cyber-monday.css"; */
-/* @import "inc/assets/css/promos/25days-xmas.css"; */
-/* @import "inc/assets/css/promos/westword-bestof.css"; */
-@import "inc/assets/css/promos/dankmas.css";

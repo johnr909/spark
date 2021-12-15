@@ -195,7 +195,7 @@ grid-area: d1;
   display: none;
 }
 
-label {
+#dank label {
   perspective: 1000px;
   transform-style: preserve-3d;
   cursor: pointer;

@@ -22,7 +22,7 @@ DEALS/EVENTS PAGE
 }
 
 .row .online-cta {
-  background: #f2f8f1 url('inc/assets/images/dots.jpg') repeat;
+  background: #f2f8f1 url('../../../inc/assets/images/dots.jpg') repeat;
 }
 
 .coupon-icon-container {

@@ -40,7 +40,7 @@ HEADER-FOOTER
 }
 
 .foot {
-  background: #111 url('inc/assets/images/footer-bg.png');
+  background: #111 url('../../../inc/assets/images/footer-bg.png');
   color: #fff;
 }
 

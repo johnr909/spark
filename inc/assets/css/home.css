@@ -186,7 +186,7 @@ h5.highlight {
 }
 
 .rewards-signup {
-  background: #fff url('inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
+  background: #fff url('../../../inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
 }
 
 @media only screen and (max-width: 576px) {
@@ -202,7 +202,7 @@ h5.highlight {
  /* rewards callout on the deals page */
 .deals-rewards {
   padding: 3rem;
-  background: #2d3545 url('inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; 
+  background: #2d3545 url('../../../inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; 
 }
 
 .deals-rewards img.card-img-top {

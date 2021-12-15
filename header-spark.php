@@ -14,10 +14,10 @@
 <head>
 	  <!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="<?php echo esc_url('https://www.googletagmanager.com/gtag/js?id=UA-175453544-1', 'wp-bootstrap-starter'); ?>"></script>
-		<script><?php esc_js("window.dataLayer = window.dataLayer || [];
+		<script window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
-		  gtag('config', 'UA-175453544-1');", 'wp-bootstrap-starter'); ?>
+		  gtag('config', 'UA-175453544-1);
 		</script>
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -83,14 +83,15 @@
                 <div class="navbar-brand">
 
                     <?php if (get_theme_mod( 'wp_bootstrap_starter_logo')): ?>
-                    <a href="<?php echo esc_url( home_url( '/' )); ?>">
-                        <img src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>"
-                             alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"
+                    <a href="<?php echo esc_url( home_url( '/' ), 'wp-bootstrap-starter'); ?>">
+                        <img src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' ), 'wp-bootstrap-starter'); ?>"
+                             alt="<?php echo esc_attr( get_bloginfo( 'name' ), 'wp-bootstrap-starter'); ?>"
                              class="navbar-brand-img">
 
                     </a>
                     <?php else : ?>
-                    <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
+                    <a class="site-title" href="<?php echo esc_url( home_url( '/' ), 'wp-bootstrap-starter'); ?>">
+                        <?php esc_url(bloginfo('name'), 'wp-bootstrap-starter'); ?></a>
 	                <?php endif; ?>
 
                 </div><!-- .navbar-brand -->

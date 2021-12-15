@@ -44,8 +44,8 @@
 
 <?php wp_footer(); ?>
 <script src ="<?php echo esc_url('https://up.pixel.ad/assets/up.js?um=1', 'wp-bootstrap-starter'); ?>"></script>
-<script type="text/javascript">
-	<?php esc_js("cntrUpTag.track('cntrData', 'a91da65f88ee6470');"); ?>
+<script type="<?php echo esc_attr('text/javascript', 'wp-bootstrap-starter'); ?>">
+	<?php echo esc_js("cntrUpTag.track('cntrData', 'a91da65f88ee6470');", 'wp-bootstrap-starter'); ?>
 </script>
 </body>
 </html>

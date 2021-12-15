@@ -18,11 +18,11 @@ DEALS/EVENTS PAGE
   border: 1px solid rgba(0, 0, 0, .125);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
   border-radius: .25rem;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .row .online-cta {
-  background: #f2f8f1 url('../../../inc/assets/images/dots.jpg') repeat;
+  background: var(--brand-light-blue) url('../../../inc/assets/images/dots.jpg') repeat;
 }
 
 .coupon-icon-container {
@@ -31,7 +31,7 @@ DEALS/EVENTS PAGE
   border: 3px solid;
   width: 10rem;
   height: 10rem;      
-  background-color: #80be79;
+  background-color: var(--brand-green);
 }
 
 .coupon-icon-container .fa {

@@ -16,27 +16,27 @@ BLOG
 }
 
 .page-link {
-  color: #80be79;
+  color: var(--brand-green);
 }
 
 .page-link:hover {
-  color: #2d3545;
+  color: var(--brand-dark-grey);
 }
 
 .page-item.active .page-link {
-  color: #f2f8f1;
-  background-color: #80be79;
-  border-color: #80be79;
+  color: var(--brand-light-blue);
+  background-color: var(--brand-green);
+  border-color: var(--brand-green);
 }
 
 .alert-info {
   color: #2d3545;
-  background-color: #80be79;
-  border-color: #f2f8f1;
+  background-color: var(--brand-green);
+  border-color: var(--brand-light-blue);
 }
 
 .cat-links {
-  font-weight: 700;
+  font-weight: var(--fweight-reg);
 }
 
 .blog-sidebar ul li {
@@ -60,7 +60,7 @@ article.reviews .entry-header {
 
 article.reviews h1.title {
   text-align: left;
-  color: #2d3545;
+  color: var(--brand-dark-grey);
 }
 
 /* hide the title on the Westword widget */
@@ -91,8 +91,8 @@ article.post header.entry-header h1.entry-title {
 /* for sticky posts */
 .sticky {
   padding: 1rem;
-  border: 1px solid #2d3545;
-  background-color: #f2f8f1;
+  border: 1px solid var(--brand-dark-grey);
+  background-color: var(--brand-light-blue);
 }
 
 .blog-sidebar {

@@ -1,14 +1,16 @@
+
 :root {
+  --black: #000;
   --white: #fff;
   --brand-green: #80be79;
   --brand-dark-grey:  #2d3545;
-  --brand-light-green: ;
   --brand-light-blue: #f2f8f1;
-  --brand-light-grey: ;
+  /*--brand-light-grey: ;*/
   --brand-orange: #ff5810;
 
   --fweight-reg: 600;
   --fweight-bold: 700;
+  --fweight-bolder: 800;
 
   --font-fam: "Muli", sans-serif;
 

@@ -5,6 +5,7 @@
   --white: #fff;
   --brand-green: #80be79;
   --brand-dark-grey:  #2d3545;
+  --brand-light-grey:  #efefef;
   --brand-light-blue: #f2f8f1;
   --brand-orange: #ff5810;
 
@@ -13,25 +14,16 @@
   --fweight-bolder: 800;
 
   --font-fam: "Muli", sans-serif;
+  --font-fam-lob2:  "Lobster Two" cursive;
 
   --lheight-reg:  125%;
 
   --btn-box-shadow-trans: 0 0 0 .2rem rgba(128,190,121,.5);
   --btn-box-shadow-opaque: 0 0 0 .2rem rgba(128,190,121);
 
+  /*
   --tablet-min-width:  768px;
   --desktop-min-width:  960px;
+  */
 
-
-
-
-
-
-
-
-}
-
-
-.main-header {
-  color: var(--main-color);
 }

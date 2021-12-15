@@ -13,7 +13,7 @@ REC & MED MENU PAGES
   padding-left: .5rem;
   font-size: 1.15rem;
   text-transform: uppercase;
-  line-height: 125%;
+  line-height: var(--lheight-reg);
   font-weight: 900;
 }
 

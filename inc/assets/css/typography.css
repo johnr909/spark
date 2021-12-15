@@ -3,10 +3,10 @@ TYPOGRAPHY
 */
 
 body {
-  font-family: "Muli", sans-serif; 
-  font-weight: 600;
+  font-family: var(--font-fam); 
+  font-weight: var(--fweight-reg);
   font-size: 1.15rem;
-  color: #2d3545;
+  color: var(--brand-dark-grey);
 }
 
 h1,
@@ -15,14 +15,14 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 125%;
-  color: #2d3545;
+  line-height: var(--lheight-reg);
+  color: var(--brand-dark-grey);
 }
 
 h4, 
 h5, 
 h6 {
-  font-weight: 700;
+  font-weight: var(--fweight-bold);
  } 
 
 h2 {
@@ -49,8 +49,8 @@ h5 {
   margin: 0;
   padding: 0 .5rem;
   font-size: 1.5rem;
-  font-weight: 700;
-  color: #80be79;
+  font-weight: var(--fweight-bold);
+  color: var(--brand-green);
   border: none;
 }
 
@@ -70,7 +70,7 @@ a {
 }
 
 a:hover {
-  color: #2d3545;
+  color: var(--brand-dark-grey);
 }
 
 @media only screen and (max-width: 576px) {

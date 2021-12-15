@@ -70,8 +70,8 @@ body.home .xdebug-warning {
 }
 
 .card-home .rewards-title {
-  line-height: 125%;
-  font-weight: 700;
+  line-height: var(--lheight-reg);
+  font-weight: var(--fweight-bold);
 }
 
 .card-home .card-text {
@@ -131,7 +131,7 @@ body.home .xdebug-warning {
   padding: .75rem 0;
   font-size: 1.25rem;
   font-weight: 800;
-  line-height: 125%;
+  line-height: var(--lheight-reg);
   border-bottom: 2px solid var(--brand-dark-grey);
 }
 
@@ -141,7 +141,7 @@ body.home .xdebug-warning {
 }
 
 h5.highlight {
-  border-bottom: 2px solid #80be79;
+  border-bottom: 2px solid var(--brand-green);
 }
 
 @media only screen and (max-width: 576px) {
@@ -236,7 +236,7 @@ h5.highlight {
   margin-bottom: 1rem;
   padding: 15px 30px;
   background: var(--brand-light-blue);
-  border: 1px solid #efefef;
+  border: 1px solid var(--brand-light-grey);
   border-radius: 3px;
 }
 
@@ -245,8 +245,8 @@ h5.highlight {
   width: 15px;
   height: 15px;
   display: block;
-  background: #f2f8f1;
-  border: 1px solid #efefef;
+  background: var(--brand-light-blue);
+  border: 1px solid var(--brand-light-grey);
   border-width: 0 0 1px 1px;
   position: absolute;
   bottom: -8px;

@@ -69,7 +69,9 @@ get_header('spark'); ?>
                 <a class="d-block mx-auto specials-btn specials-btn-top specials-btn-bottom 
                           btn btn-primary btn-lg rec-button dark-text"   
                    href="<?php echo get_site_url() . '/rec'; ?>" role="button">
-                   <i class="fa fa-dollar-sign"></i>&nbsp;&nbsp;Pre-Order Now&nbsp;&nbsp;<i class="fa fa-dollar-sign"></i>
+                   <i class="fa fa-dollar-sign"></i>
+                    <?php _e('&nbsp;&nbsp;Pre-Order Now&nbsp;&nbsp;', 'wp-bootstrap-starter'); ?>
+                   <i class="fa fa-dollar-sign"></i>
                 </a>
             </div>
 

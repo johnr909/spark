@@ -4,6 +4,6 @@
             <?php _e('Spark up your world!', 'wp-bootstrap-starter'); ?></p>
         <p class="cta text-center dark-text"><a class="rooster-link white-text" 
            href="<?php echo esc_url('/monthly-specials', 'wp-bootstrap-starter'); ?>">
-           Check out our <?php echo date('F'); ?> deals!</a>
+           <?php _e('Check out our', 'wp-bootstrap-starter'); echo date('F'); e('deals!' ,'wp-bootstrap-starter'); ?></a>
         </p>
 </div><!-- #carousel-text -->

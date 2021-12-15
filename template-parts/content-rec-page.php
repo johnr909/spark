@@ -11,8 +11,8 @@
 <div>
 	<script 
 		async="" 
-		id="dutchie--embed__script" 
-		src="https://dutchie.com/api/v2/embedded-menu/5f3c7042762f12010dd649cd.js?menuType=rec">
+		id="<?php esc_attr_e('dutchie--embed__script', 'wp-bootstrap-starter'); ?>"
+		src="<?php echo esc_url('https://dutchie.com/api/v2/embedded-menu/5f3c7042762f12010dd649cd.js?menuType=rec', 'wp-bootstrap-starter'); ?>">
 	</script>
 </div>
 

@@ -54,9 +54,9 @@
 					<p><cite title="<?php echo $reviewer; ?>"><?php echo $reviewer; ?></cite></p>
 				</blockquote>
 
-				 <a href="https://www.leafly.com/dispensary-info/sense-of-healing" 
-				    title="Spark Dispensary Reviews" target="_blank">
-				    <img src="https://www.leafly.com/badge/2x/sense-of-healing.png" 
+				 <a href="<?php echo esc_url('https://www.leafly.com/dispensary-info/sense-of-healing', 'wp-bootstrap-starter'); ?>" 
+				    title="<?php esc_attr_e('Spark Dispensary Reviews', 'wp-bootstrap-starter'); ?>" target="_blank">
+				    <img src="<?php echo esc_url('https://www.leafly.com/badge/2x/sense-of-healing.png', 'wp-bootstrap-starter'); ?>" 
 				         width="212" 
 				         class="d-block mx-auto mt-4 mb-4"/>
 				 </a> 

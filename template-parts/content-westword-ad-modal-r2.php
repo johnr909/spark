@@ -16,24 +16,26 @@
 					<div id="myModal" class="modal fade" role="dialog">
 						<div class="modal-dialog">
 
-        		<!-- Modal content-->
+        				<!-- Modal content-->
 						<div class="modal-content">
 
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<h4 class="modal-title">Our Weekly Westword Ad</h4>
+								<h4 class="modal-title"><?php _e('Our Weekly Westword Ad', 'wp-bootstrap-starter'); ?></h4>
 							</div><!-- /.modal-header -->
 
 
 							<div class="modal-body">
-				    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Westword Weekly Ad Image") ) : ?>
-				    <?php endif;?>
+				    			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Westword Weekly Ad Image") ) : ?>
+				    			<?php endif;?>
 
 				    	</div><!-- /.modal-body -->
 
 
 							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">
+									<?php _e('Close', 'wp-bootstrap-starter'); ?>
+								</button>
 							</div><!-- /.modal-footer -->
 
 						</div><!-- /.modal-content -->

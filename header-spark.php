@@ -13,18 +13,17 @@
 <html <?php language_attributes(); ?>>
 <head>
 	  <!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175453544-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
+		<script async src="<?php echo esc_url('https://www.googletagmanager.com/gtag/js?id=UA-175453544-1', 'wp-bootstrap-starter'); ?>"></script>
+		<script><?php esc_js("window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
-		  gtag('config', 'UA-175453544-1');
+		  gtag('config', 'UA-175453544-1');", 'wp-bootstrap-starter'); ?>
 		</script>
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="profile" href="<?php echo esc_url('http://gmpg.org/xfn/11', 'wp-bootstrap-starter'); ?>">
 <?php wp_head(); ?>
 </head>
 

@@ -45,16 +45,13 @@ get_header();
         ?>
 
 
-
 <!-- <table> -->
 <?php 
 	$reviewer = get_post_meta($post->ID, 'jr_reviewer', true);
 	$review_status = get_post_meta($post->ID, 'spark_review_status', true);
 
-	echo '<br>the reviewer is: ' . $reviewer . '<br><br>';
-	echo '<br>the review status is: ' . $review_status . '<br><br>';
-
-
+	_e("<br>the reviewer is: $reviewer<br><br>", 'wp-bootstrap-starter'); 
+    _e("<br>the review status is: $review_status<br><br>",'wp-bootstrap-starter'); 
 
 endwhile;
 wp_reset_postdata();

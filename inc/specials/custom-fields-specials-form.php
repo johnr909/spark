@@ -16,7 +16,7 @@
     $specials3 = get_post_meta($post->ID, 'specials3', true);
 ?>
     <p class="field">
-        <label for="specialsTitle">Specials Title</label>
+        <label for="specialsTitle"><?php _e('Specials Title', 'wp-bootstrap-starter'); ?></label>
         <input id="specialsTitle" 
                type="text" 
                name="specialsTitle"
@@ -24,7 +24,7 @@
     </p>
 
     <p class="field">
-        <label for="specialsDescription">Specials Description</label>
+        <label for="specialsDescription"><?php _e('Specials Description', 'wp-bootstrap-starter'); ?></label>
         <input id="specialsDescription"  
                   name="specialsDescription"
                   type="text"

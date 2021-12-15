@@ -16,9 +16,9 @@
 		<div class="row">
 			<div class="col"></div>
 			<div class="col align-self-end">
-				<p class="text-right green-text">Connect With Us
+				<p class="text-right green-text"><?php _e('Connect With Us', 'wp-bootstrap-starter'); ?>
 					<!-- <a href="https://www.facebook.com/SPARKDispensary" class="d-inline-block mt-3 mr-2 mb-2 ml-3"><i class="fab fa-facebook"></i></a> -->
-					<a href="https://instagram.com/sparkdispensary?igshid=1ptbuszy3kt61" class="d-inline-block mt-3 mr-2 mb-2 ml-3"><i class="fab fa-instagram"></i></a>
+					<a href="<?php echo esc_url('https://instagram.com/sparkdispensary?igshid=1ptbuszy3kt61', 'wp-bootstrap-starter'); ?>" class="d-inline-block mt-3 mr-2 mb-2 ml-3"><i class="fab fa-instagram"></i></a>
 			</p>				
 			</div><!-- .col -->
 		</div><!-- .row -->
@@ -37,15 +37,15 @@
 	    <?php endif;?>
     </div><!-- .row -->
     <div class="row foot-bottom">
-		<div class="col">&copy Copyright <?php echo date('Y') ;?> Spark Dispensary
+		<div class="col"><?php _e('&copy Copyright', 'wp-bootstrap-starter'); _e(date('Y'), 'wp-bootstrap-starter'); _e('Spark Dispensary', 'wp-bootstrap-starter'); ?>
         </div>
     </div><!-- .row -->
 </div><!-- .container-fluid -->
 
 <?php wp_footer(); ?>
-<script src ="https://up.pixel.ad/assets/up.js?um=1"></script>
+<script src ="<?php echo esc_url('https://up.pixel.ad/assets/up.js?um=1', 'wp-bootstrap-starter'); ?>"></script>
 <script type="text/javascript">
-	cntrUpTag.track('cntrData', 'a91da65f88ee6470');
+	<?php esc_js("cntrUpTag.track('cntrData', 'a91da65f88ee6470');"); ?>
 </script>
 </body>
 </html>

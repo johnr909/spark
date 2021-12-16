@@ -1,8 +1,7 @@
-inc/assets/images/
 inc/assets/fonts/
+inc/assets/images/
+inc/assets/node_modules
 spark.sublime-workspace
 spark.sublime-project
 .phpintel
-/woocommerce
-error_log
-error_log_1
+

@@ -350,7 +350,7 @@ function wp_bootstrap_starter_scripts() {
 	function loadSiteStyles() {
 		$siteURL = get_bloginfo('wpurl');
 		if(siteURL === 'https://spark.test' || 'http://test.sparkdispensary.com' || 'https://sparkdispensary.site') {
-			wp_enqueue_style( 'wp-bootstrap-starter-style', get_template_directory_uri() .'/inc/assets/css/main.css', '', $rand );
+			wp_enqueue_style( 'wp-bootstrap-starter-style', get_template_directory_uri() .'/inc/assets/dist/allstyles.css', '', $rand );
 		}
 
 		else {

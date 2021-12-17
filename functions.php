@@ -345,7 +345,22 @@ function wp_bootstrap_starter_scripts() {
 	// load AItheme styles
 	// load WP Bootstrap Starter styles
 	$rand = mt_rand( 1, 999999 );
-	wp_enqueue_style( 'wp-bootstrap-starter-style', get_template_directory_uri() .'/inc/assets/css/main.css', '', $rand );
+
+	
+	function loadSiteStyles() {
+		$siteURL = get_bloginfo('wpurl');
+		if(siteURL === 'https://spark.test' || 'http://test.sparkdispensary.com' || 'https://sparkdispensary.site') {
+			wp_enqueue_style( 'wp-bootstrap-starter-style', get_template_directory_uri() .'/inc/assets/css/main.css', '', $rand );
+		}
+
+		else {
+			wp_enqueue_style( 'wp-bootstrap-starter-style-min', get_template_directory_uri() .'/inc/assets/dist/css/allstyles.min.css', '', $rand );
+		}
+	}
+
+	// add_action('loadload', 'loadSiteStyles', 1);
+	loadSiteStyles();
+
 
     if(get_theme_mod( 'theme_option_setting' ) && get_theme_mod( 'theme_option_setting' ) !== 'default') {
         wp_enqueue_style( 'wp-bootstrap-starter-'.get_theme_mod( 'theme_option_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/theme-option/'.get_theme_mod( 'theme_option_setting' ).'.css', false, '' );

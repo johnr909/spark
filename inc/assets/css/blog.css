@@ -45,7 +45,7 @@ BLOG
   margin: .75rem 0;
   padding: 0 0 0 2rem;
   background-size: 1.25rem;
-  background-image: url('../../../inc/assets/images/emoji2.svg');
+  background-image: url('../../../../inc/assets/images/emoji2.svg');
   background-repeat: no-repeat;
   background-position: left center;
 }

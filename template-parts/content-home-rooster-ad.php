@@ -6,7 +6,7 @@
             <a class="rooster-link white-text" 
                 href="<?php echo esc_url('/monthly-specials', 'wp-bootstrap-starter'); ?>">
                 <?php 
-                    _e('Check out our', 'wp-bootstrap-starter'); echo date('F'); _e('deals!' ,'wp-bootstrap-starter'); 
+                    _e('Check out our ', 'wp-bootstrap-starter'); echo date('F'); _e(' deals!' ,'wp-bootstrap-starter'); 
                 ?>
           </a>
         </p>

@@ -46,8 +46,7 @@ const concatCSS = ()  =>
   'css/deals-page.css',
   'css/contactus-forms.css',
   'css/blog.css',
-  'css/specials.css',
-  'css/promos/dankmas.css'
+  'css/specials.css'
   ])
     .pipe(concat('allstyles.css'))
     .pipe(dest('dist/css'));

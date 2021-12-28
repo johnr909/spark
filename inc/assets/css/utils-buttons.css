@@ -40,7 +40,7 @@ blockquote {
 }
 
 .very-dark-bg {
-  background: var(--brand-dark-grey) url("../../../inc/assets/images/leaf-dark-bg2-r2.png") no-repeat bottom right;
+  background: var(--brand-dark-grey) url("../../../../inc/assets/images/leaf-dark-bg2-r2.png") no-repeat bottom right;
 }
 
 .white-bg {

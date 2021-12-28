@@ -2,18 +2,7 @@
 
     <div class="carousel-inner">
 
-        <div class="carousel-item active dankmas" data-interval="10000">
-            <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 
-'12days-banner-1920w-350h.jpg'; ?>"
-                 class="d-block w-100" alt="the 12 days of dankmas">
-            <div class="carousel-caption d-md-block">
-                <?php
-                    get_template_part( 'template-parts/content', 'home-12days' );
-                ?>
-            </div><!-- .carousel-caption -->
-        </div><!-- .carousel-item -->
-
-        <div class="carousel-item" data-interval="3000">
+        <div class="carousel-item active" data-interval="3000">
             <img src="<?php echo get_template_directory_uri() . '/inc/assets/images/' . 
 'hiker-mtns-1920w-350h.jpg'; ?>"
                  class="d-block w-100" alt="our monthly specials">

@@ -31,6 +31,13 @@ get_header('spark'); ?>
 
     <div class="container">
         <div class="row home-cards">
+
+            <div class="col-sm-12 col-md-4 online-cta-home card card-home">
+                <?php
+                    get_template_part( 'template-parts/content', 'flash-sale' );
+                ?>
+            </div><!-- .col -->
+
             <div id="card-home" class="col-sm-12 col-md-4 card card-home">
                 <?php
                     dealoFDay();
@@ -42,14 +49,9 @@ get_header('spark'); ?>
 				    get_template_part( 'template-parts/content', 'rewards-signup' );
 				?>
             </div><!-- .col -->
-
-            <div class="col-sm-12 col-md-4 online-cta-home card card-home">
-                <?php
-                    // get_template_part( 'template-parts/content', 'product-spotlight' );
-                    get_template_part( 'template-parts/content', 'flash-sale' );
-                ?>
-            </div><!-- .col -->           
+           
         </div><!-- .row -->
+
     </div><!-- .container -->
 
     <div class="container">

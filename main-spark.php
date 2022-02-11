@@ -20,16 +20,30 @@ get_header('spark'); ?>
         </div><!-- .row -->
     </div><!-- .container-fluid -->
 
-        <div class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
 
             <?php if( is_page('12days')) : ?>
-                        <?php get_template_part( 'template-parts/content', 'advent-cal' );?>
-                    <?php endif; ?>
+                <?php get_template_part( 'template-parts/content', 'advent-cal' );?>
+            <?php endif; ?>
 
         </div><!-- .row -->
     </div><!-- .container-fluid -->
 
+<?php if( is_page('monthly-specials')) : ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 mx-auto">
+                
+                    <?php get_template_part( 'template-parts/content', 'order-online-cta-home' );?>
+            </div>
+            <div class="col-sm-12 col-md-5 mx-auto">
+                    <?php get_template_part( 'template-parts/content', 'rewards-signup' );?>
+                
+            </div>
+        </div><!-- .row -->
+    </div><!-- .container -->
+<?php endif; ?>
 
     <div class="container">
         <div class="row">

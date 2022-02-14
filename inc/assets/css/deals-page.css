@@ -50,3 +50,29 @@ DEALS/EVENTS PAGE
   display: block;
   margin: .25rem auto;
 }
+
+ /* rewards callout on the deals page */
+.deals-rewards {
+  padding: 3rem;
+  background: var(--brand-dark-grey) url('../../../../inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; 
+}
+
+.deals-rewards img.card-img-top {
+  display: none;
+}
+
+.deals-rewards .rewards-title {
+  margin-top: 1.5rem;
+  font-size: 2.25rem;
+  color: var(--brand-light-blue);
+}
+
+.deals-rewards .rewards-text {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--brand-light-blue);
+}
+
+.rewards-text:last-child {
+  margin-top: 1rem;
+}

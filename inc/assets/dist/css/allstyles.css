@@ -1973,7 +1973,7 @@ h5.highlight {
 }
 
 .rewards-signup {
-  background: var(--white) url('../../../inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
+  background: var(--white) url('../../../../inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
 }
 
 @media only screen and (max-width: 576px) {
@@ -1984,32 +1984,6 @@ h5.highlight {
   .card-home .rewards-text {
     font-size: 1.5rem;
   }
-}
-
- /* rewards callout on the deals page */
-.deals-rewards {
-  padding: 3rem;
-  background: var(--brand-dark-grey) url('../../../inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; 
-}
-
-.deals-rewards img.card-img-top {
-  display: none;
-}
-
-.deals-rewards .rewards-title {
-  margin-top: 1.5rem;
-  font-size: 2.25rem;
-  color: var(--brand-light-blue);
-}
-
-.deals-rewards .rewards-text {
-  text-align: center;
-  font-size: 1.25rem;
-  color: var(--brand-light-blue);
-}
-
-.rewards-text:last-child {
-  margin-top: 1rem;
 }
 
 /* pre-order home page callout */
@@ -2213,6 +2187,32 @@ DEALS/EVENTS PAGE
 .coupon img {
   display: block;
   margin: .25rem auto;
+}
+
+ /* rewards callout on the deals page */
+.deals-rewards {
+  padding: 3rem;
+  background: var(--brand-dark-grey) url('../../../../inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; 
+}
+
+.deals-rewards img.card-img-top {
+  display: none;
+}
+
+.deals-rewards .rewards-title {
+  margin-top: 1.5rem;
+  font-size: 2.25rem;
+  color: var(--brand-light-blue);
+}
+
+.deals-rewards .rewards-text {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--brand-light-blue);
+}
+
+.rewards-text:last-child {
+  margin-top: 1rem;
 }
 
 /*

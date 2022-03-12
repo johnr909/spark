@@ -9,7 +9,7 @@
 
 ?>
 
-        <div id="warning" class="col">
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Warning") ) : ?>
-            <?php endif;?>
-        </div><!-- .col -->
+<div id="warning" class="col">
+    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Warning") ) : ?>
+    <?php endif;?>
+</div><!-- .col -->

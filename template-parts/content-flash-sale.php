@@ -9,5 +9,5 @@
 
 ?>
 
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Flash Sale CTA") ) : ?>
-	<?php endif;?>
+<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Flash Sale CTA") ) : ?>
+<?php endif;?>

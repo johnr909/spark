@@ -1,6 +1,8 @@
 <?php
 /**
 * Template Name: Main Spark Template
+* The 'true' main template file
+
  */
 
 get_header(); ?>
@@ -24,8 +26,8 @@ get_header(); ?>
         <div class="row">
 
             <?php if( is_page('12days')) : ?>
-                        <?php get_template_part( 'template-parts/content', 'advent-cal' );?>
-                    <?php endif; ?>
+                <?php get_template_part( 'template-parts/content', 'advent-cal' );?>
+            <?php endif; ?>
 
         </div><!-- .row -->
     </div><!-- .container-fluid -->
@@ -90,8 +92,7 @@ get_header(); ?>
        </div><!-- .row -->
     </div><!-- .container -->
 
-    <?php get_template_part( 'template-parts/content', 'westword-ad-modal-r2' );?>
-
+    <?php get_template_part( 'template-parts/content', 'westword-ad-modal' );?>
 
 <?php endif; ?>
 

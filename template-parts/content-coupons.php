@@ -33,10 +33,6 @@
 		    <?php endif;?>
         </div><!-- #coupon-3 -->
 
-        <!-- <div id="coupon-4" class="col-sm-5 col-md coupon rounded"> -->
-		    <?php // if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Coupon 4") ) : ?>
-		    <?php // endif;?>
-        <!-- </div> --> <!-- #coupon-4 -->
     </div><!-- .row -->
 
 </div><!-- .container-fluid -->

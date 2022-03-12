@@ -9,8 +9,8 @@
 
 ?>
 
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Rewards Signup") ) : ?>
-	<?php endif;?>
+<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Rewards Signup") ) : ?>
+<?php endif;?>
 
 
 

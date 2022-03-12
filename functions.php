@@ -551,6 +551,14 @@ if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
     require_once(get_template_directory() . '/inc/wp_bootstrap_navwalker.php');
 }
 
+/**
+ * Disable WordPress emojis.
+ */
+require_once(get_template_directory() . '/inc/disable-emojis.php');
+
+/**
+ * Load pagination.
+ */
 require get_template_directory() . '/inc/wp_bootstrap_pagination.php';
 
 

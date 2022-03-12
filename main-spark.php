@@ -3,7 +3,7 @@
 * Template Name: Main Spark Template
  */
 
-get_header('spark'); ?>
+get_header(); ?>
 
     <div class="container-fluid">
         <div class="row">
@@ -97,4 +97,4 @@ get_header('spark'); ?>
 
 
 <?php
-get_footer('spark');
+get_footer();

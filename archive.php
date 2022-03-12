@@ -7,7 +7,7 @@
  * @package WP_Bootstrap_Starter
  */
 
-	get_header('spark'); 
+get_header(); 
 ?>
 
 <div class="container-fluid-blog">
@@ -50,7 +50,6 @@
 					endwhile;
 
 					the_posts_navigation();
-					// wp_bootstrap_pagination();
 
 				else :
 
@@ -66,4 +65,4 @@
  </div><!-- .row -->
 </div><!-- .container-fluid -->
 
-<?php get_footer('spark'); ?>
+<?php get_footer(); ?>

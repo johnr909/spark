@@ -7,7 +7,7 @@
  * @package WP_Bootstrap_Starter
  */
 
-get_header('spark'); ?>
+get_header(); ?>
     <div class="container-fluid">
         <div class="row">
 
@@ -79,4 +79,4 @@ get_header('spark'); ?>
     </div><!-- .container -->
 
 <?php
-get_footer('spark');
+get_footer();

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the footer
+ * The template for displaying the spark footer
  *
  * Contains the closing of the #content div and all content after.
  *
@@ -8,29 +8,43 @@
  *
  * @package WP_Bootstrap_Starter
  */
+ ?>
 
-?>
-<?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
-			</div><!-- .row -->
-		</div><!-- .container -->
 	</div><!-- #content -->
-    <?php get_template_part( 'footer-widget' ); ?>
-	<footer id="colophon" class="site-footer <?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
-        <p>Custom Footer will go here...</p>
 
+	<div class="container-fluid foot-social">
+		<div class="row">
+			<div class="col"></div>
+			<div class="col align-self-end">
+				<p class="text-right green-text"><?php _e('Connect With Us', 'wp-bootstrap-starter'); ?>
+					<a href="<?php echo esc_url('https://instagram.com/sparkdispensary?igshid=1ptbuszy3kt61', 'wp-bootstrap-starter'); ?>" class="d-inline-block mt-3 mr-2 mb-2 ml-3"><i class="fab fa-instagram"></i>
+					</a>
+			</p>				
+			</div><!-- .col -->
+		</div><!-- .row -->
+	</div><!-- .container-fluid -->
 
-        <div class="container pt-3 pb-3">
-            <!--<div class="site-info">
-                &copy; <?php /*echo date('Y'); */?> <?php /*echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; */?>
-                <span class="sep"> | </span>
-                <a class="credits" href="https://afterimagedesigns.com/wp-bootstrap-starter/" target="_blank" title="WordPress Technical Support" alt="Bootstrap WordPress Theme"><?php /*echo esc_html__('Bootstrap WordPress Theme','wp-bootstrap-starter'); */?></a>
-
-            </div>--><!-- close .site-info -->
-		</div>
-	</footer><!-- #colophon -->
-<?php endif; ?>
-</div><!-- #page -->
+<div class="container-fluid foot">
+    <div class="row">
+	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Location") ) : ?>
+	    <?php endif;?>
+	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Phone") ) : ?>
+	    <?php endif;?>
+	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Email") ) : ?>
+	    <?php endif;?>
+	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Store Hours") ) : ?>
+	    <?php endif;?>
+    </div><!-- .row -->
+    <div class="row foot-bottom">
+		<div class="col"><?php _e('&copy Copyright', 'wp-bootstrap-starter'); _e(date('Y'), 'wp-bootstrap-starter'); _e('Spark Dispensary', 'wp-bootstrap-starter'); ?>
+        </div>
+    </div><!-- .row -->
+</div><!-- .container-fluid -->
 
 <?php wp_footer(); ?>
+<script src ="<?php echo esc_url('https://up.pixel.ad/assets/up.js?um=1', 'wp-bootstrap-starter'); ?>"></script>
+<script type="text/javascript">
+	cntrUpTag.track('cntrData', 'a91da65f88ee6470');
+</script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 * Template Name: Home
  */
 
-get_header('spark'); ?>
+get_header(); ?>
 
     <div class="container-fluid">
         <div class="row">
@@ -64,7 +64,6 @@ get_header('spark'); ?>
 
             <div class="col-sm-12 col-md-4 card card-home">
                <?php
-                    // get_template_part( 'template-parts/content', 'education-callout' );
                     get_template_part( 'template-parts/content', 'product-spotlight' );
                 ?>
             </div><!-- .col -->
@@ -79,4 +78,4 @@ get_header('spark'); ?>
     </div><!-- .container -->
 
 <?php
-get_footer('spark');
+get_footer();

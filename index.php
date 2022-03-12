@@ -12,7 +12,7 @@
  * @package WP_Bootstrap_Starter
  */
 
- get_header('spark'); ?>
+ get_header(); ?>
 
 <div class="container-fluid blog">
     <div class="row">
@@ -21,15 +21,15 @@
             <header class="entry-header-blog">
             	<?php 
             		global $wp;
-								$current_slug = add_query_arg( array(), $wp->request ); 
-							?>
+					$current_slug = add_query_arg( array(), $wp->request ); 
+				?>
             		<h1>
             			<?php
             				if($current_slug === 'resources') {
-										 	_e('Resources', 'wp-bootstrap-starter'); 
-										} 
-									?>
-								</h1>
+								_e('Resources', 'wp-bootstrap-starter'); 
+							} 
+						?>
+					</h1>
             </header><!-- .entry-header -->
         </section>
 
@@ -61,19 +61,11 @@
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-						// get_template_part( 'template-parts/content', get_post_format() );
-						get_template_part( 'template-parts/content', 'blog-list' );
-						
+						get_template_part( 'template-parts/content', 'blog-list' );			
 
 					endwhile;
 
 					wp_bootstrap_pagination();
-
-					// echo '<nav class="navigation"><ul class="pagination">';
-	        // pagination_bar();
-	        // echo '</ul></nav>';
-
-					// the_posts_navigation();
 
 				else :
 
@@ -89,4 +81,4 @@
 </div><!-- .container-fluid -->
 
 <?php
-get_footer('spark');
+get_footer();

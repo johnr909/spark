@@ -1,19 +1,4 @@
-const {src, dest, watch, series} = require('gulp');
-
-// function mytask(cb) {
-//   cb(new Error('something baaaad happened'));
-// }
-
-// exports.mytask = mytask;
-
-// function copy(cb) {
-//   src('css/*.css')
-//     .pipe(dest('dist/css'));
-
-//   cb();
-// }
-
-// exports.copy = copy;
+const {src, dest, watch} = require('gulp');
 
 const concat = require('gulp-concat');
 
@@ -78,4 +63,3 @@ function watchFiles() {
 }
     
 exports.watchFiles = watchFiles;
-// exports.watch = series(watchFiles);

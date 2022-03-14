@@ -1389,7 +1389,7 @@ HEADER-FOOTER
 
 .foot-social  {
   background-color: var(--almost-black);
-  color:  var(--white);
+  color: var(--white);
 }
 
 .foot-social .fab {
@@ -1401,7 +1401,7 @@ HEADER-FOOTER
 }
 
 .foot-social p a:hover {
-  color: #fff;
+  color: var(--white);
 }
 
 .foot {

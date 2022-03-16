@@ -12,14 +12,33 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	  <!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="<?php echo esc_url('https://www.googletagmanager.com/gtag/js?id=UA-175453544-1', 'wp-bootstrap-starter'); ?>"></script>
-		<script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-175453544-1');
-        </script
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="<?php echo esc_url('https://www.googletagmanager.com/gtag/js?id=UA-175453544-1', 'wp-bootstrap-starter'); ?>"></script>
+
+	<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-175453544-1');
+    </script>
+
+    <script>
+    (function() {
+      var surf = document.createElement('script');
+      surf.setAttribute('src','//cdn.surfside.io/v1.0.0/wave.min.js');
+      surf.setAttribute("type","text/javascript");
+      surf.setAttribute('id','surfside');
+      surf.setAttribute('accountId','9b18f')
+      surf.setAttribute('sourceId','598b4')
+      surf.setAttribute('platform','dutchie');
+      var sync = document.createElement('img');
+      sync.setAttribute('src','//edge.surfside.io/id/uid?');
+      sync.setAttribute('height','1');
+      sync.setAttribute('width','1');
+      sync.setAttribute('display','none');
+      document.head.appendChild(surf,sync);
+      })();
+    </script>
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,13 +49,12 @@
 
 <?php 
     // get the slug for CSS styling
+    $slug = get_post_field('post_name', get_post()); 
 
-        $slug = get_post_field('post_name', get_post()); 
-
-        if($slug == '') {
-            global $post;
-            $slug = $post->ID;
-        }
+    if($slug == '') {
+        global $post;
+        $slug = $post->ID;
+    }
 ?> 
 <body <?php body_class();?> id="<?php _e($slug);?>">
    

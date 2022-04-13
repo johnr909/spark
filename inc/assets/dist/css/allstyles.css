@@ -2398,18 +2398,18 @@ article.post header.entry-header h1.entry-title {
 }
 
 .carousel-text p.lead-420 {
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 100%;
   font-family: 'Anton', sans-serif;
 }
 
 .carousel-text p.cta-420-big {
-  font-size: 2.5rem;
+  font-size: 2.15rem;
   font-family: 'Bebas Neue', cursive;
 }
 
 .carousel-text p.cta-420-sm {
-  font-size: 1.85rem;
+  font-size: 1.65rem;
   font-family: 'Bebas Neue', cursive;
 }
 
@@ -2420,11 +2420,57 @@ article.post header.entry-header h1.entry-title {
   }
 
   .carousel-text p.cta-420-big {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .carousel-text p.cta-420-sm {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 
+}
+
+.btn-secondary-420 {
+  color: var(--white);
+  background-color: transparent;
+  border: 3px solid var(--white);
+}
+
+a.btn-secondary-420:hover{
+  color: var(--white);
+  background-color: var(--white)
+  opacity(.3);
+}
+
+/* the 420 page */
+a[title^="420"]::after {
+  display: inline-block;
+  padding-left: .25rem;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+a[title^="420"]::after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f55f";
+  color: #80be79;
+}
+
+.vendor-card-420 {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5px; 
+  /*padding:  .25rem;*/
+  background: linear-gradient(to right, aqua, magenta); ;
+  border:  1px solid var(--black);
+}
+
+
+.deal-card-420 {
+  width: 100%;
+  height:  8rem;
+  margin:  .5rem auto;
+  padding:  .5rem;
+  background: linear-gradient(to right, magenta, aqua); ;
+  border:  3px solid var(--brand-dark-grey);
 }

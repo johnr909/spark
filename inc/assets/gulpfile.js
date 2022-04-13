@@ -24,7 +24,8 @@ const concatCSS = ()  =>
   'css/contactus-forms.css',
   'css/blog.css',
   'css/specials.css',
-  'css/420-carousel-banner.css'
+  'css/promos/420-carousel-banner.css',
+  'css/promos/420.css'
   ])
     .pipe(concat('allstyles.css'))
     .pipe(dest('dist/css'));
@@ -58,7 +59,8 @@ function watchFiles() {
       'css/contactus-forms.css',
       'css/blog.css',
       'css/specials.css',
-      'css/420-carousel-banner.css'
+      'css/promos/420-carousel-banner.css',
+      'css/promos/420.css'
     ], concatCSS);
     
   watch('dist/css/allstyles.css', minCSS);

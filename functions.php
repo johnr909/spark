@@ -447,7 +447,7 @@ function wp_bootstrap_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_scripts' );
 
-// for styling the specials options admin page
+// for styling the specials & vendor-card-420 options admin page
 function admin_style() {
   wp_enqueue_style('admin-styles', get_template_directory_uri().'/inc/assets/css/admin.css');
 }
@@ -507,6 +507,27 @@ require get_template_directory() . '/inc/specials/custom-metabox-specials.php';
  * Custom specials options page.
  */
 require get_template_directory() . '/inc/specials/specials-options-page.php';
+
+
+/**
+ * Custom vendor 420 card post type.
+ */
+require get_template_directory() . '/inc/vendorcards420/custom-post-type-vendorcards420.php';
+
+/**
+ * Custom meta box and fields for vendor 420 card post type.
+ */
+require get_template_directory() . '/inc/vendorcards420/custom-metabox-vendorcards420.php';
+
+/**
+ * Custom deal 420 card post type.
+ */
+require get_template_directory() . '/inc/dealcards420/custom-post-type-dealscards420.php';
+
+/**
+ * Custom meta box and fields for deal 420 card post type.
+ */
+require get_template_directory() . '/inc/dealcards420/custom-metabox-dealscards420.php';
 
 /**
  * Implement the Custom Header feature.

@@ -11,18 +11,18 @@
 }
 
 .carousel-text p.lead-420 {
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 100%;
   font-family: 'Anton', sans-serif;
 }
 
 .carousel-text p.cta-420-big {
-  font-size: 2.5rem;
+  font-size: 2.15rem;
   font-family: 'Bebas Neue', cursive;
 }
 
 .carousel-text p.cta-420-sm {
-  font-size: 1.85rem;
+  font-size: 1.65rem;
   font-family: 'Bebas Neue', cursive;
 }
 
@@ -33,11 +33,23 @@
   }
 
   .carousel-text p.cta-420-big {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .carousel-text p.cta-420-sm {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 
+}
+
+.btn-secondary-420 {
+  color: var(--white);
+  background-color: transparent;
+  border: 3px solid var(--white);
+}
+
+a.btn-secondary-420:hover{
+  color: var(--white);
+  background-color: var(--white)
+  opacity(.3);
 }

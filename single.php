@@ -33,7 +33,7 @@
 					    the_post_navigation();
 							// wp_bootstrap_pagination();			    
 
-					// hide comnents for review post type
+					// hide comnments for review post type
 					if(get_post_type($post->ID) != 'reviews') {
 
 						// If comments are open or we have at least one comment, load up the comment template.

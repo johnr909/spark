@@ -8,7 +8,7 @@ get_header(); ?>
     <div class="container-fluid">
         <div class="row">
             <?php
-                get_template_part( 'template-parts/content', 'home-carousel' );
+                get_template_part( 'template-parts/content', '420-carousel' );
             ?>
         </div><!-- .row -->
     </div><!-- .container-fluid -->
@@ -31,16 +31,48 @@ get_header(); ?>
 
         </div><!-- .row -->
 
+        <?php get_template_part('template-parts/content', 'vendorcards420'); ?>
 
         <div class="row">
 
-            vendor cards go here...
+            <div class="col-lg-6">
+                <div class="vendor-card-420 text-center">vendor cards go here...</div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="vendor-card-420 text-center">vendor cards go here...</div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="vendor-card-420 text-center">vendor cards go here...</div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="vendor-card-420 text-center">vendor cards go here...</div>
+            </div>
 
         </div><!-- .row -->
 
         <div class="row">
 
-            deal cards go here
+            <div class="col-lg-12">
+                <div class="deal-card-420">deal cards go here...</div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="deal-card-420">deal cards go here...</div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="deal-card-420">deal cards go here...</div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="deal-card-420">deal cards go here...</div>
+            </div>
+
+
+            
 
         </div><!-- .row -->
 

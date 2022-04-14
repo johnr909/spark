@@ -2390,6 +2390,7 @@ article.post header.entry-header h1.entry-title {
 */
 
 .carousel-caption {
+  top:  0;
   bottom: 0 !important;
 }
 
@@ -2416,7 +2417,7 @@ article.post header.entry-header h1.entry-title {
 
 @media only screen and (min-width: 370px) and (max-width: 961px) {
   .carousel-caption {
-   top: 10% !important;
+   top: 5% !important;
   }
 
   .carousel-text p.cta-420-big {
@@ -2429,17 +2430,29 @@ article.post header.entry-header h1.entry-title {
 
 }
 
-.btn-secondary-420 {
-  color: var(--white);
-  background-color: transparent;
-  border: 3px solid var(--white);
+@media only screen and (min-width: 370px) and (max-width: 767px) {
+  .carousel-caption {
+    top: 33% !important;
+  }
 }
 
-a.btn-secondary-420:hover{
-  color: var(--white);
-  background-color: var(--white)
-  opacity(.3);
+@media only screen and (min-width: 250px) and (max-width: 360px){
+
+   .carousel-item > img {
+    width: 550% !important;
+    height: 550% !important;
+  }
 }
+
+a.btn-420 {
+  opacity: .7;
+  color:  var(--white);
+  border-color: var(--white);
+}
+
+a.btn-420:hover {
+  text-decoration: underline !important;
+} 
 
 /* the 420 page */
 a[title^="420"]::after {

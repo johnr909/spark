@@ -2,11 +2,6 @@
 420 CAROUSEL
 */
 
-.carousel-caption {
-  top:  0;
-  bottom: 0 !important;
-}
-
 .carousel-text h1 {
   display: none;
 }
@@ -29,7 +24,7 @@
 
 
 @media only screen and (min-width: 370px) and (max-width: 961px) {
-  .carousel-caption {
+  #carousel .carousel-caption {
    top: 5% !important;
   }
 
@@ -44,7 +39,7 @@
 }
 
 @media only screen and (min-width: 370px) and (max-width: 767px) {
-  .carousel-caption {
+  #carousel .carousel-caption {
     top: 33% !important;
   }
 }
@@ -66,3 +61,8 @@ a.btn-420 {
 a.btn-420:hover {
   text-decoration: underline !important;
 } 
+
+.carousel-caption {
+  /*top:  0;*/
+  bottom: 0 !important;
+}

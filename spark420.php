@@ -4,7 +4,43 @@
 */
 
 get_header(); ?>
+<script>
+    
+jQuery(document).ready(function(){
+ jQuery(window).scroll(function(){
+ if (jQuery(window).scrollTop() > 100) {
+  jQuery('#scrollToTop').fadeIn();
+ } else {
+  jQuery('#scrollToTop').fadeOut();
+ }
+ });
+});
 
+function scrolltop()
+{
+ jQuery('html, body').animate({scrollTop : 0},500);
+}
+
+</script>
+
+<style>
+
+#scrollToTop
+{
+ position:fixed;
+ left:45%;
+ bottom:50px;
+ border:3px solid #585858;
+ background-color:white;
+ color:#585858;
+ border-radius:100%;
+ height:90px;
+ width:90px;
+ font-size:15px;
+ display:none;
+}
+</style>
+<div id="wrapper">
     <div class="container-fluid">
         <div class="row">
             <?php
@@ -36,8 +72,8 @@ get_header(); ?>
 
             get_template_part('template-parts/content', 'dealcards420'); 
         ?>
-
+<input type="button" value="Scroll Top" id="scrollToTop" onclick="scrolltop();">
 
     </div><!-- .container -->
-    
+</div><!-- #wrapper -->    
 <?php get_footer();

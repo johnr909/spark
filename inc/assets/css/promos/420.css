@@ -15,7 +15,7 @@ a[title^="420"]::after {
 
 .vendor-card-420 {
   width: 100%;
-  margin: 15px; 
+  margin: 15px 0; 
   padding: 15px;
   font-family: 'Bebas Neue', cursive;
   border: 3px solid grey;
@@ -39,9 +39,15 @@ a[title^="420"]::after {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .vendor-card-420 {
       height: 23rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .vendor-card-420 {
+      height: 25rem;
   }
 }
 
@@ -78,20 +84,13 @@ a[title^="420"]::after {
 
 .deal-card-420 {
   display: grid;
-  /*align-items: center;*/
-   grid-template-columns: 400px auto;
-  /*height:  320px;*/
+  grid-template-columns: 400px auto;
   margin: 10px auto;
-  border:  10px solid var(--brand-dark-grey);
-}
-
-.deal-card-420-img {
-/*width:  40%;*/
+  border:  5px solid var(--brand-dark-grey);
 }
 
 .deal-card-420-text {
-/*width:  60%;*/
-padding-left: 15px;
+  padding-left: 15px;
 }
 
 .brand-name-420 {
@@ -120,5 +119,42 @@ padding-left: 15px;
 #content.site-content {
   padding-bottom: 1rem; 
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .deal-card-420 {
+     grid-template-columns: 150px auto;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .deal-card-420 {
+     grid-template-columns: 250px auto;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .deal-card-420-text {
+    padding-left: 5px;
+  }
+
+  .brand-name-420 {
+    font-size: 1.5rem;
+    margin: 0 !important;
+  }
+
+  .sale-date {
+    font-size: 1.15rem;
+    margin: 0;
+  }
+
+  .deal-description {
+    font-size: 1.10rem;
+  }
+
+  .exclusions {
+    font-size: .9rem;
+  }
+}
+
 
 

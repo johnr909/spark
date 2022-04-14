@@ -2464,21 +2464,27 @@ a[title^="420"]::after {
   border:  3px solid grey;
 }
 
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1120px) {
   .vendor-card-420 {
     height: 20rem;
   }
 }
 
+@media only screen and (min-width: 961px) and (max-width: 1119px) {
+  .vendor-card-420 {
+      height: 21rem;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 960px) {
   .vendor-card-420 {
-      height: 23rem;
+      height: 22rem;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .vendor-card-420 {
-      height: 25rem;
+      height: 23rem;
   }
 }
 

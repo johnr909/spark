@@ -10,7 +10,7 @@ a[title^="420"]::after {
 
 a[title^="420"]::after {
   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f55f";
-  color: #80be79;
+  color: var(--brand-green);
 }
 
 .vendor-card-420 {
@@ -18,7 +18,7 @@ a[title^="420"]::after {
   margin: 15px; 
   padding: 15px;
   font-family: 'Bebas Neue', cursive;
-  border:  3px solid grey;
+  border: 3px solid grey;
 }
 
 @media only screen and (min-width: 1120px) {
@@ -77,47 +77,48 @@ a[title^="420"]::after {
 }
 
 .deal-card-420 {
-  display: flex;
-  align-items: center;
-  height:  320px;
+  display: grid;
+  /*align-items: center;*/
+   grid-template-columns: 400px auto;
+  /*height:  320px;*/
   margin: 10px auto;
-  background: linear-gradient(to right, magenta, aqua); 
   border:  10px solid var(--brand-dark-grey);
 }
 
 .deal-card-420-img {
-width:  40%;
+/*width:  40%;*/
 }
 
 .deal-card-420-text {
-width:  60%;
+/*width:  60%;*/
+padding-left: 15px;
 }
 
-.deal-card-420 .h4 {
+.brand-name-420 {
+  font-size:  2.5rem;
+  margin:  20px 0 0 0;
+  font-family: 'Anton', sans-serif;
+}
+
+.sale-date {
+  font-size:  2rem;
+  margin:  0 0 20px 0;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.deal-description {
+  font-size: 1.25rem;
+  margin:  0;
   font-family: 'Mulish', sans-serif;
 }
 
-.deal-card-420-sale-date {
-
-}
-
-.deal-card-420-description {
-  
-}
-
-.deal-card-420-exclusive {
-  
-}
-
-
-.deal-card-420-exclusive-description {
-  
-}
-
-.deal-card-420-exclusions {
-  
+.exclusions {
+  font-size:  .9rem;
+  margin: 0;
 }
 
 #content.site-content {
   padding-bottom: 1rem; 
 }
+
+

@@ -43,8 +43,8 @@
                <?php the_post_thumbnail(); ?>
             </div><!-- .deal-card-420-img -->
 	   		<div class="deal-card-420-text text-left">
-   	   		<p><?php echo esc_attr($brand_name); ?></p>
-   	   		<p><?php echo esc_attr($sale_date); ?></p>
+   	   		<p class="brand-name-420 bold"><?php echo esc_attr($brand_name); ?></p>
+   	   		<p class="sale-date"><?php echo esc_attr($sale_date); ?></p>
                <?php 
                   if(isset($deal_description1) && strlen($deal_description1) > 0) {
                      echo '<p class="deal-description">' . esc_attr($deal_description1) . '</p>';
@@ -63,15 +63,15 @@
                   }
                   
                   if(isset($deal_description420a) && strlen($deal_description420a) > 0) {
-                     echo '<p>' . esc_attr($deal_description420a) . '</p>';
+                     echo '<p class="deal-description">' . esc_attr($deal_description420a) . '</p>';
                   }
 
                   if(isset($deal_description420ab) && strlen($deal_description420b) > 0) {
-                     echo '<p>' . esc_attr($deal_description420b) . '</p>';
+                     echo '<p class="deal-description">' . esc_attr($deal_description420b) . '</p>';
                   }
 
                   if(isset($exclusions) && strlen($exclusions) > 0) {
-                     echo '<p>' . esc_attr($exclusions) . '</p>';
+                     echo '<p class="exclusions">' . esc_attr($exclusions) . '</p>';
                   }
                ?>
          </div><!-- .deal-card-420-text -->

@@ -34,8 +34,8 @@
 		$vendor_product_link = get_post_meta($id, 'productUrl', true)
 	?>
 		<div class="col-lg-6">
-	   	<div class="vendor-card-420 text-left text-uppercase">
-	   		<div class="vendor-card-420-img">
+	   	<div class="vendor-card-420 text-center text-uppercase">
+	   		<div class="vendor-card-420-img mx-auto">
 	   			<?php the_post_thumbnail(); ?>
 	   		</div><!-- .vendor-card-420-img -->
 	   		<div class="vendor-card-420-text">

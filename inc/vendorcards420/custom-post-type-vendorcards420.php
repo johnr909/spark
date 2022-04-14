@@ -5,9 +5,7 @@ function post_type_vendor420cards() {
 
 	$supports = array(
 		'title', // post title
-		'author', // post author
 		'thumbnail', // featured images
-		'revisions', // post revisions
 		'post-formats', // post formats
 	);
 

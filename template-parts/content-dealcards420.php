@@ -15,6 +15,7 @@
         'post_status' => 'publish',
         'orderby' => 'title', 
         'order' => 'ASC',
+        'posts_per_page' => 30,
     );
 
     $loop2 = new WP_Query($args2); 
@@ -37,26 +38,42 @@
    ?>
  	
 		<div class="col-lg-12">
-	   	<div class="deal-card-420 text-center">
+	   	<div class="deal-card-420">
             <div class="deal-card-420-img">
                <?php the_post_thumbnail(); ?>
             </div><!-- .deal-card-420-img -->
-	   		<div class="deal-card-420-text">
+	   		<div class="deal-card-420-text text-left">
    	   		<p><?php echo esc_attr($brand_name); ?></p>
    	   		<p><?php echo esc_attr($sale_date); ?></p>
-   	   		<p><?php echo esc_attr($deal_description1); ?></p>
-               <p><?php echo esc_attr($deal_description2); ?></p>
-               <p><?php echo esc_attr($deal_description2); ?></p>
-               <p>
-                  <?php 
-                     if($exclusive420 === 'yes') {
-                        echo esc_attr($exclusive420);
-                     }
-                  ?>
-               </p>
+               <?php 
+                  if(isset($deal_description1) && strlen($deal_description1) > 0) {
+                     echo '<p>' . esc_attr($deal_description1) . '</p>';
+                  }
 
-   				<p><?php echo esc_attr($deal_description420); ?></p>
-               <p><?php echo esc_attr($exclusions); ?></p>
+                  if(isset($deal_description2) && strlen($deal_description2) > 0) {
+                     echo '<p>' . esc_attr($deal_description2) . '</p>';
+                  }
+
+                  if(isset($deal_description3) && strlen($deal_description3) > 0) {
+                     echo '<p>' . esc_attr($deal_description3) . '</p>';
+                  }
+   
+                  if($exclusive420 === 'yes') {
+                     echo '<p>' . esc_attr($exclusive420) . '</p>';
+                  }
+                  
+                  if(isset($deal_description420a) && strlen($deal_description420a) > 0) {
+                     echo '<p>' . esc_attr($deal_description420a) . '</p>';
+                  }
+
+                  if(isset($deal_description420ab) && strlen($deal_description420b) > 0) {
+                     echo '<p>' . esc_attr($deal_description420b) . '</p>';
+                  }
+
+                  if(isset($exclusions) && strlen($exclusions) > 0) {
+                     echo '<p>' . esc_attr($exclusions) . '</p>';
+                  }
+               ?>
          </div><!-- .deal-card-420-text -->
 	   	</div><!-- .deal-card-420 -->
 	    </div><!-- .col-lg-12 -->

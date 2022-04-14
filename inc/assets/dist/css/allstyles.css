@@ -2459,10 +2459,9 @@ a[title^="420"]::after {
 .vendor-card-420 {
   width: 100%;
   height: 98%;
-  margin: 5px auto; 
+  margin: 10px auto; 
   font-family: 'Bebas Neue', cursive;
-  background: linear-gradient(to right, aqua, magenta); ;
-  border:  1px solid var(--black);
+  border:  3px solid grey;
 }
 
 .vendor-card-420 img.wp-post-image {
@@ -2480,33 +2479,38 @@ a[title^="420"]::after {
 }
 
 .vendor-product-link-420 {
-  margin: 0 1rem;
-  border-top:  1px solid var(--brand-dark-grey);
+  /*margin: 0;*/
+  padding: 1rem;
+  /*border-top:  3px solid grey;*/
 }
 
 .vendor-product-link-420 a {
   color:  var(--brand-dark-grey);
+  text-decoration: underline;
 }
 
-.vendor-product-link-420 a:hover{
-  color:  red;
+.vendor-product-link-420 a:hover {
+  text-decoration: none;
+  background: -webkit-linear-gradient(magenta, aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .deal-card-420 {
   display: flex;
   align-items: center;
-  height:  306px;
-  margin: 5px auto;
-  background: linear-gradient(to right, magenta, aqua); ;
-  border:  3px solid var(--brand-dark-grey);
+  height:  320px;
+  margin: 10px auto;
+  background: linear-gradient(to right, magenta, aqua); 
+  border:  10px solid var(--brand-dark-grey);
 }
 
 .deal-card-420-img {
-
+width:  40%;
 }
 
 .deal-card-420-text {
-
+width:  60%;
 }
 
 .deal-card-420 .h4 {

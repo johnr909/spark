@@ -22,6 +22,14 @@
     </p>
 
     <p class="field">
+        <label for="saleDate"><?php _e('Sale Date', 'wp-bootstrap-starter'); ?></label>
+        <input type="text" 
+               name="saleDate" 
+               id="saleDate"
+               value="<?php echo esc_attr($sale_date); ?>">
+    </p>
+
+    <p class="field">
         <label for="dealDescription1"><?php _e('Deal Description1', 'wp-bootstrap-starter'); ?></label>
         <input id="dealDescription1"  
                   name="dealDescription1"
@@ -45,13 +53,6 @@
                   value="<?php echo esc_attr($deal_description3); ?>">
     </p>
 
-    <p class="field">
-        <label for="saleDate"><?php _e('Sale Date', 'wp-bootstrap-starter'); ?></label>
-        <input type="text" 
-               name="saleDate" 
-               id="saleDate"
-               value="<?php echo esc_attr($sale_date); ?>">
-    </p>
 
     <p class="field">
     <label for="exclusive420">Is this an exclusive 420 deal?</label>

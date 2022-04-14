@@ -5,9 +5,7 @@ function post_type_deals420card() {
 
 	$supports = array(
 		'title', // post title
-		'author', // post author
 		'thumbnail', // featured images
-		'revisions', // post revisions
 		'post-formats', // post formats
 	);
 

@@ -2411,7 +2411,7 @@ article.post header.entry-header h1.entry-title {
 
 
 @media only screen and (min-width: 370px) and (max-width: 961px) {
-  #carousel .carousel-caption {
+  #carousel420 .carousel-caption {
    top: 5% !important;
   }
 
@@ -2426,7 +2426,7 @@ article.post header.entry-header h1.entry-title {
 }
 
 @media only screen and (min-width: 370px) and (max-width: 767px) {
-  #carousel .carousel-caption {
+  #carousel420 .carousel-caption {
     top: 33% !important;
   }
 }
@@ -2447,10 +2447,11 @@ a.btn-420 {
 
 a.btn-420:hover {
   text-decoration: underline !important;
+  color:  var(--white);
 } 
 
-.carousel-caption {
-  /*top:  0;*/
+#carousel420 .carousel-caption {
+  top: 20%;
   bottom: 0 !important;
 }
 
@@ -2612,5 +2613,7 @@ a[title^="420"]::after {
   }
 }
 
-
+.h3-420, .h4-420 {
+  font-family: 'Bebas Neue', cursive;
+}
 

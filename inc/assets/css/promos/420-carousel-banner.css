@@ -24,7 +24,7 @@
 
 
 @media only screen and (min-width: 370px) and (max-width: 961px) {
-  #carousel .carousel-caption {
+  #carousel420 .carousel-caption {
    top: 5% !important;
   }
 
@@ -39,7 +39,7 @@
 }
 
 @media only screen and (min-width: 370px) and (max-width: 767px) {
-  #carousel .carousel-caption {
+  #carousel420 .carousel-caption {
     top: 33% !important;
   }
 }
@@ -60,9 +60,10 @@ a.btn-420 {
 
 a.btn-420:hover {
   text-decoration: underline !important;
+  color:  var(--white);
 } 
 
-.carousel-caption {
-  /*top:  0;*/
+#carousel420 .carousel-caption {
+  top: 20%;
   bottom: 0 !important;
 }

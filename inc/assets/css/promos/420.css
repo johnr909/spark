@@ -156,5 +156,7 @@ a[title^="420"]::after {
   }
 }
 
-
+.h3-420, .h4-420 {
+  font-family: 'Bebas Neue', cursive;
+}
 

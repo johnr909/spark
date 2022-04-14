@@ -2458,10 +2458,28 @@ a[title^="420"]::after {
 
 .vendor-card-420 {
   width: 100%;
-  height: 98%;
-  margin: 10px auto; 
+  margin: 15px; 
+  padding: 15px;
   font-family: 'Bebas Neue', cursive;
   border:  3px solid grey;
+}
+
+@media only screen and (min-width: 961px) {
+  .vendor-card-420 {
+    height: 20rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .vendor-card-420 {
+      height: 23rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .vendor-card-420 {
+      height: 25rem;
+  }
 }
 
 .vendor-card-420 img.wp-post-image {
@@ -2470,18 +2488,17 @@ a[title^="420"]::after {
 }
 
 .vendor-name-420 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-family: 'Anton', sans-serif;
 }
 
 .vendor-description-420 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .vendor-product-link-420 {
-  /*margin: 0;*/
+  font-size: 1.75rem;
   padding: 1rem;
-  /*border-top:  3px solid grey;*/
 }
 
 .vendor-product-link-420 a {

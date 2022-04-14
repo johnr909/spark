@@ -47,15 +47,15 @@
    	   		<p><?php echo esc_attr($sale_date); ?></p>
                <?php 
                   if(isset($deal_description1) && strlen($deal_description1) > 0) {
-                     echo '<p>' . esc_attr($deal_description1) . '</p>';
+                     echo '<p class="deal-description">' . esc_attr($deal_description1) . '</p>';
                   }
 
                   if(isset($deal_description2) && strlen($deal_description2) > 0) {
-                     echo '<p>' . esc_attr($deal_description2) . '</p>';
+                     echo '<p class="deal-description">' . esc_attr($deal_description2) . '</p>';
                   }
 
                   if(isset($deal_description3) && strlen($deal_description3) > 0) {
-                     echo '<p>' . esc_attr($deal_description3) . '</p>';
+                     echo '<p class="deal-description">' . esc_attr($deal_description3) . '</p>';
                   }
    
                   if($exclusive420 === 'yes') {

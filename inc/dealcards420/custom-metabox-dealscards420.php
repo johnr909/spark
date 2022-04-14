@@ -47,9 +47,12 @@ function save_dealcard420_meta_box($post_id) {
     $fields = [
         'brandName',
         'saleDate',
-        'dealDescription',
+        'dealDescription1',
+        'dealDescription2',
+        'dealDescription3',
         'exclusive420',
-        'dealDescription420',
+        'dealDescription420a',
+        'dealDescription420b',
         'exclusions'
     ];
 

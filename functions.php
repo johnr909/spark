@@ -399,6 +399,7 @@ function wp_bootstrap_starter_scripts() {
 
     wp_enqueue_style( 'wp-bootstrap-starter-bebas-neue', 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' );
     wp_enqueue_style( 'wp-bootstrap-starter-anton', 'https://fonts.googleapis.com/css2?family=Anton&display=swap' );
+    wp_enqueue_style( 'wp-bootstrap-starter-mmulish', 'https://fonts.googleapis.com/css2?family=Mulish&display=swap' );
 
 
 	//Color Scheme

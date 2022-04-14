@@ -31,50 +31,12 @@ get_header(); ?>
 
         </div><!-- .row -->
 
-        <?php get_template_part('template-parts/content', 'vendorcards420'); ?>
+        <?php 
+            get_template_part('template-parts/content', 'vendorcards420');
 
-        <div class="row">
+            get_template_part('template-parts/content', 'dealcards420'); 
+        ?>
 
-            <div class="col-lg-6">
-                <div class="vendor-card-420 text-center">vendor cards go here...</div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="vendor-card-420 text-center">vendor cards go here...</div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="vendor-card-420 text-center">vendor cards go here...</div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="vendor-card-420 text-center">vendor cards go here...</div>
-            </div>
-
-        </div><!-- .row -->
-
-        <div class="row">
-
-            <div class="col-lg-12">
-                <div class="deal-card-420">deal cards go here...</div>
-            </div>
-
-            <div class="col-lg-12">
-                <div class="deal-card-420">deal cards go here...</div>
-            </div>
-
-            <div class="col-lg-12">
-                <div class="deal-card-420">deal cards go here...</div>
-            </div>
-
-            <div class="col-lg-12">
-                <div class="deal-card-420">deal cards go here...</div>
-            </div>
-
-
-            
-
-        </div><!-- .row -->
 
     </div><!-- .container -->
     

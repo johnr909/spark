@@ -10,14 +10,9 @@
             display: contents;
         }
     </style>
-<?php
-    $brand_name = get_post_meta($post->ID, 'brandName', true);
-    $sale_date = get_post_meta($post->ID, 'saleDate', true);
-    $deal_description = get_post_meta($post->ID, 'dealDescription', true);
-    $exclusive420 = get_post_meta($post->ID, 'exclusive420', true);
-    $deal_description420 = get_post_meta($post->ID, 'dealDescription420', true);
-    $exclusions = get_post_meta($post->ID, 'exclusions', true);
-?>
+
+    <?php include_once 'deal-card-vars.php'; ?>
+
     <p class="field">
         <label for="brandName"><?php _e('Brand Name', 'wp-bootstrap-starter'); ?></label>
         <input id="brandName" 
@@ -27,11 +22,27 @@
     </p>
 
     <p class="field">
-        <label for="dealDescription"><?php _e('Deal Description', 'wp-bootstrap-starter'); ?></label>
-        <input id="dealDescription"  
-                  name="dealDescription"
+        <label for="dealDescription1"><?php _e('Deal Description1', 'wp-bootstrap-starter'); ?></label>
+        <input id="dealDescription1"  
+                  name="dealDescription1"
                   type="text"
-                  value="<?php echo esc_attr($deal_description); ?>">
+                  value="<?php echo esc_attr($deal_description1); ?>">
+    </p>
+
+    <p class="field">
+        <label for="dealDescription2"><?php _e('Deal Description 2', 'wp-bootstrap-starter'); ?></label>
+        <input id="dealDescription2"  
+                  name="dealDescription2"
+                  type="text"
+                  value="<?php echo esc_attr($deal_description2); ?>">
+    </p>
+
+    <p class="field">
+        <label for="dealDescription3"><?php _e('Deal Description 3', 'wp-bootstrap-starter'); ?></label>
+        <input id="dealDescription3"  
+                  name="dealDescription3"
+                  type="text"
+                  value="<?php echo esc_attr($deal_description3); ?>">
     </p>
 
     <p class="field">
@@ -47,25 +58,33 @@
     <br><br>
     <input type="radio" name="exclusive420" 
            value="yes"          
-           <?php if($review_status === 'yes') { 
-               echo 'checked="checked"'; 
+           <?php if($exclusive420 === 'yes') { 
+               _e( 'checked="checked"', 'wp-bootstrap-starter'); 
              } 
            ?>/> Yes<br />
     <input type="radio" name="exclusive420" 
            value="no"
-           <?php if($review_status === 'no') { 
-               echo ' checked="checked"'; 
+           <?php if($exclusive420 === 'no') { 
+               _e(' checked="checked"', 'wp-bootstrap-starter'); 
              } 
            ?>
            /> No
     </p>
 
     <p class="field">
-        <label for="dealDescription420"><?php _e('420 Deal Description', 'wp-bootstrap-starter'); ?></label>
-        <input id="dealDescription420"  
-                  name="dealDescription420"
+        <label for="dealDescription420a"><?php _e('420 Deal Description 1', 'wp-bootstrap-starter'); ?></label>
+        <input id="dealDescription420a"  
+                  name="dealDescription420a"
                   type="text"
-                  value="<?php echo esc_attr($deal_description420); ?>">
+                  value="<?php echo esc_attr($deal_description420a); ?>">
+    </p>
+
+    <p class="field">
+        <label for="dealDescription420b"><?php _e('420 Deal Description 2', 'wp-bootstrap-starter'); ?></label>
+        <input id="dealDescription420b"  
+                  name="dealDescription420b"
+                  type="text"
+                  value="<?php echo esc_attr($deal_description420b); ?>">
     </p>
 
     <p class="field">

@@ -59,7 +59,7 @@
                   }
    
                   if($exclusive420 === 'yes') {
-                     echo '<p>' . esc_attr($exclusive420) . '</p>';
+                     echo '<p class="exclusive-420">4/20 exclusive</p>';
                   }
                   
                   if(isset($deal_description420a) && strlen($deal_description420a) > 0) {

@@ -135,7 +135,7 @@ a[title^="420"]::after {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .deal-card-420 {
      grid-template-columns: none !important;
-     grid-template-rows: 260px 130px;
+     grid-template-rows: auto auto;
   }
 }
 

@@ -43,7 +43,7 @@
                <?php the_post_thumbnail(); ?>
             </div><!-- .deal-card-420-img -->
 	   		<div class="deal-card-420-text text-left">
-   	   		<p class="brand-name-420 bold"><?php echo esc_attr($brand_name); ?></p>
+   	   		<p class="brand-name-420"><?php echo esc_attr($brand_name); ?></p>
    	   		<p class="sale-date"><?php echo esc_attr($sale_date); ?></p>
                <?php 
                   if(isset($deal_description1) && strlen($deal_description1) > 0) {

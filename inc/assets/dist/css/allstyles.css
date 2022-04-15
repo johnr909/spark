@@ -2480,31 +2480,31 @@ a[title^="420"]::after {
 
 @media only screen and (min-width: 1120px) {
   .vendor-card-420 {
-    height: 20rem;
+    height: 22rem;
   }
 }
 
 @media only screen and (min-width: 961px) and (max-width: 1119px) {
   .vendor-card-420 {
-      height: 21rem;
+      height: 23rem;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 960px) {
   .vendor-card-420 {
-      height: 22rem;
+      height: 24rem;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .vendor-card-420 {
-      height: 23rem;
+      height: 25rem;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .vendor-card-420 {
-      height: 25rem;
+      height: 26rem;
   }
 }
 
@@ -2551,13 +2551,14 @@ a[title^="420"]::after {
 }
 
 .brand-name-420 {
-  font-size:  2.5rem;
+  font-size:  2.4rem;
   margin:  10px 0 0 0;
   font-family: 'Anton', sans-serif;
+  font-weight: 500;
 }
 
 .sale-date {
-  font-size:  2rem;
+  font-size:  1.9rem;
   margin: 0;
   font-family: 'Bebas Neue', cursive;
 }
@@ -2570,8 +2571,9 @@ a[title^="420"]::after {
 
 .exclusive-420 {
   margin: 20px 15px 0 0;
+  padding-top: 5px;
   border-top:  1px dashed var(--brand-dark-grey);
-  font-size: 2.15rem;
+  font-size: 2rem;
   font-family: 'Bebas Neue', cursive;
   font-weight: 900;
   text-transform: uppercase;
@@ -2589,11 +2591,18 @@ a[title^="420"]::after {
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .deal-card-420 {
-     grid-template-columns: 150px auto;
+     grid-template-columns: none !important;
+     grid-template-rows: 260px 130px;
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .deal-card-420 {
+     grid-template-columns: 185px auto;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
   .deal-card-420 {
      grid-template-columns: 250px auto;
   }
@@ -2605,21 +2614,30 @@ a[title^="420"]::after {
   }
 
   .brand-name-420 {
-    font-size: 1.5rem;
-    margin: 0 !important;
+    font-size: 1.4rem;
+    margin: 2px 0 0 0 !important;
+    font-weight: 400 !important;
   }
 
   .sale-date {
     font-size: 1.15rem;
     margin: 0;
+    font-weight: 400;
   }
 
   .deal-description {
-    font-size: 1.10rem;
+    font-size: .95rem;
+  }
+
+  .exclusive-420  {
+    margin-top: 2px !important;
+    font-size: 1.25rem;
+    font-weight: 400;
   }
 
   .exclusions {
-    font-size: .9rem;
+    margin-top:  0 !important;
+    font-size: .75rem;
   }
 }
 

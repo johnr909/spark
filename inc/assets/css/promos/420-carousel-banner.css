@@ -1,0 +1,69 @@
+/*
+420 CAROUSEL
+*/
+
+.carousel-text h1 {
+  display: none;
+}
+
+.carousel-text p.lead-420 {
+  font-size: 5rem;
+  line-height: 100%;
+  font-family: 'Anton', sans-serif;
+}
+
+.carousel-text p.cta-420-big {
+  font-size: 2.15rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.carousel-text p.cta-420-sm {
+  font-size: 1.65rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+
+@media only screen and (min-width: 370px) and (max-width: 961px) {
+  #carousel420 .carousel-caption {
+   top: 5% !important;
+  }
+
+  .carousel-text p.cta-420-big {
+    font-size: 1.9rem;
+  }
+
+  .carousel-text p.cta-420-sm {
+    font-size: 1.35rem;
+  }
+
+}
+
+@media only screen and (min-width: 370px) and (max-width: 767px) {
+  #carousel420 .carousel-caption {
+    top: 33% !important;
+  }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 360px){
+
+   .carousel-item > img {
+    width: 550% !important;
+    height: 550% !important;
+  }
+}
+
+a.btn-420 {
+  opacity: .7;
+  color:  var(--white);
+  border-color: var(--white);
+}
+
+a.btn-420:hover {
+  text-decoration: underline !important;
+  color:  var(--white);
+} 
+
+#carousel420 .carousel-caption {
+  top: 20%;
+  bottom: 0 !important;
+}

@@ -1,4 +1,4 @@
-<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carousel420" class="carousel slide carousel-fade" data-ride="carousel">
 
     <div class="carousel-inner">
 
@@ -7,7 +7,7 @@
                  class="d-block w-100" alt="our monthly specials">
             <div class="carousel-caption pt-0 pb-0">
                 <?php
-                    get_template_part( 'template-parts/content', '420-carousel-buttons' );
+                    get_template_part( 'template-parts/content', '420-carousel-text' );
                 ?>
             </div><!-- .carousel-caption -->
         </div><!-- .carousel-item -->
@@ -17,7 +17,7 @@
                  class="d-block w-100" alt="marijuana leaf close-up">
             <div class="carousel-caption pt-0 pb-0">
                 <?php
-                    get_template_part( 'template-parts/content', '420-carousel-buttons' );
+                    get_template_part( 'template-parts/content', '420-deals' );
                 ?>
             </div><!-- .carousel-caption -->
         </div><!-- .carousel-item -->
@@ -27,7 +27,7 @@
                  class="d-block w-100" alt="marijuana plant close-up">
             <div class="carousel-caption pt-0 pb-0">
                 <?php
-                    get_template_part( 'template-parts/content', '420-carousel-buttons' );
+                    get_template_part( 'template-parts/content', '420-tradeshow' );
                 ?>
             </div><!-- .carousel-caption -->
         </div><!-- .carousel-item -->

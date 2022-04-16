@@ -9,6 +9,17 @@ BODY-LAYOUT
 /*
 UTILITIES, BUTTONS & MODALS
 */
+.bold-reg {
+  font-weight: var(--fweight-reg);
+}
+
+.bold {
+  font-weight: var(--fweight-bold);
+}
+
+.bolder {
+  font-weight: var(--fweight-bolder);
+}
 
 blockquote {
   border: none;

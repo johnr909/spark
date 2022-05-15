@@ -434,12 +434,6 @@ function wp_bootstrap_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_scripts' );
 
-// for styling the specials & vendor-card-420 options admin page
-function admin_style() {
-  wp_enqueue_style('admin-styles', get_template_directory_uri().'/inc/assets/css/admin.css');
-}
-add_action('admin_enqueue_scripts', 'admin_style');
-
 /**
  * Add Preload for CDN scripts and stylesheet
  */

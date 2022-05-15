@@ -473,27 +473,27 @@ add_filter( 'the_password_form', 'wp_bootstrap_starter_password_form' );
 /**
  * Custom reviews post type.
  */
-require get_template_directory() . '/inc/reviews/custom-post-type-reviews.php';
+// require get_template_directory() . '/inc/reviews/custom-post-type-reviews.php';
 
 /**
  * Custom meta box and fields for reviews.
  */
-require get_template_directory() . '/inc/reviews/custom-metabox-reviews.php';
+// require get_template_directory() . '/inc/reviews/custom-metabox-reviews.php';
 
 /**
  * Custom specials post type.
  */
-require get_template_directory() . '/inc/specials/custom-post-type-specials.php';
+// require get_template_directory() . '/inc/specials/custom-post-type-specials.php';
 
 /**
  * Custom meta box and fields for specials post type.
  */
-require get_template_directory() . '/inc/specials/custom-metabox-specials.php';
+// require get_template_directory() . '/inc/specials/custom-metabox-specials.php';
 
 /**
  * Custom specials options page.
  */
-require get_template_directory() . '/inc/specials/specials-options-page.php';
+// require get_template_directory() . '/inc/specials/specials-options-page.php';
 
 /**
  * Implement the Custom Header feature.

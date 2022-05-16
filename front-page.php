@@ -70,7 +70,7 @@ get_header(); ?>
 
             <div class="col-sm-12 col-md-4 pre-order-home card card-home">
                 <?php
-                    get_template_part('template-parts/content', 'order-online-cta-home');
+                    get_template_part( 'template-parts/content', 'order-online-cta-home' );
                 ?>   
             </div><!-- .col -->
                     

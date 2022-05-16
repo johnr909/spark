@@ -13,7 +13,7 @@ get_header(); ?>
             <section class="content-area col-sm-12">
                 <header class="entry-header">
     	            <?php the_title( '<h1>', '</h1>' ); ?>
-                    <?php if( is_page('deals')) : ?>
+                    <?php if( is_page( 'deals' ) ) : ?>
                         <?php get_template_part( 'template-parts/content', 'deals-subtitles' );?>
                     <?php endif; ?>
                 </header><!-- .entry-header -->
@@ -25,7 +25,7 @@ get_header(); ?>
         <div class="container-fluid">
         <div class="row">
 
-            <?php if( is_page('12days')) : ?>
+            <?php if( is_page( '12days' ) ) : ?>
                 <?php get_template_part( 'template-parts/content', 'advent-cal' );?>
             <?php endif; ?>
 
@@ -54,7 +54,7 @@ get_header(); ?>
 
     <div class="container-fluid">
         <div class="row">
-            <?php if( is_page('rec') || is_page('med')) : ?>
+            <?php if( is_page( 'rec' ) || is_page( 'med' ) ) : ?>
 
                 <?php get_template_part( 'template-parts/content', 'order-online-cta' );?>
 
@@ -62,21 +62,21 @@ get_header(); ?>
         </div><!-- .row -->
     </div><!-- .container-fluid -->
 
-<?php if( is_page('rec')) : ?>
+<?php if( is_page( 'rec' ) ) : ?>
 
     <?php get_template_part( 'template-parts/content', 'rec-page' );?>
 
 <?php endif; ?>
 
 
-<?php if( is_page('med')) : ?>
+<?php if( is_page( 'med' ) ) : ?>
 
     <?php get_template_part( 'template-parts/content', 'med-page' );?>
 
 <?php endif; ?>
 
 
-<?php if( is_page('deals')) : ?>
+<?php if( is_page( 'deals' )) : ?>
 
 	<?php get_template_part( 'template-parts/content', 'daily-deals' );?>
 

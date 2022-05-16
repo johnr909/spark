@@ -34,7 +34,7 @@
 					    // spark_pagination();			    
 
 					// hide comnments for review post type
-					if(get_post_type($post->ID) != 'reviews') {
+					if( get_post_type( $post->ID ) != 'reviews' ) {
 
 						// If comments are open or we have at least one comment, load up the comment template.
 						if ( comments_open() || get_comments_number() ) :

@@ -28,11 +28,15 @@ get_header(); ?>
 
     			<section class="error-404 not-found">
     				<header class="page-header">
-    					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'spark' ); ?></h1>
+    					<h1 class="page-title">
+                            <?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'spark' ); ?>
+                        </h1>
     				</header><!-- .page-header -->
 
     				<div class="page-content">
-    					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the menu links or a search?', 'spark' ); ?></p>
+    					<p>
+                            <?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the menu links or a search?', 'spark' ); ?>
+                        </p>
 
     					<?php get_search_form(); ?>
 

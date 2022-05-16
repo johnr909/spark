@@ -25,17 +25,17 @@ get_header(); ?>
             <?php
                 while ( have_posts() ) : the_post();
                 endwhile;   
-                $westword_ad_image_path = get_option('westword_ad_image_path');
-                $westword_ad_run_dates =  get_option('westword_ad_run_dates');
+                $westword_ad_image_path = get_option( 'westword_ad_image_path' );
+                $westword_ad_run_dates =  get_option( 'westword_ad_run_dates' );
             ?>     
             <div class="col-lg-12">
-                <?php echo "<h2 class='h1'><i class='fa fa-money-bill-alt green-text' style='font-size: 3.5rem;'></i>&nbsp; &nbsp;Today's specials for " . date('m/d') . '</h2>'; ?>
+                <?php echo "<h2 class='h1'><i class='fa fa-money-bill-alt green-text' style='font-size: 3.5rem;'></i>&nbsp; &nbsp;Today's specials for " . date( 'm/d' ) . '</h2>'; ?>
             </div>
 
             <div class="col-lg-6">
                 <?php 
-                    $specialsTitle = get_post_meta($post->ID, 'specialsTitle', true);
-                    $specialsDescription = get_post_meta($post->ID, 'specialsDescription', true);
+                    $specialsTitle = get_post_meta( $post->ID, 'specialsTitle', true );
+                    $specialsDescription = get_post_meta( $post->ID, 'specialsDescription', true) ;
                     echo '<h3>' . $specialsTitle . '</h3>';
                     echo  '<p class="mb-0">' . $specialsDescription . '</p>';
                     the_post_thumbnail( 'medium' ); 
@@ -43,7 +43,7 @@ get_header(); ?>
             </div>
 
             <div class="col-md-6">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("more-deals") ) : ?>
+                <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'more-deals' ) ) : ?>
                 <?php endif; ?>
             </div>
 
@@ -70,7 +70,7 @@ get_header(); ?>
                           btn btn-primary btn-lg rec-button dark-text"   
                    href="<?php echo get_site_url() . '/rec'; ?>" role="button">
                    <i class="fa fa-dollar-sign"></i>
-                    <?php _e('&nbsp;&nbsp;Pre-Order Now&nbsp;&nbsp;', 'wp-bootstrap-starter'); ?>
+                    <?php _e('&nbsp;&nbsp;Pre-Order Now&nbsp;&nbsp;', 'spark'); ?>
                    <i class="fa fa-dollar-sign"></i>
                 </a>
             </div>

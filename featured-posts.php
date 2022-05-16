@@ -29,8 +29,10 @@ get_header();
 	<div class="row">
 		<section id="primary" class="content-area col-sm-12 col-lg-8">
 			<main id="main" class="site-main" role="main">
-	            <h1><?php _e('Featured Posts', 'spark'); ?></h1>
-	            <?php get_template_part('template-parts/content', 'featured-posts'); ?>
+	            <h1>
+                    <?php _e( 'Featured Posts', 'spark' ); ?>
+                </h1>
+	            <?php get_template_part(  'template-parts/content', 'featured-posts' ); ?>
 			</main><!-- #main -->
 		</section><!-- #primary -->
 

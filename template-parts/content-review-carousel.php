@@ -44,16 +44,16 @@
     		$reviewer = get_post_meta( $id, 'jr_reviewer', true );
   	    $icon = get_post_meta( $id, 'spark_review_icon', true );
   	  ?>
-  	 	<div class="carousel-item <?php if ($counter == 1) echo ' active'; ?>" data-interval="5000">
+  	 	<div class="carousel-item <?php if ($counter == 1) _e( ' active', 'spark' ); ?>" data-interval="5000">
   	 		<blockquote>
-					<p class="testimonial-text"><i class="fa fa-<?php echo $icon; ?>"></i>&nbsp;&nbsp;
+					<p class="testimonial-text"><i class="fa fa-<?php echo esc_attr( $icon ); ?>"></i>&nbsp;&nbsp;
 						<?php 
 							 // we use 'echo get_the_content()'' instead of just 'the_content()'' since the
 							 // latter adds html(<p>) tags that foul up the presentation here							 
 							 echo get_the_content(); 
 						?>
  					</p>
-					<p><cite title="<?php echo $reviewer; ?>"><?php echo $reviewer; ?></cite></p>
+					<p><cite title="<?php echo esc_attr( $reviewer ); ?>"><?php echo esc_html( $reviewer ); ?></cite></p>
 				</blockquote>
 
 				 <a href="<?php echo esc_url( 'https://www.leafly.com/dispensary-info/sense-of-healing', 'spark' ); ?>" 

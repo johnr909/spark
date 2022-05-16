@@ -6,7 +6,6 @@
  *
  * @package Spark
  */
-
 ?>
 
 <section>

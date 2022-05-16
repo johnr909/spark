@@ -6,8 +6,7 @@
  *
  * @package Spark
  */
-
 ?>
 
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Flash Sale CTA") ) : ?>
+<?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'Flash Sale CTA' ) ) : ?>
 <?php endif;?>

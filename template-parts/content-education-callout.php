@@ -6,10 +6,9 @@
  *
  * @package Spark
  */
-
 ?>
 
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Education Callout") ) : ?>
+<?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'Education Callout') ) : ?>
 <?php endif;?>
 
 

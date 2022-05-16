@@ -20,10 +20,12 @@
         'meta_value' => 'yes',
     );
 
-    $loop = new WP_Query($args); 
+    $loop = new WP_Query( $args ); 
  ?>
 
-<h5 class="rewards-title text-center">Reviews</h5>
+<h5 class="rewards-title text-center">
+	<?php _e( 'Reviews', 'spark' ); ?>
+</h5>
 
 <div id="carouselTestimonials" class="carousel slide carousel-fade" data-ride="carousel">
 
@@ -32,15 +34,15 @@
 			// need to set a counter for the JavaScript used by the carousel
 			$counter = 0; 
 		?>
-		<?php while ($loop->have_posts()) : $loop->the_post(); ?>
+		<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<?php $counter++; ?>
 		<?php 
 				// Using get_post_meta($post->ID) and similar functions was not working. The home page has an id (value = 2 ) 
 				// but that didn't return anything. While in this loop, get_the_ID() returns the id of the individual review
 				// and that apparently works
 				$id = get_the_ID();
-    		$reviewer = get_post_meta($id, 'jr_reviewer', true);
-  	    $icon = get_post_meta($id, 'spark_review_icon', true);
+    		$reviewer = get_post_meta( $id, 'jr_reviewer', true );
+  	    $icon = get_post_meta( $id, 'spark_review_icon', true );
   	  ?>
   	 	<div class="carousel-item <?php if ($counter == 1) echo ' active'; ?>" data-interval="5000">
   	 		<blockquote>
@@ -54,9 +56,9 @@
 					<p><cite title="<?php echo $reviewer; ?>"><?php echo $reviewer; ?></cite></p>
 				</blockquote>
 
-				 <a href="<?php echo esc_url('https://www.leafly.com/dispensary-info/sense-of-healing', 'spark'); ?>" 
-				    title="<?php esc_attr_e('Spark Dispensary Reviews', 'spark'); ?>" target="_blank">
-				    <img src="<?php echo esc_url('https://www.leafly.com/badge/2x/sense-of-healing.png', 'spark'); ?>" 
+				 <a href="<?php echo esc_url( 'https://www.leafly.com/dispensary-info/sense-of-healing', 'spark' ); ?>" 
+				    title="<?php esc_attr_e( 'Spark Dispensary Reviews', 'spark' ); ?>" target="_blank">
+				    <img src="<?php echo esc_url( 'https://www.leafly.com/badge/2x/sense-of-healing.png', 'spark' ); ?>" 
 				         width="212" 
 				         class="d-block mx-auto mt-4 mb-4"/>
 				 </a> 

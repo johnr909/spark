@@ -10,9 +10,9 @@ $args = array(
         'category_name' => 'featured',
     );
 
-    $loop = new WP_Query($args); 
+    $loop = new WP_Query( $args ); 
         
-    while ($loop->have_posts()) : $loop->the_post(); 
+    while ( $loop->have_posts() ) : $loop->the_post(); 
         print the_title(); 
         the_content();
     endwhile;

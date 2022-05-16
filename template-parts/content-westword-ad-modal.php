@@ -21,20 +21,20 @@
 
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title"><?php _e('Our Weekly Westword Ad', 'spark'); ?></h4>
+						<h4 class="modal-title">
+							<?php _e( 'Our Weekly Westword Ad', 'spark' ); ?>
+						</h4>
 					</div><!-- /.modal-header -->
 
-
 					<div class="modal-body">
-		    			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Westword Weekly Ad Image") ) : ?>
+		    			<?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'Westword Weekly Ad Image' ) ) : ?>
 		    			<?php endif;?>
 
 		    	</div><!-- /.modal-body -->
 
-
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">
-							<?php _e('Close', 'spark'); ?>
+							<?php _e( 'Close', 'spark' ); ?>
 						</button>
 					</div><!-- /.modal-footer -->
 

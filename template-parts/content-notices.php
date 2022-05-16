@@ -6,10 +6,9 @@
  *
  * @package Spark
  */
-
 ?>
 
 <div id="notice" class="col">
-    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Notice") ) : ?>
+    <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'Notice' ) ) : ?>
     <?php endif;?>
 </div><!-- .col -->

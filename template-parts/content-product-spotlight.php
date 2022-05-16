@@ -6,8 +6,7 @@
  *
  * @package Spark
  */
-
 ?>
 
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Product Spotlight") ) : ?>
+	<?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'Product Spotlight' ) ) : ?>
 	<?php endif;?>

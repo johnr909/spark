@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col">
             <h3 class="lead">
-            	</i><?php _e("&nbsp;&nbsp;Pre-Order Online: It's as easy as 1-2-3...Enjoy!", 'spark'); ?>
+            	</i><?php _e( "&nbsp;&nbsp;Pre-Order Online: It's as easy as 1-2-3...Enjoy!", 'spark' ); ?>
             </h3>
         </div>
     </div>
@@ -23,10 +23,10 @@
 
        <div class="col-sm-5 col-md coupon rounded online-cta">
     		<h4 class="online-step-numbers dark-text">
-                <?php _e('1', 'spark'); ?>
+                <?php _e( '1', 'spark' ); ?>
             </h4>
     		  <p class="online-cta-text mt-3 green-text text-center">
-                <?php _e('Shop by category, brand or strain', 'spark'); ?>
+                <?php _e( 'Shop by category, brand or strain', 'spark' ); ?>
               </p>
     		<div class="online-icon-container step1">
     			<img src="<?php echo get_template_directory_uri() . '/inc/assets/images/hand2.svg'; ?>" 
@@ -36,9 +36,12 @@
 
         <div class="col-sm-5 col-md coupon rounded online-cta">
     		<h4 class="online-step-numbers dark-text">
-                <?php _e('2', 'spark'); ?>
+                <?php _e( '2', 'spark' ); ?>
             </h4>
-				<p class="online-cta-text mt-3 green-text text-center"><?php _e('Checkout and complete your order', 'spark'); ?></p>
+				<p class="online-cta-text mt-3 green-text text-center">
+                    <?php _e( 'Checkout and complete your order', 'spark' ); ?>
+                </p>
+
     		<div class="online-icon-container step2">                        
     			<img src="<?php echo get_template_directory_uri() . '/inc/assets/images/cart2.svg'; ?>" 
                      alt="cart" class="d-block img-cart" width="33%" height="33%">
@@ -46,9 +49,9 @@
         </div><!-- .coupon -->
 
         <div class="col-sm-5 col-md coupon rounded online-cta">
-    		<h4 class="online-step-numbers dark-text"><?php _e('3', 'spark'); ?></h4>
+    		<h4 class="online-step-numbers dark-text"><?php _e( '3', 'spark' ); ?></h4>
 				<p class="online-cta-text mt-3 green-text text-center">
-                    <?php _e('Pickup and pay at the store', 'spark'); ?>
+                    <?php _e( 'Pickup and pay at the store', 'spark' ); ?>
                 </p>
     		<div class="online-icon-containers step3">
     			<img src="<?php echo get_template_directory_uri() . '/inc/assets/images/bag2.svg'; ?>" 
@@ -58,10 +61,10 @@
 
         <div class="col-sm-5 col-md coupon rounded online-cta">
 		    		<h4 class="online-step-numbers dark-text">
-                        <?php _e('4', 'spark'); ?>
+                        <?php _e( '4', 'spark' ); ?>
                     </h4>
     				  <p class="online-cta-text mt-3 green-text text-center">
-                        <?php _e('Enjoy!', 'spark'); ?>
+                        <?php _e( 'Enjoy!', 'spark' ); ?>
                       </p>
 		    		<div class="online-icon-container step4">
 		    			<img src="<?php echo get_template_directory_uri() . '/inc/assets/images/emoji2.svg'; ?>" 

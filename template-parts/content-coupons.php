@@ -13,7 +13,7 @@
 
     <div class="row">
         <div class="col">
-            <h3 class="lead"><i class="fa fa-money-bill-alt green-text"></i>&nbsp;&nbsp;<?php _e('Specials', 'wp-bootstrap-starter'); ?></h3>
+            <h3 class="lead"><i class="fa fa-money-bill-alt green-text"></i>&nbsp;&nbsp;<?php _e('Specials', 'spark'); ?></h3>
         </div>
     </div><!-- .row -->
 

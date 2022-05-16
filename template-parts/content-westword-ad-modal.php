@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package WP_Bootstrap_Starter
+ * @package Spark
  */
 
 ?>
@@ -21,7 +21,7 @@
 
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title"><?php _e('Our Weekly Westword Ad', 'wp-bootstrap-starter'); ?></h4>
+						<h4 class="modal-title"><?php _e('Our Weekly Westword Ad', 'spark'); ?></h4>
 					</div><!-- /.modal-header -->
 
 
@@ -34,7 +34,7 @@
 
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">
-							<?php _e('Close', 'wp-bootstrap-starter'); ?>
+							<?php _e('Close', 'spark'); ?>
 						</button>
 					</div><!-- /.modal-footer -->
 

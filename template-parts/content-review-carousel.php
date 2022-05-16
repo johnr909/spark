@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package WP_Bootstrap_Starter
+ * @package Spark
  */
 
  /**
@@ -54,9 +54,9 @@
 					<p><cite title="<?php echo $reviewer; ?>"><?php echo $reviewer; ?></cite></p>
 				</blockquote>
 
-				 <a href="<?php echo esc_url('https://www.leafly.com/dispensary-info/sense-of-healing', 'wp-bootstrap-starter'); ?>" 
-				    title="<?php esc_attr_e('Spark Dispensary Reviews', 'wp-bootstrap-starter'); ?>" target="_blank">
-				    <img src="<?php echo esc_url('https://www.leafly.com/badge/2x/sense-of-healing.png', 'wp-bootstrap-starter'); ?>" 
+				 <a href="<?php echo esc_url('https://www.leafly.com/dispensary-info/sense-of-healing', 'spark'); ?>" 
+				    title="<?php esc_attr_e('Spark Dispensary Reviews', 'spark'); ?>" target="_blank">
+				    <img src="<?php echo esc_url('https://www.leafly.com/badge/2x/sense-of-healing.png', 'spark'); ?>" 
 				         width="212" 
 				         class="d-block mx-auto mt-4 mb-4"/>
 				 </a> 

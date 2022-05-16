@@ -1,13 +1,13 @@
 <?php
 /**
- * WP Bootstrap Starter functions and definitions
+ * Spark functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package WP_Bootstrap_Starter
+ * @package Spark
  */
 
-if ( ! function_exists( 'wp_bootstrap_starter_setup' ) ) :
+if ( ! function_exists( 'spark_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,14 +15,12 @@ if ( ! function_exists( 'wp_bootstrap_starter_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function wp_bootstrap_starter_setup() {
+function spark_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on WP Bootstrap Starter, use a find and replace
-	 * to change 'wp-bootstrap-starter' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'wp-bootstrap-starter', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'spark', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -44,7 +42,7 @@ function wp_bootstrap_starter_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'wp-bootstrap-starter' ),
+		'primary' => esc_html__( 'Primary', 'spark' ),
     ) );
 
 	/*
@@ -58,7 +56,7 @@ function wp_bootstrap_starter_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'wp_bootstrap_starter_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'spark_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
@@ -70,19 +68,18 @@ function wp_bootstrap_starter_setup() {
 
 }
 endif;
-add_action( 'after_setup_theme', 'wp_bootstrap_starter_setup' );
+add_action( 'after_setup_theme', 'spark_setup' );
 
 
 /**
  * Add Welcome message to dashboard
  */
-function wp_bootstrap_starter_reminder(){
-        $theme_page_url = 'https://afterimagedesigns.com/wp-bootstrap-starter/?dashboard=1';
+function spark_reminder(){
+ 
 
-            if(!get_option( 'triggered_welcomet')){
-                $message = sprintf(__( 'Welcome to WP Bootstrap Starter Theme! Before diving in to your new theme, please visit the <a style="color: #fff; font-weight: bold;" href="%1$s" target="_blank">theme\'s</a> page for access to dozens of tips and in-depth tutorials.', 'wp-bootstrap-starter' ),
-                    esc_url( $theme_page_url )
-                );
+            if(!get_option( 'triggered_welcome')){
+                $message = sprintf(__( 'Welcome to the Spark WP Bootstrap Starter Theme', 'spark' )
+                 );
 
                 printf(
                     '<div class="notice is-dismissible" style="background-color: #6C2EB9; color: #fff; border-left: none;">
@@ -90,11 +87,11 @@ function wp_bootstrap_starter_reminder(){
                     </div>',
                     $message
                 );
-                add_option( 'triggered_welcomet', '1', '', 'yes' );
+                add_option( 'triggered_welcome', '1', '', 'yes' );
             }
 
 }
-add_action( 'admin_notices', 'wp_bootstrap_starter_reminder' );
+add_action( 'admin_notices', 'spark_reminder' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -103,68 +100,68 @@ add_action( 'admin_notices', 'wp_bootstrap_starter_reminder' );
  *
  * @global int $content_width
  */
-function wp_bootstrap_starter_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'wp_bootstrap_starter_content_width', 1170 );
+function spark_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'spark_content_width', 1170 );
 }
-add_action( 'after_setup_theme', 'wp_bootstrap_starter_content_width', 0 );
+add_action( 'after_setup_theme', 'spark_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function wp_bootstrap_starter_widgets_init() {
+function spark_widgets_init() {
    
-	/*--------------------------------------------------------------
+/*--------------------------------------------------------------
 ## Spark  Widgets
 --------------------------------------------------------------*/
 // blog sidebar
-	register_sidebar(array(
-		'name' => esc_html__( 'basic sidebar jjr', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'basic sidebar jjr', 'spark' ),
 		'id' => 'sidebar-jjr',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 	) );
 
 //	Westword Weekly Ad Image
-	register_sidebar(array(
-		'name' => esc_html__( 'Westword Weekly Ad Image', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Westword Weekly Ad Image', 'spark' ),
 		'id' => 'wwwadi',
 		'before_widget' => '<div class="wwwadi">',
 		'after_widget' => '</div><!-- .wwwadi -->',
 	) );
 
 // Header/Footer blocks
-	register_sidebar(array(
-		'name' => esc_html__( 'Header Location Phone', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Header Location Phone', 'spark' ),
 		'id' => 'header-location',
 		'before_widget' => '<div class="col col-md-5 col-lg-4 text-right header">',
 		'after_widget' => '</div><!-- .col header -->',
 	) );
 
-	register_sidebar(array(
-		'name' => esc_html__( 'Footer Location', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Footer Location', 'spark' ),
 		'id' => 'header-footer-location',
 		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-4 footer">',
 		'after_widget' => '</div><!-- .col footer left-->',
 	) );
 
-	register_sidebar(array(
-		'name' => esc_html__( 'Footer Phone', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Footer Phone', 'spark' ),
 		'id' => 'header-footer-phone',
 		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-2 footer">',
 		'after_widget' => '</div><!-- .col footer right-->',
 	) );
 
-	register_sidebar(array(
-		'name' => esc_html__( 'Footer Email', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Footer Email', 'spark' ),
 		'id' => 'header-footer-email',
 		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-3 footer">',
 		'after_widget' => '</div><!-- .col footer left-->',
 	) );
 
-	register_sidebar(array(
-		'name' => esc_html__( 'Footer Store Hours', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Footer Store Hours', 'spark' ),
 		'id' => 'header-footer-store-hours',
 		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-3 footer">',
 		'after_widget' => '</div><!-- .col footer right-->',
@@ -172,32 +169,32 @@ function wp_bootstrap_starter_widgets_init() {
 
 
 //	Warning
-	register_sidebar(array(
-		'name' => esc_html__( 'Warning', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Warning', 'spark' ),
 		'id' => 'warning',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 	) );
 
 //	Notice
-	register_sidebar(array(
-		'name' => esc_html__( 'Notice', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Notice', 'spark' ),
 		'id' => 'notice',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 	) );
 
 //	Rewards Signup
-	register_sidebar(array(
-		'name' => esc_html__( 'Rewards Signup', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Rewards Signup', 'spark' ),
 		'id' => 'rewards',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 	) );
 
 	//	Product Spotlight
-	register_sidebar(array(
-		'name' => esc_html__( 'Product Spotlight', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Product Spotlight', 'spark' ),
 		'id' => 'products',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
@@ -205,87 +202,87 @@ function wp_bootstrap_starter_widgets_init() {
 
 
 	//	Education Callout
-	register_sidebar(array(
-		'name' => esc_html__( 'Education Callout', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Education Callout', 'spark' ),
 		'id' => 'edu',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 	) );
 
 //	Daily Deals
-	register_sidebar(array(
-		'name' => esc_html__( 'deal-sunday', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'deal-sunday', 'spark' ),
 		'id' => 'sunday',
 		'before_widget' => '<div id="Sunday">',
 		'after_widget' => '</div><!-- #Sunday-->',
 	) );
 
-	register_sidebar(array(
-		'name' => esc_html__( 'deal-monday', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'deal-monday', 'spark' ),
 		'id' => 'monday',
 		'before_widget' => '<div id="Monday">',
 		'after_widget' => '</div><!-- #Monday-->',
 	) );
 
-	register_sidebar(array(
-		'name' => esc_html__( 'deal-tuesday', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'deal-tuesday', 'spark' ),
 		'id' => 'tuesday',
 		'before_widget' => '<div id="Tuesday">',
 		'after_widget' => '</div><!-- #Tuesday-->',
 	) );
 
-	register_sidebar(array(
-		'name' => esc_html__( 'deal-wednesday', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'deal-wednesday', 'spark' ),
 		'id' => 'wednesday',
 		'before_widget' => '<div id="Wednesday">',
 		'after_widget' => '</div><!-- #Wednesday-->',
 	) );
 
-	register_sidebar(array(
-		'name' => esc_html__('deal-thursday', 'wp-bootstrap-starter'),
+	register_sidebar( array(
+		'name' => esc_html__('deal-thursday', 'spark'),
 		'id' => 'thursday',
 		'before_widget' => '<div id="Thursday">',
 		'after_widget' => '</div><!-- #Thursday-->',
 	) );
 
-	register_sidebar(array(
-		'name' => esc_html__('deal-friday', 'wp-bootstrap-starter'),
+	register_sidebar( array(
+		'name' => esc_html__('deal-friday', 'spark'),
 		'id' => 'friday',
 		'before_widget' => '<div id="Friday">',
 		'after_widget' => '</div><!-- #Friday-->',
 	) );
 
-	register_sidebar(array(
-		'name' => esc_html__('deal-saturday', 'wp-bootstrap-starter'),
+	register_sidebar( array(
+		'name' => esc_html__('deal-saturday', 'spark'),
 		'id' => 'saturday',
 		'before_widget' => '<div id="Saturday">',
 		'after_widget' => '</div><!-- #Saturday-->',
 	) );
 
 // Coupons
-	register_sidebar(array(
-		'name' => esc_html__( 'Coupon 1', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Coupon 1', 'spark' ),
 		'id' => 'coupon-1',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 		) );
 
-	register_sidebar(array(
-		'name' => esc_html__( 'Coupon 2', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Coupon 2', 'spark' ),
 		'id' => 'coupon-2',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 		) );
 
-	register_sidebar(array(
-		'name' => esc_html__( 'Coupon 3',  'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Coupon 3',  'spark' ),
 		'id' => 'coupon-3',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 		) );
 
-	register_sidebar(array(
-		'name' => esc_html__( 'Coupon 4', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Coupon 4', 'spark' ),
 		'id' => 'coupon-4',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
@@ -293,29 +290,29 @@ function wp_bootstrap_starter_widgets_init() {
 
 //	Events
 	register_sidebar(array(
-		'name' => esc_html__( 'Events', 'wp-bootstrap-starter' ),
+		'name' => esc_html__( 'Events', 'spark' ),
 		'id' => 'events',
 	) );
 
 //	More Deals
 	register_sidebar(array(
-		'name' => esc_html__( 'More Deals', 'wp-bootstrap-starter' ),
+		'name' => esc_html__( 'More Deals', 'spark' ),
 		'id' => 'more-deals',
 		'before_widget' => '<div id="more-deals">',
 		'after_widget' => '</div>',
 	) );
 
 //	Westword vote for us CTA
-	register_sidebar(array(
-		'name' => esc_html__( 'Westword Vote CTA', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Westword Vote CTA', 'spark' ),
 		'id' => 'vote4us',
 		'before_widget' => '<div id="vote4us">',
 		'after_widget' => '</div>',
 	) );
 
 	//	June Flash sale CTA
-	register_sidebar(array(
-		'name' => esc_html__( 'Flash Sale CTA', 'wp-bootstrap-starter' ),
+	register_sidebar( array(
+		'name' => esc_html__( 'Flash Sale CTA', 'spark' ),
 		'id' => 'flash-sale',
 		'before_widget' => '<div id="flash-sale">',
 		'after_widget' => '</div>',
@@ -324,117 +321,111 @@ function wp_bootstrap_starter_widgets_init() {
 
 }
 
-add_action( 'widgets_init', 'wp_bootstrap_starter_widgets_init' );
+add_action( 'widgets_init', 'spark_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function wp_bootstrap_starter_scripts() {
+function spark_load_assets() {
 	// load bootstrap css
     if ( get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
-        wp_enqueue_style( 'wp-bootstrap-starter-bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css' );
-        wp_enqueue_style( 'wp-bootstrap-starter-fontawesome-cdn', 'https://use.fontawesome.com/releases/v5.10.2/css/all.css' );
+        wp_enqueue_style( 'spark-bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css' );
+        wp_enqueue_style( 'spark-fontawesome-cdn', 'https://use.fontawesome.com/releases/v5.10.2/css/all.css' );
     } else {
-        wp_enqueue_style( 'wp-bootstrap-starter-bootstrap-css', get_template_directory_uri() . '/inc/assets/css/bootstrap.min.css' );
-        wp_enqueue_style( 'wp-bootstrap-starter-fontawesome-cdn', get_template_directory_uri() . '/inc/assets/css/fontawesome.min.css' );
+        wp_enqueue_style( 'spark-bootstrap-css', get_template_directory_uri() . '/inc/assets/css/bootstrap.min.css' );
+        wp_enqueue_style( 'spark-fontawesome-cdn', get_template_directory_uri() . '/inc/assets/css/fontawesome.min.css' );
     }
 	// load bootstrap css
 	// load AItheme styles
 	// load WP Bootstrap Starter styles
 	$rand = mt_rand( 1, 999999 );
 
-	
-	function loadSiteStyles() {
+	function spark_load_site_styles() {
 		$siteURL = get_bloginfo('wpurl');
 		if($siteURL === 'https://spark.test' ||  $siteURL === 'http://test.sparkdispensary.com' || $siteURL === 'https://sparkdispensary.site') {
-			wp_enqueue_style( 'wp-bootstrap-starter-style', get_template_directory_uri() .'/inc/assets/dist/css/allstyles.css', '', $rand );
+			wp_enqueue_style( 'spark-style', get_template_directory_uri() .'/inc/assets/dist/css/allstyles.css', '', $rand );
 		}
 
 		else {
-			wp_enqueue_style( 'wp-bootstrap-starter-style-min', get_template_directory_uri() .'/inc/assets/dist/css/allstyles.min.css', '', $rand );
+			wp_enqueue_style( 'spark-style-min', get_template_directory_uri() .'/inc/assets/dist/css/allstyles.min.css', '', $rand );
 		}
 	}
 
-	// add_action('loadload', 'loadSiteStyles', 1);
-	loadSiteStyles();
+	// this didn't work" add_action('loadload', 'spark_load_site_styles', 1);
+	spark_load_site_styles();
 
+    if( get_theme_mod( 'theme_option_setting' ) && get_theme_mod( 'theme_option_setting' ) !== 'default' ) {
+        wp_enqueue_style( 'spark-'.get_theme_mod( 'theme_option_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/theme-option/'.get_theme_mod( 'theme_option_setting' ).'.css', false, '' );
+    }
+    if( get_theme_mod( 'preset_style_setting' ) === 'poppins-lora' ) {
+        wp_enqueue_style( 'spark-poppins-lora-font', 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Poppins:300,400,500,600,700' );
+    }
+    if( get_theme_mod( 'preset_style_setting' ) === 'montserrat-merriweather' ) {
+        wp_enqueue_style( 'spark-montserrat-merriweather-font', 'https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,900|Montserrat:300,400,400i,500,700,800' );
+    }
+    if( get_theme_mod( 'preset_style_setting' ) === 'poppins-poppins' ) {
+        wp_enqueue_style( 'spark-poppins-font', 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' );
+    }
+    if( get_theme_mod( 'preset_style_setting' ) === 'roboto-roboto' ) {
+        wp_enqueue_style( 'spark-roboto-font', 'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i' );
+    }
+    if( get_theme_mod( 'preset_style_setting' ) === 'arbutusslab-opensans' ) {
+        wp_enqueue_style( 'spark-arbutusslab-opensans-font', 'https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,300i,400,400i,600,600i,700,800' );
+    }
+    if( get_theme_mod( 'preset_style_setting' ) === 'oswald-muli' ) {
+        wp_enqueue_style( 'spark-oswald-muli-font', 'https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800|Oswald:300,400,500,600,700' );
+    }
+    if( get_theme_mod( 'preset_style_setting' ) === 'montserrat-opensans' ) {
+        wp_enqueue_style( 'spark-montserrat-opensans-font', 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,300i,400,400i,600,600i,700,800' );
+    }
+    if( get_theme_mod( 'preset_style_setting' ) === 'robotoslab-roboto' ) {
+        wp_enqueue_style( 'spark-robotoslab-roboto', 'https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:300,300i,400,400i,500,700,700i' );
+    }
+    if( get_theme_mod( 'preset_style_setting' ) && get_theme_mod( 'preset_style_setting' ) !== 'default' ) {
+        wp_enqueue_style( 'spark-'.get_theme_mod( 'preset_style_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/typography/'.get_theme_mod( 'preset_style_setting' ).'.css', false, '' );
+    }
 
-    if(get_theme_mod( 'theme_option_setting' ) && get_theme_mod( 'theme_option_setting' ) !== 'default') {
-        wp_enqueue_style( 'wp-bootstrap-starter-'.get_theme_mod( 'theme_option_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/theme-option/'.get_theme_mod( 'theme_option_setting' ).'.css', false, '' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'poppins-lora') {
-        wp_enqueue_style( 'wp-bootstrap-starter-poppins-lora-font', 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Poppins:300,400,500,600,700' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'montserrat-merriweather') {
-        wp_enqueue_style( 'wp-bootstrap-starter-montserrat-merriweather-font', 'https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,900|Montserrat:300,400,400i,500,700,800' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'poppins-poppins') {
-        wp_enqueue_style( 'wp-bootstrap-starter-poppins-font', 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'roboto-roboto') {
-        wp_enqueue_style( 'wp-bootstrap-starter-roboto-font', 'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'arbutusslab-opensans') {
-        wp_enqueue_style( 'wp-bootstrap-starter-arbutusslab-opensans-font', 'https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,300i,400,400i,600,600i,700,800' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'oswald-muli') {
-        wp_enqueue_style( 'wp-bootstrap-starter-oswald-muli-font', 'https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800|Oswald:300,400,500,600,700' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'montserrat-opensans') {
-        wp_enqueue_style( 'wp-bootstrap-starter-montserrat-opensans-font', 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,300i,400,400i,600,600i,700,800' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) === 'robotoslab-roboto') {
-        wp_enqueue_style( 'wp-bootstrap-starter-robotoslab-roboto', 'https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:300,300i,400,400i,500,700,700i' );
-    }
-    if(get_theme_mod( 'preset_style_setting' ) && get_theme_mod( 'preset_style_setting' ) !== 'default') {
-        wp_enqueue_style( 'wp-bootstrap-starter-'.get_theme_mod( 'preset_style_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/typography/'.get_theme_mod( 'preset_style_setting' ).'.css', false, '' );
-    }
-
-    wp_enqueue_style( 'wp-bootstrap-starter-muli', 'https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap' );
+    wp_enqueue_style( 'spark-muli', 'https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap' );
 
 	wp_enqueue_script('jquery');
 
-    // Internet Explorer HTML5 support
-    wp_enqueue_script( 'html5hiv',get_template_directory_uri().'/inc/assets/js/html5.js', array(), '3.7.0', false );
-    wp_script_add_data( 'html5hiv', 'conditional', 'lt IE 9' );
-
-	// load bootstrap js
+  	// load bootstrap js
     if ( get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
-        wp_enqueue_script('wp-bootstrap-starter-popper', 'https://cdn.jsdelivr.net/npm/popper.js@1/dist/umd/popper.min.js', array(), '', true );
-    	wp_enqueue_script('wp-bootstrap-starter-bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js', array(), '', true );
+        wp_enqueue_script( 'spark-popper', 'https://cdn.jsdelivr.net/npm/popper.js@1/dist/umd/popper.min.js', array(), '', true );
+    	wp_enqueue_script( 'spark-bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js', array(), '', true );
     } else {
-        wp_enqueue_script('wp-bootstrap-starter-popper', get_template_directory_uri() . '/inc/assets/js/popper.min.js', array(), '', true );
-        wp_enqueue_script('wp-bootstrap-starter-bootstrapjs', get_template_directory_uri() . '/inc/assets/js/bootstrap.min.js', array(), '', true );
+        wp_enqueue_script( 'spark-popper', get_template_directory_uri() . '/inc/assets/js/popper.min.js', array(), '', true );
+        wp_enqueue_script( 'spark-bootstrapjs', get_template_directory_uri() . '/inc/assets/js/bootstrap.min.js', array(), '', true );
     }
 
-	wp_enqueue_script('wp-bootstrap-starter-themejs', get_template_directory_uri() . '/inc/assets/js/theme-script.min.js', array(), '', true );
+	wp_enqueue_script('spark-themejs', get_template_directory_uri() . '/inc/assets/js/theme-script.min.js', array(), '', true );
 	// add the async attribute
-	wp_script_add_data( 'wp-bootstrap-starter-themejs', 'async', true );
+	wp_script_add_data( 'spark-themejs', 'async', true );
 
-	wp_enqueue_script( 'wp-bootstrap-starter-skip-link-focus-fix', get_template_directory_uri() . '/inc/assets/js/skip-link-focus-fix.min.js', array(), '20220515', true );
+	wp_enqueue_script( 'spark-skip-link-focus-fix', get_template_directory_uri() . '/inc/assets/js/skip-link-focus-fix.min.js', array(), '20220515', true );
+	
 	// add the async attribute
-	wp_script_add_data( 'wp-bootstrap-starter-skip-link-focus-fix', 'async', true );
-
+	wp_script_add_data( 'spark-skip-link-focus-fix', 'async', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
 	if (is_page('deals') ||  is_front_page() ) {
-		wp_enqueue_script( 'wp-bootstrap-starter-spark', get_template_directory_uri() . '/inc/assets/js/spark.js', array(), null, true );
+		wp_enqueue_script( 'starter-spark', get_template_directory_uri() . '/inc/assets/js/spark.js', array(), null, true );
 		// add the async attribute
-		wp_script_add_data( 'wp-bootstrap-starter-spark', 'async', true );
+		wp_script_add_data( 'starter-spark', 'async', true );
 	}
 
 	// the Westword tracking pixel is loaded from footer-spark.php since it's format
 	// does not fit well with wp_enque_scripts JR 12-22-20
 }
-add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_scripts' );
+add_action( 'wp_enqueue_scripts', 'spark_load_assets' );
 
 /**
  * Add Preload for CDN scripts and stylesheet
  */
-function wp_bootstrap_starter_preload( $hints, $relation_type ){
+function spark_preload( $hints, $relation_type ){
     if ( 'preconnect' === $relation_type && get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
         $hints[] = [
             'href'        => 'https://cdn.jsdelivr.net/',
@@ -448,43 +439,18 @@ function wp_bootstrap_starter_preload( $hints, $relation_type ){
     return $hints;
 } 
 
-add_filter( 'wp_resource_hints', 'wp_bootstrap_starter_preload', 10, 2 );
+add_filter( 'wp_resource_hints', 'spark_preload', 10, 2 );
 
-function wp_bootstrap_starter_password_form() {
+function spark_password_form() {
     global $post;
     $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     $o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
-    <div class="d-block mb-3">' . __( "To view this protected post, enter the password below:", "wp-bootstrap-starter" ) . '</div>
-    <div class="form-group form-inline"><label for="' . $label . '" class="mr-2">' . __( "Password:", "wp-bootstrap-starter" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" class="form-control mr-2" /> <input type="submit" name="Submit" value="' . esc_attr__( "Submit", "wp-bootstrap-starter" ) . '" class="btn btn-primary"/></div>
+    <div class="d-block mb-3">' . __( "To view this protected post, enter the password below:", "spark" ) . '</div>
+    <div class="form-group form-inline"><label for="' . $label . '" class="mr-2">' . __( "Password:", "spark" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" class="form-control mr-2" /> <input type="submit" name="Submit" value="' . esc_attr__( "Submit", "spark" ) . '" class="btn btn-primary"/></div>
     </form>';
     return $o;
 }
-add_filter( 'the_password_form', 'wp_bootstrap_starter_password_form' );
-
-/**
- * Custom reviews post type.
- */
-// require get_template_directory() . '/inc/reviews/custom-post-type-reviews.php';
-
-/**
- * Custom meta box and fields for reviews.
- */
-// require get_template_directory() . '/inc/reviews/custom-metabox-reviews.php';
-
-/**
- * Custom specials post type.
- */
-// require get_template_directory() . '/inc/specials/custom-post-type-specials.php';
-
-/**
- * Custom meta box and fields for specials post type.
- */
-// require get_template_directory() . '/inc/specials/custom-metabox-specials.php';
-
-/**
- * Custom specials options page.
- */
-// require get_template_directory() . '/inc/specials/specials-options-page.php';
+add_filter( 'the_password_form', 'spark_password_form' );
 
 /**
  * Implement the Custom Header feature.
@@ -529,14 +495,14 @@ require get_template_directory() . '/inc/numeric-slug.php';
 /**
  * Load custom WordPress nav walker.
  */
-if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
-    require_once(get_template_directory() . '/inc/spark-navwalker.php');
+if ( ! class_exists( 'Spark_Navwalker' )) {
+    require_once( get_template_directory() . '/inc/spark-navwalker.php' );
 }
 
 /**
  * Disable WordPress emojis.
  */
-require_once(get_template_directory() . '/inc/disable-emojis.php');
+require_once( get_template_directory() . '/inc/disable-emojis.php' );
 
 /**
  * Load pagination.
@@ -577,37 +543,19 @@ function dealoFDay() {
 }
 
 // elipsis/read more links for the blog
-function wp_bootstrap_starter_excerpt_more( $more ) {
+function spark_excerpt_more( $more ) {
     return ' [.....]';
 }
 
-add_filter( 'excerpt_more', 'wp_bootstrap_starter_excerpt_more', 21 );
+add_filter( 'excerpt_more', 'spark_excerpt_more', 21 );
 
-function wp_bootstrap_starter_excerpt_more_link( $excerpt ){
+function spark_excerpt_more_link( $excerpt ){
     $post = get_post();
     $excerpt .= '<a href="'. get_permalink( $post->ID ) . '" class="btn btn-primary readmore-btn">continue reading</a>';
     return $excerpt;
 }
 
-add_filter( 'the_excerpt', 'wp_bootstrap_starter_excerpt_more_link', 21 );
-
-// Pagination
-function pagination_bar() {
-  global $wp_query;
-
-  $total_pages = $wp_query->max_num_pages;
-
-  if ($total_pages > 1) {
-      $current_page = max( 1, get_query_var( 'paged' ));
-
-      echo paginate_links(array(
-          'base' => get_pagenum_link(1) . '%_%',
-          'format' => '/page/%#%',
-          'current' => $current_page,
-          'total' => $total_pages,
-      ));
-  }
-}
+add_filter( 'the_excerpt', 'spark_excerpt_more_link', 21 );
 
 // hide the WordPress version in browser source 
 function wp_version_remove_version() {

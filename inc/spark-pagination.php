@@ -3,20 +3,20 @@
  * WordPress Bootstrap Pagination
  */
 
-function wp_bootstrap_pagination( $args = array() ) {
+function spark_pagination( $args = array() ) {
     
     $defaults = array(
         'range'           => 4,
         'custom_query'    => FALSE,
-        'previous_string' => __( 'Previous', 'wp-bootstrap-starter' ),
-        'next_string'     => __( 'Next', 'wp-bootstrap-starter' ),
+        'previous_string' => __( 'Previous', 'spark' ),
+        'next_string'     => __( 'Next', 'spark' ),
         'before_output'   => '<div class="navigation"><ul class="pagination">',
         'after_output'    => '</ul></div>'
     );
     
     $args = wp_parse_args( 
         $args, 
-        apply_filters( 'wp_bootstrap_pagination_defaults', $defaults )
+        apply_filters( 'spark_pagination_defaults', $defaults )
     );
     
     $args['range'] = (int) $args['range'] - 1;
@@ -54,10 +54,10 @@ function wp_bootstrap_pagination( $args = array() ) {
     
     $firstpage = esc_attr( get_pagenum_link(1) );
     if ( $firstpage && (1 != $page) )
-        $echo .= '<li class="previous page-item"><a class="page-link" href="' . $firstpage . '">' . __( 'First', 'wp-bootstrap-starter' ) . '</a></li>';
+        $echo .= '<li class="previous page-item"><a class="page-link" href="' . $firstpage . '">' . __( 'First', 'spark' ) . '</a></li>';
 
     if ( $previous && (1 != $page) )
-        $echo .= '<li class="page-item"><a class="page-link" href="' . $previous . '" title="' . __( 'previous', 'wp-bootstrap-starter') . '">' . $args['previous_string'] . '</a></li>';
+        $echo .= '<li class="page-item"><a class="page-link" href="' . $previous . '" title="' . __( 'previous', 'spark') . '">' . $args['previous_string'] . '</a></li>';
     
     if ( !empty($min) && !empty($max) ) {
         for( $i = $min; $i <= $max; $i++ ) {
@@ -72,11 +72,11 @@ function wp_bootstrap_pagination( $args = array() ) {
     $next = intval($page) + 1;
     $next = esc_attr( get_pagenum_link($next) );
     if ($next && ($count != $page) )
-        $echo .= '<li class="page-item"><a class="page-link" href="' . $next . '" title="' . __( 'next', 'wp-bootstrap-starter') . '">' . $args['next_string'] . '</a></li>';
+        $echo .= '<li class="page-item"><a class="page-link" href="' . $next . '" title="' . __( 'next', 'spark') . '">' . $args['next_string'] . '</a></li>';
     
     $lastpage = esc_attr( get_pagenum_link($count) );
     if ( $lastpage ) {
-        $echo .= '<li class="next page-item"><a class="page-link" href="' . $lastpage . '">' . __( 'Last', 'wp-bootstrap-starter' ) . '</a></li>';
+        $echo .= '<li class="next page-item"><a class="page-link" href="' . $lastpage . '">' . __( 'Last', 'spark' ) . '</a></li>';
     }
 
     if ( isset($echo) )

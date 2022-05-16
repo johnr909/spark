@@ -414,7 +414,7 @@ function wp_bootstrap_starter_scripts() {
 	// add the async attribute
 	wp_script_add_data( 'wp-bootstrap-starter-themejs', 'async', true );
 
-	wp_enqueue_script( 'wp-bootstrap-starter-skip-link-focus-fix', get_template_directory_uri() . '/inc/assets/js/skip-link-focus-fix.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'wp-bootstrap-starter-skip-link-focus-fix', get_template_directory_uri() . '/inc/assets/js/skip-link-focus-fix.min.js', array(), '20220515', true );
 	// add the async attribute
 	wp_script_add_data( 'wp-bootstrap-starter-skip-link-focus-fix', 'async', true );
 
@@ -533,7 +533,7 @@ require get_template_directory() . '/inc/numeric-slug.php';
  * Load custom WordPress nav walker.
  */
 if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
-    require_once(get_template_directory() . '/inc/wp_bootstrap_navwalker.php');
+    require_once(get_template_directory() . '/inc/spark-navwalker.php');
 }
 
 /**
@@ -544,7 +544,7 @@ require_once(get_template_directory() . '/inc/disable-emojis.php');
 /**
  * Load pagination.
  */
-require get_template_directory() . '/inc/wp_bootstrap_pagination.php';
+require get_template_directory() . '/inc/spark-pagination.php';
 
 
 function dealoFDay() {
@@ -623,5 +623,5 @@ add_filter('the_generator', 'wp_version_remove_version');
  * Adds `async` and `defer` support for scripts registered or enqueued
  * by the theme.
  */
-$loader = new WP_Bootstrap_Script_Loader();
+$loader = new Spark_Script_Loader();
 add_filter( 'script_loader_tag', array( $loader, 'filter_script_loader_tag' ), 10, 2 );

@@ -8,7 +8,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package WP_Bootstrap_Starter
+ * @package Spark
  */
 
 get_header(); 
@@ -29,12 +29,12 @@ get_header();
 	<div class="row">
 		<section id="primary" class="content-area col-sm-12 col-lg-8">
 			<main id="main" class="site-main" role="main">
-	            <h1><?php _e('Featured Posts', 'wp-bootstrap-starter'); ?></h1>
+	            <h1><?php _e('Featured Posts', 'spark'); ?></h1>
 	            <?php get_template_part('template-parts/content', 'featured-posts'); ?>
 			</main><!-- #main -->
 		</section><!-- #primary -->
 
-    <?php get_sidebar('spark'); ?>
+    <?php get_sidebar( 'spark' ); ?>
  </div><!-- .row -->
 </div><!-- .container-fluid -->
 <?php get_footer(); ?>

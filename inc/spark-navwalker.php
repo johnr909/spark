@@ -18,13 +18,13 @@
  */
 
 // Check if Class Exists.
-if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
+if ( ! class_exists( 'Spark_Navwalker' ) ) {
 	/**
-	 * WP_Bootstrap_Navwalker class.
+	 * Spark_Navwalker class.
 	 *
 	 * @extends Walker_Nav_Menu
 	 */
-	class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
+	class Spark_Navwalker extends Walker_Nav_Menu {
 
 		/**
 		 * Starts the list before the elements are added.

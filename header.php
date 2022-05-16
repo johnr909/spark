@@ -13,7 +13,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="<?php echo esc_url('https://www.googletagmanager.com/gtag/js?id=UA-175453544-1', 'wp-bootstrap-starter'); ?>"></script>
+	<script async src="<?php echo esc_url('https://www.googletagmanager.com/gtag/js?id=UA-175453544-1', 'spark'); ?>"></script>
 
 	<script>
       window.dataLayer = window.dataLayer || [];
@@ -43,7 +43,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="profile" href="<?php echo esc_url('http://gmpg.org/xfn/11', 'wp-bootstrap-starter'); ?>">
+    <link rel="profile" href="<?php echo esc_url('http://gmpg.org/xfn/11', 'spark'); ?>">
 <?php wp_head(); ?>
 </head>
 
@@ -60,7 +60,7 @@
    
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content">
-        <?php esc_html_e('Skip to content', 'wp-bootstrap-starter'); ?>
+        <?php esc_html_e('Skip to content', 'spark'); ?>
     </a>
 
     <?php if (is_front_page()) : ?>
@@ -86,7 +86,7 @@
         </div><!-- .container-fluid -->
     <?php endif;?>       
 
-    <header id="masthead" class="site-header navbar-static-top sticky-top <?php echo wp_bootstrap_starter_bg_class(); ?>" 
+    <header id="masthead" class="site-header navbar-static-top sticky-top <?php echo spark_bg_class(); ?>" 
             role="banner">
 
         <div class="container-fluid-info">
@@ -102,16 +102,16 @@
             <nav class="navbar navbar-expand-xl p-0">
                 <div class="navbar-brand">
 
-                    <?php if (get_theme_mod( 'wp_bootstrap_starter_logo')): ?>
-                    <a href="<?php echo esc_url( home_url( '/' ), 'wp-bootstrap-starter'); ?>">
-                        <img src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' ), 'wp-bootstrap-starter'); ?>"
-                             alt="<?php echo esc_attr( get_bloginfo( 'name' ), 'wp-bootstrap-starter'); ?>"
+                    <?php if (get_theme_mod( 'spark_logo')): ?>
+                    <a href="<?php echo esc_url( home_url( '/' ), 'spark'); ?>">
+                        <img src="<?php echo esc_url(get_theme_mod( 'spark_logo' ), 'spark'); ?>"
+                             alt="<?php echo esc_attr( get_bloginfo( 'name' ), 'spark'); ?>"
                              class="navbar-brand-img">
 
                     </a>
                     <?php else : ?>
-                    <a class="site-title" href="<?php echo esc_url( home_url( '/' ), 'wp-bootstrap-starter'); ?>">
-                        <?php esc_url(bloginfo('name'), 'wp-bootstrap-starter'); ?></a>
+                    <a class="site-title" href="<?php echo esc_url( home_url( '/' ), 'spark'); ?>">
+                        <?php esc_url(bloginfo('name'), 'spark'); ?></a>
 	                <?php endif; ?>
 
                 </div><!-- .navbar-brand -->
@@ -130,8 +130,8 @@
                     'menu_id'         => false,
                     'menu_class'      => 'navbar-nav',
                     'depth'           => 3,
-                    'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-                    'walker'          => new wp_bootstrap_navwalker()
+                    'fallback_cb'     => 'spark_navwalker::fallback',
+                    'walker'          => new spark_navwalker()
                     ));
                 ?>
 

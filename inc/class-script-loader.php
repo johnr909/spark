@@ -6,14 +6,14 @@
  *
  * Based on a solution in WP Rig.
  *
- * @package WP_Bootstrap_Starter
+ * @package Spark
  */
 
-if ( ! class_exists( 'WP_Bootstrap_Script_Loader' ) ) {
+if ( ! class_exists( 'Spark_Script_Loader' ) ) {
 	/**
 	 * A class that provides a way to add `async` or `defer` attributes to scripts.
 	 */
-	class WP_Bootstrap_Script_Loader {
+	class Spark_Script_Loader {
 
 		/**
 		 * Adds async/defer attributes to enqueued / registered scripts.

@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package WP_Bootstrap_Starter
+ * @package Spark
  */
 
 ?>
@@ -21,13 +21,13 @@
 	    <div class="entry-content">
 
 				<?php	the_title( '<h3 class="entry-title">', '</h3>' ); ?>
-				<p><?php wp_bootstrap_starter_posted_on(); ?></p>
+				<p><?php spark_posted_on(); ?></p>
 				<?php the_excerpt(); ?>
 
 			</div><!-- .entry-content -->
 
 			<footer class="entry-footer">
-				<?php wp_bootstrap_starter_entry_footer(); ?>
+				<?php spark_entry_footer(); ?>
 	    </footer><!-- .entry-footer -->
 
 	  </article>

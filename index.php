@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package WP_Bootstrap_Starter
+ * @package Spark
  */
 
  get_header(); ?>
@@ -26,7 +26,7 @@
             		<h1>
             			<?php
             				if($current_slug === 'resources') {
-								_e('Resources', 'wp-bootstrap-starter'); 
+								_e('Resources', 'spark'); 
 							} 
 						?>
 					</h1>
@@ -65,7 +65,7 @@
 
 					endwhile;
 
-					wp_bootstrap_pagination();
+					spark_pagination();
 
 				else :
 
@@ -76,7 +76,7 @@
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-		<?php	get_sidebar('spark'); ?>
+		<?php	get_sidebar( 'spark' ); ?>
  </div><!-- .row -->
 </div><!-- .container-fluid -->
 

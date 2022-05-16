@@ -14,32 +14,33 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses wp_bootstrap_starter_header_style()
+ * @uses spark_header_style()
  */
-function wp_bootstrap_starter_custom_header_setup() {
+function spark_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'wp_bootstrap_starter_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => 'fff',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'wp_bootstrap_starter_header_style',
+		'wp-head-callback'       => 'spark_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'wp_bootstrap_starter_custom_header_setup' );
+add_action( 'after_setup_theme', 'spark_custom_header_setup' );
 
-if ( ! function_exists( 'wp_bootstrap_starter_header_style' ) ) :
+if ( ! function_exists( 'spark_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
  * @see wp_bootstrap_starter_custom_header_setup().
  */
-function wp_bootstrap_starter_header_style() {
+function spark_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*
 	 * If no custom options for text are set, let's bail.
-	 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
+	 * get_header_textcolor() options: Any hex value, 'blank' to hide text. 
+	 * Default: add_theme_support( 'custom-header' ).
 	 */
 	if ( get_theme_support( 'custom-header', 'default-text-color' ) === $header_text_color ) {
 		return;
@@ -61,7 +62,7 @@ function wp_bootstrap_starter_header_style() {
 		// If the user has set a custom color for the text use that.
 		else :
 	?>
-        a.site-title,
+    a.site-title,
 		.site-description {
 			color: #<?php echo esc_attr( $header_text_color ); ?>;
 		}

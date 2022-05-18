@@ -69,29 +69,47 @@
           ?>
 
 
-          <p><?php echo $id; ?></p>
+          <p>
+            <?php echo 'the id via get_the_ID(): ' . $id; ?></p>
           <p>
             <?php 
               global $post;
-              echo $post->post_name;
+              echo 'the post name: ' . $post->post_name;
             ?>
           </p>
           <p>
             <?php
               $slug = basename(get_permalink());
-              echo $slug;
-
-              $sluggo = get_post_type($id);
-              echo $sluggo;
+              echo 'the post slug: ' . $slug;
             ?>
           </p>
-        
+          <p>
+            <?
+              $gptById = get_post_type($id);
+              echo 'get_post_type($id): ' . $gptById;
+              // the_title();
+            ?> 
+          </p>
+          <p>
+            <?php 
+              $saturdayPost = get_page_by_path('saturday', '', 'dailydeals');
+              echo 'post id for Saturday (857): ' . $saturdayPost->ID;
+            ?>
+          </p>
+
           </div><!-- /.card-body -->
       </div><!-- /#the_title() -->
 
       
     </div><!-- .col-sm-3 -->
-    
+    <?php 
+      // $postie = get_page_by_path( 'saturday', OBJECT, 'dailydeals' ); 
+      // var_dump($postie);
+      // the_post_thumbnail($saturdayPost->ID);
+      // $thumb = get_post_thumbnail_id( 843 );
+      // the_post_thumbnail(843);
+      // var_dump($thumb);
+    ?>
    
   <?php 
     endwhile;

@@ -67,7 +67,25 @@
                 echo '<p class="card-text mb-3">' . esc_attr($deal_description_text2) . '</p>';
             }
           ?>
-            
+
+
+          <p><?php echo $id; ?></p>
+          <p>
+            <?php 
+              global $post;
+              echo $post->post_name;
+            ?>
+          </p>
+          <p>
+            <?php
+              $slug = basename(get_permalink());
+              echo $slug;
+
+              $sluggo = get_post_type($id);
+              echo $sluggo;
+            ?>
+          </p>
+        
           </div><!-- /.card-body -->
       </div><!-- /#the_title() -->
 

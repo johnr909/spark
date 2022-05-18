@@ -24,7 +24,7 @@ get_header();
 <div class="container-fluid blog">
 	<div class="row">
 
-		<section id="primary" class="content-area col-sm-12">
+		<section id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 
 				<header class="page-header">

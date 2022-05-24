@@ -1,4 +1,6 @@
 <?php
+
+namespace sparkt;
 /**
  * Custom template tags for this theme
  *
@@ -118,8 +120,9 @@ function spark_category_transient_flusher() {
 	// Like, beat it. Dig?
 	delete_transient( 'spark_categories' );
 }
-add_action( 'edit_category', 'spark_category_transient_flusher' );
-add_action( 'save_post',     'spark_category_transient_flusher' );
+
+add_action( 'edit_category', '\sparkt\spark_category_transient_flusher' );
+add_action( 'save_post',     '\sparkt\spark_category_transient_flusher' );
 
 
 if ( ! function_exists( 'spark_comment' ) ) :

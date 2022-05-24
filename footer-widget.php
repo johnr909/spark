@@ -1,6 +1,6 @@
 <?php
 if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) || is_active_sidebar( 'footer-3' ) ) {?>
-        <div id="footer-widget" class="row m-0 <?php if(!is_theme_preset_active()){ echo 'bg-light'; } ?>">
+        <div id="footer-widget" class="row m-0 <?php if( !\sparkt\is_spark_theme_preset_active() ) { echo 'bg-light'; } ?>">
             <div class="container">
                 <div class="row">
                     <?php if ( is_active_sidebar( 'footer-1' )) : ?>

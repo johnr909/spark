@@ -31,7 +31,7 @@
 					get_template_part( 'template-parts/content', get_post_format() );
 
 					    the_post_navigation();
-					    // spark_pagination();			    
+					    // \sparkt\spark_pagination();			    
 
 					// hide comnments for review post type
 					if( get_post_type( $post->ID ) != 'reviews' ) {

@@ -1,4 +1,6 @@
 <?php
+namespace sparkt;
+
 /**
  * Spark functions and definitions
  *
@@ -68,7 +70,8 @@ function spark_setup() {
 
 }
 endif;
-add_action( 'after_setup_theme', 'spark_setup' );
+
+add_action( 'after_setup_theme', '\sparkt\spark_setup' );
 
 
 /**
@@ -91,7 +94,8 @@ function spark_reminder(){
             }
 
 }
-add_action( 'admin_notices', 'spark_reminder' );
+
+add_action( 'admin_notices', '\sparkt\spark_reminder' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -103,7 +107,8 @@ add_action( 'admin_notices', 'spark_reminder' );
 function spark_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'spark_content_width', 1170 );
 }
-add_action( 'after_setup_theme', 'spark_content_width', 0 );
+
+add_action( 'after_setup_theme', '\sparkt\spark_content_width', 0 );
 
 /**
  * Register widget area.
@@ -117,8 +122,8 @@ function spark_widgets_init() {
 --------------------------------------------------------------*/
 // blog sidebar
 	register_sidebar( array(
-		'name' => esc_html__( 'basic sidebar jjr', 'spark' ),
-		'id' => 'sidebar-jjr',
+		'name' => esc_html__( 'Sidebar Spark Main', 'spark' ),
+		'id' => 'sidebar-spark',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 	) );
@@ -321,7 +326,7 @@ function spark_widgets_init() {
 
 }
 
-add_action( 'widgets_init', 'spark_widgets_init' );
+add_action( 'widgets_init', '\sparkt\spark_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
@@ -351,7 +356,7 @@ function spark_load_assets() {
 		}
 	}
 
-	// this didn't work" add_action('loadload', 'spark_load_site_styles', 1);
+	// this didn't work: add_action('loadload', 'spark_load_site_styles', 1);
 	spark_load_site_styles();
 
     if( get_theme_mod( 'theme_option_setting' ) && get_theme_mod( 'theme_option_setting' ) !== 'default' ) {
@@ -418,19 +423,22 @@ function spark_load_assets() {
 	}
 
 	// the Westword tracking pixel is loaded from footer-spark.php since it's format
-	// does not fit well with wp_enque_scripts JR 12-22-20
+	// does not fit well with wp_enque_scripts: JR 12-22-20
 }
-add_action( 'wp_enqueue_scripts', 'spark_load_assets' );
+
+add_action( 'wp_enqueue_scripts', '\sparkt\spark_load_assets' );
 
 /**
  * Add Preload for CDN scripts and stylesheet
  */
 function spark_preload( $hints, $relation_type ){
     if ( 'preconnect' === $relation_type && get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
+        
         $hints[] = [
             'href'        => 'https://cdn.jsdelivr.net/',
             'crossorigin' => 'anonymous',
         ];
+
         $hints[] = [
             'href'        => 'https://use.fontawesome.com/',
             'crossorigin' => 'anonymous',
@@ -439,7 +447,7 @@ function spark_preload( $hints, $relation_type ){
     return $hints;
 } 
 
-add_filter( 'wp_resource_hints', 'spark_preload', 10, 2 );
+add_filter( 'wp_resource_hints', '\sparkt\spark_preload', 10, 2 );
 
 function spark_password_form() {
     global $post;
@@ -450,7 +458,8 @@ function spark_password_form() {
     </form>';
     return $o;
 }
-add_filter( 'the_password_form', 'spark_password_form' );
+
+add_filter( 'the_password_form', '\sparkt\spark_password_form' );
 
 /**
  * Implement the Custom Header feature.
@@ -477,27 +486,21 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibility.php';
 
-/**
- * Load `async` and `defer` support for scripts registered or enqueued file
- */
-
-require get_template_directory() . '/inc/class-script-loader.php';
 /*
  * Adds `async` and `defer` support for scripts registered or enqueued
  * by the theme.
  */
+require get_template_directory() . '/inc/class-script-loader.php';
 
-require get_template_directory() . '/inc/numeric-slug.php';
 /*
- * Adds support for numeric URL slugslike '/420' toggle on/off a necessary
+ * Adds support for numeric URL slugs like '/420', can be toggled on/off as necessary
  */
+require get_template_directory() . '/inc/numeric-slug.php';
 
 /**
- * Load custom WordPress nav walker.
+ * Load a custom WordPress nav walker.
  */
-if ( ! class_exists( 'Spark_Navwalker' )) {
-    require_once( get_template_directory() . '/inc/spark-navwalker.php' );
-}
+require_once( get_template_directory() . '/inc/spark-navwalker.php' );
 
 /**
  * Disable WordPress emojis.
@@ -562,11 +565,12 @@ function wp_version_remove_version() {
 	return '';
 }
 
-add_filter('the_generator', 'wp_version_remove_version');
+add_filter('the_generator', 'wp_version_remove_version' );
 
 /*
  * Adds `async` and `defer` support for scripts registered or enqueued
  * by the theme.
  */
-$loader = new Spark_Script_Loader();
+$loader = new \sparkt\Spark_Script_Loader();
+
 add_filter( 'script_loader_tag', array( $loader, 'filter_script_loader_tag' ), 10, 2 );

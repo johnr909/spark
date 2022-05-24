@@ -1,4 +1,6 @@
 <?php
+
+namespace sparkt;
 /**
  * Custom functions that act independently of the theme templates
  *
@@ -30,7 +32,8 @@ function spark_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'spark_body_classes' );
+
+add_filter( 'body_class', '\sparkt\spark_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
@@ -38,7 +41,8 @@ add_filter( 'body_class', 'spark_body_classes' );
 function spark_pingback_header() {
 	echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 }
-add_action( 'wp_head', 'spark_pingback_header' );
+
+add_action( 'wp_head', '\sparkt\spark_pingback_header' );
 
 
 /**
@@ -114,7 +118,7 @@ function spark_bg_class() {
     }
 }
 
-function is_theme_preset_active() {
+function is_spark_theme_preset_active() {
     if(get_theme_mod( 'theme_option_setting' ) && get_theme_mod( 'theme_option_setting' ) !== 'default'){
         return true;
     }

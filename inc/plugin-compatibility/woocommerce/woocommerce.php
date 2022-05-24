@@ -1,19 +1,21 @@
 <?php
 
-add_action( 'after_setup_theme', 'woocommerce_support' );
+namespace sparkt;
+
 function woocommerce_support() {
-add_theme_support( 'woocommerce' );
+    add_theme_support( 'woocommerce' );
     add_theme_support( 'wc-product-gallery-zoom' );
     add_theme_support( 'wc-product-gallery-lightbox' );
     add_theme_support( 'wc-product-gallery-slider' );
 }
 
+add_action( 'after_setup_theme', '\sparkt\woocommerce_support' );
 
 /*********************************************************************************************/
 /** WooCommerce - Modify each individual input type $args defaults /**
 /*********************************************************************************************/
 
-add_filter('woocommerce_form_field_args','wc_form_field_args',10,3);
+add_filter( 'woocommerce_form_field_args','\sparkt\wc_form_field_args',10,3 );
 
 function wc_form_field_args( $args, $key, $value = null ) {
 

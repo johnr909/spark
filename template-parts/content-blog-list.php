@@ -20,13 +20,13 @@
 	    <div class="entry-content">
 
 				<?php	the_title( '<h3 class="entry-title">', '</h3>' ); ?>
-				<p><?php spark_posted_on(); ?></p>
+				<p><?php \sparkt\spark_posted_on(); ?></p>
 				<?php the_excerpt(); ?>
 
 			</div><!-- .entry-content -->
 
 			<footer class="entry-footer">
-				<?php spark_entry_footer(); ?>
+				<?php \sparkt\spark_entry_footer(); ?>
 	    </footer><!-- .entry-footer -->
 
 	  </article>

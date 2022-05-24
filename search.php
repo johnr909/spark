@@ -45,7 +45,7 @@ get_header(); ?>
 
 				endwhile;
 
-				spark_pagination();
+				\sparkt\spark_pagination();
 
 			else :
 

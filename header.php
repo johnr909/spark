@@ -63,7 +63,7 @@
         <?php esc_html_e( 'Skip to content', 'spark' ); ?>
     </a>
 
-    <?php if (is_front_page()) : ?>
+    <?php if ( is_front_page() ) : ?>
 
         <div class="container-fluid container-fluid-info">
             <div class="row">
@@ -75,7 +75,7 @@
 
     <?php endif;?>
 
-    <?php if ( is_front_page()) : ?>
+    <?php if ( is_front_page() ) : ?>
 
         <div class="container-fluid container-fluid-info">
             <div class="row">
@@ -86,7 +86,7 @@
         </div><!-- .container-fluid -->
     <?php endif;?>       
 
-    <header id="masthead" class="site-header navbar-static-top sticky-top <?php echo spark_bg_class(); ?>" 
+    <header id="masthead" class="site-header navbar-static-top sticky-top <?php echo \sparkt\spark_bg_class(); ?>" 
             role="banner">
 
         <div class="container-fluid-info">

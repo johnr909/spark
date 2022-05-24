@@ -61,7 +61,7 @@ get_header();
 			</main><!-- #main -->
 		</section><!-- #primary -->
 
-			<?php get_sidebar( 'spark' ); ?>
+			<?php get_sidebar(); ?>
 
  </div><!-- .row -->
 </div><!-- .container-fluid -->

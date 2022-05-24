@@ -1,4 +1,7 @@
 <?php
+
+namespace sparkt;
+
 /**
  * Javascript Loader Class
  *

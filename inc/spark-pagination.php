@@ -1,4 +1,7 @@
 <?php
+
+namespace sparkt;
+
 /**
  * WordPress Bootstrap Pagination
  */

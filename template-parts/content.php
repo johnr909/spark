@@ -22,7 +22,7 @@
 
 		if ( 'post' === get_post_type() ) : ?>
             <div class="entry-meta">
-				<?php spark_posted_on(); ?>
+				<?php \sparkt\spark_posted_on(); ?>
             </div><!-- .entry-meta -->
 		<?php
 		endif; ?>
@@ -43,6 +43,6 @@
     </div><!-- .entry-content -->
 
     <footer class="entry-footer">
-		<?php spark_entry_footer(); ?>
+		<?php \sparkt\spark_entry_footer(); ?>
     </footer><!-- .entry-footer -->
 </article><!-- #post-## -->

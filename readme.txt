@@ -1,8 +1,8 @@
 === Spark Bootstrap Starter ===
 
 Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, custom-background, e-commerce, theme-options, sticky-post, full-width-template
-Requires at least: 5.0
-Tested up to: 5.7
+Requires at least: 5.6
+Tested up to: 7.4
 
 This Theme is distributed under the terms of the GNU GPL.
 

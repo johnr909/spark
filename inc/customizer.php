@@ -1,6 +1,8 @@
 <?php
 
-namespace sparkt;
+// namespace sparkt;
+// This namespace does not work with refs to WP_Customize_Control which is instantiated 
+// a bunch of times here. 
 
 /**
  * Spark Theme Customizer

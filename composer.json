@@ -17,17 +17,9 @@
             "inc/template-tags.php",
             "inc/extras.php",
             "inc/customizer.php",
-            "inc/plugin-compatability/plugin-compatibility.php",
             "inc/numeric-slug.php",
             "inc/disable-emojis.php",
             "inc/spark-pagination.php"
-        ],
-        "psr-4": {
-            "sparkt\\":"inc/src"
-        },
-        "autoload": {
-            "classmap": ["inc/src"]
-        }
-        
+        ]
     }
 }

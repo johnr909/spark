@@ -461,56 +461,41 @@ function spark_password_form() {
 
 add_filter( 'the_password_form', '\sparkt\spark_password_form' );
 
+require get_template_directory() . '/vendor/autoload.php';
 /**
- * Implement the Custom Header feature.
+ * Composer loads in a few files with global functions via the autoload/files options
+ * to reduce the number of include/require statements so see the compposer.json for details. 
+ *  What gets loaded in:
+ *  "inc/custom-header.php": Custom Header feature
+ *	"inc/template-tags.php" Custom template tags for this theme
+ *	"inc/extras.php": Theme-independent utility global functions
+ *	"inc/customizer.php", Full-fledged Customizer API implementations
+ *	"inc/numeric-slug.php", Adds support for numeric URL slugs like '/420', can be toggled on/off as necessary
+ *	"inc/disable-emojis.php", Removes those pesky HTTP emoji calls
+ *	"inc/spark-pagination.php" A full-featured paginator
+ *
  */
-// require get_template_directory() . '/inc/custom-header.php';
-
-/**
- * Custom template tags for this theme.
- */
-// require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Custom functions that act independently of the theme templates.
- */
-require get_template_directory() . '/inc/extras.php';
-
-/**
- * Customizer additions.
- */
-// require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Load plugin compatibility file.
  */
-// require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibility.php';
+require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibility.php';
+
+/**
+ * Load a custom WordPress nav walker.
+ */
+require_once( get_template_directory() . '/inc/src/spark_navwalker.php' );
 
 /*
  * Adds `async` and `defer` support for scripts registered or enqueued
  * by the theme.
  */
-// require get_template_directory() . '/inc/class-script-loader.php';
 
-/*
- * Adds support for numeric URL slugs like '/420', can be toggled on/off as necessary
- */
-// require get_template_directory() . '/inc/numeric-slug.php';
+require get_template_directory() . '/inc/src/spark_script_loader.php';
+$loader = new \sparkt\Spark_Script_Loader();
 
-/**
- * Load a custom WordPress nav walker.
- */
-// require_once( get_template_directory() . '/inc/spark-navwalker.php' );
+add_filter( 'script_loader_tag', array( $loader, 'filter_script_loader_tag' ), 10, 2 );
 
-/**
- * Load pagination.
- */
-// require get_template_directory() . '/inc/spark-pagination.php';
-
-/**
- * Disable WordPress emojis.
- */
-// require_once( get_template_directory() . '/inc/disable-emojis.php' );
 
 function dealoFDay() {
 	date_default_timezone_set( 'America/Denver' );
@@ -565,14 +550,3 @@ function remove_wp_version() {
 }
 
 add_filter('the_generator', '\sparkt\remove_wp_version' );
-
-/*
- * Adds `async` and `defer` support for scripts registered or enqueued
- * by the theme.
- */
-
-// need to load  this via Composer
-require get_template_directory() . '/inc/class-script-loader.php';
-$loader = new \sparkt\Spark_Script_Loader();
-
-add_filter( 'script_loader_tag', array( $loader, 'filter_script_loader_tag' ), 10, 2 );

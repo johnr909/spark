@@ -1,5 +1,5 @@
-
 <?php
+
 namespace sparkt;
 
 /**
@@ -464,12 +464,12 @@ add_filter( 'the_password_form', '\sparkt\spark_password_form' );
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+// require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+// require get_template_directory() . '/inc/template-tags.php';
 
 /**
  * Custom functions that act independently of the theme templates.
@@ -479,39 +479,38 @@ require get_template_directory() . '/inc/extras.php';
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+// require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Load plugin compatibility file.
  */
-require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibility.php';
+// require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibility.php';
 
 /*
  * Adds `async` and `defer` support for scripts registered or enqueued
  * by the theme.
  */
-require get_template_directory() . '/inc/class-script-loader.php';
+// require get_template_directory() . '/inc/class-script-loader.php';
 
 /*
  * Adds support for numeric URL slugs like '/420', can be toggled on/off as necessary
  */
-require get_template_directory() . '/inc/numeric-slug.php';
+// require get_template_directory() . '/inc/numeric-slug.php';
 
 /**
  * Load a custom WordPress nav walker.
  */
-require_once( get_template_directory() . '/inc/spark-navwalker.php' );
-
-/**
- * Disable WordPress emojis.
- */
-require_once( get_template_directory() . '/inc/disable-emojis.php' );
+// require_once( get_template_directory() . '/inc/spark-navwalker.php' );
 
 /**
  * Load pagination.
  */
-require get_template_directory() . '/inc/spark-pagination.php';
+// require get_template_directory() . '/inc/spark-pagination.php';
 
+/**
+ * Disable WordPress emojis.
+ */
+// require_once( get_template_directory() . '/inc/disable-emojis.php' );
 
 function dealoFDay() {
 	date_default_timezone_set( 'America/Denver' );
@@ -571,6 +570,9 @@ add_filter('the_generator', '\sparkt\remove_wp_version' );
  * Adds `async` and `defer` support for scripts registered or enqueued
  * by the theme.
  */
+
+// need to load  this via Composer
+require get_template_directory() . '/inc/class-script-loader.php';
 $loader = new \sparkt\Spark_Script_Loader();
 
 add_filter( 'script_loader_tag', array( $loader, 'filter_script_loader_tag' ), 10, 2 );

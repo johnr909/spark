@@ -7,8 +7,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Spark
- */
+ * @package spark */
 
 /*
  * If the current post is protected by a password and

@@ -7,8 +7,7 @@ namespace sparkt;
  *
  * @link https://jetpack.com/
  *
- * @package Spark
- */
+ * @package spark */
 
 /**
  * Jetpack setup function.

@@ -4,8 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Spark
- */
+ * @package spark */
 
  get_header(); ?>
 

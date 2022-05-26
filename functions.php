@@ -1,3 +1,4 @@
+
 <?php
 namespace sparkt;
 
@@ -6,8 +7,7 @@ namespace sparkt;
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Spark
- */
+ * @package spark */
 
 if ( ! function_exists( 'spark_setup' ) ) :
 /**
@@ -550,7 +550,7 @@ function spark_excerpt_more( $more ) {
     return ' [.....]';
 }
 
-add_filter( 'excerpt_more', 'spark_excerpt_more', 21 );
+add_filter( 'excerpt_more', '\sparkt\spark_excerpt_more', 21 );
 
 function spark_excerpt_more_link( $excerpt ){
     $post = get_post();
@@ -558,14 +558,14 @@ function spark_excerpt_more_link( $excerpt ){
     return $excerpt;
 }
 
-add_filter( 'the_excerpt', 'spark_excerpt_more_link', 21 );
+add_filter( 'the_excerpt', '\sparkt\spark_excerpt_more_link', 21 );
 
 // hide the WordPress version in browser source 
-function wp_version_remove_version() {
+function remove_wp_version() {
 	return '';
 }
 
-add_filter('the_generator', 'wp_version_remove_version' );
+add_filter('the_generator', '\sparkt\remove_wp_version' );
 
 /*
  * Adds `async` and `defer` support for scripts registered or enqueued

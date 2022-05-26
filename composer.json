@@ -1,0 +1,14 @@
+{
+    "name": "johnr909/spark",
+    "description": "Spark theme",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "John Rose",
+            "email": "johnr909@yahoo.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

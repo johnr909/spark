@@ -6,8 +6,7 @@ namespace sparkt;
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Spark
- */
+ * @package spark */
 
 if ( ! function_exists( 'spark_posted_on' ) ) :
 /**

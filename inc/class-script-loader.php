@@ -9,8 +9,7 @@ namespace sparkt;
  *
  * Based on a solution in WP Rig.
  *
- * @package Spark
- */
+ * @package spark */
 
 if ( ! class_exists( 'Spark_Script_Loader' ) ) {
 	/**

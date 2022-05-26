@@ -5,8 +5,7 @@ namespace sparkt;
 /**
  * Spark Theme Customizer
  *
- * @package Spark
- */
+ * @package spark */
 
 /**
  * Add postMessage support for the site title and description for the Theme Customizer.

@@ -6,8 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Spark
- */
+ * @package spark */
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>

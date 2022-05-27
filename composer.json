@@ -16,7 +16,7 @@
             "inc/custom-header.php",
             "inc/template-tags.php",
             "inc/extras.php",
-            "inc/customizer.php",
+            "inc/customizer-original.php",
             "inc/numeric-slug.php",
             "inc/disable-emojis.php",
             "inc/spark-pagination.php"

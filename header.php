@@ -101,9 +101,9 @@
             <nav class="navbar navbar-expand-xl p-0">
                 <div class="navbar-brand">
 
-                    <?php if ( get_theme_mod( 'spark_logo' ) ): ?>
+                    <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
                     <a href="<?php echo esc_url(  home_url( '/' ), 'spark' ); ?>">
-                        <img src="<?php echo esc_url( get_theme_mod( 'spark_logo' ), 'spark'); ?>"
+                        <img src="<?php echo esc_url( get_theme_mod( 'wp_bootstrap_starter_logo' ), 'spark'); ?>"
                              alt="<?php echo esc_attr( get_bloginfo( 'name' ), 'spark'); ?>"
                              class="navbar-brand-img">
 

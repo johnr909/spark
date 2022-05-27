@@ -20,7 +20,7 @@ namespace sparkt;
  * @uses spark_header_style()
  */
 function spark_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'spark_custom_header_args', array(
+	add_theme_support( 'custom-header', apply_filters( '\sparkt\spark_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => 'fff',
 		'width'                  => 1000,

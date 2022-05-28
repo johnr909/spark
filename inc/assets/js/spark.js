@@ -4,7 +4,7 @@ jQuery(document).ready( function() {
     // on the home page, it's  in the theme's functions.php file
     function highlightDailyDeal() {
         var date =  new Date();
-        var weekday = new Array(7);
+        var weekday = [];
             weekday[0] = "Sunday";;
             weekday[1] = "Monday";
             weekday[2] = "Tuesday";

@@ -33,11 +33,12 @@ jQuery(document).ready( function() {
     jQuery('.rewards-signup p').removeClass('rewards-text');
 });
 
-// needs to outside of document.ready()
+// needs to be outside of document.ready()
 
 // add FA calendar icon to events list
 jQuery('h4.tribe-event-title ').prepend('<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;');
 
+// hide the events container if the Events plugin is disabled 
 if(jQuery('.tribe-list-widget').length === 0) {
         jQuery('#events-container').addClass('d-none');
 }

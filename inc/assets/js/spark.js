@@ -18,18 +18,13 @@ jQuery(document).ready( function() {
         jQuery('#' + dayOfWeek + ' .card-text' ).addClass('highlight');
     }
 
-        highlightDailyDeal();
-
+    highlightDailyDeal();
 
     // move and re-style elements for home page visual consistency
     jQuery('#card-home h5').insertBefore('#card-home .card-img-top');
     jQuery('#card-home h5').removeClass('card-title highlight');
     jQuery('#card-home h5').addClass('rewards-title');
     jQuery('#card-home p').removeClass('highlight');
-    // the below line was wrong anyway since 'dayOfWeek' is scoped only 
-    // to highlightDailyDeal()
-    // jQuery('#card-home' + '#' + dayOfWeek + ' .card-text' ).removeClass('highlight');
-    
     jQuery('.rewards-signup p').removeClass('rewards-text');
 });
 
@@ -40,6 +35,6 @@ jQuery('h4.tribe-event-title ').prepend('<i class="fas fa-calendar-alt"></i>&nbs
 
 // hide the events container if the Events plugin is disabled 
 if(jQuery('.tribe-list-widget').length === 0) {
-        jQuery('#events-container').addClass('d-none');
+    jQuery('#events-container').addClass('d-none');
 }
     

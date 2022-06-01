@@ -7,7 +7,8 @@ namespace sparkt;
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package spark */
+ * @package spark 
+ **/
 
 if ( ! function_exists( 'spark_setup' ) ) :
 /**
@@ -65,37 +66,10 @@ function spark_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
-
-    
-
 }
 endif;
 
 add_action( 'after_setup_theme', '\sparkt\spark_setup' );
-
-
-/**
- * Add Welcome message to dashboard
- */
-function spark_reminder(){
- 
-
-            if(!get_option( 'triggered_welcome')){
-                $message = sprintf(__( 'Welcome to the Spark WP Bootstrap Starter Theme', 'spark' )
-                 );
-
-                printf(
-                    '<div class="notice is-dismissible" style="background-color: #6C2EB9; color: #fff; border-left: none;">
-                        <p>%1$s</p>
-                    </div>',
-                    $message
-                );
-                add_option( 'triggered_welcome', '1', '', 'yes' );
-            }
-
-}
-
-add_action( 'admin_notices', '\sparkt\spark_reminder' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -109,6 +83,29 @@ function spark_content_width() {
 }
 
 add_action( 'after_setup_theme', '\sparkt\spark_content_width', 0 );
+
+
+/**
+ * Add Welcome message to dashboard
+ */
+function dashboard_welcome() {
+ 
+    if( !get_option( 'triggered_welcome' ) ) {
+        $message = sprintf( __( 'Welcome to the Spark WP Bootstrap Starter Theme', 'spark' ) );
+
+        printf(
+            '<div class="notice is-dismissible" style="background-color: #6C2EB9; color: #fff; border-left: none;">
+                <p>%1$s</p>
+            </div>',
+            $message
+        );
+        add_option( 'triggered_welcome', '1', '', 'yes' );
+    }
+
+}
+
+add_action( 'admin_notices', '\sparkt\dashboard_welcome' );
+
 
 /**
  * Register widget area.
@@ -171,7 +168,6 @@ function spark_widgets_init() {
 		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-3 footer">',
 		'after_widget' => '</div><!-- .col footer right-->',
 	) );
-
 
 //	Warning
 	register_sidebar( array(
@@ -431,7 +427,7 @@ add_action( 'wp_enqueue_scripts', '\sparkt\spark_load_assets' );
 /**
  * Add Preload for CDN scripts and stylesheet
  */
-function spark_preload( $hints, $relation_type ){
+function preload_cdn_assets( $hints, $relation_type ){
     if ( 'preconnect' === $relation_type && get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
         
         $hints[] = [
@@ -447,9 +443,9 @@ function spark_preload( $hints, $relation_type ){
     return $hints;
 } 
 
-add_filter( 'wp_resource_hints', '\sparkt\spark_preload', 10, 2 );
+add_filter( 'wp_resource_hints', '\sparkt\preload_cdn_assets', 10, 2 );
 
-function spark_password_form() {
+function password_form() {
     global $post;
     $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     $o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
@@ -459,7 +455,7 @@ function spark_password_form() {
     return $o;
 }
 
-add_filter( 'the_password_form', '\sparkt\spark_password_form' );
+add_filter( 'the_password_form', '\sparkt\password_form' );
 
 require get_template_directory() . '/vendor/autoload.php';
 /**
@@ -484,15 +480,15 @@ require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibili
 /**
  * Load a custom WordPress nav walker.
  */
-require_once( get_template_directory() . '/inc/src/spark_navwalker.php' );
+require_once( get_template_directory() . '/inc/src/navwalker.php' );
 
 /*
  * Adds `async` and `defer` support for scripts registered or enqueued
  * by the theme.
  */
 
-require get_template_directory() . '/inc/src/spark_script_loader.php';
-$loader = new \sparkt\Spark_Script_Loader();
+require get_template_directory() . '/inc/src/script_loader.php';
+$loader = new \sparkt\Script_Loader();
 
 add_filter( 'script_loader_tag', array( $loader, 'filter_script_loader_tag' ), 10, 2 );
 
@@ -530,19 +526,19 @@ function dealoFDay() {
 }
 
 // elipsis/read more links for the blog
-function spark_excerpt_more( $more ) {
+function excerpt_more( $more ) {
     return ' [.....]';
 }
 
-add_filter( 'excerpt_more', '\sparkt\spark_excerpt_more', 21 );
+add_filter( 'excerpt_more', '\sparkt\excerpt_more', 21 );
 
-function spark_excerpt_more_link( $excerpt ){
+function excerpt_more_link( $excerpt ){
     $post = get_post();
     $excerpt .= '<a href="'. get_permalink( $post->ID ) . '" class="btn btn-primary readmore-btn">continue reading</a>';
     return $excerpt;
 }
 
-add_filter( 'the_excerpt', '\sparkt\spark_excerpt_more_link', 21 );
+add_filter( 'the_excerpt', '\sparkt\excerpt_more_link', 21 );
 
 // hide the WordPress version in browser source 
 function remove_wp_version() {

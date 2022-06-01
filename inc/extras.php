@@ -14,7 +14,7 @@ namespace sparkt;
  * @param array $classes Classes for the body element.
  * @return array
  */
-function spark_body_classes( $classes ) {
+function body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -32,22 +32,22 @@ function spark_body_classes( $classes ) {
 	return $classes;
 }
 
-add_filter( 'body_class', '\sparkt\spark_body_classes' );
+add_filter( 'body_class', '\sparkt\body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
-function spark_pingback_header() {
+function pingback_header() {
 	echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 }
 
-add_action( 'wp_head', '\sparkt\spark_pingback_header' );
+add_action( 'wp_head', '\sparkt\pingback_header' );
 
 
 /**
  * Return the header class
  */
-function spark_bg_class() {
+function bg_class() {
     switch (get_theme_mod( 'theme_option_setting' )) {
         case "cerulean":
             return 'navbar-dark bg-primary';
@@ -117,7 +117,7 @@ function spark_bg_class() {
     }
 }
 
-function is_spark_theme_preset_active() {
+function theme_preset_active() {
     if(get_theme_mod( 'theme_option_setting' ) && get_theme_mod( 'theme_option_setting' ) !== 'default'){
         return true;
     }

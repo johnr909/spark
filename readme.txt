@@ -19,6 +19,8 @@ This theme, like WordPress, is licensed under the GPL. You can use this theme as
 
 This theme uses Composer to load required files and employs namespaces to keep functions names simple. Simply swith the namespace from 'sparkt' to something appropriate for your project.
 
+Gulp is used to concatenate and minfy the theme's CSS files.
+
 Page templates
 * Right-sidebar (default page template)
 * Left-Sidebar
@@ -36,12 +38,12 @@ Other features:
 * Compatible with Elementor Page Builder
 
 == Installation ==
-
+Once the plugin  is installed, run the following command in terminal from the main theme directory:
+$ composer dump-autoload
 
 == Frequently Asked Questions ==
 
 = Does this theme support any plugins? =
-
 Spark includes support for Infinite Scroll in Jetpack.
 
 == Credits ==

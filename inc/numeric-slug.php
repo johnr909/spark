@@ -2,6 +2,7 @@
 
 namespace sparkt;
 
+// Adds support for numeric URL slugs like '/420', can be toggled on/off as necessary
 function unique_post_slug( $slug, $post_ID, $post_status, $post_type, $post_parent, $original_slug ) { 
 	global $wpdb; 
 	

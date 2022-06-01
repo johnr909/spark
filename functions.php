@@ -10,61 +10,19 @@
  * @package spark 
  **/
 
-/**
- * load basic theme setup/options
- */
-// require_once get_template_directory() . '/inc/theme-setup.php';
-
-/**
- * for simple, theme-level utilitis
- */
-// require_once get_template_directory() . '/inc/theme-utils.php';
-
-/**
- * for excerpts
- */
-// require_once get_template_directory() . '/inc/excerpts.php';
-
-/**
- * load the dashboard welcome message
- */
-// require_once get_template_directory() . '/inc/dashboard-welcome.php';
-
-/**
- * register and load widgets
- */
-// require_once get_template_directory() . '/inc/widgets.php';
-
-/**
- * enque front-end assets like Bootstrap, jQuery and Font Awesome 
- * via CDN or locally
- */
-// require_once get_template_directory() . '/inc/load-assets.php';
-
-/**
- * to output a password form if needed
- */
-// require_once get_template_directory() . '/inc/password-form.php';
-
-/**
- * the highlighted daily deal function 
- */
-// require_once get_template_directory() . '/inc/deal-of-day.php';
-
-
 require get_template_directory() . '/vendor/autoload.php';
 /**
- * Composer loads in a few files with global functions via the autoload/files options
- * to reduce the number of include/require statements so see the compposer.json for details. 
+ *  Composer loads in a many files with global functions via the autoload/files options
+ *  to reduce the number of include/require statements so see the compposer.json for details. 
+ *  
  *  What gets loaded in:
- *  "inc/theme-setup.php": Load basic theme setup/options
- *  "inc/theme-utils.php": For simple, theme-level utilitis
+ *  "inc/theme-setup.php": Loads basic theme setup/options
  *  "inc/excerpts.php": For excerpts
- *  "inc/dashboard-welcome.php": Load the dashboard welcome message
- *  "inc/widgets.php": register and load widgets
+ *  "inc/dashboard-welcome.php": Loads the dashboard welcome message
+ *  "inc/widgets.php": Registers and loads widgets
  *  "inc/load-assets.php": Enque front-end assets like Bootstrap, jQuery and Font Awesome via CDN or locally
  *  "inc/password-form.php": Output a password form if needed
- *  "inc/deal-of-day.php": the highlighted daily deal function 
+ *  "inc/deal-of-day.php": The highlighted daily deal function 
  *  "inc/custom-header.php": Custom Header feature
  *	"inc/template-tags.php" Custom template tags for this theme
  *	"inc/extras.php": Theme-independent utility global functions
@@ -75,19 +33,22 @@ require get_template_directory() . '/vendor/autoload.php';
  *
  */
 
+// The below are files yet to be successfully autoloaded by Composer.
+
 /**
- * Load plugin compatibility file.
+ * Load plugin compatibility file which itself links to files in /inc/plugin-compatibility/jetpack
+ * and /inc/plugin-compatibility/woocommerce
  */
 require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibility.php';
 
 /**
- * Load a custom WordPress nav walker.
+ * Load a custom WordPress Nav Walker class.
  */
 require_once( get_template_directory() . '/inc/src/navwalker.php' );
 
 /*
  * Adds `async` and `defer` support for scripts registered or enqueued
- * by the theme.
+ * by the theme via a simple 'Script_Loader class.
  */
 require get_template_directory() . '/inc/src/script_loader.php';
 $loader = new \sparkt\Script_Loader();

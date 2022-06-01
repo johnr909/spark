@@ -19,7 +19,7 @@
             "inc/customizer.php",
             "inc/numeric-slug.php",
             "inc/disable-emojis.php",
-            "inc/spark-pagination.php"
+            "inc/pagination.php"
         ]
     }
 }

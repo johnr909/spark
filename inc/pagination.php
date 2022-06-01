@@ -6,7 +6,7 @@ namespace sparkt;
  * WordPress Bootstrap Pagination
  */
 
-function spark_pagination( $args = array() ) {
+function pagination( $args = array() ) {
     
     $defaults = array(
         'range'           => 4,

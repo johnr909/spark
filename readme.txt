@@ -35,6 +35,9 @@ Other features:
 * Compatible with Visual Composer
 * Compatible with Elementor Page Builder
 
+== Installation ==
+
+
 == Frequently Asked Questions ==
 
 = Does this theme support any plugins? =

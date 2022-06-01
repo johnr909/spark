@@ -13,6 +13,14 @@
     "require": {},
     "autoload": {
         "files": [ 
+            "inc/theme-setup.php",
+            "inc/theme-utils.php",
+            "inc/excerpts.php",
+            "inc/dashboard-welcome.php",
+            "inc/widgets.php",
+            "inc/load-assets.php",
+            "inc/password-form.php",
+            "inc/deal-of-day.php",
             "inc/custom-header.php",
             "inc/template-tags.php",
             "inc/extras.php",

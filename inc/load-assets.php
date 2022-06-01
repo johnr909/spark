@@ -20,9 +20,10 @@ function load_site_styles() {
     }
 }
 
-// this didn't work: add_action('loadload', 'load_site_styles', 1);
-add_action( 'wp_enqueue_scripts', 'load_site_styles', 1 );
-// load_site_styles();
+
+// I haven't been able to hook this function to an action  like:
+// add_action( 'after_setup_theme', 'load_site_styles', 100);
+load_site_styles();
 
 function load_assets() {
   // load Bootstrap CSS from a CDN or locally

@@ -16,6 +16,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This theme, like WordPress, is licensed under the GPL. You can use this theme as base for your next WordPress theme project and you are allowed to remove the link at the footer or do whatever you want.
 
+This theme uses Composer to load required files and employs namespaces to keep functions names simple. Simply swith the namespace from 'sparkt' to something appropriate for your project.
+
 Page templates
 * Right-sidebar (default page template)
 * Left-Sidebar

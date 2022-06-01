@@ -4,8 +4,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Spark
- */
+ * @package spark 
+ **/
 
 if ( ! function_exists( 'spark_setup' ) ) :
 /**
@@ -63,35 +63,9 @@ function spark_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
-
-    
-
 }
 endif;
 add_action( 'after_setup_theme', 'spark_setup' );
-
-
-/**
- * Add Welcome message to dashboard
- */
-function spark_reminder(){
- 
-
-            if(!get_option( 'triggered_welcome')){
-                $message = sprintf(__( 'Welcome to the Spark WP Bootstrap Starter Theme', 'spark' )
-                 );
-
-                printf(
-                    '<div class="notice is-dismissible" style="background-color: #6C2EB9; color: #fff; border-left: none;">
-                        <p>%1$s</p>
-                    </div>',
-                    $message
-                );
-                add_option( 'triggered_welcome', '1', '', 'yes' );
-            }
-
-}
-add_action( 'admin_notices', 'spark_reminder' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -104,6 +78,29 @@ function spark_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'spark_content_width', 1170 );
 }
 add_action( 'after_setup_theme', 'spark_content_width', 0 );
+
+
+/**
+ * Add Welcome message to dashboard
+ */
+function dashboard_welcome() {
+ 
+    if( !get_option( 'triggered_welcome' ) ) {
+        $message = sprintf( __( 'Welcome to the Spark WP Bootstrap Starter Theme', 'spark' ) );
+
+        printf(
+            '<div class="notice is-dismissible" style="background-color: #6C2EB9; color: #fff; border-left: none;">
+                <p>%1$s</p>
+            </div>',
+            $message
+        );
+        add_option( 'triggered_welcome', '1', '', 'yes' );
+    }
+
+}
+
+add_action( 'admin_notices', '\sparkt\dashboard_welcome' );
+
 
 /**
  * Register widget area.
@@ -166,7 +163,6 @@ function spark_widgets_init() {
 		'before_widget' => '<div class="col-xs-12 col-sm-6 col-lg-3 footer">',
 		'after_widget' => '</div><!-- .col footer right-->',
 	) );
-
 
 //	Warning
 	register_sidebar( array(
@@ -425,7 +421,7 @@ add_action( 'wp_enqueue_scripts', 'spark_load_assets' );
 /**
  * Add Preload for CDN scripts and stylesheet
  */
-function spark_preload( $hints, $relation_type ){
+function preload_cdn_assets( $hints, $relation_type ){
     if ( 'preconnect' === $relation_type && get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
         $hints[] = [
             'href'        => 'https://cdn.jsdelivr.net/',
@@ -439,9 +435,9 @@ function spark_preload( $hints, $relation_type ){
     return $hints;
 } 
 
-add_filter( 'wp_resource_hints', 'spark_preload', 10, 2 );
+add_filter( 'wp_resource_hints', '\sparkt\preload_cdn_assets', 10, 2 );
 
-function spark_password_form() {
+function password_form() {
     global $post;
     $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     $o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
@@ -457,10 +453,7 @@ add_filter( 'the_password_form', 'spark_password_form' );
  */
 require get_template_directory() . '/inc/custom-header.php';
 
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
+add_filter( 'the_password_form', '\sparkt\password_form' );
 
 /**
  * Custom functions that act independently of the theme templates.
@@ -480,6 +473,7 @@ require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibili
 /**
  * Load `async` and `defer` support for scripts registered or enqueued file
  */
+require_once( get_template_directory() . '/inc/src/navwalker.php' );
 
 require get_template_directory() . '/inc/class-script-loader.php';
 /*
@@ -487,10 +481,8 @@ require get_template_directory() . '/inc/class-script-loader.php';
  * by the theme.
  */
 
-require get_template_directory() . '/inc/numeric-slug.php';
-/*
- * Adds support for numeric URL slugslike '/420' toggle on/off a necessary
- */
+require get_template_directory() . '/inc/src/script_loader.php';
+$loader = new \sparkt\Script_Loader();
 
 /**
  * Load custom WordPress nav walker.
@@ -543,19 +535,19 @@ function dealoFDay() {
 }
 
 // elipsis/read more links for the blog
-function spark_excerpt_more( $more ) {
+function excerpt_more( $more ) {
     return ' [.....]';
 }
 
-add_filter( 'excerpt_more', 'spark_excerpt_more', 21 );
+add_filter( 'excerpt_more', '\sparkt\excerpt_more', 21 );
 
-function spark_excerpt_more_link( $excerpt ){
+function excerpt_more_link( $excerpt ){
     $post = get_post();
     $excerpt .= '<a href="'. get_permalink( $post->ID ) . '" class="btn btn-primary readmore-btn">continue reading</a>';
     return $excerpt;
 }
 
-add_filter( 'the_excerpt', 'spark_excerpt_more_link', 21 );
+add_filter( 'the_excerpt', '\sparkt\excerpt_more_link', 21 );
 
 // hide the WordPress version in browser source 
 function wp_version_remove_version() {

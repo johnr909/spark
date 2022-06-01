@@ -1,7 +1,7 @@
 <?php 
 add_filter( 'wp_unique_post_slug', 'spark_unique_post_slug', 10, 6 ); 
 
-function spark_unique_post_slug( $slug, $post_ID, $post_status, $post_type, $post_parent, $original_slug ) { 
+function unique_post_slug( $slug, $post_ID, $post_status, $post_type, $post_parent, $original_slug ) { 
 	global $wpdb; 
 	
 	// Don't change non-numeric values
@@ -21,4 +21,6 @@ function spark_unique_post_slug( $slug, $post_ID, $post_status, $post_type, $pos
 	return $original_slug;
 }
 
-// Read more at: Enabling Numeric Slug on WordPress: https://russelljohn.net/?p=2042
+add_filter( 'wp_unique_post_slug', '\sparkt\unique_post_slug', 10, 6 );
+
+// read more at: Enabling Numeric Slug on WordPress: https://russelljohn.net/?p=2042

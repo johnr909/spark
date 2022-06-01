@@ -15,7 +15,7 @@ function themeslug_sanitize_checkbox( $checked ) {
     return ( ( isset( $checked ) && true == $checked ) ? true : false );
 }
 
-function spark_customize_register( $wp_customize ) {
+function customize_register( $wp_customize ) {
 
     // Style Preset
     $wp_customize->add_section(
@@ -257,10 +257,10 @@ function spark_customize_register( $wp_customize ) {
     ) ) );
 
 }
-add_action( 'customize_register', 'spark_customize_register' );
 
-add_action( 'wp_head', 'spark_customizer_css');
-function spark_customizer_css() 
+add_action( 'customize_register', 'customize_register' );
+
+function customizer_css() 
 {
     ?>
     <style type="text/css">
@@ -269,11 +269,14 @@ function spark_customizer_css()
     <?php
 }
 
+add_action( 'wp_head', 'customizer_css');
+
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function spark_customize_preview_js() {
+function customize_preview_js() {
     wp_enqueue_script( 'spark_customizer', get_template_directory_uri() . '/inc/assets/js/customizer.js', array( 'customize-preview' ), '20220515', true );
 }
-add_action( 'customize_preview_init', 'spark_customize_preview_js' );
+
+add_action( 'customize_preview_init', 'customize_preview_js' );

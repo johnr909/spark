@@ -3,38 +3,37 @@
  * Sample implementation of the Custom Header feature
  *
  * You can add an optional custom header image to header.php like so ...
- *
-	<?php the_header_image_tag(); ?>
+ * <?php the_header_image_tag(); ?>
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package WP_Bootstrap_Starter
- */
+ * @package spark
+ **/
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses spark_header_style()
+ * @uses header_style()
  */
-function spark_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'wp_bootstrap_starter_custom_header_args', array(
+function custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( '\sparkt\spark_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => 'fff',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'spark_header_style',
+		'wp-head-callback'       => '\sparkt\header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'spark_custom_header_setup' );
 
-if ( ! function_exists( 'spark_header_style' ) ) :
+add_action( 'after_setup_theme', '\sparkt\custom_header_setup' );
+
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see wp_bootstrap_starter_custom_header_setup().
+ * @see custom_header_setup().
  */
-function spark_header_style() {
+function header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*
@@ -46,7 +45,7 @@ function spark_header_style() {
 		return;
 	}
 
-	// If we get this far, we have custom styles. Let's do this.
+	// If we get this far, we have custom stylesso let's output them
 	?>
 	<style type="text/css">
 	<?php
@@ -70,4 +69,3 @@ function spark_header_style() {
 	</style>
 	<?php
 }
-endif;

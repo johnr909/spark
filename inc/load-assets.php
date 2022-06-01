@@ -20,10 +20,7 @@ function load_site_styles() {
     }
 }
 
-
-// I haven't been able to hook this function to an action  like:
-// add_action( 'after_setup_theme', 'load_site_styles', 100);
-load_site_styles();
+add_action( 'after_setup_theme', '\sparkt\load_site_styles', 100);
 
 function load_assets() {
   // load Bootstrap CSS from a CDN or locally

@@ -6,22 +6,6 @@ namespace sparkt;
  * Enqueue scripts and styles.
  */
 
-// load non-minified CSS for dev and test environments and minified for production
-function load_site_styles() {
-    $siteURL = get_bloginfo('wpurl');
-    $rand = mt_rand( 1, 999999 );
-
-    if($siteURL === 'https://spark.test' ||  $siteURL === 'http://test.sparkdispensary.com' || $siteURL === 'https://sparkdispensary.site') {
-      wp_enqueue_style( 'spark-style', get_template_directory_uri() .'/inc/assets/dist/css/allstyles.css', '', $rand );
-    }
-
-    else {
-      wp_enqueue_style( 'spark-style-min', get_template_directory_uri() .'/inc/assets/dist/css/allstyles.min.css', '', $rand );
-    }
-}
-
-add_action( 'after_setup_theme', '\sparkt\load_site_styles', 100);
-
 function load_assets() {
   // load Bootstrap CSS from a CDN or locally
     if ( get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
@@ -144,3 +128,18 @@ function get_theme_mods() {
 
 add_action( 'wp_enqueue_scripts', '\sparkt\get_theme_mods' );
 
+// load non-minified CSS for dev and test environments and minified for production
+function load_site_styles() {
+    $siteURL = get_bloginfo('wpurl');
+    $rand = mt_rand( 1, 999999 );
+
+    if($siteURL === 'https://spark.test' ||  $siteURL === 'http://test.sparkdispensary.com' || $siteURL === 'https://sparkdispensary.site') {
+      wp_enqueue_style( 'spark-style', get_template_directory_uri() .'/inc/assets/dist/css/allstyles.css', '', $rand );
+    }
+
+    else {
+      wp_enqueue_style( 'spark-style-min', get_template_directory_uri() .'/inc/assets/dist/css/allstyles.min.css', '', $rand );
+    }
+}
+
+add_action( 'after_setup_theme', '\sparkt\load_site_styles', 100);

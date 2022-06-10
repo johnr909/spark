@@ -4,8 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Spark
- */
+ * @package spark */
 
  /**
  * Setup query to show the ‘reviews’ post type with ‘10’ posts.

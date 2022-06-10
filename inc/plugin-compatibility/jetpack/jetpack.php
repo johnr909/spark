@@ -1,11 +1,13 @@
 <?php
+
+namespace sparkt;
+
 /**
  * Jetpack Compatibility File
  *
  * @link https://jetpack.com/
  *
- * @package Spark
- */
+ * @package spark */
 
 /**
  * Jetpack setup function.

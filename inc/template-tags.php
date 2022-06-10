@@ -1,11 +1,12 @@
 <?php
+
+namespace sparkt;
 /**
  * Custom template tags for this theme
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Spark
- */
+ * @package spark */
 
 /**
  * Prints HTML with meta information for the current post-date/time and author.

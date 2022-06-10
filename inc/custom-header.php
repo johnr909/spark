@@ -1,4 +1,7 @@
 <?php
+
+namespace sparkt;
+
 /**
  * Sample implementation of the Custom Header feature
  *

@@ -4,8 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Spark
- */
+ * @package spark */
 ?>
 
 	<?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'Product Spotlight' ) ) : ?>

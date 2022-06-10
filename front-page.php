@@ -40,7 +40,7 @@ get_header(); ?>
 
             <div id="card-home" class="col-sm-12 col-md-4 card card-home">
                 <?php
-                    dealoFDay();
+                    \sparkt\dealoFDay();
                 ?>
             </div><!-- .col -->
 

@@ -4,8 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Spark
- */
+ * @package spark */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

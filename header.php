@@ -6,8 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Spark
- */
+ * @package spark */
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -63,7 +62,7 @@
         <?php esc_html_e( 'Skip to content', 'spark' ); ?>
     </a>
 
-    <?php if (is_front_page()) : ?>
+    <?php if ( is_front_page() ) : ?>
 
         <div class="container-fluid container-fluid-info">
             <div class="row">
@@ -75,7 +74,7 @@
 
     <?php endif;?>
 
-    <?php if ( is_front_page()) : ?>
+    <?php if ( is_front_page() ) : ?>
 
         <div class="container-fluid container-fluid-info">
             <div class="row">

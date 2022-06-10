@@ -17,9 +17,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This theme, like WordPress, is licensed under the GPL. You can use this theme as base for your next WordPress theme project and you are allowed to remove the link at the footer or do whatever you want.
 
-This theme uses Composer to load required files and employs namespaces to keep functions names simple. Simply swith the namespace from 'sparkt' to something appropriate for your project.
+This theme uses Composer to load required files and employs namespaces to keep functions names simple. Simply swith the namespace from 'sparkt' to something appropriate for your project. From the theme's top-lvel directory, run:
+$ composer dump-autoload 
+to generate the necessary autoload files. 
 
-Gulp is used to concatenate and minfy the theme's CSS files.
+Gulp is used to concatenate and minify the theme's CSS files. To set the watcher to minify and concatenate the theme's CSS files, terminal into the theme's 'inc/assets' directory and run 
+$ gulp watchFiles
+Take a look at 'gulpfile.js' in the theme's 'inc/assets' directory for more details. 
 
 Page templates
 * Right-sidebar (default page template)

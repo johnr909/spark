@@ -37,7 +37,11 @@
     </div><!-- .row -->
     <div class="row foot-bottom">
 		<div class="col">
-			<?php _e( '&copy Copyright', 'spark' ); _e( date( 'Y'), 'spark' ); _e( 'Spark Dispensary', 'spark' ); ?>
+			<?php 
+				_e( '&copy Copyright ', 'spark' ); 
+				_e( date( 'Y'), 'spark' ); 
+				_e( '	Spark Dispensary', 'spark' ); 
+			?>
         </div>
     </div><!-- .row -->
 </div><!-- .container-fluid -->

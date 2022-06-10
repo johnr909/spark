@@ -66,7 +66,7 @@
 
 					endwhile;
 
-					\sparkt\spark_pagination();
+					\sparkt\pagination();
 
 				else :
 

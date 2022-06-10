@@ -142,4 +142,4 @@ function load_site_styles() {
     }
 }
 
-add_action( 'after_setup_theme', '\sparkt\load_site_styles', 100);
+add_action( 'wp_enqueue_scripts', '\sparkt\load_site_styles', 100);

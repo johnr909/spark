@@ -95,25 +95,25 @@ function customize_register( $wp_customize ) {
         )
     ) ) );
 
-    // $wp_customize->add_setting( 'preset_color_scheme_setting', array(
-    //     'default'   => 'default',
-    //     'type'       => 'theme_mod',
-    //     'capability' => 'edit_theme_options',
-    //     'sanitize_callback' => 'wp_filter_nohtml_kses',
-    // ) );
-    // $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'preset_color_scheme_setting', array(
-    //     'label' => __( 'Color Scheme', 'spark' ),
-    //     'section'    => 'typography',
-    //     'settings'   => 'preset_color_scheme_setting',
-    //     'type'    => 'select',
-    //     'choices' => array(
-    //         'default' => 'Default',
-    //         'red' => 'Red',
-    //         'green' => 'Green',
-    //         'orange' => 'Orange',
-    //         'pink' => 'Pink',
-    //     )
-    // ) ) );
+    $wp_customize->add_setting( 'preset_color_scheme_setting', array(
+        'default'   => 'default',
+        'type'       => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'preset_color_scheme_setting', array(
+        'label' => __( 'Color Scheme', 'spark' ),
+        'section'    => 'typography',
+        'settings'   => 'preset_color_scheme_setting',
+        'type'    => 'select',
+        'choices' => array(
+            'default' => 'Default',
+            'red' => 'Red',
+            'green' => 'Green',
+            'orange' => 'Orange',
+            'pink' => 'Pink',
+        )
+    ) ) );
 
     // Banner 
     $wp_customize->add_section(

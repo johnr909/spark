@@ -86,7 +86,7 @@
         </div><!-- .container-fluid -->
     <?php endif;?>       
 
-    <header id="masthead" class="site-header navbar-static-top sticky-top <?php echo \sparkt\bg_class(); ?>" 
+    <header id="masthead" class="site-header navbar-static-top sticky-top <?php echo bg_class(); ?>" 
             role="banner">
 
         <div class="container-fluid-info">
@@ -131,7 +131,7 @@
                     'menu_class'      => 'navbar-nav',
                     'depth'           => 3,
                     'fallback_cb'     => 'navwalker::fallback',
-                    'walker'          => new navwalker()
+                    'walker'          => new Spark_Navwalker()
                     ));
                 ?>
 

@@ -31,7 +31,7 @@ function body_classes( $classes ) {
 	return $classes;
 }
 
-add_filter( 'body_class', '\sparkt\body_classes' );
+add_filter( 'body_class', 'body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
@@ -40,7 +40,7 @@ function pingback_header() {
 	echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 }
 
-add_action( 'wp_head', '\sparkt\pingback_header' );
+add_action( 'wp_head', 'pingback_header' );
 
 
 /**

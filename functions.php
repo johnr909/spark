@@ -334,9 +334,9 @@ function spark_load_assets() {
 	// load bootstrap css
 	// load AItheme styles
 	// load WP Bootstrap Starter styles
-	$rand = mt_rand( 1, 999999 );
 
 	function spark_load_site_styles() {
+		$rand = mt_rand( 1, 999999 );
 		$siteURL = get_bloginfo('wpurl');
 		if($siteURL === 'https://spark.test' ||  $siteURL === 'http://test.sparkdispensary.com' || $siteURL === 'https://sparkdispensary.site') {
 			wp_enqueue_style( 'spark-style', get_template_directory_uri() .'/inc/assets/dist/css/allstyles.css', '', $rand );
@@ -435,7 +435,7 @@ function preload_cdn_assets( $hints, $relation_type ){
     return $hints;
 } 
 
-add_filter( 'wp_resource_hints', '\sparkt\preload_cdn_assets', 10, 2 );
+add_filter( 'wp_resource_hints', 'preload_cdn_assets', 10, 2 );
 
 function password_form() {
     global $post;
@@ -473,15 +473,13 @@ require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibili
 /**
  * Load `async` and `defer` support for scripts registered or enqueued file
  */
-require_once( get_template_directory() . '/inc/src/navwalker.php' );
-
 require get_template_directory() . '/inc/class-script-loader.php';
 /*
  * Adds `async` and `defer` support for scripts registered or enqueued
  * by the theme.
  */
 
-require get_template_directory() . '/inc/src/script_loader.php';
+require get_template_directory() . '/inc/script_loader.php';
 $loader = new \sparkt\Script_Loader();
 
 /**

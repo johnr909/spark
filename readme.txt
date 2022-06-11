@@ -17,13 +17,14 @@ and Font Awesome. This theme, like WordPress, is licensed under the GPL. You can
 
 This theme, like WordPress, is licensed under the GPL. You can use this theme as base for your next WordPress theme project and you are allowed to remove the link at the footer or do whatever you want.
 
-This theme uses Composer to load required files and employs namespaces to keep functions names simple. Simply swith the namespace from 'sparkt' to something appropriate for your project. From the theme's top-lvel directory, run:
+This theme uses Composer to load required files and employs namespaces to keep functions names simple. Simply switch the namespace from 'sparkt' to something appropriate for your project. From the theme's top-lvel directory, run the following 
+command in a terminal to generate the necessary autoload files:
 $ composer dump-autoload 
-to generate the necessary autoload files. 
-
-Gulp is used to concatenate and minify the theme's CSS files. To set the watcher to minify and concatenate the theme's CSS files, terminal into the theme's 'inc/assets' directory and run 
+ 
+Gulp is used to concatenate and minify the theme's CSS files. To set the Gulp watcher to minify and concatenate the theme's CSS files, terminal into the theme's 'inc/assets' directory and run: 
 $ gulp watchFiles
-Take a look at 'gulpfile.js' in the theme's 'inc/assets' directory for more details. 
+
+Take a look at 'gulpfile.js' in the theme's 'inc/assets' directory for more details on the available build scripts. 
 
 Page templates
 * Right-sidebar (default page template)
@@ -66,4 +67,4 @@ Initial release
 
 1.1.0
 Released: June 10, 2022
-
+Composer to manage non-class-based required files. 

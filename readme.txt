@@ -17,14 +17,13 @@ and Font Awesome. This theme, like WordPress, is licensed under the GPL. You can
 
 This theme, like WordPress, is licensed under the GPL. You can use this theme as base for your next WordPress theme project and you are allowed to remove the link at the footer or do whatever you want.
 
-This theme uses Composer to load required files and employs namespaces to keep functions names simple. Simply switch the namespace from 'sparkt' to something appropriate for your project. From the theme's top-lvel directory, run the following 
-command in a terminal to generate the necessary autoload files:
+This theme uses Composer to load required PHP files. It also and employs namespaces to keep PHP function names simple. Simply switch the namespace from 'sparkt' to something appropriate for your project. From the theme's top-lvel directory, run the following command in a terminal to generate the necessary autoload files:
 $ composer dump-autoload 
  
-Gulp is used to concatenate and minify the theme's CSS files. To set the Gulp watcher to minify and concatenate the theme's CSS files, terminal into the theme's 'inc/assets' directory and run: 
+Gulp is used to concatenate and minify the theme's CSS files. There is no CSS-preprocessing. To set the Gulp watcher to minify and concatenate the theme's CSS files, terminal into the theme's '<theme name>/inc/assets' directory and run: 
 $ gulp watchFiles
 
-Take a look at 'gulpfile.js' in the theme's 'inc/assets' directory for more details on the available build scripts. 
+Take a look at 'gulpfile.js' in the theme's '<theme name>/inc/assets' directory for more details on the available build scripts. 
 
 Page templates
 * Right-sidebar (default page template)
@@ -42,8 +41,32 @@ Other features:
 * Compatible with Visual Composer
 * Compatible with Elementor Page Builder
 
+Preset Styles:
+Typography pairing is perhaps the single most frustrating and time-consuming task you’ll face as a developer when starting a new website.
+
+So, we search the web for some stupendously stunning combinations, with the aim of giving you the perfect font combinations that you can use right away.
+
+    Default Style 
+    Poppins / Lora 
+    Poppins / Poppins 
+    Oswald / Muli 
+    Montserrat / Merriweather 
+    Roboto / Roboto 
+    Arbutus Slab / Open Sans 
+    Montserrat / Open Sans 
+
+Quick Tips On Using  The Theme:
+    To make your life easier for everyone, the Theme is loaded with the BEST Google font combinations that you can select and use right away. Just go to:
+
+    Dashboard > Appearance > Customize > Preset Styles
+
+    You can easily add awesome icons to your pages and posts.
+    To display , use the code
+
+    <i aria-hidden="true"></i>
+
 == Installation ==
-Once the plugin  is installed, run the following command in terminal from the main theme directory:
+Once the theme is installed, run the following command in terminal from the main theme directory:
 $ composer dump-autoload
 
 == Frequently Asked Questions ==

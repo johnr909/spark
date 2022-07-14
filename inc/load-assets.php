@@ -89,35 +89,35 @@ function get_theme_mods() {
     }
 
     if( get_theme_mod( 'preset_style_setting' ) === 'poppins-lora' ) {
-        wp_enqueue_style( 'spark-poppins-lora-font', 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Poppins:300,400,500,600,700' );
+        wp_enqueue_style( 'spark-poppins-lora-font', 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Poppins:300,400,500,600,700&display=swap' );
     }
 
     if( get_theme_mod( 'preset_style_setting' ) === 'montserrat-merriweather' ) {
-        wp_enqueue_style( 'spark-montserrat-merriweather-font', 'https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,900|Montserrat:300,400,400i,500,700,800' );
+        wp_enqueue_style( 'spark-montserrat-merriweather-font', 'https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,900|Montserrat:300,400,400i,500,700,800&display=swap' );
     }
 
     if( get_theme_mod( 'preset_style_setting' ) === 'poppins-poppins' ) {
-        wp_enqueue_style( 'spark-poppins-font', 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' );
+        wp_enqueue_style( 'spark-poppins-font', 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap' );
     }
 
     if( get_theme_mod( 'preset_style_setting' ) === 'roboto-roboto' ) {
-        wp_enqueue_style( 'spark-roboto-font', 'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i' );
+        wp_enqueue_style( 'spark-roboto-font', 'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap' );
     }
 
     if( get_theme_mod( 'preset_style_setting' ) === 'arbutusslab-opensans' ) {
-        wp_enqueue_style( 'spark-arbutusslab-opensans-font', 'https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,300i,400,400i,600,600i,700,800' );
+        wp_enqueue_style( 'spark-arbutusslab-opensans-font', 'https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,300i,400,400i,600,600i,700,800&display=swap' );
     }
 
     if( get_theme_mod( 'preset_style_setting' ) === 'oswald-muli' ) {
-        wp_enqueue_style( 'spark-oswald-muli-font', 'https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800|Oswald:300,400,500,600,700' );
+        wp_enqueue_style( 'spark-oswald-muli-font', 'https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800|Oswald:300,400,500,600,700&display=swap' );
     }
 
     if( get_theme_mod( 'preset_style_setting' ) === 'montserrat-opensans' ) {
-        wp_enqueue_style( 'spark-montserrat-opensans-font', 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,300i,400,400i,600,600i,700,800' );
+        wp_enqueue_style( 'spark-montserrat-opensans-font', 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,300i,400,400i,600,600i,700,800&display=swap' );
     }
 
     if( get_theme_mod( 'preset_style_setting' ) === 'robotoslab-roboto' ) {
-        wp_enqueue_style( 'spark-robotoslab-roboto', 'https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:300,300i,400,400i,500,700,700i' );
+        wp_enqueue_style( 'spark-robotoslab-roboto', 'https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:300,300i,400,400i,500,700,700i&display=swap' );
     }
 
     if( get_theme_mod( 'preset_style_setting' ) && get_theme_mod( 'preset_style_setting' ) !== 'default' ) {

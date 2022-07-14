@@ -1249,7 +1249,7 @@ blockquote {
 }
 
 .light-blue-bg {
-  background-color: #f2f8f1;
+  background-color: var(--brand-light-blue);
 }
 
 .very-dark-bg {
@@ -1416,7 +1416,7 @@ HEADER-FOOTER
 }
 
 .foot {
-  background: var(--almost-black) url('../../../../inc/assets/images/footer-bg.png');
+  background: var(--almost-black) url('../../../../inc/assets/images/footer-bg.webp');
   color: #fff;
 }
 
@@ -1644,7 +1644,7 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 #home-mobile-banner {
   width: 100%;
   padding: 5px 15px;
-  background: transparent url('../../../../inc/assets/images/leaves-closeup.jpg') no-repeat;
+  background: transparent url('../../../../inc/assets/images/leaves-closeup.webp') no-repeat;
 }
 
 #home-mobile-banner h2 {
@@ -1984,7 +1984,7 @@ h5.highlight {
 }
 
 .rewards-signup {
-  background: var(--white) url('../../../../inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
+  background: var(--white) url('../../../../inc/assets/images/phone-icon-lg.webp') no-repeat 30% 50%;
 }
 
 @media only screen and (max-width: 576px) {
@@ -2042,26 +2042,26 @@ h5.highlight {
 }
 
 .entry-header-blog {
-  background: var(--brand-dark-grey) url('../../../../inc/assets/images/Trikes1920.jpg') no-repeat;
+  background: var(--brand-dark-grey) url('../../../../inc/assets/images/Trikes1920.webp') no-repeat;
 }
 
 .error404 .entry-header {
-  background: var(--brand-dark-grey) url('../../../../inc/assets/images/Trikes1920-404err-r5.jpg') no-repeat
+  background: var(--brand-dark-grey) url('../../../../inc/assets/images/Trikes1920-404err-r5.webp') no-repeat
 }
 
 #rec .entry-header,
 #med .entry-header,
 [id$="specials"] .entry-header {
-  background: var(--brand-dark-grey) url('../../../../inc/assets/images/Trikes1920.jpg') no-repeat;
+  background: var(--brand-dark-grey) url('../../../../inc/assets/images/Trikes1920.webp') no-repeat;
 }
 
 #deals .entry-header,
 .single-specials .entry-header {
-  background: var(--brand-dark-grey) url('../../../../inc/assets/images/page-header-1920w-300h.jpg') no-repeat;
+  background: var(--brand-dark-grey) url('../../../../inc/assets/images/page-header-1920w-300h.webp') no-repeat;
 }
 
 #contact-us .entry-header {
-  background: var(--brand-dark-grey) url('../../../../inc/assets/images/b&w-bud-1920.jpg') no-repeat;
+  background: var(--brand-dark-grey) url('../../../../inc/assets/images/b&w-bud-1920.webp') no-repeat;
 }
 
 #rec .entry-header h1,
@@ -2171,7 +2171,7 @@ DEALS/EVENTS PAGE
 }
 
 .row .online-cta {
-  background: var(--brand-light-blue) url('../../../../inc/assets/images/dots.jpg') repeat;
+  background: var(--brand-light-blue) url('../../../../inc/assets/images/dots.webp') repeat;
 }
 
 .coupon-icon-container {
@@ -2203,7 +2203,7 @@ DEALS/EVENTS PAGE
  /* rewards callout on the deals page */
 .deals-rewards {
   padding: 3rem;
-  background: var(--brand-dark-grey) url('../../../../inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; 
+  background: var(--brand-dark-grey) url('../../../../inc/assets/images/phone-icon-md-r3.webp') no-repeat 50% 60%; 
 }
 
 .deals-rewards img.card-img-top {
@@ -2281,7 +2281,7 @@ BLOG
 }
 
 .alert-info {
-  color: #2d3545;
+  color: var(--brand-dark-grey);
   background-color: var(--brand-green);
   border-color: var(--brand-light-blue);
 }
@@ -2384,264 +2384,3 @@ article.post header.entry-header h1.entry-title {
 .specials-btn-bottom {
   margin-bottom: 3rem;
 }
-
-/*
-420 CAROUSEL
-*/
-
-.carousel-text h1 {
-  display: none;
-}
-
-.carousel-text p.lead-420 {
-  font-size: 5rem;
-  line-height: 100%;
-  font-family: 'Anton', sans-serif;
-}
-
-.carousel-text p.cta-420-big {
-  font-size: 2.15rem;
-  font-family: 'Bebas Neue', cursive;
-}
-
-.carousel-text p.cta-420-sm {
-  font-size: 1.65rem;
-  font-family: 'Bebas Neue', cursive;
-}
-
-
-@media only screen and (min-width: 370px) and (max-width: 961px) {
-  #carousel420 .carousel-caption {
-   top: 5% !important;
-  }
-
-  .carousel-text p.cta-420-big {
-    font-size: 1.9rem;
-  }
-
-  .carousel-text p.cta-420-sm {
-    font-size: 1.35rem;
-  }
-
-}
-
-@media only screen and (min-width: 370px) and (max-width: 767px) {
-  #carousel420 .carousel-caption {
-    top: 33% !important;
-  }
-}
-
-@media only screen and (min-width: 250px) and (max-width: 360px){
-
-   .carousel-item > img {
-    width: 550% !important;
-    height: 550% !important;
-  }
-}
-
-a.btn-420 {
-  opacity: .7;
-  color:  var(--white);
-  border-color: var(--white);
-}
-
-a.btn-420:hover {
-  text-decoration: underline !important;
-  color:  var(--white);
-} 
-
-#carousel420 .carousel-caption {
-  top: 20%;
-  bottom: 0 !important;
-}
-
-/* the 420 page */
-a[title^="420"]::after {
-  display: inline-block;
-  padding-left: .25rem;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-a[title^="420"]::after {
-  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f55f";
-  color: var(--brand-green);
-}
-
-.vendor-card-420 {
-  width: 100%;
-  margin: 15px 0; 
-  padding: 15px;
-  font-family: 'Bebas Neue', cursive;
-  border: 3px solid grey;
-}
-
-@media only screen and (min-width: 1120px) {
-  .vendor-card-420 {
-    height: 22rem;
-  }
-}
-
-@media only screen and (min-width: 961px) and (max-width: 1119px) {
-  .vendor-card-420 {
-      height: 23rem;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  .vendor-card-420 {
-      height: 24rem;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  .vendor-card-420 {
-      height: 25rem;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .vendor-card-420 {
-      height: 26rem;
-  }
-}
-
-.vendor-card-420 img.wp-post-image {
-  display: inline-block;
-  margin: 10px auto;
-}
-
-.vendor-name-420 {
-  font-size: 2.25rem;
-  font-family: 'Anton', sans-serif;
-}
-
-.vendor-description-420 {
-  font-size: 1.5rem;
-}
-
-.vendor-product-link-420 {
-  font-size: 1.75rem;
-  padding: 1rem;
-}
-
-.vendor-product-link-420 a {
-  color:  var(--brand-dark-grey);
-  text-decoration: underline;
-}
-
-.vendor-product-link-420 a:hover {
-  text-decoration: none;
-  background: -webkit-linear-gradient(magenta, aqua);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.deal-card-420 {
-  display: grid;
-  grid-template-columns: 400px auto;
-  margin: 10px auto;
-  border:  5px solid var(--brand-dark-grey);
-}
-
-.deal-card-420-text {
-  padding-left: 15px;
-}
-
-.brand-name-420 {
-  font-size:  2.4rem;
-  margin:  10px 0 0 0;
-  font-family: 'Anton', sans-serif;
-  font-weight: 500;
-}
-
-.sale-date {
-  font-size:  1.9rem;
-  margin: 0;
-  font-family: 'Bebas Neue', cursive;
-}
-
-.deal-description {
-  font-size: 1.15rem;
-  margin: 0;
-  font-family: 'Mulish', sans-serif;
-}
-
-.exclusive-420 {
-  margin: 20px 15px 0 0;
-  padding-top: 5px;
-  border-top:  1px dashed var(--brand-dark-grey);
-  font-size: 2rem;
-  font-family: 'Bebas Neue', cursive;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.exclusions {
-  font-size:  .75rem;
-  margin: 20px 0 0 0;
-  font-family: 'Mulish', sans-serif;
-}
-
-#content.site-content {
-  padding-bottom: 1rem; 
-}
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .deal-card-420 {
-     grid-template-columns: none !important;
-     grid-template-rows: auto auto;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 600px) {
-  .deal-card-420 {
-     grid-template-columns: 185px auto;
-  }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 767px) {
-  .deal-card-420 {
-     grid-template-columns: 250px auto;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .deal-card-420-text {
-    padding-left: 5px;
-  }
-
-  .brand-name-420 {
-    font-size: 1.4rem;
-    margin: 2px 0 0 0 !important;
-    font-weight: 400 !important;
-  }
-
-  .sale-date {
-    font-size: 1.15rem;
-    margin: 0;
-    font-weight: 400;
-  }
-
-  .deal-description {
-    font-size: .95rem;
-  }
-
-  .exclusive-420  {
-    margin-top: 2px !important;
-    font-size: 1.25rem;
-    font-weight: 400;
-  }
-
-  .exclusions {
-    margin-top:  0 !important;
-    font-size: .75rem;
-  }
-}
-
-.h3-420, .h4-420 {
-  font-family: 'Bebas Neue', cursive;
-}
-

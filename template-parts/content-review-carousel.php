@@ -58,7 +58,7 @@
 				 <a href="<?php echo esc_url( 'https://www.leafly.com/dispensary-info/sense-of-healing', 'spark' ); ?>" 
 				    title="<?php esc_attr_e( 'Spark Dispensary Reviews', 'spark' ); ?>" target="_blank">
 				    <img src="<?php echo esc_url( 'https://www.leafly.com/badge/2x/sense-of-healing.png', 'spark' ); ?>" 
-				         width="212" width="97"
+				         width="212" height="97"
 				         class="d-block mx-auto mt-4 mb-4"/>
 				 </a> 
   

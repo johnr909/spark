@@ -145,7 +145,7 @@ function load_site_styles() {
 add_action( 'wp_enqueue_scripts', '\sparkt\load_site_styles', 100);
 
 function style_loader_filter($html, $handle) {
-    if ( $handle === 'spark-fontawesome-cdn' ) {
+    if ( $handle === 'spark-fontawesome-cdn' || $handle === 'spark-muli' ) {
         return str_replace( "rel='stylesheet'",
             "rel='preload' as='font' type='font/woff2' crossorigin='anonymous'", $html );
     }

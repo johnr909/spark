@@ -24,10 +24,8 @@ function load_assets() {
 
     // load Bootstrap JS from a CDN or locally
     if ( get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
-        wp_enqueue_script( 'spark-popper', 'https://cdn.jsdelivr.net/npm/popper.js@1/dist/umd/popper.min.js', array(), '', true );
       wp_enqueue_script( 'spark-bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js', array(), '', true );
     } else {
-        wp_enqueue_script( 'spark-popper', get_template_directory_uri() . '/inc/assets/js/popper.min.js', array(), '', true );
         wp_enqueue_script( 'spark-bootstrapjs', get_template_directory_uri() . '/inc/assets/js/bootstrap.min.js', array(), '', true );
     }
 

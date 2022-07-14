@@ -8,11 +8,13 @@
  *
  * @package spark */
 
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="<?php echo esc_url( 'https://www.googletagmanager.com/gtag/js?id=UA-175453544-1', 'spark' ); ?>"></script>
+	<script defer src="<?php echo esc_url( 'https://www.googletagmanager.com/gtag/js?id=UA-175453544-1', 'spark' ); ?>"></script>
 
 	<script>
       window.dataLayer = window.dataLayer || [];
@@ -105,7 +107,7 @@
                     <a href="<?php echo esc_url(  home_url( '/' ), 'spark' ); ?>">
                         <img src="<?php echo esc_url( get_theme_mod( 'spark_logo' ), 'spark'); ?>"
                              alt="<?php echo esc_attr( get_bloginfo( 'name' ), 'spark'); ?>"
-                             class="navbar-brand-img">
+                             width="225" height="59" class="navbar-brand-img">
 
                     </a>
                     <?php else : ?>

@@ -10,10 +10,10 @@ function load_assets() {
   // load Bootstrap CSS from a CDN or locally
     if ( get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
         wp_enqueue_style( 'spark-bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css' );
-        wp_enqueue_style( 'spark-fontawesome-cdn', 'https://use.fontawesome.com/releases/v5.10.2/css/all.css' );
+        wp_enqueue_style( 'spark-fontawesome', 'https://use.fontawesome.com/releases/v5.10.2/css/all.css' );
     } else { 
         wp_enqueue_style( 'spark-bootstrap-css', get_template_directory_uri() . '/inc/assets/css/bootstrap.min.css' );
-        wp_enqueue_style( 'spark-fontawesome-cdn', get_template_directory_uri() . '/inc/assets/css/fontawesome.min.css' );
+        wp_enqueue_style( 'spark-fontawesome', get_template_directory_uri() . '/inc/assets/css/fontawesome.min.css' );
     }
     
     // load the site's main font
@@ -29,16 +29,19 @@ function load_assets() {
         wp_enqueue_script( 'spark-bootstrapjs', get_template_directory_uri() . '/inc/assets/js/bootstrap.min.js', array(), '', true );
     }
 
+    // add the async attribute to Bootstrap's JS
+    wp_script_add_data( 'spark-bootstrapjs', 'async', true );
+
     // load the theme's main JS file
     wp_enqueue_script('spark-themejs', get_template_directory_uri() . '/inc/assets/js/theme-script.min.js', array(), '', true );
 
-    // add the async attribute to script tags
+    // add the async attribute to 'theme-script-min.js'
     wp_script_add_data( 'spark-themejs', 'async', true );
 
     // add JS skip links functionality
     wp_enqueue_script( 'spark-skip-link-focus-fix', get_template_directory_uri() . '/inc/assets/js/skip-link-focus-fix.min.js', array(), '20220515', true );
       
-    // add the async attribute
+    // add the async attribute to 'skip-link-focus-fix.min.js'
     wp_script_add_data( 'spark-skip-link-focus-fix', 'async', true );
 
     // conditionally load comment styles
@@ -143,11 +146,11 @@ function load_site_styles() {
 add_action( 'wp_enqueue_scripts', '\sparkt\load_site_styles', 100);
 
 function style_loader_filter($html, $handle) {
-    if ( $handle === 'spark-fontawesome-cdn' || $handle === 'spark-muli' ) {
+    if ( $handle === 'spark-muli' ) {
         return str_replace( "rel='stylesheet'",
             "rel='preload' as='font' type='font/woff2' crossorigin='anonymous'", $html );
     }
     return $html;
 }
 
-// add_filter( 'style_loader_tag', '\sparkt\style_loader_filter', 10, 2 );
+add_filter( 'style_loader_tag', '\sparkt\style_loader_filter', 10, 2 );

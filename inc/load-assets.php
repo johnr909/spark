@@ -150,4 +150,4 @@ function style_loader_filter($html, $handle) {
     return $html;
 }
 
-add_filter( 'style_loader_tag', '\sparkt\style_loader_filter', 10, 2 );
+// add_filter( 'style_loader_tag', '\sparkt\style_loader_filter', 10, 2 );

@@ -1595,9 +1595,9 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 
 /* rooster ad */
 .rooster-caption {
-  right: 20% !important;
+ /* right: 20% !important;
   left: 20% !important;
-  bottom: 40px;
+  bottom: 40px;*/
 }
 
 #carousel-text .rooster-text {
@@ -1791,6 +1791,18 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 }
 
 @media only screen and (min-width: 1024px) {
+  .rooster-caption {
+    bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1700px) {
+  .rooster-caption {
+    bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1701px) and (max-width: 3200px) {
   .rooster-caption {
     bottom: 75px;
   }

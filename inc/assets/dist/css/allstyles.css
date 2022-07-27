@@ -1545,7 +1545,7 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 */
 
 .carousel-caption {
-  bottom: 20px;
+  bottom: 1rem;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -1672,6 +1672,17 @@ HOME PAGE CAROUSEL/MOBILE BANNER
   color: var(--brand-green);
 }
 
+.rooster-caption .carousel-text p.cta-rooster {
+  margin-top:  1rem;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .rooster-caption .btn-lg {
+    padding: .25rem .75rem .5rem .75rem;
+  }
+}
+
 @media only screen and (min-width: 250px) and (max-width: 360px){
 
    .carousel-item > img {
@@ -1697,7 +1708,7 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 @media only screen and (max-width: 480px) {
 
   .carousel-caption {
-    top: 2%;
+    top: 0;
   }
 
   .carousel-text p.lead {
@@ -1714,12 +1725,16 @@ HOME PAGE CAROUSEL/MOBILE BANNER
     padding: .5rem .75rem;
   }
 
+  .rooster-caption .carousel-text p.cta-rooster {
+    margin-top: 1rem;
+  }
+
 }
 
 @media only screen and (min-width: 481px)  and (max-width: 767px) {
 
   .carousel-caption {
-    top: 10%;
+    top: 0;
   }
 
   .carousel-item > img {
@@ -1752,7 +1767,7 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 @media only screen and (min-width: 768px)  and (max-width: 959px) {
 
   .carousel-caption {
-    top: 2%;
+    top: 0;
   }
 
   .carousel-item > img {
@@ -1774,6 +1789,10 @@ HOME PAGE CAROUSEL/MOBILE BANNER
     padding: .35rem .5rem;
   }
 
+  .rooster-caption .carousel-text p.cta-rooster {
+    margin-top: .5rem;
+  }
+
 }
 
 @media only screen and (max-width: 960px) {
@@ -1792,19 +1811,25 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 
 @media only screen and (min-width: 1024px) {
   .rooster-caption {
-    bottom: 15px;
+    bottom: 1rem;
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1700px) {
+@media only screen and (min-width: 1025px) and (max-width: 1300px) {
   .rooster-caption {
-    bottom: 30px;
+    bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1700px) {
+  .rooster-caption {
+    bottom: 2.5rem;
   }
 }
 
 @media only screen and (min-width: 1701px) and (max-width: 3200px) {
   .rooster-caption {
-    bottom: 75px;
+    bottom: 3.5rem;
   }
 }
 

@@ -11,7 +11,7 @@
             ?>
       </a>
     </p>
-    <p class="cta text-center green-text">
+    <p class="cta cta-rooster text-center green-text">
         <?php _e( 'Save time, pre-order online!', 'spark' ); ?></p>
     <a class="btn btn-primary btn-lg rec-button" 
        href="<?php echo esc_url( '/rec', 'spark' ); ?>" role="button">

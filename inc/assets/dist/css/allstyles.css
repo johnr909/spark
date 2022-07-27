@@ -1051,12 +1051,6 @@ body:not(.theme-preset-active) footer#colophon {
 
   --btn-box-shadow-trans: 0 0 0 .2rem rgba(128,190,121,.5);
   --btn-box-shadow-opaque: 0 0 0 .2rem rgba(128,190,121);
-
-  /*
-  --tablet-min-width:  768px;
-  --desktop-min-width:  960px;
-  */
-
 }
 
 /*
@@ -1545,7 +1539,7 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 */
 
 .carousel-caption {
-  bottom: 1rem;
+  bottom: .5rem;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -1582,7 +1576,7 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 }
 
 .bud-burst .carousel-text p.cta {
-  color: #fff;
+  color: var(--white);
 }
 
 .carousel-text .rec-button {
@@ -1594,12 +1588,6 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 }
 
 /* rooster ad */
-.rooster-caption {
- /* right: 20% !important;
-  left: 20% !important;
-  bottom: 40px;*/
-}
-
 #carousel-text .rooster-text {
   font-size: 2.5rem;
   text-shadow: -3px 2px #222425;
@@ -1699,8 +1687,8 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 @media only screen and (min-width: 361px) and (max-width: 479px){
 
    .carousel-item > img {
-    width: 350% !important;
-    height: 350% !important;
+    width: 300% !important;
+    height: 300% !important;
   }
 
 }
@@ -1771,8 +1759,8 @@ HOME PAGE CAROUSEL/MOBILE BANNER
   }
 
   .carousel-item > img {
-    width: 115%;
-    height: 115%;
+    width: 115% !important;
+    height: 115% !important;
   }
  
   .carousel-text p.lead {

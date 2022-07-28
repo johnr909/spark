@@ -1800,6 +1800,7 @@ HOME PAGE CAROUSEL/MOBILE BANNER
 
 @media only screen and (min-width: 1024px) {
   .rooster-caption {
+    top:  3px;
     bottom: 1rem;
   }
 }

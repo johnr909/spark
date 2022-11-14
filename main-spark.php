@@ -2,8 +2,8 @@
 /**
 * Template Name: Main Spark Template
 * The 'true' main template file
-
- */
+* @package spark
+*/
 
 get_header(); ?>
 

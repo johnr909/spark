@@ -1,7 +1,8 @@
 <?php 
 /**
 * Template Name: Home
- */
+* @package spark 
+*/
 
 get_header(); ?>
 

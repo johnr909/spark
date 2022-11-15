@@ -31,6 +31,7 @@ Page templates
 * Full-Width
 * Blank with container
 * Blank without container Page
+    NOTE: Unused template files reside in the 'extra-tpls' directory. To use one of these files, first move it up one level to the main theme directory.
 
 Other features:
 * Currently using Bootstrap v4.3.1

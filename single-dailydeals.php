@@ -33,7 +33,10 @@ get_header();
 					?>
 				</header><!-- .page-header -->
 
-				<?php get_template_part( 'template-parts/content', 'daily-deals-cpt' );?>
+                <?php
+                    while ( have_posts() ) : the_post();
+                    endwhile;   
+                ?>
 
 			</main><!-- #main -->
 		</section><!-- #primary -->

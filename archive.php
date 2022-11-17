@@ -4,8 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Spark
- */
+ * @package spark */
 
 get_header(); 
 ?>
@@ -61,7 +60,7 @@ get_header();
 			</main><!-- #main -->
 		</section><!-- #primary -->
 
-			<?php get_sidebar( 'spark' ); ?>
+			<?php get_sidebar(); ?>
 
  </div><!-- .row -->
 </div><!-- .container-fluid -->

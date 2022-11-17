@@ -9,8 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Spark
- */
+ * @package spark */
 
  get_header(); ?>
 
@@ -67,7 +66,7 @@
 
 					endwhile;
 
-					spark_pagination();
+					\sparkt\pagination();
 
 				else :
 
@@ -78,7 +77,7 @@
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-		<?php	get_sidebar( 'spark' ); ?>
+		<?php	get_sidebar(); ?>
  </div><!-- .row -->
 </div><!-- .container-fluid -->
 

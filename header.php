@@ -6,14 +6,15 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Spark
- */
+ * @package spark */
 
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="<?php echo esc_url( 'https://www.googletagmanager.com/gtag/js?id=UA-175453544-1', 'spark' ); ?>"></script>
+	<script defer src="<?php echo esc_url( 'https://www.googletagmanager.com/gtag/js?id=UA-175453544-1', 'spark' ); ?>"></script>
 
 	<script>
       window.dataLayer = window.dataLayer || [];
@@ -63,7 +64,7 @@
         <?php esc_html_e( 'Skip to content', 'spark' ); ?>
     </a>
 
-    <?php if (is_front_page()) : ?>
+    <?php if ( is_front_page() ) : ?>
 
         <div class="container-fluid container-fluid-info">
             <div class="row">
@@ -75,7 +76,7 @@
 
     <?php endif;?>
 
-    <?php if ( is_front_page()) : ?>
+    <?php if ( is_front_page() ) : ?>
 
         <div class="container-fluid container-fluid-info">
             <div class="row">
@@ -86,7 +87,7 @@
         </div><!-- .container-fluid -->
     <?php endif;?>       
 
-    <header id="masthead" class="site-header navbar-static-top sticky-top <?php echo spark_bg_class(); ?>" 
+    <header id="masthead" class="site-header navbar-static-top sticky-top <?php echo \sparkt\bg_class(); ?>" 
             role="banner">
 
         <div class="container-fluid-info">
@@ -106,7 +107,7 @@
                     <a href="<?php echo esc_url(  home_url( '/' ), 'spark' ); ?>">
                         <img src="<?php echo esc_url( get_theme_mod( 'spark_logo' ), 'spark'); ?>"
                              alt="<?php echo esc_attr( get_bloginfo( 'name' ), 'spark'); ?>"
-                             class="navbar-brand-img">
+                             width="225" height="59" class="navbar-brand-img">
 
                     </a>
                     <?php else : ?>
@@ -130,8 +131,8 @@
                     'menu_id'         => false,
                     'menu_class'      => 'navbar-nav',
                     'depth'           => 3,
-                    'fallback_cb'     => 'spark_navwalker::fallback',
-                    'walker'          => new spark_navwalker()
+                    'fallback_cb'     => 'navwalker::fallback',
+                    'walker'          => new navwalker()
                     ));
                 ?>
 

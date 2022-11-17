@@ -4,8 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Spark
- */
+ * @package spark */
 
 get_header(); ?>
 
@@ -45,7 +44,7 @@ get_header(); ?>
 
 				endwhile;
 
-				spark_pagination();
+				\sparkt\spark_pagination();
 
 			else :
 

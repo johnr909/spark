@@ -4,8 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Spark
- */
+ * @package spark */
 
  /**
  * Setup query to show the ‘reviews’ post type with ‘10’ posts.
@@ -44,7 +43,7 @@
     		$reviewer = get_post_meta( $id, 'jr_reviewer', true );
   	    $icon = get_post_meta( $id, 'spark_review_icon', true );
   	  ?>
-  	 	<div class="carousel-item <?php if ($counter == 1) _e( ' active', 'spark' ); ?>" data-interval="5000">
+  	 	<div class="carousel-item <?php if ($counter == 1) _e( ' active', 'spark' ); ?>" data-interval="3000">
   	 		<blockquote>
 					<p class="testimonial-text"><i class="fa fa-<?php echo esc_attr( $icon ); ?>"></i>&nbsp;&nbsp;
 						<?php 
@@ -59,7 +58,7 @@
 				 <a href="<?php echo esc_url( 'https://www.leafly.com/dispensary-info/sense-of-healing', 'spark' ); ?>" 
 				    title="<?php esc_attr_e( 'Spark Dispensary Reviews', 'spark' ); ?>" target="_blank">
 				    <img src="<?php echo esc_url( 'https://www.leafly.com/badge/2x/sense-of-healing.png', 'spark' ); ?>" 
-				         width="212" 
+				         width="212" height="97" alt="Leafly logo"
 				         class="d-block mx-auto mt-4 mb-4"/>
 				 </a> 
   

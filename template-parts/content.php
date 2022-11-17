@@ -4,8 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Spark
- */
+ * @package spark */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -22,7 +21,7 @@
 
 		if ( 'post' === get_post_type() ) : ?>
             <div class="entry-meta">
-				<?php spark_posted_on(); ?>
+				<?php \sparkt\posted_on(); ?>
             </div><!-- .entry-meta -->
 		<?php
 		endif; ?>
@@ -43,6 +42,6 @@
     </div><!-- .entry-content -->
 
     <footer class="entry-footer">
-		<?php spark_entry_footer(); ?>
+		<?php \sparkt\entry_footer(); ?>
     </footer><!-- .entry-footer -->
 </article><!-- #post-## -->

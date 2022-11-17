@@ -1,0 +1,32 @@
+{
+    "name": "johnr909/spark",
+    "description": "Spark theme",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "John Rose",
+            "email": "johnr909@yahoo.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "files": [ 
+            "inc/theme-setup.php",
+            "inc/excerpts.php",
+            "inc/dashboard-welcome.php",
+            "inc/widgets.php",
+            "inc/load-assets.php",
+            "inc/password-form.php",
+            "inc/deal-of-day.php",
+            "inc/custom-header.php",
+            "inc/template-tags.php",
+            "inc/extras.php",
+            "inc/customizer.php",
+            "inc/numeric-slug.php",
+            "inc/disable-emojis.php",
+            "inc/pagination.php"
+        ]
+    }
+}

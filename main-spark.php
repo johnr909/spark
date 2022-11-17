@@ -2,8 +2,8 @@
 /**
 * Template Name: Main Spark Template
 * The 'true' main template file
-
- */
+* @package spark
+*/
 
 get_header(); ?>
 
@@ -22,45 +22,21 @@ get_header(); ?>
         </div><!-- .row -->
     </div><!-- .container-fluid -->
 
-        <div class="container-fluid">
-        <div class="row">
-
-            <?php if( is_page( '12days' ) ) : ?>
-                <?php get_template_part( 'template-parts/content', 'advent-cal' );?>
-            <?php endif; ?>
-
-        </div><!-- .row -->
-    </div><!-- .container-fluid -->
-
-
     <div class="container">
         <div class="row">
 
             <section id="primary" class="content-area col-sm-12">      
                 <main id="main" class="site-main" role="main">
-                    
-
                     <?php
                         while ( have_posts() ) : the_post();
                         endwhile; // End of the loop.
+                        the_content();
                     ?>
-                    <?php  the_content(); ?>
-
                 </main><!-- #main -->
             </section><!-- #primary -->
 
         </div><!-- .row -->
     </div><!-- .container -->
-
-    <div class="container-fluid">
-        <div class="row">
-            <?php if( is_page( 'rec' ) || is_page( 'med' ) ) : ?>
-
-                <?php get_template_part( 'template-parts/content', 'order-online-cta' );?>
-
-            <?php endif; ?>
-        </div><!-- .row -->
-    </div><!-- .container-fluid -->
 
 <?php if( is_page( 'rec' ) ) : ?>
 

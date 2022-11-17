@@ -30,7 +30,7 @@ BLOG
 }
 
 .alert-info {
-  color: #2d3545;
+  color: var(--brand-dark-grey);
   background-color: var(--brand-green);
   border-color: var(--brand-light-blue);
 }

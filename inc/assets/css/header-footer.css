@@ -40,7 +40,7 @@ HEADER-FOOTER
 }
 
 .foot {
-  background: var(--almost-black) url('../../../../inc/assets/images/footer-bg.png');
+  background: var(--almost-black) url('../../../../inc/assets/images/footer-bg.webp');
   color: #fff;
 }
 

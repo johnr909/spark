@@ -186,7 +186,7 @@ h5.highlight {
 }
 
 .rewards-signup {
-  background: var(--white) url('../../../../inc/assets/images/phone-icon-lg.png') no-repeat 30% 50%;
+  background: var(--white) url('../../../../inc/assets/images/phone-icon-lg.webp') no-repeat 30% 50%;
 }
 
 @media only screen and (max-width: 576px) {

@@ -22,7 +22,7 @@ DEALS/EVENTS PAGE
 }
 
 .row .online-cta {
-  background: var(--brand-light-blue) url('../../../../inc/assets/images/dots.jpg') repeat;
+  background: var(--brand-light-blue) url('../../../../inc/assets/images/dots.webp') repeat;
 }
 
 .coupon-icon-container {
@@ -54,7 +54,7 @@ DEALS/EVENTS PAGE
  /* rewards callout on the deals page */
 .deals-rewards {
   padding: 3rem;
-  background: var(--brand-dark-grey) url('../../../../inc/assets/images/phone-icon-md-r3.png') no-repeat 50% 60%; 
+  background: var(--brand-dark-grey) url('../../../../inc/assets/images/phone-icon-md-r3.webp') no-repeat 50% 60%; 
 }
 
 .deals-rewards img.card-img-top {

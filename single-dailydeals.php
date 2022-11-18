@@ -35,7 +35,22 @@ get_header();
 
                 <?php
                     while ( have_posts() ) : the_post();
-                    endwhile;   
+                    endwhile; 
+
+                    $dealTitle = get_post_meta( $post->ID, 'dealTitle', true );
+                    $dealLeadOff = get_post_meta( $post->ID, 'dealLeadOff', true) ;
+                    $dealDescriptionText = get_post_meta( $post->ID, 'dealDescriptionText', true );
+                    $dealLeadOff2 = get_post_meta( $post->ID, 'dealLeadOff2', true );
+                    $dealDescriptionText2 = get_post_meta( $post->ID, 'dealDescriptionText2', true );
+
+
+                    echo '<h3>' . $dealTitle . '</h3>';
+                    echo  '<p class="mb-0">' . $dealLeadOff . '</p>';
+                    the_post_thumbnail( 'medium' );
+                    echo  '<p class="mb-0">' . $dealDescriptionText . '</p>';
+                    echo  '<p class="mb-0">' . $dealLeadOff2 . '</p>';
+                    echo  '<p class="mb-0">' . $dealDescriptionText2 . '</p>';
+
                 ?>
 
 			</main><!-- #main -->

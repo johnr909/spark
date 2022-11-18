@@ -42,6 +42,7 @@ get_header();
                     $dealDescriptionText = get_post_meta( $post->ID, 'dealDescriptionText', true );
                     $dealLeadOff2 = get_post_meta( $post->ID, 'dealLeadOff2', true );
                     $dealDescriptionText2 = get_post_meta( $post->ID, 'dealDescriptionText2', true );
+                    $postId = get_the_id();
 
 
                     echo '<h3>' . $dealTitle . '</h3>';
@@ -50,6 +51,7 @@ get_header();
                     echo  '<p class="mb-0">' . $dealDescriptionText . '</p>';
                     echo  '<p class="mb-0">' . $dealLeadOff2 . '</p>';
                     echo  '<p class="mb-0">' . $dealDescriptionText2 . '</p>';
+                    echo  '<p class="mb-0">' . $postId . '</p>';
 
                 ?>
 

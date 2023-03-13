@@ -77,7 +77,7 @@
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-		<?php	get_sidebar(); ?>
+		<?php get_sidebar(); ?>
  </div><!-- .row -->
 </div><!-- .container-fluid -->
 
